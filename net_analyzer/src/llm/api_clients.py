@@ -17,7 +17,7 @@ from src.system_core.handlers import (
 from src.llm.utils import retry_on_failure
 
 # Konštanty pre konfiguráciu Ollama klientov/modelov
-OLLAMA_BASE_URL = "http://10.0.0.10:11434"
+OLLAMA_BASE_URL = "http://localhost:11434"
 DEFAULT_NUM_CTX = 8000
 DEFAULT_TEMPERATURE = 0.2
 DEFAULT_NUM_PREDICT = 4096
