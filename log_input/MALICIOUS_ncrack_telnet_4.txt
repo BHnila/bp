@@ -1,0 +1,117 @@
+2025-05-03T00:37:33.135076+02:00 victim-ubuntu login[54210]: pam_mail(login:session): pam_putenv: delete non-existent entry; MAIL
+2025-05-03T00:37:33.135119+02:00 victim-ubuntu login[54210]: pam_unix(login:session): session closed for user root
+2025-05-03T00:37:33.135161+02:00 victim-ubuntu login[54210]: PAM 4 more authentication failures; logname=.telnet uid=0 euid=0 tty=/dev/pts/3 ruser= rhost=172.16.22.48  user=root
+2025-05-03T00:37:33.135209+02:00 victim-ubuntu login[54210]: PAM service(login) ignoring max retries; 5 > 3
+2025-05-03T00:37:33.143450+02:00 victim-ubuntu login[54216]: FAILED LOGIN (1) on '/dev/pts/2' from '172.16.22.48' FOR 'root', Authentication failure
+2025-05-03T00:37:33.203444+02:00 victim-ubuntu login[54214]: FAILED LOGIN (2) on '/dev/pts/5' from '172.16.22.48' FOR 'root', Authentication failure
+2025-05-03T00:37:33.226663+02:00 victim-ubuntu login[54218]: pam_unix(login:auth): authentication failure; logname=.telnet uid=0 euid=0 tty=/dev/pts/6 ruser= rhost=172.16.22.48  user=root
+2025-05-03T00:37:39.318274+02:00 victim-ubuntu login[54218]: FAILED LOGIN (1) on '/dev/pts/6' from '172.16.22.48' FOR 'root', Authentication failure
+2025-05-03T00:37:39.319132+02:00 victim-ubuntu login[54216]: FAILED LOGIN (2) on '/dev/pts/2' from '172.16.22.48' FOR 'root', Authentication failure
+2025-05-03T00:37:39.335581+02:00 victim-ubuntu login[54212]: FAILED LOGIN (4) on '/dev/pts/4' from '172.16.22.48' FOR 'root', Authentication failure
+2025-05-03T00:37:39.345228+02:00 victim-ubuntu login[54214]: FAILED LOGIN (3) on '/dev/pts/5' from '172.16.22.48' FOR 'root', Authentication failure
+2025-05-03T00:37:39.692276+02:00 victim-ubuntu login[54220]: pam_unix(login:auth): authentication failure; logname=.telnet uid=0 euid=0 tty=/dev/pts/3 ruser= rhost=172.16.22.48  user=root
+2025-05-03T00:37:42.837453+02:00 victim-ubuntu login[54218]: FAILED LOGIN (2) on '/dev/pts/6' from '172.16.22.48' FOR 'root', Authentication failure
+2025-05-03T00:37:42.838337+02:00 victim-ubuntu login[54212]: FAILED LOGIN (5) on '/dev/pts/4' from '172.16.22.48' FOR 'root', Authentication failure
+2025-05-03T00:37:42.838425+02:00 victim-ubuntu login[54212]: TOO MANY LOGIN TRIES (5) on '/dev/pts/4' from '172.16.22.48' FOR 'root'
+2025-05-03T00:37:42.838540+02:00 victim-ubuntu login[54212]: pam_mail(login:session): pam_putenv: delete non-existent entry; MAIL
+2025-05-03T00:37:42.838628+02:00 victim-ubuntu login[54212]: pam_unix(login:session): session closed for user root
+2025-05-03T00:37:42.838658+02:00 victim-ubuntu login[54212]: PAM 4 more authentication failures; logname=.telnet uid=0 euid=0 tty=/dev/pts/4 ruser= rhost=172.16.22.48  user=root
+2025-05-03T00:37:42.838705+02:00 victim-ubuntu login[54212]: PAM service(login) ignoring max retries; 5 > 3
+2025-05-03T00:37:43.911205+02:00 victim-ubuntu login[54214]: FAILED LOGIN (4) on '/dev/pts/5' from '172.16.22.48' FOR 'root', Authentication failure
+2025-05-03T00:37:43.918573+02:00 victim-ubuntu login[54220]: FAILED LOGIN (1) on '/dev/pts/3' from '172.16.22.48' FOR 'root', Authentication failure
+2025-05-03T00:37:43.918897+02:00 victim-ubuntu login[54216]: FAILED LOGIN (3) on '/dev/pts/2' from '172.16.22.48' FOR 'root', Authentication failure
+2025-05-03T00:37:43.992629+02:00 victim-ubuntu login[54222]: pam_unix(login:auth): authentication failure; logname=.telnet uid=0 euid=0 tty=/dev/pts/4 ruser= rhost=172.16.22.48  user=root
+2025-05-03T00:37:45.210497+02:00 victim-ubuntu login[54218]: FAILED LOGIN (3) on '/dev/pts/6' from '172.16.22.48' FOR 'root', Authentication failure
+2025-05-03T00:37:46.463713+02:00 victim-ubuntu login[54216]: FAILED LOGIN (4) on '/dev/pts/2' from '172.16.22.48' FOR 'root', Authentication failure
+2025-05-03T00:37:46.464137+02:00 victim-ubuntu login[54222]: FAILED LOGIN (1) on '/dev/pts/4' from '172.16.22.48' FOR 'root', Authentication failure
+2025-05-03T00:37:46.513138+02:00 victim-ubuntu login[54214]: FAILED LOGIN (5) on '/dev/pts/5' from '172.16.22.48' FOR 'root', Authentication failure
+2025-05-03T00:37:46.513477+02:00 victim-ubuntu login[54220]: FAILED LOGIN (2) on '/dev/pts/3' from '172.16.22.48' FOR 'root', Authentication failure
+2025-05-03T00:37:46.513522+02:00 victim-ubuntu login[54214]: TOO MANY LOGIN TRIES (5) on '/dev/pts/5' from '172.16.22.48' FOR 'root'
+2025-05-03T00:37:46.513573+02:00 victim-ubuntu login[54214]: pam_mail(login:session): pam_putenv: delete non-existent entry; MAIL
+2025-05-03T00:37:46.513635+02:00 victim-ubuntu login[54214]: pam_unix(login:session): session closed for user root
+2025-05-03T00:37:46.513684+02:00 victim-ubuntu login[54214]: PAM 4 more authentication failures; logname=.telnet uid=0 euid=0 tty=/dev/pts/5 ruser= rhost=172.16.22.48  user=root
+2025-05-03T00:37:46.513872+02:00 victim-ubuntu login[54214]: PAM service(login) ignoring max retries; 5 > 3
+2025-05-03T00:37:48.162294+02:00 victim-ubuntu login[54218]: FAILED LOGIN (4) on '/dev/pts/6' from '172.16.22.48' FOR 'root', Authentication failure
+2025-05-03T00:37:48.448231+02:00 victim-ubuntu login[54224]: pam_unix(login:auth): authentication failure; logname=.telnet uid=0 euid=0 tty=/dev/pts/5 ruser= rhost=172.16.22.48  user=root
+2025-05-03T00:37:48.664003+02:00 victim-ubuntu login[54216]: FAILED LOGIN (5) on '/dev/pts/2' from '172.16.22.48' FOR 'root', Authentication failure
+2025-05-03T00:37:48.664296+02:00 victim-ubuntu login[54216]: TOO MANY LOGIN TRIES (5) on '/dev/pts/2' from '172.16.22.48' FOR 'root'
+2025-05-03T00:37:48.664363+02:00 victim-ubuntu login[54216]: pam_mail(login:session): pam_putenv: delete non-existent entry; MAIL
+2025-05-03T00:37:48.664427+02:00 victim-ubuntu login[54216]: pam_unix(login:session): session closed for user root
+2025-05-03T00:37:48.664525+02:00 victim-ubuntu login[54216]: PAM 4 more authentication failures; logname=.telnet uid=0 euid=0 tty=/dev/pts/2 ruser= rhost=172.16.22.48  user=root
+2025-05-03T00:37:48.664586+02:00 victim-ubuntu login[54216]: PAM service(login) ignoring max retries; 5 > 3
+2025-05-03T00:37:48.713506+02:00 victim-ubuntu login[54220]: FAILED LOGIN (3) on '/dev/pts/3' from '172.16.22.48' FOR 'root', Authentication failure
+2025-05-03T00:37:49.817560+02:00 victim-ubuntu login[54222]: FAILED LOGIN (2) on '/dev/pts/4' from '172.16.22.48' FOR 'root', Authentication failure
+2025-05-03T00:37:51.338094+02:00 victim-ubuntu login[54218]: FAILED LOGIN (5) on '/dev/pts/6' from '172.16.22.48' FOR 'root', Authentication failure
+2025-05-03T00:37:51.338420+02:00 victim-ubuntu login[54218]: TOO MANY LOGIN TRIES (5) on '/dev/pts/6' from '172.16.22.48' FOR 'root'
+2025-05-03T00:37:51.338460+02:00 victim-ubuntu login[54218]: pam_mail(login:session): pam_putenv: delete non-existent entry; MAIL
+2025-05-03T00:37:51.338492+02:00 victim-ubuntu login[54218]: pam_unix(login:session): session closed for user root
+2025-05-03T00:37:51.338522+02:00 victim-ubuntu login[54218]: PAM 4 more authentication failures; logname=.telnet uid=0 euid=0 tty=/dev/pts/6 ruser= rhost=172.16.22.48  user=root
+2025-05-03T00:37:51.338549+02:00 victim-ubuntu login[54218]: PAM service(login) ignoring max retries; 5 > 3
+2025-05-03T00:37:52.089479+02:00 victim-ubuntu login[54224]: FAILED LOGIN (1) on '/dev/pts/5' from '172.16.22.48' FOR 'root', Authentication failure
+2025-05-03T00:37:52.225376+02:00 victim-ubuntu login[54220]: FAILED LOGIN (4) on '/dev/pts/3' from '172.16.22.48' FOR 'root', Authentication failure
+2025-05-03T00:37:53.112658+02:00 victim-ubuntu login[54222]: FAILED LOGIN (3) on '/dev/pts/4' from '172.16.22.48' FOR 'root', Authentication failure
+2025-05-03T00:37:53.272039+02:00 victim-ubuntu login[54227]: PAM unable to dlopen(pam_lastlog.so): /usr/lib/security/pam_lastlog.so: cannot open shared object file: No such file or directory
+2025-05-03T00:37:53.272109+02:00 victim-ubuntu login[54227]: PAM adding faulty module: pam_lastlog.so
+2025-05-03T00:37:53.405278+02:00 victim-ubuntu login[54227]: pam_unix(login:auth): authentication failure; logname=.telnet uid=0 euid=0 tty=/dev/pts/2 ruser= rhost=172.16.22.48  user=root
+2025-05-03T00:37:55.832057+02:00 victim-ubuntu login[54220]: FAILED LOGIN (5) on '/dev/pts/3' from '172.16.22.48' FOR 'root', Authentication failure
+2025-05-03T00:37:55.832239+02:00 victim-ubuntu login[54220]: TOO MANY LOGIN TRIES (5) on '/dev/pts/3' from '172.16.22.48' FOR 'root'
+2025-05-03T00:37:55.832353+02:00 victim-ubuntu login[54220]: pam_mail(login:session): pam_putenv: delete non-existent entry; MAIL
+2025-05-03T00:37:55.832423+02:00 victim-ubuntu login[54220]: pam_unix(login:session): session closed for user root
+2025-05-03T00:37:55.832551+02:00 victim-ubuntu login[54220]: PAM 4 more authentication failures; logname=.telnet uid=0 euid=0 tty=/dev/pts/3 ruser= rhost=172.16.22.48  user=root
+2025-05-03T00:37:55.832589+02:00 victim-ubuntu login[54220]: PAM service(login) ignoring max retries; 5 > 3
+2025-05-03T00:37:55.845206+02:00 victim-ubuntu login[54224]: FAILED LOGIN (2) on '/dev/pts/5' from '172.16.22.48' FOR 'root', Authentication failure
+2025-05-03T00:37:55.918259+02:00 victim-ubuntu login[54227]: FAILED LOGIN (1) on '/dev/pts/2' from '172.16.22.48' FOR 'root', Authentication failure
+2025-05-03T00:37:58.408121+02:00 victim-ubuntu login[54229]: pam_unix(login:auth): authentication failure; logname=.telnet uid=0 euid=0 tty=/dev/pts/3 ruser= rhost=172.16.22.48  user=root
+2025-05-03T00:37:58.413673+02:00 victim-ubuntu login[54224]: FAILED LOGIN (3) on '/dev/pts/5' from '172.16.22.48' FOR 'root', Authentication failure
+2025-05-03T00:37:58.467421+02:00 victim-ubuntu login[54227]: FAILED LOGIN (2) on '/dev/pts/2' from '172.16.22.48' FOR 'root', Authentication failure
+2025-05-03T00:38:00.452472+02:00 victim-ubuntu login[54229]: FAILED LOGIN (1) on '/dev/pts/3' from '172.16.22.48' FOR 'root', Authentication failure
+2025-05-03T00:38:00.590079+02:00 victim-ubuntu login[54224]: FAILED LOGIN (4) on '/dev/pts/5' from '172.16.22.48' FOR 'root', Authentication failure
+2025-05-03T00:38:00.646715+02:00 victim-ubuntu login[54227]: FAILED LOGIN (3) on '/dev/pts/2' from '172.16.22.48' FOR 'root', Authentication failure
+2025-05-03T00:38:00.709794+02:00 victim-ubuntu login[54222]: FAILED LOGIN (4) on '/dev/pts/4' from '172.16.22.48' FOR 'root', Authentication failure
+2025-05-03T00:38:03.411153+02:00 victim-ubuntu login[54231]: pam_unix(login:auth): authentication failure; logname=.telnet uid=0 euid=0 tty=/dev/pts/6 ruser= rhost=172.16.22.48  user=root
+2025-05-03T00:38:03.689885+02:00 victim-ubuntu login[54227]: FAILED LOGIN (4) on '/dev/pts/2' from '172.16.22.48' FOR 'root', Authentication failure
+2025-05-03T00:38:03.836299+02:00 victim-ubuntu login[54229]: FAILED LOGIN (2) on '/dev/pts/3' from '172.16.22.48' FOR 'root', Authentication failure
+2025-05-03T00:38:03.836659+02:00 victim-ubuntu login[54224]: FAILED LOGIN (5) on '/dev/pts/5' from '172.16.22.48' FOR 'root', Authentication failure
+2025-05-03T00:38:03.836729+02:00 victim-ubuntu login[54224]: TOO MANY LOGIN TRIES (5) on '/dev/pts/5' from '172.16.22.48' FOR 'root'
+2025-05-03T00:38:03.836784+02:00 victim-ubuntu login[54224]: pam_mail(login:session): pam_putenv: delete non-existent entry; MAIL
+2025-05-03T00:38:03.836825+02:00 victim-ubuntu login[54224]: pam_unix(login:session): session closed for user root
+2025-05-03T00:38:03.836863+02:00 victim-ubuntu login[54224]: PAM 4 more authentication failures; logname=.telnet uid=0 euid=0 tty=/dev/pts/5 ruser= rhost=172.16.22.48  user=root
+2025-05-03T00:38:03.836895+02:00 victim-ubuntu login[54224]: PAM service(login) ignoring max retries; 5 > 3
+2025-05-03T00:38:07.408441+02:00 victim-ubuntu login[54227]: FAILED LOGIN (5) on '/dev/pts/2' from '172.16.22.48' FOR 'root', Authentication failure
+2025-05-03T00:38:07.408614+02:00 victim-ubuntu login[54227]: TOO MANY LOGIN TRIES (5) on '/dev/pts/2' from '172.16.22.48' FOR 'root'
+2025-05-03T00:38:07.408692+02:00 victim-ubuntu login[54227]: pam_mail(login:session): pam_putenv: delete non-existent entry; MAIL
+2025-05-03T00:38:07.408767+02:00 victim-ubuntu login[54227]: pam_unix(login:session): session closed for user root
+2025-05-03T00:38:07.408846+02:00 victim-ubuntu login[54227]: PAM 4 more authentication failures; logname=.telnet uid=0 euid=0 tty=/dev/pts/2 ruser= rhost=172.16.22.48  user=root
+2025-05-03T00:38:07.408901+02:00 victim-ubuntu login[54227]: PAM service(login) ignoring max retries; 5 > 3
+2025-05-03T00:38:07.515674+02:00 victim-ubuntu login[54229]: FAILED LOGIN (3) on '/dev/pts/3' from '172.16.22.48' FOR 'root', Authentication failure
+2025-05-03T00:38:08.567525+02:00 victim-ubuntu login[54233]: pam_unix(login:auth): authentication failure; logname=.telnet uid=0 euid=0 tty=/dev/pts/2 ruser= rhost=172.16.22.48  user=root
+2025-05-03T00:38:10.574961+02:00 victim-ubuntu login[54229]: FAILED LOGIN (4) on '/dev/pts/3' from '172.16.22.48' FOR 'root', Authentication failure
+2025-05-03T00:38:13.663181+02:00 victim-ubuntu login[54235]: pam_unix(login:auth): authentication failure; logname=.telnet uid=0 euid=0 tty=/dev/pts/4 ruser= rhost=172.16.22.48  user=root
+2025-05-03T00:38:14.593809+02:00 victim-ubuntu login[54229]: FAILED LOGIN (5) on '/dev/pts/3' from '172.16.22.48' FOR 'root', Authentication failure
+2025-05-03T00:38:14.594019+02:00 victim-ubuntu login[54229]: TOO MANY LOGIN TRIES (5) on '/dev/pts/3' from '172.16.22.48' FOR 'root'
+2025-05-03T00:38:14.594072+02:00 victim-ubuntu login[54229]: pam_mail(login:session): pam_putenv: delete non-existent entry; MAIL
+2025-05-03T00:38:14.594118+02:00 victim-ubuntu login[54229]: pam_unix(login:session): session closed for user root
+2025-05-03T00:38:14.594152+02:00 victim-ubuntu login[54229]: PAM 4 more authentication failures; logname=.telnet uid=0 euid=0 tty=/dev/pts/3 ruser= rhost=172.16.22.48  user=root
+2025-05-03T00:38:14.594180+02:00 victim-ubuntu login[54229]: PAM service(login) ignoring max retries; 5 > 3
+2025-05-03T00:38:14.793697+02:00 victim-ubuntu login[54233]: FAILED LOGIN (1) on '/dev/pts/2' from '172.16.22.48' FOR 'root', Authentication failure
+2025-05-03T00:38:16.957711+02:00 victim-ubuntu login[54235]: FAILED LOGIN (1) on '/dev/pts/4' from '172.16.22.48' FOR 'root', Authentication failure
+2025-05-03T00:38:19.336453+02:00 victim-ubuntu login[54235]: FAILED LOGIN (2) on '/dev/pts/4' from '172.16.22.48' FOR 'root', Authentication failure
+2025-05-03T00:38:22.285519+02:00 victim-ubuntu login[54235]: FAILED LOGIN (3) on '/dev/pts/4' from '172.16.22.48' FOR 'root', Authentication failure
+2025-05-03T00:38:23.534927+02:00 victim-ubuntu login[54237]: PAM unable to dlopen(pam_lastlog.so): /usr/lib/security/pam_lastlog.so: cannot open shared object file: No such file or directory
+2025-05-03T00:38:23.535124+02:00 victim-ubuntu login[54237]: PAM adding faulty module: pam_lastlog.so
+2025-05-03T00:38:23.672260+02:00 victim-ubuntu login[54237]: pam_unix(login:auth): authentication failure; logname=.telnet uid=0 euid=0 tty=/dev/pts/3 ruser= rhost=172.16.22.48  user=root
+2025-05-03T00:38:23.940486+02:00 victim-ubuntu login[54233]: FAILED LOGIN (2) on '/dev/pts/2' from '172.16.22.48' FOR 'root', Authentication failure
+2025-05-03T00:38:29.017725+02:00 victim-ubuntu login[54239]: pam_unix(login:auth): authentication failure; logname=.telnet uid=0 euid=0 tty=/dev/pts/5 ruser= rhost=172.16.22.48  user=root
+2025-05-03T00:38:29.331669+02:00 victim-ubuntu login[54233]: FAILED LOGIN (3) on '/dev/pts/2' from '172.16.22.48' FOR 'root', Authentication failure
+2025-05-03T00:38:29.332131+02:00 victim-ubuntu login[54237]: FAILED LOGIN (1) on '/dev/pts/3' from '172.16.22.48' FOR 'root', Authentication failure
+2025-05-03T00:38:29.362831+02:00 victim-ubuntu login[54235]: FAILED LOGIN (4) on '/dev/pts/4' from '172.16.22.48' FOR 'root', Authentication failure
+2025-05-03T00:38:38.974870+02:00 victim-ubuntu login[54242]: pam_unix(login:auth): authentication failure; logname=.telnet uid=0 euid=0 tty=/dev/pts/6 ruser= rhost=172.16.22.48  user=root
+2025-05-03T00:38:38.986887+02:00 victim-ubuntu login[54233]: FAILED LOGIN (4) on '/dev/pts/2' from '172.16.22.48' FOR 'root', Authentication failure
+2025-05-03T00:38:38.987318+02:00 victim-ubuntu login[54237]: FAILED LOGIN (2) on '/dev/pts/3' from '172.16.22.48' FOR 'root', Authentication failure
+2025-05-03T00:38:42.460990+02:00 victim-ubuntu login[54237]: FAILED LOGIN (3) on '/dev/pts/3' from '172.16.22.48' FOR 'root', Authentication failure
+2025-05-03T00:38:44.091809+02:00 victim-ubuntu login[54244]: pam_unix(login:auth): authentication failure; logname=.telnet uid=0 euid=0 tty=/dev/pts/4 ruser= rhost=172.16.22.48  user=root
+2025-05-03T00:38:49.029976+02:00 victim-ubuntu login[54246]: pam_unix(login:auth): authentication failure; logname=.telnet uid=0 euid=0 tty=/dev/pts/5 ruser= rhost=172.16.22.48  user=root
+2025-05-03T00:38:51.394321+02:00 victim-ubuntu login[54246]: FAILED LOGIN (1) on '/dev/pts/5' from '172.16.22.48' FOR 'root', Authentication failure
+2025-05-03T00:38:52.017643+02:00 victim-ubuntu login[54248]: pam_unix(login:auth): authentication succeeded for root
+2025-05-03T00:38:52.017951+02:00 victim-ubuntu login[54248]: ROOT LOGIN ON '/dev/pts/7' FROM '172.16.22.48'
+2025-05-03T00:38:52.018031+02:00 victim-ubuntu login[54248]: pam_unix(login:session): session opened for user root by LOGIN(uid=0)

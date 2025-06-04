@@ -1,0 +1,26 @@
+[2025/05/04 09:45:12.346102,  3] lib/util_sock.c:102(client_connect)
+      client_connect:  accepted connection from 203.0.113.17:54321
+[2025/05/04 09:45:12.347456,  3] smbd/service.c:456(make_connection_snum)
+      make_connection_snum:  New SMB2 connection, dialect SMB 3.1.1
+[2025/05/04 09:45:12.348789,  3] auth/ntlmssp/ntlmssp_server.c:509(ntlmssp_server_preauth)
+      Got user=[Emily] domain=[WORKGROUP] workstation=[EMILY-PC] len1=32 len2=32
+[2025/05/04 09:45:12.349901,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+      auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user
+      WORKGROUP\[Emily]@203.0.113.17 with the new password interface
+[2025/05/04 09:45:12.350012,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+      auth_check_ntlm_password: check_ntlm_password:  mapped user is:
+      WORKGROUP\[Emily]@203.0.113.17
+[2025/05/04 09:45:12.351123,  3] auth/gensec/spnego.c:1443(gensec_spnego_server_negTokenTarg_step)
+      gensec_spnego_server_negTokenTarg_step: SPNEGO(ntlmssp) login succeeded:
+      NT_STATUS_OK
+[2025/05/04 09:45:12.352234,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+      check_ntlm_password:  Authentication for user [Emily] -> [Emily]
+      SUCCEEDED with status NT_STATUS_OK, authoritative=1
+[2025/05/04 09:45:12.353345,  1] smbd/service.c:1234(start_smbd_session)
+      start_smbd_session:  session setup for user [Emily] (uid=1002, gid=1002) succeeded
+[2025/05/04 09:45:12.354012,  1] smbd/service.c:1300(open_svc)
+      open_svc:  service [public] pid=6789
+[2025/05/04 09:45:12.354123,  1] smbd/protocol.c:789(create_tree_connection)
+      TreeConnect (1): \\SERVER\public Succeeded (share_mode=RDONLY)
+[2025/05/04 09:45:12.354234,  1] smbd/protocol.c:812(negociate_user_session)
+      Session (userid=1002) fully established over SMB2

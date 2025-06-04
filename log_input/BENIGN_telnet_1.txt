@@ -1,0 +1,16 @@
+May  4 08:07:36 ubuntu polkitd(authority=local): Registered Authentication Agent for unix-process:4021:173345 (system bus name :1.15, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)  
+May  4 11:08:48 ubuntu polkitd(authority=local): Unregistered Authentication Agent for unix-process:4021:173345 (system bus name :1.15)  
+May  4 10:33:49 ubuntu passwd[3650]: password expiry warning for user Daniel  
+May  4 11:52:02 ubuntu passwd[3650]: pam_unix(passwd:chauthtok): password changed for Daniel  
+May  4 09:39:07 ubuntu telnetd[65060]: connect from 87.52.47.98  
+May  4 10:26:51 ubuntu login[65061]: pam_unix(login:auth): authentication success; logname=.telnet uid=0 euid=0 tty=pts/2 ruser= rhost=87.52.47.98 user=Sophia  
+May  4 10:45:08 ubuntu login[65061]: pam_unix(login:session): session opened for user Sophia by LOGIN(uid=0)  
+May  4 11:43:09 ubuntu login[65061]: pam_unix(login:session): session closed for user Sophia  
+May  4 08:21:36 ubuntu CRON[3600]: pam_unix(cron:session): session opened for user Robert by (uid=0)  
+May  4 11:48:07 ubuntu CRON[3600]: pam_unix(cron:session): session closed for user Robert  
+May  4 10:22:30 ubuntu su[3620]: pam_unix(su:session): session opened for user Robert by Michael(uid=1002)  
+May  4 12:22:41 ubuntu su[3620]: pam_unix(su:session): session closed for user Robert  
+May  4 10:41:04 ubuntu sudo[3610]: Emma : TTY=pts/0 ; PWD=/home/Emma ; USER=Robert ; COMMAND=/usr/bin/apt update  
+May  4 11:15:44 ubuntu sudo[3610]: pam_unix(sudo:session): session opened for user Robert by Emma(uid=1001)  
+May  4 11:37:01 ubuntu sudo[3610]: pam_unix(sudo:session): session closed for user Robert  
+

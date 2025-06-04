@@ -1,0 +1,23 @@
+2025-05-03T00:30:59.163599+02:00 ubuntu login[54126]: pam_unix(login:auth): authentication failure; logname=.telnet uid=0 euid=0 tty=/dev/pts/2 ruser= rhost=172.16.22.48  user=root
+2025-05-03T00:31:02.082585+02:00 ubuntu login[54126]: FAILED LOGIN (1) on '/dev/pts/2' from '172.16.22.48' FOR 'root', Authentication failure
+2025-05-03T00:31:02.751239+02:00 ubuntu login[54126]: pam_unix(login:auth): check pass; user unknown
+2025-05-03T00:31:02.751378+02:00 ubuntu login[54126]: pam_unix(login:auth): authentication failure; logname=.telnet uid=0 euid=0 tty=/dev/pts/2 ruser= rhost=172.16.22.48 
+2025-05-03T00:31:05.161144+02:00 ubuntu login[54126]: FAILED LOGIN (2) on '/dev/pts/2' from '172.16.22.48' FOR 'UNKNOWN', Authentication failure
+2025-05-03T00:31:05.682343+02:00 ubuntu login[54126]: pam_unix(login:auth): check pass; user unknown
+2025-05-03T00:31:08.712580+02:00 ubuntu login[54126]: FAILED LOGIN (3) on '/dev/pts/2' from '172.16.22.48' FOR 'UNKNOWN', Authentication failure
+2025-05-03T00:31:09.135733+02:00 ubuntu login[54126]: pam_unix(login:auth): check pass; user unknown
+2025-05-03T00:31:11.787339+02:00 ubuntu login[54126]: FAILED LOGIN (4) on '/dev/pts/2' from '172.16.22.48' FOR 'UNKNOWN', Authentication failure
+2025-05-03T00:31:12.124126+02:00 ubuntu login[54126]: pam_unix(login:auth): check pass; user unknown
+2025-05-03T00:31:15.367705+02:00 ubuntu login[54126]: FAILED LOGIN (5) on '/dev/pts/2' from '172.16.22.48' FOR 'UNKNOWN', Authentication failure
+2025-05-03T00:31:15.367882+02:00 ubuntu login[54126]: TOO MANY LOGIN TRIES (5) on '/dev/pts/2' from '172.16.22.48' FOR 'UNKNOWN'
+2025-05-03T00:31:15.367961+02:00 ubuntu login[54126]: pam_mail(login:session): user unknown
+2025-05-03T00:31:15.368055+02:00 ubuntu login[54126]: pam_unix(login:session): close_session - error recovering username
+2025-05-03T00:31:15.368119+02:00 ubuntu login[54126]: PAM 3 more authentication failures; logname=.telnet uid=0 euid=0 tty=/dev/pts/2 ruser= rhost=172.16.22.48 
+2025-05-03T00:31:15.368179+02:00 ubuntu login[54126]: PAM service(login) ignoring max retries; 4 > 3
+2025-05-03T00:31:16.580475+02:00 ubuntu login[54128]: PAM unable to dlopen(pam_lastlog.so): /usr/lib/security/pam_lastlog.so: cannot open shared object file: No such file or directory
+2025-05-03T00:31:16.580615+02:00 ubuntu login[54128]: PAM adding faulty module: pam_lastlog.so
+2025-05-03T00:32:17.699345+02:00 ubuntu login[54133]: PAM unable to dlopen(pam_lastlog.so): /usr/lib/security/pam_lastlog.so: cannot open shared object file: No such file or directory
+2025-05-03T00:32:17.699526+02:00 ubuntu login[54133]: PAM adding faulty module: pam_lastlog.so
+2025-05-03T00:32:18.104293+02:00 ubuntu login[54135]: pam_unix(login:auth): authentication succeeded for root
+2025-05-03T00:32:18.104721+02:00 ubuntu login[54135]: ROOT LOGIN ON '/dev/pts/3' FROM '172.16.22.48'
+2025-05-03T00:32:18.104897+02:00 ubuntu login[54135]: pam_unix(login:session): session opened for user root by LOGIN(uid=0)

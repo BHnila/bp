@@ -1,0 +1,32 @@
+[2025/05/04 16:00:00.124999,  3] lib/util_sock.c:102(client_connect)
+      client_connect:  accepted connection from 198.51.100.23:50123
+[2025/05/04 16:00:00.125890,  3] smbd/service.c:456(make_connection_snum)
+      make_connection_snum:  New SMB1 connection, dialect SMB1
+[2025/05/04 16:00:00.126912,  3] auth/ntlmssp/ntlmssp_server.c:509(ntlmssp_server_preauth)
+      Got user=[Oliver] domain=[WORKGROUP] workstation=[OLIVER-PC] len1=24 len2=24
+[2025/05/04 16:00:00.127903,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+      auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user
+      WORKGROUP\[Oliver]@198.51.100.23 with the new password interface
+[2025/05/04 16:00:00.128901,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+      auth_check_ntlm_password: check_ntlm_password:  mapped user is:
+      WORKGROUP\[Oliver]@198.51.100.23
+[2025/05/04 16:00:00.129987,  3] auth/gensec/spnego.c:1443(gensec_spnego_server_negTokenTarg_step)
+      gensec_spnego_server_negTokenTarg_step: SPNEGO(ntlmssp) login succeeded:
+      NT_STATUS_OK
+[2025/05/04 16:00:00.130912,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+      check_ntlm_password:  Authentication for user [Oliver] -> [Oliver]
+      SUCCEEDED with status NT_STATUS_OK, authoritative=1
+[2025/05/04 16:00:00.131876,  1] smbd/service.c:1234(start_smbd_session)
+      start_smbd_session:  session setup for user [Oliver] (uid=1003, gid=1003) succeeded
+[2025/05/04 16:00:00.132945,  1] smbd/service.c:1300(open_svc)
+      open_svc:  service [shared] pid=1122
+[2025/05/04 16:00:00.133876,  1] smbd/protocol.c:789(create_tree_connection)
+      TreeConnect (1): \\SERVER\shared Succeeded (share_mode=RDWR)
+[2025/05/04 16:00:00.134789,  1] smbd/protocol.c:901(process_read)
+      Read (fid=3, offset=0, len=512) Succeeded
+[2025/05/04 16:00:00.135912,  1] smbd/protocol.c:920(process_write)
+      Write (fid=3, offset=512, len=256) Succeeded
+[2025/05/04 16:00:00.136890,  1] smbd/protocol.c:1045(process_logoff)
+      Logoff (userid=1003) Succeeded
+[2025/05/04 16:00:00.137801,  1] smbd/service.c:1350(end_smbd_session)
+      end_smbd_session:  session teardown for user [Oliver] completed

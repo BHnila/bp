@@ -1,0 +1,16 @@
+2025-05-03T03:23:47.456123+02:00 ubuntu telnetd[65001]:
+      connect from 185.23.42.17
+2025-05-03T03:23:47.456789+02:00 ubuntu login[65002]:
+            pam_unix(login:auth): authentication failure; logname=.telnet uid=0
+            euid=0 tty=/dev/pts/3 ruser= rhost=185.23.42.17 user=Victor
+2025-05-03T03:24:12.123987+02:00 ubuntu login[65002]:
+            FAILED LOGIN (1) on '/dev/pts/3' from '185.23.42.17' FOR 'Victor',
+            Authentication failure
+2025-05-03T03:26:33.789456+02:00 ubuntu telnetd[65010]: connect from 185.23.42.17
+2025-05-03T03:26:33.790123+02:00 ubuntu login[65011]:
+            pam_unix(login:auth): authentication success; logname=.telnet uid=0
+            euid=0 tty=/dev/pts/4 ruser= rhost=185.23.42.17 user=Victor
+2025-05-03T03:26:33.790456+02:00 ubuntu login[65011]:
+            pam_unix(login:session): session opened for user Victor by LOGIN(uid=0)
+2025-05-03T03:33:29.001234+02:00 ubuntu login[65011]:
+            pam_unix(login:session): session closed for user Victor

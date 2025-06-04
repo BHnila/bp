@@ -1,0 +1,34 @@
+2025-05-02T18:25:30.200000+02:00 ubuntu sudo:
+      Lucas : TTY=pts/0 ; PWD=/var/log ; USER=Robert ; COMMAND=/usr/bin/systemctl start rsyslog
+2025-05-02T18:25:30.200800+02:00 ubuntu sudo:
+      pam_unix(sudo:session): session opened for user Robert by Lucas(uid=1000)
+2025-05-02T18:25:30.211400+02:00 ubuntu sudo:
+      pam_unix(sudo:session): session closed for user Robert
+2025-05-02T18:26:50.000000+02:00 ubuntu sshd[1530]:
+      Server listening on :: port 22.
+2025-05-02T18:26:40.315000+02:00 ubuntu systemd-logind[1066]:
+      New seat seat0.
+2025-05-02T18:26:40.315009+02:00 ubuntu systemd-logind[1066]:
+      Watching system buttons on /dev/input/event0 (Power Button)
+2025-05-02T18:26:40.315013+02:00 ubuntu systemd-logind[1066]:
+      Watching system buttons on /dev/input/event1 (Sleep Button)
+2025-05-02T18:26:40.334898+02:00 ubuntu systemd-logind[1066]:
+      Watching system buttons on /dev/input/event2 (AT Translated Set 2 keyboard)
+2025-05-02T18:26:40.335103+02:00 ubuntu polkitd[1035]:
+      Loading rules from directory /etc/polkit-1/rules.d
+2025-05-02T18:26:40.353686+02:00 ubuntu polkitd[1035]:
+      Loading rules from directory /usr/share/polkit-1/rules.d
+2025-05-02T18:26:40.355065+02:00 ubuntu polkitd[1035]:
+      Finished loading, compiling and executing 17 rules
+2025-05-02T18:26:40.356000+02:00 ubuntu polkitd[1035]:
+      Acquired the name org.freedesktop.PolicyKit1 on the system bus
+2025-05-02T18:25:15.300000+02:00 ubuntu CRON[27237]:
+      pam_unix(cron:session): session closed for user Robert
+2025-05-02T18:26:20.000000+02:00 ubuntu systemd-logind[1020]:
+      The system will reboot now!
+2025-05-02T18:26:20.020200+02:00 ubuntu systemd-logind[1020]:
+      System is rebooting.
+2025-05-02T18:26:20.044300+02:00 ubuntu gdm-password]:
+      pam_unix(gdm-password:session): session closed for user Lucas
+2025-05-02T18:26:20.100500+02:00 ubuntu xrdp-sesman[8686]:
+      pam_unix(xrdp-sesman:session): session closed for user Lucas

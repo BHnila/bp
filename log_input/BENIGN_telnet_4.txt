@@ -1,0 +1,8 @@
+2025-05-03T01:58:03.111111+02:00 ubuntu telnetd[64950]: connect from 198.51.100.77
+2025-05-03T01:58:03.111400+02:00 ubuntu login[64952]:
+      pam_unix(login:auth): authentication success; logname=.telnet uid=0
+      euid=0 tty=/dev/pts/2 ruser= rhost=198.51.100.77 user=Robert
+2025-05-03T01:58:03.111700+02:00 ubuntu login[64952]:
+      pam_unix(login:session): session opened for user Robert by LOGIN(uid=0)
+2025-05-03T02:10:22.333333+02:00 ubuntu login[64952]:
+      pam_unix(login:session): session closed for user Robert

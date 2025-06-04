@@ -1,0 +1,30 @@
+2025-05-02T18:44:20.571099+02:00 ubuntu gdm-password]:
+      gkr-pam: unable to locate daemon control file
+2025-05-02T18:44:22.232123+02:00 ubuntu gdm-password]:
+      gkr-pam: stashed password to try later in open session
+2025-05-02T18:44:23.727598+02:00 ubuntu gdm-launch-environment]:
+      pam_unix(gdm-launch-environment:session): session opened for user Grace(uid=120) by (uid=0)
+2025-05-02T18:44:24.185157+02:00 ubuntu (systemd):
+      pam_unix(systemd-user:session): session opened for user Grace(uid=120) by Grace(uid=0)
+2025-05-02T18:44:25.738263+02:00 ubuntu polkitd[1030]:
+      Loading rules from directory /etc/polkit-1/rules.d
+2025-05-02T18:44:26.190700+02:00 ubuntu polkitd[1030]:
+      Loading rules from directory /usr/share/polkit-1/rules.d
+2025-05-02T18:44:27.524668+02:00 ubuntu polkitd[1030]:
+      Finished loading, compiling and executing 17 rules
+2025-05-02T18:44:27.685760+02:00 ubuntu polkitd[1030]:
+      Acquired the name org.freedesktop.PolicyKit1 on the system bus
+2025-05-02T18:44:28.994163+02:00 ubuntu systemd-logind[1059]:
+      New session 2 of user Oliver.
+2025-05-02T18:44:30.829693+02:00 ubuntu sshd[1917]:
+      Server listening on :: port 22.
+2025-05-02T18:44:31.470371+02:00 ubuntu (systemd):
+      pam_unix(systemd-user:session): session opened for user Oliver(uid=1000) by Oliver(uid=0)
+2025-05-02T18:44:31.713787+02:00 ubuntu systemd-logind[1059]:
+      New session c1 of user Grace.
+2025-05-02T18:44:32.046398+02:00 ubuntu polkitd[1030]:
+      Registered Authentication Agent for unix-session:c1 (system bus name :1.35 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+2025-05-02T18:44:34.454434+02:00 ubuntu gdm-password]:
+      pam_unix(gdm-password:session): session opened for user Oliver(uid=1000) by Oliver(uid=0)
+2025-05-02T18:44:36.115989+02:00 ubuntu gdm-password]:
+      gkr-pam: unlocked login keyring

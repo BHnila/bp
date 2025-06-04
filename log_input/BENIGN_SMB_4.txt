@@ -1,0 +1,16 @@
+[2025/05/03 21:08:33.258900,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+      auth_check_ntlm_password: check_ntlm_password:
+      Checking password for unmapped user [HQ]\[Isabella]@[203.0.113.99] with the new password interface
+[2025/05/03 21:08:33.259200,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+      auth_check_ntlm_password: check_ntlm_password:
+      mapped user is: [HQ]\[Isabella]@[203.0.113.99]
+[2025/05/03 21:08:33.259500,  3] auth/gensec/spnego.c:1443(gensec_spnego_server_negTokenTarg_step)
+      gensec_spnego_server_negTokenTarg_step:
+      SPNEGO(ntlmssp) login succeeded: NT_STATUS_OK
+[2025/05/03 21:08:33.259800,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+      check_ntlm_password:
+      Authentication for user [Isabella] -> [Isabella] SUCCEEDED with status NT_STATUS_OK, authoritative=1
+[2025/05/03 21:08:33.260100,  1] smbd/service.c:1234(start_smbd_session)
+      start_smbd_session:  session setup for user [Isabella] (uid=1001, gid=1001) succeeded
+[2025/05/03 21:08:33.260300,  1] smbd/service.c:1300(open_svc)
+      open_svc:  service [share] pid=54321

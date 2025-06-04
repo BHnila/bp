@@ -1,0 +1,21 @@
+May  3 03:23:17 ubuntu telnetd[65040]: connect from 203.0.113.59
+May  3 03:23:22 ubuntu login[65041]: pam_unix(login:auth): authentication failure; logname=.telnet uid=0 euid=0 tty=pts/5 ruser= rhost=203.0.113.59 user=Marcus
+May  3 03:23:27 ubuntu login[65041]: FAILED LOGIN (1) on 'pts/5' from '203.0.113.59' FOR 'Marcus', Authentication failure
+May  3 03:26:05 ubuntu telnetd[65045]: connect from 203.0.113.59
+May  3 03:26:10 ubuntu login[65046]: pam_unix(login:auth): authentication failure; logname=.telnet uid=0 euid=0 tty=pts/6 ruser= rhost=203.0.113.59 user=Marcus
+May  3 03:26:15 ubuntu login[65046]: FAILED LOGIN (1) on 'pts/6' from '203.0.113.59' FOR 'Marcus', Authentication failure
+May  3 03:29:44 ubuntu telnetd[65047]: connect from 203.0.113.59
+May  3 03:29:49 ubuntu login[65048]: pam_unix(login:auth): authentication success; logname=.telnet uid=0 euid=0 tty=pts/7 ruser= rhost=203.0.113.59 user=Marcus
+May  3 03:29:54 ubuntu login[65048]: pam_unix(login:session): session opened for user Marcus by LOGIN(uid=0)
+May  3 03:49:31 ubuntu login[65048]: pam_unix(login:session): session closed for user Marcus
+
+May  3 03:21:09 ubuntu telnetd[65030]: connect from 192.168.42.17
+May  3 03:21:14 ubuntu login[65031]: pam_unix(login:auth): authentication failure; logname=.telnet uid=0 euid=0 tty=pts/2 ruser= rhost=192.168.42.17 user=Julia
+May  3 03:21:19 ubuntu login[65031]: FAILED LOGIN (1) on 'pts/2' from '192.168.42.17' FOR 'Julia', Authentication failure
+May  3 03:24:02 ubuntu telnetd[65035]: connect from 192.168.42.17
+May  3 03:24:07 ubuntu login[65036]: pam_unix(login:auth): authentication failure; logname=.telnet uid=0 euid=0 tty=pts/3 ruser= rhost=192.168.42.17 user=Julia
+May  3 03:24:12 ubuntu login[65036]: FAILED LOGIN (1) on 'pts/3' from '192.168.42.17' FOR 'Julia', Authentication failure
+May  3 03:27:36 ubuntu telnetd[65037]: connect from 192.168.42.17
+May  3 03:27:41 ubuntu login[65038]: pam_unix(login:auth): authentication success; logname=.telnet uid=0 euid=0 tty=pts/4 ruser= rhost=192.168.42.17 user=Julia
+May  3 03:27:46 ubuntu login[65038]: pam_unix(login:session): session opened for user Julia by LOGIN(uid=0)
+May  3 03:31:58 ubuntu login[65038]: pam_unix(login:session): session closed for user Julia

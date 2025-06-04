@@ -1,0 +1,106 @@
+2024-01-03T01:52:54.255935+02:00 deb-server login[62622]: pam_unix(login:auth): check pass; user unknown
+2024-01-03T01:52:54.256080+02:00 deb-server login[62622]: pam_unix(login:auth): authentication failure; logname=.telnet uid=0 euid=0 tty=/dev/pts/8 ruser= rhost=172.16.22.48 
+2024-01-03T01:52:54.256167+02:00 deb-server login[62618]: pam_unix(login:auth): check pass; user unknown
+2024-01-03T01:52:54.256221+02:00 deb-server login[62618]: pam_unix(login:auth): authentication failure; logname=.telnet uid=0 euid=0 tty=/dev/pts/5 ruser= rhost=172.16.22.48 
+2024-01-03T01:52:54.257883+02:00 deb-server login[62621]: pam_unix(login:auth): check pass; user unknown
+2024-01-03T01:52:54.257945+02:00 deb-server login[62621]: pam_unix(login:auth): authentication failure; logname=.telnet uid=0 euid=0 tty=/dev/pts/7 ruser= rhost=172.16.22.48 
+2024-01-03T01:52:54.259007+02:00 deb-server login[62617]: pam_unix(login:auth): check pass; user unknown
+2024-01-03T01:52:54.260103+02:00 deb-server login[62617]: pam_unix(login:auth): authentication failure; logname=.telnet uid=0 euid=0 tty=/dev/pts/4 ruser= rhost=172.16.22.48 
+2024-01-03T01:52:54.261557+02:00 deb-server login[62615]: pam_unix(login:auth): check pass; user unknown
+2024-01-03T01:52:54.263023+02:00 deb-server login[62615]: pam_unix(login:auth): authentication failure; logname=.telnet uid=0 euid=0 tty=/dev/pts/3 ruser= rhost=172.16.22.48 
+2024-01-03T01:52:54.264307+02:00 deb-server login[62613]: pam_unix(login:auth): check pass; user unknown
+2024-01-03T01:52:54.265648+02:00 deb-server login[62613]: pam_unix(login:auth): authentication failure; logname=.telnet uid=0 euid=0 tty=/dev/pts/2 ruser= rhost=172.16.22.48 
+2024-01-03T01:52:54.271636+02:00 deb-server login[62612]: pam_unix(login:auth): check pass; user unknown
+2024-01-03T01:52:54.273333+02:00 deb-server login[62612]: pam_unix(login:auth): authentication failure; logname=.telnet uid=0 euid=0 tty=/dev/pts/1 ruser= rhost=172.16.22.48 
+2024-01-03T01:52:54.279648+02:00 deb-server login[62620]: pam_unix(login:auth): check pass; user unknown
+2024-01-03T01:52:54.279694+02:00 deb-server login[62620]: pam_unix(login:auth): authentication failure; logname=.telnet uid=0 euid=0 tty=/dev/pts/6 ruser= rhost=172.16.22.48 
+2024-01-03T01:52:54.323056+02:00 deb-server login[62626]: pam_unix(login:auth): check pass; user unknown
+2024-01-03T01:52:54.323184+02:00 deb-server login[62626]: pam_unix(login:auth): authentication failure; logname=.telnet uid=0 euid=0 tty=/dev/pts/9 ruser= rhost=172.16.22.48 
+2024-01-03T01:52:54.323248+02:00 deb-server login[62625]: pam_unix(login:auth): check pass; user unknown
+2024-01-03T01:52:54.323312+02:00 deb-server login[62625]: pam_unix(login:auth): authentication failure; logname=.telnet uid=0 euid=0 tty=/dev/pts/10 ruser= rhost=172.16.22.48 
+2024-01-03T01:52:58.633556+02:00 deb-server login[62625]: FAILED LOGIN (1) on '/dev/pts/10' from '172.16.22.48' FOR 'UNKNOWN', Authentication failure
+2024-01-03T01:52:58.633920+02:00 deb-server login[62612]: FAILED LOGIN (1) on '/dev/pts/1' from '172.16.22.48' FOR 'UNKNOWN', Authentication failure
+2024-01-03T01:52:58.650459+02:00 deb-server login[62613]: FAILED LOGIN (1) on '/dev/pts/2' from '172.16.22.48' FOR 'UNKNOWN', Authentication failure
+2024-01-03T01:52:58.663806+02:00 deb-server login[62621]: FAILED LOGIN (1) on '/dev/pts/7' from '172.16.22.48' FOR 'UNKNOWN', Authentication failure
+2024-01-03T01:52:58.752136+02:00 deb-server login[62626]: FAILED LOGIN (1) on '/dev/pts/9' from '172.16.22.48' FOR 'UNKNOWN', Authentication failure
+2024-01-03T01:52:58.752398+02:00 deb-server login[62617]: FAILED LOGIN (1) on '/dev/pts/4' from '172.16.22.48' FOR 'UNKNOWN', Authentication failure
+2024-01-03T01:52:58.752604+02:00 deb-server login[62620]: FAILED LOGIN (1) on '/dev/pts/6' from '172.16.22.48' FOR 'UNKNOWN', Authentication failure
+2024-01-03T01:52:58.752783+02:00 deb-server login[62618]: FAILED LOGIN (1) on '/dev/pts/5' from '172.16.22.48' FOR 'UNKNOWN', Authentication failure
+2024-01-03T01:52:58.753701+02:00 deb-server login[62622]: FAILED LOGIN (1) on '/dev/pts/8' from '172.16.22.48' FOR 'UNKNOWN', Authentication failure
+2024-01-03T01:52:58.758515+02:00 deb-server login[62615]: FAILED LOGIN (1) on '/dev/pts/3' from '172.16.22.48' FOR 'UNKNOWN', Authentication failure
+2024-01-03T01:52:58.796939+02:00 deb-server login[62630]: pam_unix(login:auth): check pass; user unknown
+2024-01-03T01:52:58.797069+02:00 deb-server login[62630]: pam_unix(login:auth): authentication failure; logname=.telnet uid=0 euid=0 tty=/dev/pts/1 ruser= rhost=172.16.22.48 
+2024-01-03T01:52:58.799217+02:00 deb-server login[62631]: pam_unix(login:auth): check pass; user unknown
+2024-01-03T01:52:58.799326+02:00 deb-server login[62631]: pam_unix(login:auth): authentication failure; logname=.telnet uid=0 euid=0 tty=/dev/pts/2 ruser= rhost=172.16.22.48 
+2024-01-03T01:52:58.799380+02:00 deb-server login[62632]: pam_unix(login:auth): check pass; user unknown
+2024-01-03T01:52:58.799408+02:00 deb-server login[62632]: pam_unix(login:auth): authentication failure; logname=.telnet uid=0 euid=0 tty=/dev/pts/10 ruser= rhost=172.16.22.48 
+2024-01-03T01:52:58.848273+02:00 deb-server login[62641]: pam_unix(login:auth): check pass; user unknown
+2024-01-03T01:52:58.848438+02:00 deb-server login[62640]: pam_unix(login:auth): check pass; user unknown
+2024-01-03T01:52:58.848486+02:00 deb-server login[62641]: pam_unix(login:auth): authentication failure; logname=.telnet uid=0 euid=0 tty=/dev/pts/5 ruser= rhost=172.16.22.48 
+2024-01-03T01:52:58.848536+02:00 deb-server login[62640]: pam_unix(login:auth): authentication failure; logname=.telnet uid=0 euid=0 tty=/dev/pts/4 ruser= rhost=172.16.22.48 
+2024-01-03T01:52:58.848586+02:00 deb-server login[62643]: pam_unix(login:auth): check pass; user unknown
+2024-01-03T01:52:58.848646+02:00 deb-server login[62643]: pam_unix(login:auth): authentication failure; logname=.telnet uid=0 euid=0 tty=/dev/pts/6 ruser= rhost=172.16.22.48 
+2024-01-03T01:52:58.849904+02:00 deb-server login[62642]: pam_unix(login:auth): check pass; user unknown
+2024-01-03T01:52:58.850043+02:00 deb-server login[62642]: pam_unix(login:auth): authentication failure; logname=.telnet uid=0 euid=0 tty=/dev/pts/3 ruser= rhost=172.16.22.48 
+2024-01-03T01:52:58.891768+02:00 deb-server login[62645]: pam_unix(login:auth): check pass; user unknown
+2024-01-03T01:52:58.891896+02:00 deb-server login[62645]: pam_unix(login:auth): authentication failure; logname=.telnet uid=0 euid=0 tty=/dev/pts/8 ruser= rhost=172.16.22.48 
+2024-01-03T01:52:58.891951+02:00 deb-server login[62644]: pam_unix(login:auth): check pass; user unknown
+2024-01-03T01:52:58.892020+02:00 deb-server login[62646]: pam_unix(login:auth): check pass; user unknown
+2024-01-03T01:52:58.892074+02:00 deb-server login[62644]: pam_unix(login:auth): authentication failure; logname=.telnet uid=0 euid=0 tty=/dev/pts/7 ruser= rhost=172.16.22.48 
+2024-01-03T01:52:58.892130+02:00 deb-server login[62646]: pam_unix(login:auth): authentication failure; logname=.telnet uid=0 euid=0 tty=/dev/pts/9 ruser= rhost=172.16.22.48 
+2024-01-03T01:53:01.506305+02:00 deb-server login[62632]: FAILED LOGIN (1) on '/dev/pts/10' from '172.16.22.48' FOR 'UNKNOWN', Authentication failure
+2024-01-03T01:53:01.546129+02:00 deb-server login[62641]: FAILED LOGIN (1) on '/dev/pts/5' from '172.16.22.48' FOR 'UNKNOWN', Authentication failure
+2024-01-03T01:53:01.546741+02:00 deb-server login[62643]: FAILED LOGIN (1) on '/dev/pts/6' from '172.16.22.48' FOR 'UNKNOWN', Authentication failure
+2024-01-03T01:53:01.572291+02:00 deb-server login[62642]: FAILED LOGIN (1) on '/dev/pts/3' from '172.16.22.48' FOR 'UNKNOWN', Authentication failure
+2024-01-03T01:53:01.572574+02:00 deb-server login[62630]: FAILED LOGIN (1) on '/dev/pts/1' from '172.16.22.48' FOR 'UNKNOWN', Authentication failure
+2024-01-03T01:53:01.590948+02:00 deb-server login[62645]: FAILED LOGIN (1) on '/dev/pts/8' from '172.16.22.48' FOR 'UNKNOWN', Authentication failure
+2024-01-03T01:53:01.591297+02:00 deb-server login[62644]: FAILED LOGIN (1) on '/dev/pts/7' from '172.16.22.48' FOR 'UNKNOWN', Authentication failure
+2024-01-03T01:53:01.591516+02:00 deb-server login[62646]: FAILED LOGIN (1) on '/dev/pts/9' from '172.16.22.48' FOR 'UNKNOWN', Authentication failure
+2024-01-03T01:53:01.638637+02:00 deb-server login[62650]: pam_unix(login:auth): check pass; user unknown
+2024-01-03T01:53:01.638831+02:00 deb-server login[62650]: pam_unix(login:auth): authentication failure; logname=.telnet uid=0 euid=0 tty=/dev/pts/5 ruser= rhost=172.16.22.48 
+2024-01-03T01:53:01.640239+02:00 deb-server login[62651]: pam_unix(login:auth): check pass; user unknown
+2024-01-03T01:53:01.640397+02:00 deb-server login[62652]: pam_unix(login:auth): check pass; user unknown
+2024-01-03T01:53:01.640438+02:00 deb-server login[62652]: pam_unix(login:auth): authentication failure; logname=.telnet uid=0 euid=0 tty=/dev/pts/10 ruser= rhost=172.16.22.48 
+2024-01-03T01:53:01.640743+02:00 deb-server login[62651]: pam_unix(login:auth): authentication failure; logname=.telnet uid=0 euid=0 tty=/dev/pts/6 ruser= rhost=172.16.22.48 
+2024-01-03T01:53:01.703222+02:00 deb-server login[62661]: pam_unix(login:auth): check pass; user unknown
+2024-01-03T01:53:01.703340+02:00 deb-server login[62659]: pam_unix(login:auth): check pass; user unknown
+2024-01-03T01:53:01.703374+02:00 deb-server login[62661]: pam_unix(login:auth): authentication failure; logname=.telnet uid=0 euid=0 tty=/dev/pts/8 ruser= rhost=172.16.22.48 
+2024-01-03T01:53:01.703413+02:00 deb-server login[62659]: pam_unix(login:auth): authentication failure; logname=.telnet uid=0 euid=0 tty=/dev/pts/1 ruser= rhost=172.16.22.48 
+2024-01-03T01:53:01.703445+02:00 deb-server login[62658]: pam_unix(login:auth): check pass; user unknown
+2024-01-03T01:53:01.703467+02:00 deb-server login[62660]: pam_unix(login:auth): check pass; user unknown
+2024-01-03T01:53:01.703506+02:00 deb-server login[62658]: pam_unix(login:auth): authentication failure; logname=.telnet uid=0 euid=0 tty=/dev/pts/3 ruser= rhost=172.16.22.48 
+2024-01-03T01:53:01.703554+02:00 deb-server login[62660]: pam_unix(login:auth): authentication failure; logname=.telnet uid=0 euid=0 tty=/dev/pts/7 ruser= rhost=172.16.22.48 
+2024-01-03T01:53:01.704514+02:00 deb-server login[62662]: pam_unix(login:auth): check pass; user unknown
+2024-01-03T01:53:01.704572+02:00 deb-server login[62662]: pam_unix(login:auth): authentication failure; logname=.telnet uid=0 euid=0 tty=/dev/pts/9 ruser= rhost=172.16.22.48 
+2024-01-03T01:53:01.786114+02:00 deb-server login[62640]: FAILED LOGIN (1) on '/dev/pts/4' from '172.16.22.48' FOR 'UNKNOWN', Authentication failure
+2024-01-03T01:53:01.786450+02:00 deb-server login[62631]: FAILED LOGIN (1) on '/dev/pts/2' from '172.16.22.48' FOR 'UNKNOWN', Authentication failure
+2024-01-03T01:53:03.377158+02:00 deb-server login[62666]: pam_unix(login:auth): check pass; user unknown
+2024-01-03T01:53:03.377345+02:00 deb-server login[62666]: pam_unix(login:auth): authentication failure; logname=.telnet uid=0 euid=0 tty=/dev/pts/4 ruser= rhost=172.16.22.48 
+2024-01-03T01:53:03.377404+02:00 deb-server login[62665]: pam_unix(login:auth): check pass; user unknown
+2024-01-03T01:53:03.377463+02:00 deb-server login[62665]: pam_unix(login:auth): authentication failure; logname=.telnet uid=0 euid=0 tty=/dev/pts/2 ruser= rhost=172.16.22.48 
+2024-01-03T01:53:03.954699+02:00 deb-server login[62650]: FAILED LOGIN (1) on '/dev/pts/5' from '172.16.22.48' FOR 'UNKNOWN', Authentication failure
+2024-01-03T01:53:03.956618+02:00 deb-server login[62652]: FAILED LOGIN (1) on '/dev/pts/10' from '172.16.22.48' FOR 'UNKNOWN', Authentication failure
+2024-01-03T01:53:03.957130+02:00 deb-server login[62651]: FAILED LOGIN (1) on '/dev/pts/6' from '172.16.22.48' FOR 'UNKNOWN', Authentication failure
+2024-01-03T01:53:04.018617+02:00 deb-server login[62661]: FAILED LOGIN (1) on '/dev/pts/8' from '172.16.22.48' FOR 'UNKNOWN', Authentication failure
+2024-01-03T01:53:04.018936+02:00 deb-server login[62660]: FAILED LOGIN (1) on '/dev/pts/7' from '172.16.22.48' FOR 'UNKNOWN', Authentication failure
+2024-01-03T01:53:04.019222+02:00 deb-server login[62658]: FAILED LOGIN (1) on '/dev/pts/3' from '172.16.22.48' FOR 'UNKNOWN', Authentication failure
+2024-01-03T01:53:04.019470+02:00 deb-server login[62659]: FAILED LOGIN (1) on '/dev/pts/1' from '172.16.22.48' FOR 'UNKNOWN', Authentication failure
+2024-01-03T01:53:04.020667+02:00 deb-server login[62662]: FAILED LOGIN (1) on '/dev/pts/9' from '172.16.22.48' FOR 'UNKNOWN', Authentication failure
+2024-01-03T01:53:04.048454+02:00 deb-server login[62670]: pam_unix(login:auth): check pass; user unknown
+2024-01-03T01:53:04.048562+02:00 deb-server login[62670]: pam_unix(login:auth): authentication failure; logname=.telnet uid=0 euid=0 tty=/dev/pts/5 ruser= rhost=172.16.22.48 
+2024-01-03T01:53:04.048943+02:00 deb-server login[62671]: pam_unix(login:auth): check pass; user unknown
+2024-01-03T01:53:04.049084+02:00 deb-server login[62671]: pam_unix(login:auth): authentication failure; logname=.telnet uid=0 euid=0 tty=/dev/pts/6 ruser= rhost=172.16.22.48 
+2024-01-03T01:53:04.052832+02:00 deb-server login[62672]: pam_unix(login:auth): check pass; user unknown
+2024-01-03T01:53:04.052989+02:00 deb-server login[62672]: pam_unix(login:auth): authentication failure; logname=.telnet uid=0 euid=0 tty=/dev/pts/10 ruser= rhost=172.16.22.48 
+2024-01-03T01:53:04.133914+02:00 deb-server login[62679]: pam_unix(login:auth): check pass; user unknown
+2024-01-03T01:53:04.134103+02:00 deb-server login[62681]: pam_unix(login:auth): check pass; user unknown
+2024-01-03T01:53:04.134141+02:00 deb-server login[62679]: pam_unix(login:auth): authentication failure; logname=.telnet uid=0 euid=0 tty=/dev/pts/3 ruser= rhost=172.16.22.48 
+2024-01-03T01:53:04.134171+02:00 deb-server login[62681]: pam_unix(login:auth): authentication failure; logname=.telnet uid=0 euid=0 tty=/dev/pts/8 ruser= rhost=172.16.22.48 
+2024-01-03T01:53:04.134212+02:00 deb-server login[62680]: pam_unix(login:auth): check pass; user unknown
+2024-01-03T01:53:04.134249+02:00 deb-server login[62680]: pam_unix(login:auth): authentication failure; logname=.telnet uid=0 euid=0 tty=/dev/pts/7 ruser= rhost=172.16.22.48 
+2024-01-03T01:53:04.134282+02:00 deb-server login[62682]: pam_unix(login:auth): check pass; user unknown
+2024-01-03T01:53:04.134314+02:00 deb-server login[62682]: pam_unix(login:auth): authentication failure; logname=.telnet uid=0 euid=0 tty=/dev/pts/9 ruser= rhost=172.16.22.48 
+2024-01-03T01:53:04.135420+02:00 deb-server login[62678]: pam_unix(login:auth): check pass; user unknown
+2024-01-03T01:53:04.135486+02:00 deb-server login[62678]: pam_unix(login:auth): authentication failure; logname=.telnet uid=0 euid=0 tty=/dev/pts/1 ruser= rhost=172.16.22.48 
+2024-01-03T01:53:06.245732+02:00 deb-server login[62685]: pam_unix(login:session): session opened for user root by (uid=0)
+2024-01-03T01:53:06.245876+02:00 deb-server login[62685]: ROOT LOGIN ON '/dev/pts/4' FROM '172.16.22.48'

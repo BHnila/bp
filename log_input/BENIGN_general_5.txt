@@ -1,0 +1,30 @@
+May  6 06:00:00 ubuntu CRON[5001]:
+      pam_unix(cron:session): session opened for user alice by alice(uid=1001)
+May  6 06:00:00 ubuntu CRON[5001]:
+      pam_unix(cron:session): session closed for user alice
+May  6 07:10:15 ubuntu su[5005]:
+      pam_unix(su:session): session opened for user bob by alice(uid=1001)
+May  6 07:12:30 ubuntu su[5005]:
+      pam_unix(su:session): session closed for user bob
+May  6 08:20:05 ubuntu telnetd[5008]:
+      connect from 10.10.11.60
+May  6 08:20:06 ubuntu login[5009]:
+      pam_unix(login:auth): authentication success; logname=.telnet uid=1002 euid=1002 tty=pts/1 ruser= rhost=10.10.11.60 user=charlie
+May  6 08:45:00 ubuntu login[5009]:
+      pam_unix(login:session): session closed for user charlie
+May  6 09:00:00 ubuntu passwd[5010]:
+      password expiry warning for user dave
+May  6 09:00:00 ubuntu passwd[5010]:
+      pam_unix(passwd:chauthtok): password changed for dave
+May  6 10:00:00 ubuntu polkitd(authority=local):
+      Registered Authentication Agent for unix-process:5012:174567 (system bus name :1.55, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+May  6 10:45:20 ubuntu polkitd(authority=local):
+      Unregistered Authentication Agent for unix-process:5012:174567 (system bus name :1.55)
+May  6 11:15:05 ubuntu systemd-logind[5015]:
+      New session 61 of user eve.
+May  6 11:15:05 ubuntu systemd-logind[5015]:
+      Removed session 60.
+May  6 12:30:33 ubuntu gdm-password[5020]:
+      pam_unix(gdm-password:session): session opened for user frank(uid=1003) by gdm(uid=120)
+May  6 12:32:45 ubuntu gdm-password[5020]:
+      pam_unix(gdm-password:session): session closed for user frank

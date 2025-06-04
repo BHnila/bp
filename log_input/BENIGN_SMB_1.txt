@@ -1,0 +1,31 @@
+[2025/05/04 16:10:00.623456,  3] lib/util_sock.c:102(client_connect)
+      client_connect:  accepted connection from 203.0.113.45:50200
+[2025/05/04 16:10:00.724567,  3] smbd/service.c:456(make_connection_snum)
+      make_connection_snum:  New SMB1 connection, dialect SMB1
+[2025/05/04 16:10:01.135678,  3] auth/ntlmssp/ntlmssp_server.c:509(ntlmssp_server_preauth)
+      Got user=[Victor] domain=[WORKGROUP] workstation=[VICTOR-PC] len1=24 len2=24
+[2025/05/04 16:10:01.536789,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+      auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user
+      WORKGROUP\[Victor]@203.0.113.45 with the new password interface
+[2025/05/04 16:10:01.937890,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+      auth_check_ntlm_password: check_ntlm_password:  mapped user is:
+      WORKGROUP\[Victor]@203.0.113.45
+[2025/05/04 16:10:02.230123,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+      check_ntlm_password:  Authentication for user [Victor] -> [Victor]
+      FAILED with error NT_STATUS_WRONG_PASSWORD, authoritative=1
+
+[2025/05/04 16:10:03.223456,  3] lib/util_sock.c:102(client_connect)
+      client_connect:  accepted connection from 203.0.113.45:50201
+[2025/05/04 16:10:03.324567,  3] smbd/service.c:456(make_connection_snum)
+      make_connection_snum:  New SMB1 connection, dialect SMB1
+[2025/05/04 16:10:03.635678,  3] auth/ntlmssp/ntlmssp_server.c:509(ntlmssp_server_preauth)
+      Got user=[Victor] domain=[WORKGROUP] workstation=[VICTOR-PC] len1=24 len2=24
+[2025/05/04 16:10:03.936789,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+      auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user
+      WORKGROUP\[Victor]@203.0.113.45 with the new password interface
+[2025/05/04 16:10:04.237890,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+      auth_check_ntlm_password: check_ntlm_password:  mapped user is:
+      WORKGROUP\[Victor]@203.0.113.45
+[2025/05/04 16:10:04.630123,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+      check_ntlm_password:  Authentication for user [Victor] -> [Victor]
+      SUCCEEDED with status NT_STATUS_OK, authoritative=1

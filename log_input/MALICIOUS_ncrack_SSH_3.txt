@@ -1,0 +1,30 @@
+2025-05-02T21:36:25.335853+02:00 office-pc sshd[1917]: exited MaxStartups throttling after 00:04:19, 2 connections dropped
+2025-05-02T21:36:25.568227+02:00 office-pc sshd[52660]: Invalid user admin from 192.168.11.4 port 58326
+2025-05-02T21:36:25.570483+02:00 office-pc sshd[52660]: pam_unix(sshd:auth): check pass; user unknown
+2025-05-02T21:36:25.570603+02:00 office-pc sshd[52660]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.11.4 
+2025-05-02T21:36:27.202667+02:00 office-pc sshd[52660]: Failed password for invalid user admin from 192.168.11.4 port 58326 ssh2
+2025-05-02T21:36:39.395019+02:00 office-pc sshd[52660]: pam_unix(sshd:auth): check pass; user unknown
+2025-05-02T21:36:41.974502+02:00 office-pc sshd[52660]: Failed password for invalid user admin from 192.168.11.4 port 58326 ssh2
+2025-05-02T21:36:44.812011+02:00 office-pc sshd[52660]: pam_unix(sshd:auth): check pass; user unknown
+2025-05-02T21:36:52.769100+02:00 office-pc sshd[52660]: Failed password for invalid user admin from 192.168.11.4 port 58326 ssh2
+2025-05-02T21:36:52.789110+02:00 office-pc sshd[52660]: pam_unix(sshd:auth): check pass; user unknown
+2025-05-02T21:36:55.111298+02:00 office-pc sshd[52660]: Failed password for invalid user admin from 192.168.11.4 port 58326 ssh2
+2025-05-02T21:36:55.313612+02:00 office-pc sshd[52660]: pam_unix(sshd:auth): check pass; user unknown
+2025-05-02T21:36:58.708706+02:00 office-pc sshd[52660]: Failed password for invalid user admin from 192.168.11.4 port 58326 ssh2
+2025-05-02T21:37:00.070369+02:00 office-pc sshd[52660]: pam_unix(sshd:auth): check pass; user unknown
+2025-05-02T21:37:09.453383+02:00 office-pc sshd[52660]: Failed password for invalid user admin from 192.168.11.4 port 58326 ssh2
+2025-05-02T21:37:09.455592+02:00 office-pc sshd[52660]: Connection closed by invalid user admin 192.168.11.4 port 58326 [preauth]
+2025-05-02T21:37:09.455660+02:00 office-pc sshd[52660]: PAM 5 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.11.4 
+2025-05-02T21:37:09.455717+02:00 office-pc sshd[52660]: PAM service(sshd) ignoring max retries; 6 > 3
+2025-05-02T21:37:14.835241+02:00 office-pc sshd[52667]: Invalid user admin from 192.168.11.4 port 52674
+2025-05-02T21:37:14.838331+02:00 office-pc sshd[52667]: pam_unix(sshd:auth): check pass; user unknown
+2025-05-02T21:37:14.838486+02:00 office-pc sshd[52667]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.11.4 
+2025-05-02T21:37:21.787911+02:00 office-pc sshd[52667]: Failed password for invalid user admin from 192.168.11.4 port 52674 ssh2
+2025-05-02T21:37:21.804915+02:00 office-pc sshd[52667]: pam_unix(sshd:auth): check pass; user unknown
+2025-05-02T21:37:30.570443+02:00 office-pc sshd[52667]: Failed password for invalid user admin from 192.168.11.4 port 52674 ssh2
+2025-05-02T21:37:30.581839+02:00 office-pc sshd[52667]: pam_unix(sshd:auth): check pass; user unknown
+2025-05-02T21:37:35.567681+02:00 office-pc sshd[52667]: Failed password for invalid user admin from 192.168.11.4 port 52674 ssh2
+2025-05-02T21:37:40.159671+02:00 office-pc sshd[52667]: Connection closed by invalid user admin 192.168.11.4 port 52674 [preauth]
+2025-05-02T21:37:40.159806+02:00 office-pc sshd[52667]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.11.4
+2025-05-02T21:37:41.204118+02:00 office-pc sshd[52670]: Accepted password for root from 192.168.11.4 port 52676 ssh2
+2025-05-02T21:37:41.204735+02:00 office-pc sshd[52670]: pam_unix(sshd:session): session opened for user root(uid=0) by (uid=0)

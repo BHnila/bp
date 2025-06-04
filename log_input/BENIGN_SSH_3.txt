@@ -1,0 +1,38 @@
+2025-04-30T16:55:22.567890+02:00 ubuntu CRON[2636757]:
+      pam_unix(cron:session): session opened for user Robert(uid=0) by Robert(uid=0)
+2025-04-30T16:55:22.577890+02:00 ubuntu CRON[2636757]:
+      pam_unix(cron:session): session closed for user Robert
+2025-04-30T16:10:45.234567+02:00 ubuntu CRON[2620279]:
+      pam_unix(cron:session): session opened for user Robert(uid=0) by Robert(uid=0)
+2025-04-30T16:10:45.244567+02:00 ubuntu CRON[2620279]:
+      pam_unix(cron:session): session closed for user Robert
+2025-04-30T16:47:15.234567+02:00 ubuntu sshd[2629506]:
+      Invalid user Ethan from 10.0.5.8 port 46450
+2025-04-30T16:48:15.334567+02:00 ubuntu sshd[2629508]:
+      Invalid user Ethan from 10.0.5.8 port 46458
+2025-04-30T16:48:16.234567+02:00 ubuntu sshd[2629506]:
+      Connection closed by invalid user Ethan 10.0.5.8 port 46450 [preauth]
+2025-04-30T16:20:05.124567+02:00 ubuntu CRON[2612187]:
+      pam_unix(cron:session): session opened for user Robert(uid=0) by Robert(uid=0)
+2025-04-30T16:20:05.134567+02:00 ubuntu CRON[2612187]:
+      pam_unix(cron:session): session closed for user Robert
+2025-04-30T16:40:10.678912+02:00 ubuntu CRON[2652949]:
+      pam_unix(cron:session): session opened for user Robert(uid=0) by Robert(uid=0)
+2025-04-30T16:40:10.688912+02:00 ubuntu CRON[2652949]:
+      pam_unix(cron:session): session closed for user Robert
+2025-04-30T16:05:12.456789+02:00 ubuntu CRON[2628378]:
+      pam_unix(cron:session): session opened for user Robert(uid=0) by Robert(uid=0)
+2025-04-30T16:05:12.466789+02:00 ubuntu CRON[2628378]:
+      pam_unix(cron:session): session closed for user Robert
+2025-04-30T16:30:00.345678+02:00 ubuntu CRON[2621963]:
+      pam_unix(cron:session): session opened for user Robert(uid=0) by Robert(uid=0)
+2025-04-30T16:30:00.355678+02:00 ubuntu CRON[2621963]:
+      pam_unix(cron:session): session closed for user Robert
+2025-04-30T16:50:18.789012+02:00 ubuntu CRON[2657131]:
+      pam_unix(cron:session): session opened for user Robert(uid=0) by Robert(uid=0)
+2025-04-30T16:50:18.799012+02:00 ubuntu CRON[2657131]:
+      pam_unix(cron:session): session closed for user Robert
+2025-04-30T17:00:00.123456+02:00 ubuntu CRON[2644850]:
+      pam_unix(cron:session): session opened for user Robert(uid=0) by Robert(uid=0)
+2025-04-30T17:00:00.133456+02:00 ubuntu CRON[2644850]:
+      pam_unix(cron:session): session closed for user Robert

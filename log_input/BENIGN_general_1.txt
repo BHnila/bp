@@ -1,0 +1,30 @@
+2025-05-04T09:55:44.556677+02:00 ubuntu gdm-password[4789]:
+      pam_unix(gdm-password:session): session opened for user Isabella by (uid=0)
+2025-05-04T09:55:44.679677+02:00 ubuntu gdm-password[4789]:
+      pam_unix(gdm-password:session): session closed for user Isabella
+2025-05-04T10:02:13.123456+02:00 ubuntu sudo[3470]:
+      Emma : TTY=pts/1 ; PWD=/home/Emma ; USER=Robert ; COMMAND=/usr/bin/apt update
+2025-05-04T10:02:13.623456+02:00 ubuntu sudo[3470]:
+      pam_unix(sudo:session): session opened for user Robert by Emma(uid=1001)
+2025-05-04T10:02:14.124690+02:00 ubuntu sudo[3470]:
+      pam_unix(sudo:session): session closed for user Robert
+2025-05-04T13:55:33.987654+02:00 ubuntu passwd[3678]:
+      password expiry warning for user Sophia
+2025-05-04T13:55:34.437654+02:00 ubuntu passwd[3678]:
+      pam_unix(passwd:chauthtok): password changed for Sophia
+2025-05-04T14:10:49.567890+02:00 ubuntu polkitd(authority=local):
+      Registered Authentication Agent for unix-process:4021:173345 (system bus name :1.15, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+2025-05-04T15:20:33.223344+02:00 ubuntu polkitd(authority=local):
+      Unregistered Authentication Agent for unix-process:4021:173345 (system bus name :1.15)
+2025-05-04T11:20:07.345600+02:00 ubuntu CRON[3456]:
+      pam_unix(cron:session): session opened for user Robert by (uid=0)
+2025-05-04T11:20:07.349921+02:00 ubuntu CRON[3456]:
+      pam_unix(cron:session): session closed for user Robert
+2025-05-04T16:00:22.112233+02:00 ubuntu systemd-logind[420]:
+      New session 54 of user Lucas.
+2025-05-04T16:00:22.362233+02:00 ubuntu systemd-logind[420]:
+      Removed session 53.
+2025-05-04T15:37:18.654321+02:00 ubuntu su[3567]:
+      pam_unix(su:session): session opened for user Robert by Michael(uid=1002)
+2025-05-04T15:37:19.888888+02:00 ubuntu su[3567]:
+      pam_unix(su:session): session closed for user Robert

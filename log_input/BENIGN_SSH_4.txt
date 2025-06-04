@@ -1,0 +1,37 @@
+2025-04-19T09:24:31.123456+02:00 ubuntu sshd[3140]:
+      Server listening on :: port 22.
+2025-04-19T09:24:31.234567+02:00 ubuntu sshd[3141]:
+      Accepted publickey for Lucas from 198.51.100.42 port 59192 ssh2:
+      RSA SHA256:svFyiwd6eNAGhYjoyLK5s4DfV7L9OGkl96TdPD/HGx4
+2025-04-19T09:24:31.345678+02:00 ubuntu sshd[3141]:
+      pam_unix(sshd:session): session opened for user Lucas(uid=1000) by Lucas(uid=0)
+2025-04-19T09:25:10.456789+02:00 ubuntu sshd[3281]:
+      Received disconnect from 198.51.100.42 port 59192:11: disconnected by user
+2025-04-19T09:25:10.467890+02:00 ubuntu sshd[3281]:
+      Disconnected from user Lucas 198.51.100.42 port 59192
+2025-04-19T09:25:10.478901+02:00 ubuntu sshd[3141]:
+      pam_unix(sshd:session): session closed for user Lucas
+2025-04-18T23:36:50.223456+02:00 ubuntu sshd[547960]:
+      Accepted publickey for Lucas from 198.51.100.42 port 53808 ssh2:
+      RSA SHA256:svFyiwd6eNAGhYjoyLK5s4DfV7L9OGkl96TdPD/HGx4
+2025-04-18T23:36:50.323456+02:00 ubuntu sshd[547960]:
+      pam_unix(sshd:session): session opened for user Lucas(uid=1000) by Lucas(uid=0)
+2025-04-18T23:37:10.423456+02:00 ubuntu sshd[548058]:
+      Received disconnect from 198.51.100.42 port 53808:11: disconnected by user
+2025-04-18T23:37:10.433456+02:00 ubuntu sshd[548058]:
+      Disconnected from user Lucas 198.51.100.42 port 53808
+2025-04-18T23:37:10.443456+02:00 ubuntu sshd[547960]:
+      pam_unix(sshd:session): session closed for user Lucas
+2025-04-19T09:15:00.245678+02:00 ubuntu sshd[551506]:
+      Accepted publickey for Lucas from 198.51.100.42 port 33152 ssh2:
+      RSA SHA256:svFyiwd6eNAGhYjoyLK5s4DfV7L9OGkl96TdPD/HGx4
+2025-04-19T09:15:00.345678+02:00 ubuntu sshd[551506]:
+      pam_unix(sshd:session): session opened for user Lucas(uid=1000) by Lucas(uid=0)
+2025-04-19T09:17:05.456789+02:00 ubuntu sshd[552208]:
+      Invalid user Chloe from 198.51.100.42 port 57392
+2025-04-19T09:17:06.567890+02:00 ubuntu sshd[552210]:
+      Invalid user Chloe from 198.51.100.42 port 57404
+2025-04-19T09:17:07.678901+02:00 ubuntu sshd[552208]:
+      Connection closed by invalid user Chloe 198.51.100.42 port 57392 [preauth]
+2025-04-19T09:20:11.789012+02:00 ubuntu sshd[551506]:
+      pam_unix(sshd:session): session closed for user Lucas

@@ -1,0 +1,6 @@
+May  4 09:02:34 ubuntu sshd[3210]: Connection from 203.0.113.8 port 53718
+May  4 09:02:35 ubuntu sshd[3210]: Failed password for Liam from 203.0.113.8 port 53718 ssh2
+May  4 09:02:35 ubuntu sshd[3210]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=203.0.113.8
+May  4 09:02:37 ubuntu sshd[3210]: Accepted password for Liam from 203.0.113.8 port 53718 ssh2
+May  4 09:02:37 ubuntu sshd[3210]: pam_unix(sshd:session): session opened for user Liam by (uid=0)
+May  4 09:08:41 ubuntu sshd[3210]: pam_unix(sshd:session): session closed for user Liam

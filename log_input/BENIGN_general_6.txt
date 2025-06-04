@@ -1,0 +1,32 @@
+May  6 06:00:10 ubuntu CRON[5101]:
+      pam_unix(cron:session): session opened for user alice by (uid=0)
+May  6 06:00:10 ubuntu CRON[5101]:
+      pam_unix(cron:session): session closed for user alice
+May  6 07:15:40 ubuntu su[5205]:
+      pam_unix(su:session): session opened for user dave by bob(uid=1002)
+May  6 07:17:05 ubuntu su[5205]:
+      pam_unix(su:session): session closed for user dave
+May  6 08:05:45 ubuntu vncserver[5308]:
+      Connection from 10.10.11.75:5901
+May  6 08:05:46 ubuntu vncserver[5308]:
+      pam_unix(vnc:auth): authentication success; logname=.vnc uid=1003 euid=1003 display=:1 ruser= rhost=10.10.11.75 user=carol
+May  6 08:05:47 ubuntu vncserver[5308]:
+      pam_unix(vnc:session): session opened for user carol by (uid=0)
+May  6 08:45:00 ubuntu vncserver[5308]:
+      pam_unix(vnc:session): session closed for user carol
+May  6 09:00:00 ubuntu passwd[5400]:
+      password expiry warning for user eve
+May  6 09:00:00 ubuntu passwd[5400]:
+      pam_unix(passwd:chauthtok): password changed for eve
+May  6 10:00:00 ubuntu polkitd(authority=local):
+      Registered Authentication Agent for unix-process:5402:175678 (system bus name :1.60, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+May  6 10:45:20 ubuntu polkitd(authority=local):
+      Unregistered Authentication Agent for unix-process:5402:175678 (system bus name :1.60)
+May  6 11:15:05 ubuntu systemd-logind[5415]:
+      New session 62 of user frank.
+May  6 11:15:05 ubuntu systemd-logind[5415]:
+      Removed session 61.
+May  6 12:30:33 ubuntu gdm-password[5420]:
+      pam_unix(gdm-password:session): session opened for user gdm(uid=120) by (uid=0)
+May  6 12:32:45 ubuntu gdm-password[5420]:
+      pam_unix(gdm-password:session): session closed for user gdm
