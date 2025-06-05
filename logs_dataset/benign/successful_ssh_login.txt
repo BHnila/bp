@@ -1,0 +1,99 @@
+2025-04-30T10:55:01.422467+02:00 ubuntu CRON[2351645]: pam_unix(cron:session): session closed for user root
+2025-04-30T11:00:01.445821+02:00 ubuntu CRON[2355997]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-04-30T11:00:02.420896+02:00 ubuntu CRON[2355997]: pam_unix(cron:session): session closed for user root
+2025-04-30T11:05:01.442245+02:00 ubuntu CRON[2360387]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-04-30T11:05:01.452837+02:00 ubuntu CRON[2360387]: pam_unix(cron:session): session closed for user root
+2025-04-30T11:15:01.479280+02:00 ubuntu CRON[2368807]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-04-30T11:15:01.489249+02:00 ubuntu CRON[2368807]: pam_unix(cron:session): session closed for user root
+2025-04-30T11:17:01.509977+02:00 ubuntu CRON[2370546]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-04-30T11:17:01.520569+02:00 ubuntu CRON[2370546]: pam_unix(cron:session): session closed for user root
+2025-04-30T11:25:01.544703+02:00 ubuntu CRON[2377222]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-04-30T11:25:01.555188+02:00 ubuntu CRON[2377222]: pam_unix(cron:session): session closed for user root
+2025-04-30T11:35:01.580633+02:00 ubuntu CRON[2385636]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-04-30T11:35:01.589952+02:00 ubuntu CRON[2385636]: pam_unix(cron:session): session closed for user root
+2025-04-30T11:45:01.614112+02:00 ubuntu CRON[2394340]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-04-30T11:45:01.623966+02:00 ubuntu CRON[2394340]: pam_unix(cron:session): session closed for user root
+2025-04-30T11:55:01.651092+02:00 ubuntu CRON[2402760]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-04-30T11:55:01.660959+02:00 ubuntu CRON[2402760]: pam_unix(cron:session): session closed for user root
+2025-04-30T12:00:01.685399+02:00 ubuntu CRON[2406825]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-04-30T12:00:02.663402+02:00 ubuntu CRON[2406825]: pam_unix(cron:session): session closed for user root
+2025-04-30T12:05:01.686743+02:00 ubuntu CRON[2411210]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-04-30T12:05:01.696399+02:00 ubuntu CRON[2411210]: pam_unix(cron:session): session closed for user root
+2025-04-30T12:15:01.723198+02:00 ubuntu CRON[2419621]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-04-30T12:15:01.733084+02:00 ubuntu CRON[2419621]: pam_unix(cron:session): session closed for user root
+2025-04-30T12:17:01.755484+02:00 ubuntu CRON[2421361]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-04-30T12:17:01.765079+02:00 ubuntu CRON[2421361]: pam_unix(cron:session): session closed for user root
+2025-04-30T12:25:01.790182+02:00 ubuntu CRON[2428040]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-04-30T12:25:01.800272+02:00 ubuntu CRON[2428040]: pam_unix(cron:session): session closed for user root
+2025-04-30T12:35:01.826964+02:00 ubuntu CRON[2436738]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-04-30T12:35:01.836827+02:00 ubuntu CRON[2436738]: pam_unix(cron:session): session closed for user root
+2025-04-30T12:45:01.861313+02:00 ubuntu CRON[2445151]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-04-30T12:45:01.871087+02:00 ubuntu CRON[2445151]: pam_unix(cron:session): session closed for user root
+2025-04-30T12:55:01.895247+02:00 ubuntu CRON[2453563]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-04-30T12:55:01.905265+02:00 ubuntu CRON[2453563]: pam_unix(cron:session): session closed for user root
+2025-04-30T13:00:01.928941+02:00 ubuntu CRON[2457916]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-04-30T13:00:02.914571+02:00 ubuntu CRON[2457916]: pam_unix(cron:session): session closed for user root
+2025-04-30T13:05:01.937431+02:00 ubuntu CRON[2462299]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-04-30T13:05:01.947434+02:00 ubuntu CRON[2462299]: pam_unix(cron:session): session closed for user root
+2025-04-30T13:15:01.972768+02:00 ubuntu CRON[2470713]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-04-30T13:15:01.982526+02:00 ubuntu CRON[2470713]: pam_unix(cron:session): session closed for user root
+2025-04-30T13:17:02.005474+02:00 ubuntu CRON[2472454]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-04-30T13:17:02.014945+02:00 ubuntu CRON[2472454]: pam_unix(cron:session): session closed for user root
+2025-04-30T13:25:01.038818+02:00 ubuntu CRON[2479127]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-04-30T13:25:01.048448+02:00 ubuntu CRON[2479127]: pam_unix(cron:session): session closed for user root
+2025-04-30T13:32:10.605673+02:00 ubuntu sshd[2485216]: Accepted publickey for ubuntu from 10.116.7.3 port 45516 ssh2: RSA SHA256:svFyiwd6eNAGhYjoyLK5s4DfV7L9OGkl96TdPD/HGx4
+2025-04-30T13:32:10.614946+02:00 ubuntu sshd[2485216]: pam_unix(sshd:session): session opened for user ubuntu(uid=1000) by ubuntu(uid=0)
+2025-04-30T13:32:10.628596+02:00 ubuntu systemd-logind[979]: New session 1567 of user ubuntu.
+2025-04-30T13:32:12.572437+02:00 ubuntu sshd[2485314]: Received disconnect from 10.116.7.3 port 45516:11: disconnected by user
+2025-04-30T13:32:12.638247+02:00 ubuntu sshd[2485314]: Disconnected from user ubuntu 10.116.7.3 port 45516
+2025-04-30T13:32:12.639361+02:00 ubuntu systemd-logind[979]: Session 1567 logged out. Waiting for processes to exit.
+2025-04-30T13:32:12.640629+02:00 ubuntu sshd[2485216]: pam_unix(sshd:session): session closed for user ubuntu
+2025-04-30T13:32:13.797832+02:00 ubuntu systemd-logind[979]: Removed session 1567.
+2025-04-30T13:35:01.075029+02:00 ubuntu CRON[2487970]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-04-30T13:35:01.084853+02:00 ubuntu CRON[2487970]: pam_unix(cron:session): session closed for user root
+2025-04-30T13:45:01.109955+02:00 ubuntu CRON[2496377]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-04-30T13:45:01.119498+02:00 ubuntu CRON[2496377]: pam_unix(cron:session): session closed for user root
+2025-04-30T13:55:01.145424+02:00 ubuntu CRON[2504793]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-04-30T13:55:01.154981+02:00 ubuntu CRON[2504793]: pam_unix(cron:session): session closed for user root
+2025-04-30T14:00:01.179133+02:00 ubuntu CRON[2509146]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-04-30T14:00:02.156610+02:00 ubuntu CRON[2509146]: pam_unix(cron:session): session closed for user root
+2025-04-30T14:05:01.180041+02:00 ubuntu CRON[2513240]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-04-30T14:05:01.189637+02:00 ubuntu CRON[2513240]: pam_unix(cron:session): session closed for user root
+2025-04-30T14:15:01.214620+02:00 ubuntu CRON[2521649]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-04-30T14:15:01.224647+02:00 ubuntu CRON[2521649]: pam_unix(cron:session): session closed for user root
+2025-04-30T14:17:01.247965+02:00 ubuntu CRON[2523321]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-04-30T14:17:01.257827+02:00 ubuntu CRON[2523321]: pam_unix(cron:session): session closed for user root
+2025-04-30T14:25:01.280155+02:00 ubuntu CRON[2529746]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-04-30T14:25:01.290492+02:00 ubuntu CRON[2529746]: pam_unix(cron:session): session closed for user root
+2025-04-30T14:35:01.308035+02:00 ubuntu CRON[2537835]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-04-30T14:35:01.322508+02:00 ubuntu CRON[2537835]: pam_unix(cron:session): session closed for user root
+2025-04-30T14:45:01.338661+02:00 ubuntu CRON[2546209]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-04-30T14:45:01.350616+02:00 ubuntu CRON[2546209]: pam_unix(cron:session): session closed for user root
+2025-04-30T14:55:01.370398+02:00 ubuntu CRON[2554300]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-04-30T14:55:01.382373+02:00 ubuntu CRON[2554300]: pam_unix(cron:session): session closed for user root
+2025-04-30T15:00:01.399086+02:00 ubuntu CRON[2558487]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-04-30T15:00:02.378297+02:00 ubuntu CRON[2558487]: pam_unix(cron:session): session closed for user root
+2025-04-30T15:05:01.394857+02:00 ubuntu CRON[2562709]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-04-30T15:05:01.404829+02:00 ubuntu CRON[2562709]: pam_unix(cron:session): session closed for user root
+2025-04-30T15:15:01.423934+02:00 ubuntu CRON[2570835]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-04-30T15:15:01.434326+02:00 ubuntu CRON[2570835]: pam_unix(cron:session): session closed for user root
+2025-04-30T15:17:01.457782+02:00 ubuntu CRON[2572519]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-04-30T15:17:01.467417+02:00 ubuntu CRON[2572519]: pam_unix(cron:session): session closed for user root
+2025-04-30T15:25:01.491175+02:00 ubuntu CRON[2579217]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-04-30T15:25:01.500971+02:00 ubuntu CRON[2579217]: pam_unix(cron:session): session closed for user root
+2025-04-30T15:35:01.526433+02:00 ubuntu CRON[2587307]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-04-30T15:35:01.536196+02:00 ubuntu CRON[2587307]: pam_unix(cron:session): session closed for user root
+2025-04-30T15:45:01.562327+02:00 ubuntu CRON[2595685]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-04-30T15:45:01.571831+02:00 ubuntu CRON[2595685]: pam_unix(cron:session): session closed for user root
+2025-04-30T15:55:01.598103+02:00 ubuntu CRON[2603775]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-04-30T15:55:01.607631+02:00 ubuntu CRON[2603775]: pam_unix(cron:session): session closed for user root
+2025-04-30T16:00:01.632249+02:00 ubuntu CRON[2607964]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-04-30T16:00:02.598396+02:00 ubuntu CRON[2607964]: pam_unix(cron:session): session closed for user root
+2025-04-30T16:05:01.620769+02:00 ubuntu CRON[2612187]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-04-30T16:05:01.630878+02:00 ubuntu CRON[2612187]: pam_unix(cron:session): session closed for user root
+2025-04-30T16:15:01.657300+02:00 ubuntu CRON[2620279]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-04-30T16:15:01.667693+02:00 ubuntu CRON[2620279]: pam_unix(cron:session): session closed for user root
+2025-04-30T16:17:01.690428+02:00 ubuntu CRON[2621963]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-04-30T16:17:01.700390+02:00 ubuntu CRON[2621963]: pam_unix(cron:session): session closed for user root
+2025-04-30T16:25:01.726194+02:00 ubuntu CRON[2628378]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+

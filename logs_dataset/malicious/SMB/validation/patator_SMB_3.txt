@@ -1,0 +1,860 @@
+[2025/05/03 22:06:47.193889,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user []\[admin]@[] with the new password interface
+[2025/05/03 22:06:47.195136,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[admin]@[]
+[2025/05/03 22:06:47.195977,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+  check_ntlm_password:  Authentication for user [admin] -> [admin] FAILED with error NT_STATUS_WRONG_PASSWORD, authoritative=1
+[2025/05/03 22:06:47.196050,  3] auth/gensec/spnego.c:1443(gensec_spnego_server_negTokenTarg_step)
+  gensec_spnego_server_negTokenTarg_step: SPNEGO(ntlmssp) login failed: NT_STATUS_WRONG_PASSWORD
+[2025/05/03 22:06:47.197505,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+  check_ntlm_password:  Authentication for user [admin] -> [admin] FAILED with error NT_STATUS_WRONG_PASSWORD, authoritative=1
+[2025/05/03 22:06:47.197765,  3] auth/gensec/spnego.c:1443(gensec_spnego_server_negTokenTarg_step)
+  gensec_spnego_server_negTokenTarg_step: SPNEGO(ntlmssp) login failed: NT_STATUS_WRONG_PASSWORD
+[2025/05/03 22:06:47.198102,  3] auth/ntlmssp/ntlmssp_util.c:72(debug_ntlmssp_flags)
+  Got NTLMSSP neg_flags=0xa0080205
+[2025/05/03 22:06:47.204739,  3] auth/ntlmssp/ntlmssp_util.c:72(debug_ntlmssp_flags)
+  Got NTLMSSP neg_flags=0xa0880205
+[2025/05/03 22:06:47.205456,  3] auth/ntlmssp/ntlmssp_server.c:509(ntlmssp_server_preauth)
+  Got user=[admin] domain=[] workstation=[] len1=24 len2=24
+[2025/05/03 22:06:47.205529,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user []\[admin]@[] with the new password interface
+[2025/05/03 22:06:47.205560,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[admin]@[]
+[2025/05/03 22:06:47.206371,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+  check_ntlm_password:  Authentication for user [admin] -> [admin] FAILED with error NT_STATUS_WRONG_PASSWORD, authoritative=1
+[2025/05/03 22:06:47.206426,  3] auth/gensec/spnego.c:1443(gensec_spnego_server_negTokenTarg_step)
+  gensec_spnego_server_negTokenTarg_step: SPNEGO(ntlmssp) login failed: NT_STATUS_WRONG_PASSWORD
+[2025/05/03 22:06:47.211566,  3] auth/ntlmssp/ntlmssp_util.c:72(debug_ntlmssp_flags)
+  Got NTLMSSP neg_flags=0xa0880205
+[2025/05/03 22:06:47.213235,  3] auth/ntlmssp/ntlmssp_server.c:509(ntlmssp_server_preauth)
+  Got user=[admin] domain=[] workstation=[] len1=24 len2=198
+[2025/05/03 22:06:47.213304,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user []\[admin]@[] with the new password interface
+[2025/05/03 22:06:47.213330,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[admin]@[]
+[2025/05/03 22:06:47.214112,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+  check_ntlm_password:  Authentication for user [admin] -> [admin] FAILED with error NT_STATUS_WRONG_PASSWORD, authoritative=1
+[2025/05/03 22:06:47.214175,  3] auth/gensec/spnego.c:1443(gensec_spnego_server_negTokenTarg_step)
+  gensec_spnego_server_negTokenTarg_step: SPNEGO(ntlmssp) login failed: NT_STATUS_WRONG_PASSWORD
+[2025/05/03 22:06:47.216489,  3] auth/ntlmssp/ntlmssp_util.c:72(debug_ntlmssp_flags)
+  Got NTLMSSP neg_flags=0xa0080205
+[2025/05/03 22:06:47.220100,  3] auth/ntlmssp/ntlmssp_server.c:509(ntlmssp_server_preauth)
+  Got user=[admin] domain=[] workstation=[] len1=24 len2=198
+[2025/05/03 22:06:47.220196,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user []\[admin]@[] with the new password interface
+[2025/05/03 22:06:47.220225,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[admin]@[]
+[2025/05/03 22:06:47.221061,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+  check_ntlm_password:  Authentication for user [admin] -> [admin] FAILED with error NT_STATUS_WRONG_PASSWORD, authoritative=1
+[2025/05/03 22:06:47.221137,  3] auth/gensec/spnego.c:1443(gensec_spnego_server_negTokenTarg_step)
+  gensec_spnego_server_negTokenTarg_step: SPNEGO(ntlmssp) login failed: NT_STATUS_WRONG_PASSWORD
+[2025/05/03 22:06:47.221298,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user []\[admin]@[] with the new password interface
+[2025/05/03 22:06:47.221357,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[admin]@[]
+[2025/05/03 22:06:47.222054,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+  check_ntlm_password:  Authentication for user [admin] -> [admin] FAILED with error NT_STATUS_WRONG_PASSWORD, authoritative=1
+[2025/05/03 22:06:47.222107,  3] auth/gensec/spnego.c:1443(gensec_spnego_server_negTokenTarg_step)
+  gensec_spnego_server_negTokenTarg_step: SPNEGO(ntlmssp) login failed: NT_STATUS_WRONG_PASSWORD
+[2025/05/03 22:06:47.225267,  3] auth/ntlmssp/ntlmssp_server.c:509(ntlmssp_server_preauth)
+  Got user=[admin] domain=[] workstation=[] len1=24 len2=24
+[2025/05/03 22:06:47.225341,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user []\[admin]@[] with the new password interface
+[2025/05/03 22:06:47.225367,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[admin]@[]
+[2025/05/03 22:06:47.226188,  3] auth/ntlmssp/ntlmssp_util.c:72(debug_ntlmssp_flags)
+  Got NTLMSSP neg_flags=0xa0080205
+[2025/05/03 22:06:47.226505,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+  check_ntlm_password:  Authentication for user [admin] -> [admin] FAILED with error NT_STATUS_WRONG_PASSWORD, authoritative=1
+[2025/05/03 22:06:47.226553,  3] auth/gensec/spnego.c:1443(gensec_spnego_server_negTokenTarg_step)
+  gensec_spnego_server_negTokenTarg_step: SPNEGO(ntlmssp) login failed: NT_STATUS_WRONG_PASSWORD
+[2025/05/03 22:06:47.227076,  3] auth/ntlmssp/ntlmssp_util.c:72(debug_ntlmssp_flags)
+  Got NTLMSSP neg_flags=0xa0080205
+[2025/05/03 22:06:47.229169,  3] auth/ntlmssp/ntlmssp_server.c:509(ntlmssp_server_preauth)
+  Got user=[admin] domain=[] workstation=[] len1=24 len2=24
+[2025/05/03 22:06:47.229240,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user []\[admin]@[] with the new password interface
+[2025/05/03 22:06:47.229276,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[admin]@[]
+[2025/05/03 22:06:47.230116,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+  check_ntlm_password:  Authentication for user [admin] -> [admin] FAILED with error NT_STATUS_WRONG_PASSWORD, authoritative=1
+[2025/05/03 22:06:47.230196,  3] auth/gensec/spnego.c:1443(gensec_spnego_server_negTokenTarg_step)
+  gensec_spnego_server_negTokenTarg_step: SPNEGO(ntlmssp) login failed: NT_STATUS_WRONG_PASSWORD
+[2025/05/03 22:06:47.231415,  3] auth/ntlmssp/ntlmssp_server.c:509(ntlmssp_server_preauth)
+  Got user=[admin] domain=[] workstation=[] len1=24 len2=24
+[2025/05/03 22:06:47.231532,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user []\[admin]@[] with the new password interface
+[2025/05/03 22:06:47.231566,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[admin]@[]
+[2025/05/03 22:06:47.232482,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+  check_ntlm_password:  Authentication for user [admin] -> [admin] FAILED with error NT_STATUS_WRONG_PASSWORD, authoritative=1
+[2025/05/03 22:06:47.232564,  3] auth/gensec/spnego.c:1443(gensec_spnego_server_negTokenTarg_step)
+  gensec_spnego_server_negTokenTarg_step: SPNEGO(ntlmssp) login failed: NT_STATUS_WRONG_PASSWORD
+[2025/05/03 22:06:47.233175,  3] auth/ntlmssp/ntlmssp_util.c:72(debug_ntlmssp_flags)
+  Got NTLMSSP neg_flags=0xa0880205
+[2025/05/03 22:06:47.236317,  3] auth/ntlmssp/ntlmssp_util.c:72(debug_ntlmssp_flags)
+  Got NTLMSSP neg_flags=0xa0880205
+[2025/05/03 22:06:47.237705,  3] auth/ntlmssp/ntlmssp_server.c:509(ntlmssp_server_preauth)
+  Got user=[admin] domain=[] workstation=[] len1=24 len2=198
+[2025/05/03 22:06:47.237769,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user []\[admin]@[] with the new password interface
+[2025/05/03 22:06:47.237789,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[admin]@[]
+[2025/05/03 22:06:47.238443,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+  check_ntlm_password:  Authentication for user [admin] -> [admin] FAILED with error NT_STATUS_WRONG_PASSWORD, authoritative=1
+[2025/05/03 22:06:47.238496,  3] auth/gensec/spnego.c:1443(gensec_spnego_server_negTokenTarg_step)
+  gensec_spnego_server_negTokenTarg_step: SPNEGO(ntlmssp) login failed: NT_STATUS_WRONG_PASSWORD
+[2025/05/03 22:06:47.239276,  3] auth/ntlmssp/ntlmssp_util.c:72(debug_ntlmssp_flags)
+  Got NTLMSSP neg_flags=0xa0880205
+[2025/05/03 22:06:47.240830,  3] auth/ntlmssp/ntlmssp_server.c:509(ntlmssp_server_preauth)
+  Got user=[admin] domain=[] workstation=[] len1=24 len2=198
+[2025/05/03 22:06:47.240893,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user []\[admin]@[] with the new password interface
+[2025/05/03 22:06:47.240916,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[admin]@[]
+[2025/05/03 22:06:47.241360,  3] auth/ntlmssp/ntlmssp_util.c:72(debug_ntlmssp_flags)
+  Got NTLMSSP neg_flags=0xa0080205
+[2025/05/03 22:06:47.241723,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+  check_ntlm_password:  Authentication for user [admin] -> [admin] FAILED with error NT_STATUS_WRONG_PASSWORD, authoritative=1
+[2025/05/03 22:06:47.241771,  3] auth/gensec/spnego.c:1443(gensec_spnego_server_negTokenTarg_step)
+  gensec_spnego_server_negTokenTarg_step: SPNEGO(ntlmssp) login failed: NT_STATUS_WRONG_PASSWORD
+[2025/05/03 22:06:47.242744,  3] auth/ntlmssp/ntlmssp_server.c:509(ntlmssp_server_preauth)
+  Got user=[admin] domain=[] workstation=[] len1=24 len2=198
+[2025/05/03 22:06:47.242798,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user []\[admin]@[] with the new password interface
+[2025/05/03 22:06:47.242814,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[admin]@[]
+[2025/05/03 22:06:47.243370,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+  check_ntlm_password:  Authentication for user [admin] -> [admin] FAILED with error NT_STATUS_WRONG_PASSWORD, authoritative=1
+[2025/05/03 22:06:47.243422,  3] auth/gensec/spnego.c:1443(gensec_spnego_server_negTokenTarg_step)
+  gensec_spnego_server_negTokenTarg_step: SPNEGO(ntlmssp) login failed: NT_STATUS_WRONG_PASSWORD
+[2025/05/03 22:06:47.243532,  3] auth/ntlmssp/ntlmssp_server.c:509(ntlmssp_server_preauth)
+  Got user=[admin] domain=[] workstation=[] len1=24 len2=24
+[2025/05/03 22:06:47.243576,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user []\[admin]@[] with the new password interface
+[2025/05/03 22:06:47.243591,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[admin]@[]
+[2025/05/03 22:06:47.244065,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+  check_ntlm_password:  Authentication for user [admin] -> [admin] FAILED with error NT_STATUS_WRONG_PASSWORD, authoritative=1
+[2025/05/03 22:06:47.244116,  3] auth/gensec/spnego.c:1443(gensec_spnego_server_negTokenTarg_step)
+  gensec_spnego_server_negTokenTarg_step: SPNEGO(ntlmssp) login failed: NT_STATUS_WRONG_PASSWORD
+[2025/05/03 22:06:47.245489,  3] auth/ntlmssp/ntlmssp_util.c:72(debug_ntlmssp_flags)
+  Got NTLMSSP neg_flags=0xa0080205
+[2025/05/03 22:06:47.246420,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user []\[admin]@[] with the new password interface
+[2025/05/03 22:06:47.246464,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[admin]@[]
+[2025/05/03 22:06:47.246979,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+  check_ntlm_password:  Authentication for user [admin] -> [admin] FAILED with error NT_STATUS_WRONG_PASSWORD, authoritative=1
+[2025/05/03 22:06:47.247016,  3] auth/gensec/spnego.c:1443(gensec_spnego_server_negTokenTarg_step)
+  gensec_spnego_server_negTokenTarg_step: SPNEGO(ntlmssp) login failed: NT_STATUS_WRONG_PASSWORD
+[2025/05/03 22:06:47.247268,  3] auth/ntlmssp/ntlmssp_util.c:72(debug_ntlmssp_flags)
+  Got NTLMSSP neg_flags=0xa0080205
+[2025/05/03 22:06:47.247956,  3] auth/ntlmssp/ntlmssp_util.c:72(debug_ntlmssp_flags)
+  Got NTLMSSP neg_flags=0xa0880205
+[2025/05/03 22:06:47.248209,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+  check_ntlm_password:  Authentication for user [admin] -> [admin] FAILED with error NT_STATUS_WRONG_PASSWORD, authoritative=1
+[2025/05/03 22:06:47.248264,  3] auth/gensec/spnego.c:1443(gensec_spnego_server_negTokenTarg_step)
+  gensec_spnego_server_negTokenTarg_step: SPNEGO(ntlmssp) login failed: NT_STATUS_WRONG_PASSWORD
+[2025/05/03 22:06:47.248498,  3] auth/ntlmssp/ntlmssp_server.c:509(ntlmssp_server_preauth)
+  Got user=[admin] domain=[] workstation=[] len1=24 len2=24
+[2025/05/03 22:06:47.248555,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user []\[admin]@[] with the new password interface
+[2025/05/03 22:06:47.248585,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[admin]@[]
+[2025/05/03 22:06:47.249167,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+  check_ntlm_password:  Authentication for user [admin] -> [admin] FAILED with error NT_STATUS_WRONG_PASSWORD, authoritative=1
+[2025/05/03 22:06:47.249215,  3] auth/gensec/spnego.c:1443(gensec_spnego_server_negTokenTarg_step)
+  gensec_spnego_server_negTokenTarg_step: SPNEGO(ntlmssp) login failed: NT_STATUS_WRONG_PASSWORD
+[2025/05/03 22:06:47.250356,  3] auth/ntlmssp/ntlmssp_util.c:72(debug_ntlmssp_flags)
+  Got NTLMSSP neg_flags=0xa0080205
+[2025/05/03 22:06:47.250382,  3] auth/ntlmssp/ntlmssp_server.c:509(ntlmssp_server_preauth)
+  Got user=[admin] domain=[] workstation=[] len1=24 len2=198
+[2025/05/03 22:06:47.250433,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user []\[admin]@[] with the new password interface
+[2025/05/03 22:06:47.250454,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[admin]@[]
+[2025/05/03 22:06:47.251099,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+  check_ntlm_password:  Authentication for user [admin] -> [admin] FAILED with error NT_STATUS_WRONG_PASSWORD, authoritative=1
+[2025/05/03 22:06:47.251146,  3] auth/gensec/spnego.c:1443(gensec_spnego_server_negTokenTarg_step)
+  gensec_spnego_server_negTokenTarg_step: SPNEGO(ntlmssp) login failed: NT_STATUS_WRONG_PASSWORD
+[2025/05/03 22:06:47.252321,  3] auth/ntlmssp/ntlmssp_server.c:509(ntlmssp_server_preauth)
+  Got user=[admin] domain=[] workstation=[] len1=24 len2=24
+[2025/05/03 22:06:47.252373,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user []\[admin]@[] with the new password interface
+[2025/05/03 22:06:47.252395,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[admin]@[]
+[2025/05/03 22:06:47.252873,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+  check_ntlm_password:  Authentication for user [admin] -> [admin] FAILED with error NT_STATUS_WRONG_PASSWORD, authoritative=1
+[2025/05/03 22:06:47.252915,  3] auth/gensec/spnego.c:1443(gensec_spnego_server_negTokenTarg_step)
+  gensec_spnego_server_negTokenTarg_step: SPNEGO(ntlmssp) login failed: NT_STATUS_WRONG_PASSWORD
+[2025/05/03 22:06:47.253631,  3] auth/ntlmssp/ntlmssp_util.c:72(debug_ntlmssp_flags)
+  Got NTLMSSP neg_flags=0xa0080205
+[2025/05/03 22:06:47.254963,  3] auth/ntlmssp/ntlmssp_util.c:72(debug_ntlmssp_flags)
+  Got NTLMSSP neg_flags=0xa0880205
+[2025/05/03 22:06:47.255047,  3] auth/ntlmssp/ntlmssp_server.c:509(ntlmssp_server_preauth)
+  Got user=[admin] domain=[] workstation=[] len1=24 len2=24
+[2025/05/03 22:06:47.255103,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user []\[admin]@[] with the new password interface
+[2025/05/03 22:06:47.255132,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[admin]@[]
+[2025/05/03 22:06:47.255753,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+  check_ntlm_password:  Authentication for user [admin] -> [admin] FAILED with error NT_STATUS_WRONG_PASSWORD, authoritative=1
+[2025/05/03 22:06:47.255804,  3] auth/gensec/spnego.c:1443(gensec_spnego_server_negTokenTarg_step)
+  gensec_spnego_server_negTokenTarg_step: SPNEGO(ntlmssp) login failed: NT_STATUS_WRONG_PASSWORD
+[2025/05/03 22:06:47.257994,  3] auth/ntlmssp/ntlmssp_util.c:72(debug_ntlmssp_flags)
+  Got NTLMSSP neg_flags=0xa0880205
+[2025/05/03 22:06:47.258259,  3] auth/ntlmssp/ntlmssp_server.c:509(ntlmssp_server_preauth)
+  Got user=[admin] domain=[] workstation=[] len1=24 len2=24
+[2025/05/03 22:06:47.258297,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user []\[admin]@[] with the new password interface
+[2025/05/03 22:06:47.258310,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[admin]@[]
+[2025/05/03 22:06:47.258624,  3] auth/ntlmssp/ntlmssp_server.c:509(ntlmssp_server_preauth)
+  Got user=[admin] domain=[] workstation=[] len1=24 len2=198
+[2025/05/03 22:06:47.258675,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user []\[admin]@[] with the new password interface
+[2025/05/03 22:06:47.258697,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[admin]@[]
+[2025/05/03 22:06:47.258755,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+  check_ntlm_password:  Authentication for user [admin] -> [admin] FAILED with error NT_STATUS_WRONG_PASSWORD, authoritative=1
+[2025/05/03 22:06:47.258789,  3] auth/gensec/spnego.c:1443(gensec_spnego_server_negTokenTarg_step)
+  gensec_spnego_server_negTokenTarg_step: SPNEGO(ntlmssp) login failed: NT_STATUS_WRONG_PASSWORD
+[2025/05/03 22:06:47.258937,  3] auth/ntlmssp/ntlmssp_util.c:72(debug_ntlmssp_flags)
+  Got NTLMSSP neg_flags=0xa0880205
+[2025/05/03 22:06:47.259199,  3] auth/ntlmssp/ntlmssp_util.c:72(debug_ntlmssp_flags)
+  Got NTLMSSP neg_flags=0xa0880205
+[2025/05/03 22:06:47.259602,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+  check_ntlm_password:  Authentication for user [admin] -> [admin] FAILED with error NT_STATUS_WRONG_PASSWORD, authoritative=1
+[2025/05/03 22:06:47.259644,  3] auth/gensec/spnego.c:1443(gensec_spnego_server_negTokenTarg_step)
+  gensec_spnego_server_negTokenTarg_step: SPNEGO(ntlmssp) login failed: NT_STATUS_WRONG_PASSWORD
+[2025/05/03 22:06:47.260652,  3] auth/ntlmssp/ntlmssp_util.c:72(debug_ntlmssp_flags)
+  Got NTLMSSP neg_flags=0xa0080205
+[2025/05/03 22:06:47.261154,  3] auth/ntlmssp/ntlmssp_server.c:509(ntlmssp_server_preauth)
+  Got user=[admin] domain=[] workstation=[] len1=24 len2=198
+[2025/05/03 22:06:47.261215,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user []\[admin]@[] with the new password interface
+[2025/05/03 22:06:47.261237,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[admin]@[]
+[2025/05/03 22:06:47.261488,  3] auth/ntlmssp/ntlmssp_server.c:509(ntlmssp_server_preauth)
+  Got user=[admin] domain=[] workstation=[] len1=24 len2=198
+[2025/05/03 22:06:47.261542,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user []\[admin]@[] with the new password interface
+[2025/05/03 22:06:47.261571,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[admin]@[]
+[2025/05/03 22:06:47.261762,  3] auth/ntlmssp/ntlmssp_util.c:72(debug_ntlmssp_flags)
+  Got NTLMSSP neg_flags=0xa0080205
+[2025/05/03 22:06:47.261855,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+  check_ntlm_password:  Authentication for user [admin] -> [admin] FAILED with error NT_STATUS_WRONG_PASSWORD, authoritative=1
+[2025/05/03 22:06:47.261903,  3] auth/gensec/spnego.c:1443(gensec_spnego_server_negTokenTarg_step)
+  gensec_spnego_server_negTokenTarg_step: SPNEGO(ntlmssp) login failed: NT_STATUS_WRONG_PASSWORD
+[2025/05/03 22:06:47.262341,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+  check_ntlm_password:  Authentication for user [admin] -> [admin] FAILED with error NT_STATUS_WRONG_PASSWORD, authoritative=1
+[2025/05/03 22:06:47.262396,  3] auth/gensec/spnego.c:1443(gensec_spnego_server_negTokenTarg_step)
+  gensec_spnego_server_negTokenTarg_step: SPNEGO(ntlmssp) login failed: NT_STATUS_WRONG_PASSWORD
+[2025/05/03 22:06:47.263101,  3] auth/ntlmssp/ntlmssp_server.c:509(ntlmssp_server_preauth)
+  Got user=[admin] domain=[] workstation=[] len1=24 len2=24
+[2025/05/03 22:06:47.263151,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user []\[admin]@[] with the new password interface
+[2025/05/03 22:06:47.263173,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[admin]@[]
+[2025/05/03 22:06:47.263551,  3] auth/ntlmssp/ntlmssp_server.c:509(ntlmssp_server_preauth)
+  Got user=[admin] domain=[] workstation=[] len1=24 len2=198
+[2025/05/03 22:06:47.263605,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user []\[admin]@[] with the new password interface
+[2025/05/03 22:06:47.263625,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[admin]@[]
+[2025/05/03 22:06:47.263639,  3] auth/ntlmssp/ntlmssp_util.c:72(debug_ntlmssp_flags)
+  Got NTLMSSP neg_flags=0xa0080205
+[2025/05/03 22:06:47.263747,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+  check_ntlm_password:  Authentication for user [admin] -> [admin] FAILED with error NT_STATUS_WRONG_PASSWORD, authoritative=1
+[2025/05/03 22:06:47.263789,  3] auth/gensec/spnego.c:1443(gensec_spnego_server_negTokenTarg_step)
+  gensec_spnego_server_negTokenTarg_step: SPNEGO(ntlmssp) login failed: NT_STATUS_WRONG_PASSWORD
+[2025/05/03 22:06:47.264179,  3] auth/ntlmssp/ntlmssp_util.c:72(debug_ntlmssp_flags)
+  Got NTLMSSP neg_flags=0xa0880205
+[2025/05/03 22:06:47.264518,  3] auth/ntlmssp/ntlmssp_server.c:509(ntlmssp_server_preauth)
+  Got user=[admin] domain=[] workstation=[] len1=24 len2=24
+[2025/05/03 22:06:47.264573,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user []\[admin]@[] with the new password interface
+[2025/05/03 22:06:47.264605,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[admin]@[]
+[2025/05/03 22:06:47.264643,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+  check_ntlm_password:  Authentication for user [admin] -> [admin] FAILED with error NT_STATUS_WRONG_PASSWORD, authoritative=1
+[2025/05/03 22:06:47.264694,  3] auth/gensec/spnego.c:1443(gensec_spnego_server_negTokenTarg_step)
+  gensec_spnego_server_negTokenTarg_step: SPNEGO(ntlmssp) login failed: NT_STATUS_WRONG_PASSWORD
+[2025/05/03 22:06:47.265323,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+  check_ntlm_password:  Authentication for user [admin] -> [admin] FAILED with error NT_STATUS_WRONG_PASSWORD, authoritative=1
+[2025/05/03 22:06:47.265380,  3] auth/gensec/spnego.c:1443(gensec_spnego_server_negTokenTarg_step)
+  gensec_spnego_server_negTokenTarg_step: SPNEGO(ntlmssp) login failed: NT_STATUS_WRONG_PASSWORD
+[2025/05/03 22:06:47.266169,  3] auth/ntlmssp/ntlmssp_util.c:72(debug_ntlmssp_flags)
+  Got NTLMSSP neg_flags=0xa0080205
+[2025/05/03 22:06:47.266639,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+  check_ntlm_password:  Authentication for user [admin] -> [admin] FAILED with error NT_STATUS_WRONG_PASSWORD, authoritative=1
+[2025/05/03 22:06:47.266709,  3] auth/gensec/spnego.c:1443(gensec_spnego_server_negTokenTarg_step)
+  gensec_spnego_server_negTokenTarg_step: SPNEGO(ntlmssp) login failed: NT_STATUS_WRONG_PASSWORD
+[2025/05/03 22:06:47.267262,  3] auth/ntlmssp/ntlmssp_server.c:509(ntlmssp_server_preauth)
+  Got user=[admin] domain=[] workstation=[] len1=24 len2=24
+[2025/05/03 22:06:47.267312,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user []\[admin]@[] with the new password interface
+[2025/05/03 22:06:47.267333,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[admin]@[]
+[2025/05/03 22:06:47.267840,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+  check_ntlm_password:  Authentication for user [admin] -> [admin] FAILED with error NT_STATUS_WRONG_PASSWORD, authoritative=1
+[2025/05/03 22:06:47.267869,  3] auth/ntlmssp/ntlmssp_util.c:72(debug_ntlmssp_flags)
+  Got NTLMSSP neg_flags=0xa0880205
+[2025/05/03 22:06:47.267877,  3] auth/gensec/spnego.c:1443(gensec_spnego_server_negTokenTarg_step)
+  gensec_spnego_server_negTokenTarg_step: SPNEGO(ntlmssp) login failed: NT_STATUS_WRONG_PASSWORD
+[2025/05/03 22:06:47.268135,  3] auth/ntlmssp/ntlmssp_server.c:509(ntlmssp_server_preauth)
+  Got user=[admin] domain=[] workstation=[] len1=24 len2=198
+[2025/05/03 22:06:47.268169,  3] auth/ntlmssp/ntlmssp_util.c:72(debug_ntlmssp_flags)
+  Got NTLMSSP neg_flags=0xa0080205
+[2025/05/03 22:06:47.268193,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user []\[admin]@[] with the new password interface
+[2025/05/03 22:06:47.268208,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[admin]@[]
+[2025/05/03 22:06:47.268728,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+  check_ntlm_password:  Authentication for user [admin] -> [admin] FAILED with error NT_STATUS_WRONG_PASSWORD, authoritative=1
+[2025/05/03 22:06:47.268763,  3] auth/gensec/spnego.c:1443(gensec_spnego_server_negTokenTarg_step)
+  gensec_spnego_server_negTokenTarg_step: SPNEGO(ntlmssp) login failed: NT_STATUS_WRONG_PASSWORD
+[2025/05/03 22:06:47.270147,  3] auth/ntlmssp/ntlmssp_util.c:72(debug_ntlmssp_flags)
+  Got NTLMSSP neg_flags=0xa0080205
+[2025/05/03 22:06:47.270507,  3] auth/ntlmssp/ntlmssp_util.c:72(debug_ntlmssp_flags)
+  Got NTLMSSP neg_flags=0xa0880205
+[2025/05/03 22:06:47.271065,  3] auth/ntlmssp/ntlmssp_util.c:72(debug_ntlmssp_flags)
+  Got NTLMSSP neg_flags=0xa0880205
+[2025/05/03 22:06:47.271575,  3] auth/ntlmssp/ntlmssp_server.c:509(ntlmssp_server_preauth)
+  Got user=[admin] domain=[] workstation=[] len1=24 len2=24
+[2025/05/03 22:06:47.271604,  3] auth/ntlmssp/ntlmssp_server.c:509(ntlmssp_server_preauth)
+  Got user=[admin] domain=[] workstation=[] len1=24 len2=198
+[2025/05/03 22:06:47.271631,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user []\[admin]@[] with the new password interface
+[2025/05/03 22:06:47.271646,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user []\[admin]@[] with the new password interface
+[2025/05/03 22:06:47.271656,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[admin]@[]
+[2025/05/03 22:06:47.271661,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[admin]@[]
+[2025/05/03 22:06:47.272195,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+  check_ntlm_password:  Authentication for user [admin] -> [admin] FAILED with error NT_STATUS_WRONG_PASSWORD, authoritative=1
+[2025/05/03 22:06:47.272233,  3] auth/gensec/spnego.c:1443(gensec_spnego_server_negTokenTarg_step)
+  gensec_spnego_server_negTokenTarg_step: SPNEGO(ntlmssp) login failed: NT_STATUS_WRONG_PASSWORD
+[2025/05/03 22:06:47.272391,  3] auth/ntlmssp/ntlmssp_server.c:509(ntlmssp_server_preauth)
+  Got user=[admin] domain=[] workstation=[] len1=24 len2=24
+[2025/05/03 22:06:47.272451,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user []\[admin]@[] with the new password interface
+[2025/05/03 22:06:47.272472,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+  check_ntlm_password:  Authentication for user [admin] -> [admin] FAILED with error NT_STATUS_WRONG_PASSWORD, authoritative=1
+[2025/05/03 22:06:47.272480,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[admin]@[]
+[2025/05/03 22:06:47.272510,  3] auth/gensec/spnego.c:1443(gensec_spnego_server_negTokenTarg_step)
+  gensec_spnego_server_negTokenTarg_step: SPNEGO(ntlmssp) login failed: NT_STATUS_WRONG_PASSWORD
+[2025/05/03 22:06:47.272843,  3] auth/ntlmssp/ntlmssp_server.c:509(ntlmssp_server_preauth)
+  Got user=[admin] domain=[] workstation=[] len1=24 len2=198
+[2025/05/03 22:06:47.272886,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user []\[admin]@[] with the new password interface
+[2025/05/03 22:06:47.272896,  3] auth/ntlmssp/ntlmssp_util.c:72(debug_ntlmssp_flags)
+  Got NTLMSSP neg_flags=0xa0880205
+[2025/05/03 22:06:47.272906,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[admin]@[]
+[2025/05/03 22:06:47.273254,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+  check_ntlm_password:  Authentication for user [admin] -> [admin] FAILED with error NT_STATUS_WRONG_PASSWORD, authoritative=1
+[2025/05/03 22:06:47.273304,  3] auth/gensec/spnego.c:1443(gensec_spnego_server_negTokenTarg_step)
+  gensec_spnego_server_negTokenTarg_step: SPNEGO(ntlmssp) login failed: NT_STATUS_WRONG_PASSWORD
+[2025/05/03 22:06:47.273483,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+  check_ntlm_password:  Authentication for user [admin] -> [admin] FAILED with error NT_STATUS_WRONG_PASSWORD, authoritative=1
+[2025/05/03 22:06:47.273516,  3] auth/gensec/spnego.c:1443(gensec_spnego_server_negTokenTarg_step)
+  gensec_spnego_server_negTokenTarg_step: SPNEGO(ntlmssp) login failed: NT_STATUS_WRONG_PASSWORD
+[2025/05/03 22:06:47.273708,  3] auth/ntlmssp/ntlmssp_server.c:509(ntlmssp_server_preauth)
+  Got user=[admin] domain=[] workstation=[] len1=24 len2=198
+[2025/05/03 22:06:47.273753,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user []\[admin]@[] with the new password interface
+[2025/05/03 22:06:47.273788,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[admin]@[]
+[2025/05/03 22:06:47.274287,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+  check_ntlm_password:  Authentication for user [admin] -> [admin] FAILED with error NT_STATUS_WRONG_PASSWORD, authoritative=1
+[2025/05/03 22:06:47.274334,  3] auth/gensec/spnego.c:1443(gensec_spnego_server_negTokenTarg_step)
+  gensec_spnego_server_negTokenTarg_step: SPNEGO(ntlmssp) login failed: NT_STATUS_WRONG_PASSWORD
+[2025/05/03 22:06:47.274659,  3] auth/ntlmssp/ntlmssp_server.c:509(ntlmssp_server_preauth)
+  Got user=[admin] domain=[] workstation=[] len1=24 len2=24
+[2025/05/03 22:06:47.274704,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user []\[admin]@[] with the new password interface
+[2025/05/03 22:06:47.274718,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[admin]@[]
+[2025/05/03 22:06:47.275283,  3] auth/ntlmssp/ntlmssp_util.c:72(debug_ntlmssp_flags)
+  Got NTLMSSP neg_flags=0xa0080205
+[2025/05/03 22:06:47.275471,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+  check_ntlm_password:  Authentication for user [admin] -> [admin] FAILED with error NT_STATUS_WRONG_PASSWORD, authoritative=1
+[2025/05/03 22:06:47.275478,  3] auth/ntlmssp/ntlmssp_util.c:72(debug_ntlmssp_flags)
+  Got NTLMSSP neg_flags=0xa0080205
+[2025/05/03 22:06:47.275508,  3] auth/gensec/spnego.c:1443(gensec_spnego_server_negTokenTarg_step)
+  gensec_spnego_server_negTokenTarg_step: SPNEGO(ntlmssp) login failed: NT_STATUS_WRONG_PASSWORD
+[2025/05/03 22:06:47.276505,  3] auth/ntlmssp/ntlmssp_util.c:72(debug_ntlmssp_flags)
+  Got NTLMSSP neg_flags=0xa0880205
+[2025/05/03 22:06:47.276575,  3] auth/ntlmssp/ntlmssp_util.c:72(debug_ntlmssp_flags)
+  Got NTLMSSP neg_flags=0xa0080205
+[2025/05/03 22:06:47.277159,  3] auth/ntlmssp/ntlmssp_server.c:509(ntlmssp_server_preauth)
+  Got user=[admin] domain=[] workstation=[] len1=24 len2=198
+[2025/05/03 22:06:47.277215,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user []\[admin]@[] with the new password interface
+[2025/05/03 22:06:47.277229,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[admin]@[]
+[2025/05/03 22:06:47.277788,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+  check_ntlm_password:  Authentication for user [admin] -> [admin] FAILED with error NT_STATUS_WRONG_PASSWORD, authoritative=1
+[2025/05/03 22:06:47.277830,  3] auth/gensec/spnego.c:1443(gensec_spnego_server_negTokenTarg_step)
+  gensec_spnego_server_negTokenTarg_step: SPNEGO(ntlmssp) login failed: NT_STATUS_WRONG_PASSWORD
+[2025/05/03 22:06:47.278679,  3] auth/ntlmssp/ntlmssp_server.c:509(ntlmssp_server_preauth)
+  Got user=[admin] domain=[] workstation=[] len1=24 len2=24
+[2025/05/03 22:06:47.278728,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user []\[admin]@[] with the new password interface
+[2025/05/03 22:06:47.278723,  3] auth/ntlmssp/ntlmssp_server.c:509(ntlmssp_server_preauth)
+  Got user=[admin] domain=[] workstation=[] len1=24 len2=24
+[2025/05/03 22:06:47.278742,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[admin]@[]
+[2025/05/03 22:06:47.278764,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user []\[admin]@[] with the new password interface
+[2025/05/03 22:06:47.278777,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[admin]@[]
+[2025/05/03 22:06:47.279271,  3] auth/ntlmssp/ntlmssp_server.c:509(ntlmssp_server_preauth)
+  Got user=[admin] domain=[] workstation=[] len1=24 len2=24
+[2025/05/03 22:06:47.279283,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+  check_ntlm_password:  Authentication for user [admin] -> [admin] FAILED with error NT_STATUS_WRONG_PASSWORD, authoritative=1
+[2025/05/03 22:06:47.279333,  3] auth/gensec/spnego.c:1443(gensec_spnego_server_negTokenTarg_step)
+  gensec_spnego_server_negTokenTarg_step: SPNEGO(ntlmssp) login failed: NT_STATUS_WRONG_PASSWORD
+[2025/05/03 22:06:47.279335,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user []\[admin]@[] with the new password interface
+[2025/05/03 22:06:47.279356,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[admin]@[]
+[2025/05/03 22:06:47.279609,  3] auth/ntlmssp/ntlmssp_util.c:72(debug_ntlmssp_flags)
+  Got NTLMSSP neg_flags=0xa0880205
+[2025/05/03 22:06:47.279676,  3] auth/ntlmssp/ntlmssp_server.c:509(ntlmssp_server_preauth)
+  Got user=[admin] domain=[] workstation=[] len1=24 len2=198
+[2025/05/03 22:06:47.279737,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user []\[admin]@[] with the new password interface
+[2025/05/03 22:06:47.279764,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[admin]@[]
+[2025/05/03 22:06:47.279822,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+  check_ntlm_password:  Authentication for user [admin] -> [admin] FAILED with error NT_STATUS_WRONG_PASSWORD, authoritative=1
+[2025/05/03 22:06:47.279864,  3] auth/gensec/spnego.c:1443(gensec_spnego_server_negTokenTarg_step)
+  gensec_spnego_server_negTokenTarg_step: SPNEGO(ntlmssp) login failed: NT_STATUS_WRONG_PASSWORD
+[2025/05/03 22:06:47.280131,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+  check_ntlm_password:  Authentication for user [admin] -> [admin] FAILED with error NT_STATUS_WRONG_PASSWORD, authoritative=1
+[2025/05/03 22:06:47.280166,  3] auth/gensec/spnego.c:1443(gensec_spnego_server_negTokenTarg_step)
+  gensec_spnego_server_negTokenTarg_step: SPNEGO(ntlmssp) login failed: NT_STATUS_WRONG_PASSWORD
+[2025/05/03 22:06:47.280383,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+  check_ntlm_password:  Authentication for user [admin] -> [admin] FAILED with error NT_STATUS_WRONG_PASSWORD, authoritative=1
+[2025/05/03 22:06:47.280416,  3] auth/gensec/spnego.c:1443(gensec_spnego_server_negTokenTarg_step)
+  gensec_spnego_server_negTokenTarg_step: SPNEGO(ntlmssp) login failed: NT_STATUS_WRONG_PASSWORD
+[2025/05/03 22:06:47.280566,  3] auth/ntlmssp/ntlmssp_util.c:72(debug_ntlmssp_flags)
+  Got NTLMSSP neg_flags=0xa0080205
+[2025/05/03 22:06:47.281789,  3] auth/ntlmssp/ntlmssp_server.c:509(ntlmssp_server_preauth)
+  Got user=[admin] domain=[] workstation=[] len1=24 len2=198
+[2025/05/03 22:06:47.281838,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user []\[admin]@[] with the new password interface
+[2025/05/03 22:06:47.281852,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[admin]@[]
+[2025/05/03 22:06:47.282488,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+  check_ntlm_password:  Authentication for user [admin] -> [admin] FAILED with error NT_STATUS_WRONG_PASSWORD, authoritative=1
+[2025/05/03 22:06:47.282531,  3] auth/gensec/spnego.c:1443(gensec_spnego_server_negTokenTarg_step)
+  gensec_spnego_server_negTokenTarg_step: SPNEGO(ntlmssp) login failed: NT_STATUS_WRONG_PASSWORD
+[2025/05/03 22:06:47.283016,  3] auth/ntlmssp/ntlmssp_util.c:72(debug_ntlmssp_flags)
+  Got NTLMSSP neg_flags=0xa0880205
+[2025/05/03 22:06:47.283454,  3] auth/ntlmssp/ntlmssp_util.c:72(debug_ntlmssp_flags)
+  Got NTLMSSP neg_flags=0xa0880205
+[2025/05/03 22:06:47.283767,  3] auth/ntlmssp/ntlmssp_util.c:72(debug_ntlmssp_flags)
+  Got NTLMSSP neg_flags=0xa0880205
+[2025/05/03 22:06:47.284115,  3] auth/ntlmssp/ntlmssp_util.c:72(debug_ntlmssp_flags)
+  Got NTLMSSP neg_flags=0xa0080205
+[2025/05/03 22:06:47.285418,  3] auth/ntlmssp/ntlmssp_server.c:509(ntlmssp_server_preauth)
+  Got user=[admin] domain=[] workstation=[] len1=24 len2=198
+[2025/05/03 22:06:47.285466,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user []\[admin]@[] with the new password interface
+[2025/05/03 22:06:47.285479,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[admin]@[]
+[2025/05/03 22:06:47.285525,  3] auth/ntlmssp/ntlmssp_util.c:72(debug_ntlmssp_flags)
+  Got NTLMSSP neg_flags=0xa0880205
+[2025/05/03 22:06:47.285679,  3] auth/ntlmssp/ntlmssp_server.c:509(ntlmssp_server_preauth)
+  Got user=[admin] domain=[] workstation=[] len1=24 len2=198
+[2025/05/03 22:06:47.285716,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user []\[admin]@[] with the new password interface
+[2025/05/03 22:06:47.285736,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[admin]@[]
+[2025/05/03 22:06:47.285748,  3] auth/ntlmssp/ntlmssp_util.c:72(debug_ntlmssp_flags)
+  Got NTLMSSP neg_flags=0xa0080205
+[2025/05/03 22:06:47.286073,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+  check_ntlm_password:  Authentication for user [admin] -> [admin] FAILED with error NT_STATUS_WRONG_PASSWORD, authoritative=1
+[2025/05/03 22:06:47.286114,  3] auth/gensec/spnego.c:1443(gensec_spnego_server_negTokenTarg_step)
+  gensec_spnego_server_negTokenTarg_step: SPNEGO(ntlmssp) login failed: NT_STATUS_WRONG_PASSWORD
+[2025/05/03 22:06:47.286322,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+  check_ntlm_password:  Authentication for user [admin] -> [admin] FAILED with error NT_STATUS_WRONG_PASSWORD, authoritative=1
+[2025/05/03 22:06:47.286356,  3] auth/gensec/spnego.c:1443(gensec_spnego_server_negTokenTarg_step)
+  gensec_spnego_server_negTokenTarg_step: SPNEGO(ntlmssp) login failed: NT_STATUS_WRONG_PASSWORD
+[2025/05/03 22:06:47.286409,  3] auth/ntlmssp/ntlmssp_server.c:509(ntlmssp_server_preauth)
+  Got user=[admin] domain=[] workstation=[] len1=24 len2=198
+[2025/05/03 22:06:47.286555,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user []\[admin]@[] with the new password interface
+[2025/05/03 22:06:47.286572,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[admin]@[]
+[2025/05/03 22:06:47.287200,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+  check_ntlm_password:  Authentication for user [admin] -> [admin] FAILED with error NT_STATUS_WRONG_PASSWORD, authoritative=1
+[2025/05/03 22:06:47.287246,  3] auth/gensec/spnego.c:1443(gensec_spnego_server_negTokenTarg_step)
+  gensec_spnego_server_negTokenTarg_step: SPNEGO(ntlmssp) login failed: NT_STATUS_WRONG_PASSWORD
+[2025/05/03 22:06:47.287396,  3] auth/ntlmssp/ntlmssp_server.c:509(ntlmssp_server_preauth)
+  Got user=[admin] domain=[] workstation=[] len1=24 len2=24
+[2025/05/03 22:06:47.287440,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user []\[admin]@[] with the new password interface
+[2025/05/03 22:06:47.287455,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[admin]@[]
+[2025/05/03 22:06:47.287600,  3] auth/ntlmssp/ntlmssp_server.c:509(ntlmssp_server_preauth)
+  Got user=[admin] domain=[] workstation=[] len1=24 len2=24
+[2025/05/03 22:06:47.287640,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user []\[admin]@[] with the new password interface
+[2025/05/03 22:06:47.287660,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[admin]@[]
+[2025/05/03 22:06:47.287869,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+  check_ntlm_password:  Authentication for user [admin] -> [admin] FAILED with error NT_STATUS_WRONG_PASSWORD, authoritative=1
+[2025/05/03 22:06:47.287901,  3] auth/gensec/spnego.c:1443(gensec_spnego_server_negTokenTarg_step)
+  gensec_spnego_server_negTokenTarg_step: SPNEGO(ntlmssp) login failed: NT_STATUS_WRONG_PASSWORD
+[2025/05/03 22:06:47.288201,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+  check_ntlm_password:  Authentication for user [admin] -> [admin] FAILED with error NT_STATUS_WRONG_PASSWORD, authoritative=1
+[2025/05/03 22:06:47.288231,  3] auth/gensec/spnego.c:1443(gensec_spnego_server_negTokenTarg_step)
+  gensec_spnego_server_negTokenTarg_step: SPNEGO(ntlmssp) login failed: NT_STATUS_WRONG_PASSWORD
+[2025/05/03 22:06:47.288602,  3] auth/ntlmssp/ntlmssp_server.c:509(ntlmssp_server_preauth)
+  Got user=[admin] domain=[] workstation=[] len1=24 len2=24
+[2025/05/03 22:06:47.288647,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user []\[admin]@[] with the new password interface
+[2025/05/03 22:06:47.288662,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[admin]@[]
+[2025/05/03 22:06:47.288710,  3] auth/ntlmssp/ntlmssp_util.c:72(debug_ntlmssp_flags)
+  Got NTLMSSP neg_flags=0xa0080205
+[2025/05/03 22:06:47.289272,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+  check_ntlm_password:  Authentication for user [admin] -> [admin] FAILED with error NT_STATUS_WRONG_PASSWORD, authoritative=1
+[2025/05/03 22:06:47.289314,  3] auth/gensec/spnego.c:1443(gensec_spnego_server_negTokenTarg_step)
+  gensec_spnego_server_negTokenTarg_step: SPNEGO(ntlmssp) login failed: NT_STATUS_WRONG_PASSWORD
+[2025/05/03 22:06:47.290092,  3] auth/ntlmssp/ntlmssp_util.c:72(debug_ntlmssp_flags)
+  Got NTLMSSP neg_flags=0xa0080205
+[2025/05/03 22:06:47.290168,  3] auth/ntlmssp/ntlmssp_util.c:72(debug_ntlmssp_flags)
+  Got NTLMSSP neg_flags=0xa0080205
+[2025/05/03 22:06:47.291584,  3] auth/ntlmssp/ntlmssp_server.c:509(ntlmssp_server_preauth)
+  Got user=[admin] domain=[] workstation=[] len1=24 len2=24
+[2025/05/03 22:06:47.291630,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user []\[admin]@[] with the new password interface
+[2025/05/03 22:06:47.291644,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[admin]@[]
+[2025/05/03 22:06:47.292129,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+  check_ntlm_password:  Authentication for user [admin] -> [admin] FAILED with error NT_STATUS_WRONG_PASSWORD, authoritative=1
+[2025/05/03 22:06:47.292172,  3] auth/gensec/spnego.c:1443(gensec_spnego_server_negTokenTarg_step)
+  gensec_spnego_server_negTokenTarg_step: SPNEGO(ntlmssp) login failed: NT_STATUS_WRONG_PASSWORD
+[2025/05/03 22:06:47.292273,  3] auth/ntlmssp/ntlmssp_server.c:509(ntlmssp_server_preauth)
+  Got user=[admin] domain=[] workstation=[] len1=24 len2=198
+[2025/05/03 22:06:47.292332,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user []\[admin]@[] with the new password interface
+[2025/05/03 22:06:47.292354,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[admin]@[]
+[2025/05/03 22:06:47.292835,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+  check_ntlm_password:  Authentication for user [admin] -> [admin] FAILED with error NT_STATUS_WRONG_PASSWORD, authoritative=1
+[2025/05/03 22:06:47.292874,  3] auth/gensec/spnego.c:1443(gensec_spnego_server_negTokenTarg_step)
+  gensec_spnego_server_negTokenTarg_step: SPNEGO(ntlmssp) login failed: NT_STATUS_WRONG_PASSWORD
+[2025/05/03 22:06:47.292872,  3] auth/ntlmssp/ntlmssp_util.c:72(debug_ntlmssp_flags)
+  Got NTLMSSP neg_flags=0xa0880205
+[2025/05/03 22:06:47.293610,  3] auth/ntlmssp/ntlmssp_util.c:72(debug_ntlmssp_flags)
+  Got NTLMSSP neg_flags=0xa0880205
+[2025/05/03 22:06:47.293720,  3] auth/ntlmssp/ntlmssp_util.c:72(debug_ntlmssp_flags)
+  Got NTLMSSP neg_flags=0xa0880205
+[2025/05/03 22:06:47.294173,  3] auth/ntlmssp/ntlmssp_server.c:509(ntlmssp_server_preauth)
+  Got user=[admin] domain=[] workstation=[] len1=24 len2=24
+[2025/05/03 22:06:47.294221,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user []\[admin]@[] with the new password interface
+[2025/05/03 22:06:47.294234,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[admin]@[]
+[2025/05/03 22:06:47.294613,  3] auth/ntlmssp/ntlmssp_util.c:72(debug_ntlmssp_flags)
+  Got NTLMSSP neg_flags=0xa0080205
+[2025/05/03 22:06:47.294695,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+  check_ntlm_password:  Authentication for user [admin] -> [admin] FAILED with error NT_STATUS_WRONG_PASSWORD, authoritative=1
+[2025/05/03 22:06:47.294730,  3] auth/gensec/spnego.c:1443(gensec_spnego_server_negTokenTarg_step)
+  gensec_spnego_server_negTokenTarg_step: SPNEGO(ntlmssp) login failed: NT_STATUS_WRONG_PASSWORD
+[2025/05/03 22:06:47.294811,  3] auth/ntlmssp/ntlmssp_server.c:509(ntlmssp_server_preauth)
+  Got user=[admin] domain=[] workstation=[] len1=24 len2=24
+[2025/05/03 22:06:47.294865,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user []\[admin]@[] with the new password interface
+[2025/05/03 22:06:47.294885,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[admin]@[]
+[2025/05/03 22:06:47.295477,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+  check_ntlm_password:  Authentication for user [admin] -> [admin] FAILED with error NT_STATUS_WRONG_PASSWORD, authoritative=1
+[2025/05/03 22:06:47.295529,  3] auth/gensec/spnego.c:1443(gensec_spnego_server_negTokenTarg_step)
+  gensec_spnego_server_negTokenTarg_step: SPNEGO(ntlmssp) login failed: NT_STATUS_WRONG_PASSWORD
+[2025/05/03 22:06:47.296187,  3] auth/ntlmssp/ntlmssp_util.c:72(debug_ntlmssp_flags)
+  Got NTLMSSP neg_flags=0xa0880205
+[2025/05/03 22:06:47.296235,  3] auth/ntlmssp/ntlmssp_server.c:509(ntlmssp_server_preauth)
+  Got user=[admin] domain=[] workstation=[] len1=24 len2=198
+[2025/05/03 22:06:47.296276,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user []\[admin]@[] with the new password interface
+[2025/05/03 22:06:47.296332,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[admin]@[]
+[2025/05/03 22:06:47.296771,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+  check_ntlm_password:  Authentication for user [admin] -> [admin] FAILED with error NT_STATUS_WRONG_PASSWORD, authoritative=1
+[2025/05/03 22:06:47.296809,  3] auth/gensec/spnego.c:1443(gensec_spnego_server_negTokenTarg_step)
+  gensec_spnego_server_negTokenTarg_step: SPNEGO(ntlmssp) login failed: NT_STATUS_WRONG_PASSWORD
+[2025/05/03 22:06:47.297151,  3] auth/ntlmssp/ntlmssp_util.c:72(debug_ntlmssp_flags)
+  Got NTLMSSP neg_flags=0xa0880205
+[2025/05/03 22:06:47.298045,  3] auth/ntlmssp/ntlmssp_server.c:509(ntlmssp_server_preauth)
+  Got user=[admin] domain=[] workstation=[] len1=24 len2=24
+[2025/05/03 22:06:47.298088,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user []\[admin]@[] with the new password interface
+[2025/05/03 22:06:47.298102,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[admin]@[]
+[2025/05/03 22:06:47.298684,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+  check_ntlm_password:  Authentication for user [admin] -> [admin] FAILED with error NT_STATUS_WRONG_PASSWORD, authoritative=1
+[2025/05/03 22:06:47.298722,  3] auth/ntlmssp/ntlmssp_server.c:509(ntlmssp_server_preauth)
+  Got user=[admin] domain=[] workstation=[] len1=24 len2=198
+[2025/05/03 22:06:47.298722,  3] auth/gensec/spnego.c:1443(gensec_spnego_server_negTokenTarg_step)
+  gensec_spnego_server_negTokenTarg_step: SPNEGO(ntlmssp) login failed: NT_STATUS_WRONG_PASSWORD
+[2025/05/03 22:06:47.298760,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user []\[admin]@[] with the new password interface
+[2025/05/03 22:06:47.298786,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[admin]@[]
+[2025/05/03 22:06:47.299281,  3] auth/ntlmssp/ntlmssp_server.c:509(ntlmssp_server_preauth)
+  Got user=[admin] domain=[] workstation=[] len1=24 len2=198
+[2025/05/03 22:06:47.299302,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+  check_ntlm_password:  Authentication for user [admin] -> [admin] FAILED with error NT_STATUS_WRONG_PASSWORD, authoritative=1
+[2025/05/03 22:06:47.299335,  3] auth/gensec/spnego.c:1443(gensec_spnego_server_negTokenTarg_step)
+  gensec_spnego_server_negTokenTarg_step: SPNEGO(ntlmssp) login failed: NT_STATUS_WRONG_PASSWORD
+[2025/05/03 22:06:47.299330,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user []\[admin]@[] with the new password interface
+[2025/05/03 22:06:47.299352,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[admin]@[]
+[2025/05/03 22:06:47.299803,  3] auth/ntlmssp/ntlmssp_server.c:509(ntlmssp_server_preauth)
+  Got user=[admin] domain=[] workstation=[] len1=24 len2=198
+[2025/05/03 22:06:47.299823,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+  check_ntlm_password:  Authentication for user [admin] -> [admin] FAILED with error NT_STATUS_WRONG_PASSWORD, authoritative=1
+[2025/05/03 22:06:47.299853,  3] auth/gensec/spnego.c:1443(gensec_spnego_server_negTokenTarg_step)
+  gensec_spnego_server_negTokenTarg_step: SPNEGO(ntlmssp) login failed: NT_STATUS_WRONG_PASSWORD
+[2025/05/03 22:06:47.299856,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user []\[admin]@[] with the new password interface
+[2025/05/03 22:06:47.299879,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[admin]@[]
+[2025/05/03 22:06:47.300075,  3] auth/ntlmssp/ntlmssp_util.c:72(debug_ntlmssp_flags)
+  Got NTLMSSP neg_flags=0xa0080205
+[2025/05/03 22:06:47.300107,  3] auth/ntlmssp/ntlmssp_server.c:509(ntlmssp_server_preauth)
+  Got user=[admin] domain=[] workstation=[] len1=24 len2=198
+[2025/05/03 22:06:47.300158,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user []\[admin]@[] with the new password interface
+[2025/05/03 22:06:47.300177,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[admin]@[]
+[2025/05/03 22:06:47.300452,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+  check_ntlm_password:  Authentication for user [admin] -> [admin] FAILED with error NT_STATUS_WRONG_PASSWORD, authoritative=1
+[2025/05/03 22:06:47.300491,  3] auth/gensec/spnego.c:1443(gensec_spnego_server_negTokenTarg_step)
+  gensec_spnego_server_negTokenTarg_step: SPNEGO(ntlmssp) login failed: NT_STATUS_WRONG_PASSWORD
+[2025/05/03 22:06:47.300709,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+  check_ntlm_password:  Authentication for user [admin] -> [admin] FAILED with error NT_STATUS_WRONG_PASSWORD, authoritative=1
+[2025/05/03 22:06:47.300747,  3] auth/gensec/spnego.c:1443(gensec_spnego_server_negTokenTarg_step)
+  gensec_spnego_server_negTokenTarg_step: SPNEGO(ntlmssp) login failed: NT_STATUS_WRONG_PASSWORD
+[2025/05/03 22:06:47.301143,  3] auth/ntlmssp/ntlmssp_util.c:72(debug_ntlmssp_flags)
+  Got NTLMSSP neg_flags=0xa0080205
+[2025/05/03 22:06:47.301321,  3] auth/ntlmssp/ntlmssp_util.c:72(debug_ntlmssp_flags)
+  Got NTLMSSP neg_flags=0xa0080205
+[2025/05/03 22:06:47.302145,  3] auth/ntlmssp/ntlmssp_util.c:72(debug_ntlmssp_flags)
+  Got NTLMSSP neg_flags=0xa0880205
+[2025/05/03 22:06:47.302379,  3] auth/ntlmssp/ntlmssp_util.c:72(debug_ntlmssp_flags)
+  Got NTLMSSP neg_flags=0xa0080205
+[2025/05/03 22:06:47.303260,  3] auth/ntlmssp/ntlmssp_server.c:509(ntlmssp_server_preauth)
+  Got user=[admin] domain=[] workstation=[] len1=24 len2=24
+[2025/05/03 22:06:47.303301,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user []\[admin]@[] with the new password interface
+[2025/05/03 22:06:47.303323,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[admin]@[]
+[2025/05/03 22:06:47.303527,  3] auth/ntlmssp/ntlmssp_util.c:72(debug_ntlmssp_flags)
+  Got NTLMSSP neg_flags=0xa0880205
+[2025/05/03 22:06:47.303777,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+  check_ntlm_password:  Authentication for user [admin] -> [admin] FAILED with error NT_STATUS_WRONG_PASSWORD, authoritative=1
+[2025/05/03 22:06:47.303815,  3] auth/gensec/spnego.c:1443(gensec_spnego_server_negTokenTarg_step)
+  gensec_spnego_server_negTokenTarg_step: SPNEGO(ntlmssp) login failed: NT_STATUS_WRONG_PASSWORD
+[2025/05/03 22:06:47.304335,  3] auth/ntlmssp/ntlmssp_server.c:509(ntlmssp_server_preauth)
+  Got user=[admin] domain=[] workstation=[] len1=24 len2=24
+[2025/05/03 22:06:47.304372,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user []\[admin]@[] with the new password interface
+[2025/05/03 22:06:47.304392,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[admin]@[]
+[2025/05/03 22:06:47.304795,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+  check_ntlm_password:  Authentication for user [admin] -> [admin] FAILED with error NT_STATUS_WRONG_PASSWORD, authoritative=1
+[2025/05/03 22:06:47.304829,  3] auth/gensec/spnego.c:1443(gensec_spnego_server_negTokenTarg_step)
+  gensec_spnego_server_negTokenTarg_step: SPNEGO(ntlmssp) login failed: NT_STATUS_WRONG_PASSWORD
+[2025/05/03 22:06:47.305102,  3] auth/ntlmssp/ntlmssp_server.c:509(ntlmssp_server_preauth)
+  Got user=[admin] domain=[] workstation=[] len1=24 len2=24
+[2025/05/03 22:06:47.305149,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user []\[admin]@[] with the new password interface
+[2025/05/03 22:06:47.305169,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[admin]@[]
+[2025/05/03 22:06:47.305633,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+  check_ntlm_password:  Authentication for user [admin] -> [admin] FAILED with error NT_STATUS_WRONG_PASSWORD, authoritative=1
+[2025/05/03 22:06:47.305672,  3] auth/gensec/spnego.c:1443(gensec_spnego_server_negTokenTarg_step)
+  gensec_spnego_server_negTokenTarg_step: SPNEGO(ntlmssp) login failed: NT_STATUS_WRONG_PASSWORD
+[2025/05/03 22:06:47.305978,  3] auth/ntlmssp/ntlmssp_server.c:509(ntlmssp_server_preauth)
+  Got user=[admin] domain=[] workstation=[] len1=24 len2=198
+[2025/05/03 22:06:47.306064,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user []\[admin]@[] with the new password interface
+[2025/05/03 22:06:47.306087,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[admin]@[]
+[2025/05/03 22:06:47.306140,  3] auth/ntlmssp/ntlmssp_server.c:509(ntlmssp_server_preauth)
+  Got user=[admin] domain=[] workstation=[] len1=24 len2=24
+[2025/05/03 22:06:47.306155,  3] auth/ntlmssp/ntlmssp_util.c:72(debug_ntlmssp_flags)
+  Got NTLMSSP neg_flags=0xa0080205
+[2025/05/03 22:06:47.306180,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user []\[admin]@[] with the new password interface
+[2025/05/03 22:06:47.306197,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[admin]@[]
+[2025/05/03 22:06:47.306955,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+  check_ntlm_password:  Authentication for user [admin] -> [admin] FAILED with error NT_STATUS_WRONG_PASSWORD, authoritative=1
+[2025/05/03 22:06:47.307010,  3] auth/gensec/spnego.c:1443(gensec_spnego_server_negTokenTarg_step)
+  gensec_spnego_server_negTokenTarg_step: SPNEGO(ntlmssp) login failed: NT_STATUS_WRONG_PASSWORD
+[2025/05/03 22:06:47.307299,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+  check_ntlm_password:  Authentication for user [admin] -> [admin] FAILED with error NT_STATUS_WRONG_PASSWORD, authoritative=1
+[2025/05/03 22:06:47.307347,  3] auth/gensec/spnego.c:1443(gensec_spnego_server_negTokenTarg_step)
+  gensec_spnego_server_negTokenTarg_step: SPNEGO(ntlmssp) login failed: NT_STATUS_WRONG_PASSWORD
+[2025/05/03 22:06:47.308316,  3] auth/ntlmssp/ntlmssp_server.c:509(ntlmssp_server_preauth)
+  Got user=[admin] domain=[] workstation=[] len1=24 len2=24
+[2025/05/03 22:06:47.308357,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user []\[admin]@[] with the new password interface
+[2025/05/03 22:06:47.308377,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[admin]@[]
+[2025/05/03 22:06:47.308853,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+  check_ntlm_password:  Authentication for user [admin] -> [admin] FAILED with error NT_STATUS_WRONG_PASSWORD, authoritative=1
+[2025/05/03 22:06:47.308890,  3] auth/gensec/spnego.c:1443(gensec_spnego_server_negTokenTarg_step)
+  gensec_spnego_server_negTokenTarg_step: SPNEGO(ntlmssp) login failed: NT_STATUS_WRONG_PASSWORD
+[2025/05/03 22:06:47.309063,  3] auth/ntlmssp/ntlmssp_util.c:72(debug_ntlmssp_flags)
+  Got NTLMSSP neg_flags=0xa0880205
+[2025/05/03 22:06:47.309262,  3] auth/ntlmssp/ntlmssp_util.c:72(debug_ntlmssp_flags)
+  Got NTLMSSP neg_flags=0xa0080205
+[2025/05/03 22:06:47.309476,  3] auth/ntlmssp/ntlmssp_util.c:72(debug_ntlmssp_flags)
+  Got NTLMSSP neg_flags=0xa0880205
+[2025/05/03 22:06:47.309502,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+  check_ntlm_password:  Authentication for user [admin] -> [admin] FAILED with error NT_STATUS_WRONG_PASSWORD, authoritative=1
+[2025/05/03 22:06:47.309557,  3] auth/gensec/spnego.c:1443(gensec_spnego_server_negTokenTarg_step)
+  gensec_spnego_server_negTokenTarg_step: SPNEGO(ntlmssp) login failed: NT_STATUS_WRONG_PASSWORD
+[2025/05/03 22:06:47.309682,  3] auth/ntlmssp/ntlmssp_server.c:509(ntlmssp_server_preauth)
+  Got user=[admin] domain=[] workstation=[] len1=24 len2=198
+[2025/05/03 22:06:47.309735,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user []\[admin]@[] with the new password interface
+[2025/05/03 22:06:47.309748,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[admin]@[]
+[2025/05/03 22:06:47.310146,  3] auth/ntlmssp/ntlmssp_util.c:72(debug_ntlmssp_flags)
+  Got NTLMSSP neg_flags=0xa0880205
+[2025/05/03 22:06:47.310372,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+  check_ntlm_password:  Authentication for user [admin] -> [admin] FAILED with error NT_STATUS_WRONG_PASSWORD, authoritative=1
+[2025/05/03 22:06:47.310410,  3] auth/gensec/spnego.c:1443(gensec_spnego_server_negTokenTarg_step)
+  gensec_spnego_server_negTokenTarg_step: SPNEGO(ntlmssp) login failed: NT_STATUS_WRONG_PASSWORD
+[2025/05/03 22:06:47.311355,  3] auth/ntlmssp/ntlmssp_server.c:509(ntlmssp_server_preauth)
+  Got user=[admin] domain=[] workstation=[] len1=24 len2=24
+[2025/05/03 22:06:47.311415,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user []\[admin]@[] with the new password interface
+[2025/05/03 22:06:47.311442,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[admin]@[]
+[2025/05/03 22:06:47.311994,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+  check_ntlm_password:  Authentication for user [admin] -> [admin] FAILED with error NT_STATUS_WRONG_PASSWORD, authoritative=1
+[2025/05/03 22:06:47.312049,  3] auth/gensec/spnego.c:1443(gensec_spnego_server_negTokenTarg_step)
+  gensec_spnego_server_negTokenTarg_step: SPNEGO(ntlmssp) login failed: NT_STATUS_WRONG_PASSWORD
+[2025/05/03 22:06:47.312540,  3] auth/ntlmssp/ntlmssp_util.c:72(debug_ntlmssp_flags)
+  Got NTLMSSP neg_flags=0xa0080205
+[2025/05/03 22:06:47.313255,  3] auth/ntlmssp/ntlmssp_util.c:72(debug_ntlmssp_flags)
+  Got NTLMSSP neg_flags=0xa0880205
+[2025/05/03 22:06:47.314369,  3] auth/ntlmssp/ntlmssp_server.c:509(ntlmssp_server_preauth)
+  Got user=[admin] domain=[] workstation=[] len1=24 len2=198
+[2025/05/03 22:06:47.314445,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user []\[admin]@[] with the new password interface
+[2025/05/03 22:06:47.314473,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[admin]@[]
+[2025/05/03 22:06:47.314504,  3] auth/ntlmssp/ntlmssp_server.c:509(ntlmssp_server_preauth)
+  Got user=[admin] domain=[] workstation=[] len1=24 len2=24
+[2025/05/03 22:06:47.314540,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user []\[admin]@[] with the new password interface
+[2025/05/03 22:06:47.314565,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[admin]@[]
+[2025/05/03 22:06:47.315237,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+  check_ntlm_password:  Authentication for user [admin] -> [admin] FAILED with error NT_STATUS_WRONG_PASSWORD, authoritative=1
+[2025/05/03 22:06:47.315315,  3] auth/gensec/spnego.c:1443(gensec_spnego_server_negTokenTarg_step)
+  gensec_spnego_server_negTokenTarg_step: SPNEGO(ntlmssp) login failed: NT_STATUS_WRONG_PASSWORD
+[2025/05/03 22:06:47.315610,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+  check_ntlm_password:  Authentication for user [admin] -> [admin] FAILED with error NT_STATUS_WRONG_PASSWORD, authoritative=1
+[2025/05/03 22:06:47.315668,  3] auth/gensec/spnego.c:1443(gensec_spnego_server_negTokenTarg_step)
+  gensec_spnego_server_negTokenTarg_step: SPNEGO(ntlmssp) login failed: NT_STATUS_WRONG_PASSWORD
+[2025/05/03 22:06:47.317555,  3] auth/ntlmssp/ntlmssp_server.c:509(ntlmssp_server_preauth)
+  Got user=[admin] domain=[] workstation=[] len1=24 len2=198
+[2025/05/03 22:06:47.317635,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user []\[admin]@[] with the new password interface
+[2025/05/03 22:06:47.317650,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[admin]@[]
+[2025/05/03 22:06:47.318072,  3] auth/ntlmssp/ntlmssp_server.c:509(ntlmssp_server_preauth)
+  Got user=[admin] domain=[] workstation=[] len1=24 len2=198
+[2025/05/03 22:06:47.318144,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user []\[admin]@[] with the new password interface
+[2025/05/03 22:06:47.318166,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[admin]@[]
+[2025/05/03 22:06:47.318242,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+  check_ntlm_password:  Authentication for user [admin] -> [admin] FAILED with error NT_STATUS_WRONG_PASSWORD, authoritative=1
+[2025/05/03 22:06:47.318344,  3] auth/gensec/spnego.c:1443(gensec_spnego_server_negTokenTarg_step)
+  gensec_spnego_server_negTokenTarg_step: SPNEGO(ntlmssp) login failed: NT_STATUS_WRONG_PASSWORD
+[2025/05/03 22:06:47.318574,  3] auth/ntlmssp/ntlmssp_server.c:509(ntlmssp_server_preauth)
+  Got user=[admin] domain=[] workstation=[] len1=24 len2=198
+[2025/05/03 22:06:47.318629,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user []\[admin]@[] with the new password interface
+[2025/05/03 22:06:47.318652,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[admin]@[]
+[2025/05/03 22:06:47.318844,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+  check_ntlm_password:  Authentication for user [admin] -> [admin] FAILED with error NT_STATUS_WRONG_PASSWORD, authoritative=1
+[2025/05/03 22:06:47.318896,  3] auth/gensec/spnego.c:1443(gensec_spnego_server_negTokenTarg_step)
+  gensec_spnego_server_negTokenTarg_step: SPNEGO(ntlmssp) login failed: NT_STATUS_WRONG_PASSWORD
+[2025/05/03 22:06:47.319690,  3] auth/ntlmssp/ntlmssp_util.c:72(debug_ntlmssp_flags)
+  Got NTLMSSP neg_flags=0xa0080205
+[2025/05/03 22:06:47.319900,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+  check_ntlm_password:  Authentication for user [admin] -> [admin] FAILED with error NT_STATUS_WRONG_PASSWORD, authoritative=1
+[2025/05/03 22:06:47.320004,  3] auth/gensec/spnego.c:1443(gensec_spnego_server_negTokenTarg_step)
+  gensec_spnego_server_negTokenTarg_step: SPNEGO(ntlmssp) login failed: NT_STATUS_WRONG_PASSWORD
+[2025/05/03 22:06:47.321103,  3] auth/ntlmssp/ntlmssp_util.c:72(debug_ntlmssp_flags)
+  Got NTLMSSP neg_flags=0xa0080205
+[2025/05/03 22:06:47.321507,  3] auth/ntlmssp/ntlmssp_util.c:72(debug_ntlmssp_flags)
+  Got NTLMSSP neg_flags=0xa0080205
+[2025/05/03 22:06:47.321855,  3] auth/ntlmssp/ntlmssp_util.c:72(debug_ntlmssp_flags)
+  Got NTLMSSP neg_flags=0xa0080205
+[2025/05/03 22:06:47.323405,  3] auth/ntlmssp/ntlmssp_server.c:509(ntlmssp_server_preauth)
+  Got user=[admin] domain=[] workstation=[] len1=24 len2=24
+[2025/05/03 22:06:47.323465,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user []\[admin]@[] with the new password interface
+[2025/05/03 22:06:47.323486,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[admin]@[]
+[2025/05/03 22:06:47.324155,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+  check_ntlm_password:  Authentication for user [admin] -> [admin] FAILED with error NT_STATUS_WRONG_PASSWORD, authoritative=1
+[2025/05/03 22:06:47.324202,  3] auth/gensec/spnego.c:1443(gensec_spnego_server_negTokenTarg_step)
+  gensec_spnego_server_negTokenTarg_step: SPNEGO(ntlmssp) login failed: NT_STATUS_WRONG_PASSWORD
+[2025/05/03 22:06:47.324607,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+  check_ntlm_password:  Authentication for user [admin] -> [admin] FAILED with error NT_STATUS_WRONG_PASSWORD, authoritative=1
+[2025/05/03 22:06:47.324665,  3] auth/gensec/spnego.c:1443(gensec_spnego_server_negTokenTarg_step)
+  gensec_spnego_server_negTokenTarg_step: SPNEGO(ntlmssp) login failed: NT_STATUS_WRONG_PASSWORD
+[2025/05/03 22:06:47.325697,  3] auth/ntlmssp/ntlmssp_server.c:509(ntlmssp_server_preauth)
+  Got user=[admin] domain=[] workstation=[] len1=24 len2=24
+[2025/05/03 22:06:47.325754,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user []\[admin]@[] with the new password interface
+[2025/05/03 22:06:47.325778,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[admin]@[]
+[2025/05/03 22:06:47.326144,  3] auth/ntlmssp/ntlmssp_server.c:509(ntlmssp_server_preauth)
+  Got user=[admin] domain=[] workstation=[] len1=24 len2=24
+[2025/05/03 22:06:47.326198,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user []\[admin]@[] with the new password interface
+[2025/05/03 22:06:47.326212,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[admin]@[]
+[2025/05/03 22:06:47.326365,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+  check_ntlm_password:  Authentication for user [admin] -> [admin] FAILED with error NT_STATUS_WRONG_PASSWORD, authoritative=1
+[2025/05/03 22:06:47.326408,  3] auth/gensec/spnego.c:1443(gensec_spnego_server_negTokenTarg_step)
+  gensec_spnego_server_negTokenTarg_step: SPNEGO(ntlmssp) login failed: NT_STATUS_WRONG_PASSWORD
+[2025/05/03 22:06:47.326811,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+  check_ntlm_password:  Authentication for user [admin] -> [admin] FAILED with error NT_STATUS_WRONG_PASSWORD, authoritative=1
+[2025/05/03 22:06:47.326863,  3] auth/gensec/spnego.c:1443(gensec_spnego_server_negTokenTarg_step)
+  gensec_spnego_server_negTokenTarg_step: SPNEGO(ntlmssp) login failed: NT_STATUS_WRONG_PASSWORD
+[2025/05/03 22:06:47.333139,  3] auth/ntlmssp/ntlmssp_server.c:509(ntlmssp_server_preauth)
+  Got user=[admin] domain=[] workstation=[] len1=24 len2=24
+[2025/05/03 22:06:47.333252,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user []\[admin]@[] with the new password interface
+[2025/05/03 22:06:47.333278,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[admin]@[]
+[2025/05/03 22:06:47.333866,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+  check_ntlm_password:  Authentication for user [admin] -> [admin] FAILED with error NT_STATUS_WRONG_PASSWORD, authoritative=1
+[2025/05/03 22:06:47.333918,  3] auth/gensec/spnego.c:1443(gensec_spnego_server_negTokenTarg_step)
+  gensec_spnego_server_negTokenTarg_step: SPNEGO(ntlmssp) login failed: NT_STATUS_WRONG_PASSWORD

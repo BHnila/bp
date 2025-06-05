@@ -1,0 +1,170 @@
+2025-05-02T22:04:15.078042+02:00 victim-ubuntu sshd[53327]: Invalid user admin from 172.16.22.48 port 45614
+2025-05-02T22:04:15.081054+02:00 victim-ubuntu sshd[53327]: pam_unix(sshd:auth): check pass; user unknown
+2025-05-02T22:04:15.081172+02:00 victim-ubuntu sshd[53327]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=172.16.22.48 
+2025-05-02T22:04:15.081581+02:00 victim-ubuntu sshd[53328]: Invalid user admin from 172.16.22.48 port 45616
+2025-05-02T22:04:15.084894+02:00 victim-ubuntu sshd[53328]: pam_unix(sshd:auth): check pass; user unknown
+2025-05-02T22:04:15.085027+02:00 victim-ubuntu sshd[53328]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=172.16.22.48 
+2025-05-02T22:04:15.086867+02:00 victim-ubuntu sshd[53331]: Invalid user admin from 172.16.22.48 port 45630
+2025-05-02T22:04:15.087118+02:00 victim-ubuntu sshd[53329]: Invalid user admin from 172.16.22.48 port 45618
+2025-05-02T22:04:15.090159+02:00 victim-ubuntu sshd[53329]: pam_unix(sshd:auth): check pass; user unknown
+2025-05-02T22:04:15.090301+02:00 victim-ubuntu sshd[53329]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=172.16.22.48 
+2025-05-02T22:04:15.090658+02:00 victim-ubuntu sshd[53331]: pam_unix(sshd:auth): check pass; user unknown
+2025-05-02T22:04:15.090708+02:00 victim-ubuntu sshd[53331]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=172.16.22.48 
+2025-05-02T22:04:15.094612+02:00 victim-ubuntu sshd[53335]: Invalid user admin from 172.16.22.48 port 45642
+2025-05-02T22:04:15.094901+02:00 victim-ubuntu sshd[53334]: Invalid user admin from 172.16.22.48 port 45632
+2025-05-02T22:04:15.097669+02:00 victim-ubuntu sshd[53337]: Invalid user admin from 172.16.22.48 port 45648
+2025-05-02T22:04:15.097793+02:00 victim-ubuntu sshd[53334]: pam_unix(sshd:auth): check pass; user unknown
+2025-05-02T22:04:15.097843+02:00 victim-ubuntu sshd[53334]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=172.16.22.48 
+2025-05-02T22:04:15.098515+02:00 victim-ubuntu sshd[53335]: pam_unix(sshd:auth): check pass; user unknown
+2025-05-02T22:04:15.098575+02:00 victim-ubuntu sshd[53335]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=172.16.22.48 
+2025-05-02T22:04:15.100257+02:00 victim-ubuntu sshd[53337]: pam_unix(sshd:auth): check pass; user unknown
+2025-05-02T22:04:15.100302+02:00 victim-ubuntu sshd[53337]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=172.16.22.48 
+2025-05-02T22:04:15.101492+02:00 victim-ubuntu sshd[53338]: Invalid user admin from 172.16.22.48 port 45664
+2025-05-02T22:04:15.103836+02:00 victim-ubuntu sshd[53338]: pam_unix(sshd:auth): check pass; user unknown
+2025-05-02T22:04:15.103919+02:00 victim-ubuntu sshd[53338]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=172.16.22.48 
+2025-05-02T22:04:15.129218+02:00 victim-ubuntu sshd[53343]: Invalid user admin from 172.16.22.48 port 45670
+2025-05-02T22:04:15.129504+02:00 victim-ubuntu sshd[53344]: Invalid user admin from 172.16.22.48 port 45672
+2025-05-02T22:04:15.131903+02:00 victim-ubuntu sshd[53343]: pam_unix(sshd:auth): check pass; user unknown
+2025-05-02T22:04:15.131971+02:00 victim-ubuntu sshd[53343]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=172.16.22.48 
+2025-05-02T22:04:15.132056+02:00 victim-ubuntu sshd[53344]: pam_unix(sshd:auth): check pass; user unknown
+2025-05-02T22:04:15.132103+02:00 victim-ubuntu sshd[53344]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=172.16.22.48 
+2025-05-02T22:04:17.292722+02:00 victim-ubuntu sshd[53328]: Failed password for invalid user admin from 172.16.22.48 port 45616 ssh2
+2025-05-02T22:04:17.293107+02:00 victim-ubuntu sshd[53329]: Failed password for invalid user admin from 172.16.22.48 port 45618 ssh2
+2025-05-02T22:04:17.293284+02:00 victim-ubuntu sshd[53331]: Failed password for invalid user admin from 172.16.22.48 port 45630 ssh2
+2025-05-02T22:04:17.322519+02:00 victim-ubuntu sshd[53338]: Failed password for invalid user admin from 172.16.22.48 port 45664 ssh2
+2025-05-02T22:04:17.322731+02:00 victim-ubuntu sshd[53337]: Failed password for invalid user admin from 172.16.22.48 port 45648 ssh2
+2025-05-02T22:04:17.322920+02:00 victim-ubuntu sshd[53334]: Failed password for invalid user admin from 172.16.22.48 port 45632 ssh2
+2025-05-02T22:04:17.352368+02:00 victim-ubuntu sshd[53344]: Failed password for invalid user admin from 172.16.22.48 port 45672 ssh2
+2025-05-02T22:04:17.467693+02:00 victim-ubuntu sshd[53328]: pam_unix(sshd:auth): check pass; user unknown
+2025-05-02T22:04:17.467818+02:00 victim-ubuntu sshd[53331]: pam_unix(sshd:auth): check pass; user unknown
+2025-05-02T22:04:17.467912+02:00 victim-ubuntu sshd[53334]: pam_unix(sshd:auth): check pass; user unknown
+2025-05-02T22:04:17.467961+02:00 victim-ubuntu sshd[53329]: pam_unix(sshd:auth): check pass; user unknown
+2025-05-02T22:04:17.469382+02:00 victim-ubuntu sshd[53337]: pam_unix(sshd:auth): check pass; user unknown
+2025-05-02T22:04:17.525535+02:00 victim-ubuntu sshd[53344]: pam_unix(sshd:auth): check pass; user unknown
+2025-05-02T22:04:19.288144+02:00 victim-ubuntu sshd[53334]: Failed password for invalid user admin from 172.16.22.48 port 45632 ssh2
+2025-05-02T22:04:19.288560+02:00 victim-ubuntu sshd[53328]: Failed password for invalid user admin from 172.16.22.48 port 45616 ssh2
+2025-05-02T22:04:19.288871+02:00 victim-ubuntu sshd[53329]: Failed password for invalid user admin from 172.16.22.48 port 45618 ssh2
+2025-05-02T22:04:19.289073+02:00 victim-ubuntu sshd[53331]: Failed password for invalid user admin from 172.16.22.48 port 45630 ssh2
+2025-05-02T22:04:19.289229+02:00 victim-ubuntu sshd[53337]: Failed password for invalid user admin from 172.16.22.48 port 45648 ssh2
+2025-05-02T22:04:19.340898+02:00 victim-ubuntu sshd[53344]: Failed password for invalid user admin from 172.16.22.48 port 45672 ssh2
+2025-05-02T22:04:19.845596+02:00 victim-ubuntu sshd[53331]: pam_unix(sshd:auth): check pass; user unknown
+2025-05-02T22:04:19.845709+02:00 victim-ubuntu sshd[53328]: pam_unix(sshd:auth): check pass; user unknown
+2025-05-02T22:04:19.900795+02:00 victim-ubuntu sshd[53344]: pam_unix(sshd:auth): check pass; user unknown
+2025-05-02T22:04:19.977728+02:00 victim-ubuntu sshd[53327]: Failed password for invalid user admin from 172.16.22.48 port 45614 ssh2
+2025-05-02T22:04:19.978081+02:00 victim-ubuntu sshd[53335]: Failed password for invalid user admin from 172.16.22.48 port 45642 ssh2
+2025-05-02T22:04:19.978391+02:00 victim-ubuntu sshd[53343]: Failed password for invalid user admin from 172.16.22.48 port 45670 ssh2
+2025-05-02T22:04:19.983320+02:00 victim-ubuntu sshd[53334]: pam_unix(sshd:auth): check pass; user unknown
+2025-05-02T22:04:19.983451+02:00 victim-ubuntu sshd[53329]: pam_unix(sshd:auth): check pass; user unknown
+2025-05-02T22:04:19.983491+02:00 victim-ubuntu sshd[53337]: pam_unix(sshd:auth): check pass; user unknown
+2025-05-02T22:04:19.984112+02:00 victim-ubuntu sshd[53338]: pam_unix(sshd:auth): check pass; user unknown
+2025-05-02T22:04:21.739722+02:00 victim-ubuntu sshd[53329]: Failed password for invalid user admin from 172.16.22.48 port 45618 ssh2
+2025-05-02T22:04:21.769519+02:00 victim-ubuntu sshd[53344]: Failed password for invalid user admin from 172.16.22.48 port 45672 ssh2
+2025-05-02T22:04:21.769847+02:00 victim-ubuntu sshd[53328]: Failed password for invalid user admin from 172.16.22.48 port 45616 ssh2
+2025-05-02T22:04:21.770103+02:00 victim-ubuntu sshd[53331]: Failed password for invalid user admin from 172.16.22.48 port 45630 ssh2
+2025-05-02T22:04:21.770367+02:00 victim-ubuntu sshd[53334]: Failed password for invalid user admin from 172.16.22.48 port 45632 ssh2
+2025-05-02T22:04:21.850970+02:00 victim-ubuntu sshd[53337]: Failed password for invalid user admin from 172.16.22.48 port 45648 ssh2
+2025-05-02T22:04:21.886917+02:00 victim-ubuntu sshd[53338]: Failed password for invalid user admin from 172.16.22.48 port 45664 ssh2
+2025-05-02T22:04:22.715626+02:00 victim-ubuntu sshd[53331]: pam_unix(sshd:auth): check pass; user unknown
+2025-05-02T22:04:22.715767+02:00 victim-ubuntu sshd[53328]: pam_unix(sshd:auth): check pass; user unknown
+2025-05-02T22:04:22.715948+02:00 victim-ubuntu sshd[53334]: pam_unix(sshd:auth): check pass; user unknown
+2025-05-02T22:04:22.772473+02:00 victim-ubuntu sshd[53344]: pam_unix(sshd:auth): check pass; user unknown
+2025-05-02T22:04:23.702337+02:00 victim-ubuntu sshd[53337]: pam_unix(sshd:auth): check pass; user unknown
+2025-05-02T22:04:23.702554+02:00 victim-ubuntu sshd[53329]: pam_unix(sshd:auth): check pass; user unknown
+2025-05-02T22:04:23.702745+02:00 victim-ubuntu sshd[53338]: pam_unix(sshd:auth): check pass; user unknown
+2025-05-02T22:04:24.586228+02:00 victim-ubuntu sshd[53335]: pam_unix(sshd:auth): check pass; user unknown
+2025-05-02T22:04:24.613853+02:00 victim-ubuntu sshd[53343]: pam_unix(sshd:auth): check pass; user unknown
+2025-05-02T22:04:24.791274+02:00 victim-ubuntu sshd[53327]: pam_unix(sshd:auth): check pass; user unknown
+2025-05-02T22:04:25.220228+02:00 victim-ubuntu sshd[53334]: Failed password for invalid user admin from 172.16.22.48 port 45632 ssh2
+2025-05-02T22:04:25.220576+02:00 victim-ubuntu sshd[53328]: Failed password for invalid user admin from 172.16.22.48 port 45616 ssh2
+2025-05-02T22:04:25.291471+02:00 victim-ubuntu sshd[53344]: Failed password for invalid user admin from 172.16.22.48 port 45672 ssh2
+2025-05-02T22:04:25.359474+02:00 victim-ubuntu sshd[53337]: Failed password for invalid user admin from 172.16.22.48 port 45648 ssh2
+2025-05-02T22:04:25.363490+02:00 victim-ubuntu sshd[53338]: Failed password for invalid user admin from 172.16.22.48 port 45664 ssh2
+2025-05-02T22:04:27.302503+02:00 victim-ubuntu sshd[53327]: Failed password for invalid user admin from 172.16.22.48 port 45614 ssh2
+2025-05-02T22:04:27.302843+02:00 victim-ubuntu sshd[53335]: Failed password for invalid user admin from 172.16.22.48 port 45642 ssh2
+2025-05-02T22:04:27.303115+02:00 victim-ubuntu sshd[53329]: Failed password for invalid user admin from 172.16.22.48 port 45618 ssh2
+2025-05-02T22:04:27.303281+02:00 victim-ubuntu sshd[53331]: Failed password for invalid user admin from 172.16.22.48 port 45630 ssh2
+2025-05-02T22:04:27.379796+02:00 victim-ubuntu sshd[53343]: Failed password for invalid user admin from 172.16.22.48 port 45670 ssh2
+2025-05-02T22:04:27.382634+02:00 victim-ubuntu sshd[53337]: pam_unix(sshd:auth): check pass; user unknown
+2025-05-02T22:04:27.382815+02:00 victim-ubuntu sshd[53338]: pam_unix(sshd:auth): check pass; user unknown
+2025-05-02T22:04:27.732814+02:00 victim-ubuntu sshd[53331]: pam_unix(sshd:auth): check pass; user unknown
+2025-05-02T22:04:27.747633+02:00 victim-ubuntu sshd[53344]: pam_unix(sshd:auth): check pass; user unknown
+2025-05-02T22:04:27.747937+02:00 victim-ubuntu sshd[53328]: pam_unix(sshd:auth): check pass; user unknown
+2025-05-02T22:04:27.748093+02:00 victim-ubuntu sshd[53334]: pam_unix(sshd:auth): check pass; user unknown
+2025-05-02T22:04:28.449517+02:00 victim-ubuntu sshd[53329]: pam_unix(sshd:auth): check pass; user unknown
+2025-05-02T22:04:29.234943+02:00 victim-ubuntu sshd[53338]: Failed password for invalid user admin from 172.16.22.48 port 45664 ssh2
+2025-05-02T22:04:29.331769+02:00 victim-ubuntu sshd[53335]: pam_unix(sshd:auth): check pass; user unknown
+2025-05-02T22:04:29.357836+02:00 victim-ubuntu sshd[53343]: pam_unix(sshd:auth): check pass; user unknown
+2025-05-02T22:04:29.443533+02:00 victim-ubuntu sshd[53337]: Failed password for invalid user admin from 172.16.22.48 port 45648 ssh2
+2025-05-02T22:04:29.610649+02:00 victim-ubuntu sshd[53334]: Failed password for invalid user admin from 172.16.22.48 port 45632 ssh2
+2025-05-02T22:04:29.611026+02:00 victim-ubuntu sshd[53328]: Failed password for invalid user admin from 172.16.22.48 port 45616 ssh2
+2025-05-02T22:04:30.059385+02:00 victim-ubuntu sshd[53344]: Failed password for invalid user admin from 172.16.22.48 port 45672 ssh2
+2025-05-02T22:04:30.061266+02:00 victim-ubuntu sshd[53338]: pam_unix(sshd:auth): check pass; user unknown
+2025-05-02T22:04:30.061477+02:00 victim-ubuntu sshd[53327]: pam_unix(sshd:auth): check pass; user unknown
+2025-05-02T22:04:30.124559+02:00 victim-ubuntu sshd[53344]: pam_unix(sshd:auth): check pass; user unknown
+2025-05-02T22:04:30.365612+02:00 victim-ubuntu sshd[53331]: Failed password for invalid user admin from 172.16.22.48 port 45630 ssh2
+2025-05-02T22:04:30.404670+02:00 victim-ubuntu sshd[53337]: pam_unix(sshd:auth): check pass; user unknown
+2025-05-02T22:04:30.404791+02:00 victim-ubuntu sshd[53334]: pam_unix(sshd:auth): check pass; user unknown
+2025-05-02T22:04:30.404837+02:00 victim-ubuntu sshd[53328]: pam_unix(sshd:auth): check pass; user unknown
+2025-05-02T22:04:30.436837+02:00 victim-ubuntu sshd[53329]: Failed password for invalid user admin from 172.16.22.48 port 45618 ssh2
+2025-05-02T22:04:30.828487+02:00 victim-ubuntu sshd[53329]: pam_unix(sshd:auth): check pass; user unknown
+2025-05-02T22:04:31.134647+02:00 victim-ubuntu sshd[53335]: Failed password for invalid user admin from 172.16.22.48 port 45642 ssh2
+2025-05-02T22:04:31.200050+02:00 victim-ubuntu sshd[53343]: Failed password for invalid user admin from 172.16.22.48 port 45670 ssh2
+2025-05-02T22:04:31.659084+02:00 victim-ubuntu sshd[53338]: Failed password for invalid user admin from 172.16.22.48 port 45664 ssh2
+2025-05-02T22:04:31.966375+02:00 victim-ubuntu sshd[53327]: Failed password for invalid user admin from 172.16.22.48 port 45614 ssh2
+2025-05-02T22:04:31.991506+02:00 victim-ubuntu sshd[53344]: Failed password for invalid user admin from 172.16.22.48 port 45672 ssh2
+2025-05-02T22:04:31.999466+02:00 victim-ubuntu sshd[53328]: Failed password for invalid user admin from 172.16.22.48 port 45616 ssh2
+2025-05-02T22:04:32.011087+02:00 victim-ubuntu sshd[53334]: Failed password for invalid user admin from 172.16.22.48 port 45632 ssh2
+2025-05-02T22:04:32.011411+02:00 victim-ubuntu sshd[53337]: Failed password for invalid user admin from 172.16.22.48 port 45648 ssh2
+2025-05-02T22:04:32.013125+02:00 victim-ubuntu sshd[53343]: pam_unix(sshd:auth): check pass; user unknown
+2025-05-02T22:04:32.013182+02:00 victim-ubuntu sshd[53335]: pam_unix(sshd:auth): check pass; user unknown
+2025-05-02T22:04:32.778903+02:00 victim-ubuntu sshd[53334]: pam_unix(sshd:auth): check pass; user unknown
+2025-05-02T22:04:32.814695+02:00 victim-ubuntu sshd[53327]: pam_unix(sshd:auth): check pass; user unknown
+2025-05-02T22:04:32.815027+02:00 victim-ubuntu sshd[53331]: pam_unix(sshd:auth): check pass; user unknown
+2025-05-02T22:04:32.833404+02:00 victim-ubuntu sshd[53329]: Failed password for invalid user admin from 172.16.22.48 port 45618 ssh2
+2025-05-02T22:04:32.836325+02:00 victim-ubuntu sshd[53328]: pam_unix(sshd:auth): check pass; user unknown
+2025-05-02T22:04:32.836678+02:00 victim-ubuntu sshd[53338]: pam_unix(sshd:auth): check pass; user unknown
+2025-05-02T22:04:32.836764+02:00 victim-ubuntu sshd[53337]: pam_unix(sshd:auth): check pass; user unknown
+2025-05-02T22:04:32.836855+02:00 victim-ubuntu sshd[53344]: pam_unix(sshd:auth): check pass; user unknown
+2025-05-02T22:04:33.201909+02:00 victim-ubuntu sshd[53329]: pam_unix(sshd:auth): check pass; user unknown
+2025-05-02T22:04:35.044410+02:00 victim-ubuntu sshd[53338]: Failed password for invalid user admin from 172.16.22.48 port 45664 ssh2
+2025-05-02T22:04:35.044770+02:00 victim-ubuntu sshd[53344]: Failed password for invalid user admin from 172.16.22.48 port 45672 ssh2
+2025-05-02T22:04:36.955132+02:00 victim-ubuntu sshd[53327]: Failed password for invalid user admin from 172.16.22.48 port 45614 ssh2
+2025-05-02T22:04:36.955550+02:00 victim-ubuntu sshd[53337]: Failed password for invalid user admin from 172.16.22.48 port 45648 ssh2
+2025-05-02T22:04:36.955879+02:00 victim-ubuntu sshd[53329]: Failed password for invalid user admin from 172.16.22.48 port 45618 ssh2
+2025-05-02T22:04:36.956058+02:00 victim-ubuntu sshd[53344]: Connection closed by invalid user admin 172.16.22.48 port 45672 [preauth]
+2025-05-02T22:04:36.956100+02:00 victim-ubuntu sshd[53344]: PAM 6 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=172.16.22.48 
+2025-05-02T22:04:36.956147+02:00 victim-ubuntu sshd[53344]: PAM service(sshd) ignoring max retries; 7 > 3
+2025-05-02T22:04:37.022616+02:00 victim-ubuntu sshd[53328]: Failed password for invalid user admin from 172.16.22.48 port 45616 ssh2
+2025-05-02T22:04:37.022915+02:00 victim-ubuntu sshd[53338]: Connection closed by invalid user admin 172.16.22.48 port 45664 [preauth]
+2025-05-02T22:04:37.022998+02:00 victim-ubuntu sshd[53338]: PAM 5 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=172.16.22.48 
+2025-05-02T22:04:37.023045+02:00 victim-ubuntu sshd[53338]: PAM service(sshd) ignoring max retries; 6 > 3
+2025-05-02T22:04:37.046681+02:00 victim-ubuntu sshd[53334]: Failed password for invalid user admin from 172.16.22.48 port 45632 ssh2
+2025-05-02T22:04:37.047063+02:00 victim-ubuntu sshd[53343]: Failed password for invalid user admin from 172.16.22.48 port 45670 ssh2
+2025-05-02T22:04:37.047121+02:00 victim-ubuntu sshd[53343]: Connection closed by invalid user admin 172.16.22.48 port 45670 [preauth]
+2025-05-02T22:04:37.047160+02:00 victim-ubuntu sshd[53343]: PAM 3 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=172.16.22.48 
+2025-05-02T22:04:37.047201+02:00 victim-ubuntu sshd[53343]: PAM service(sshd) ignoring max retries; 4 > 3
+2025-05-02T22:04:37.151355+02:00 victim-ubuntu sshd[53331]: Failed password for invalid user admin from 172.16.22.48 port 45630 ssh2
+2025-05-02T22:04:37.151601+02:00 victim-ubuntu sshd[53335]: Failed password for invalid user admin from 172.16.22.48 port 45642 ssh2
+2025-05-02T22:04:37.151642+02:00 victim-ubuntu sshd[53335]: Connection closed by invalid user admin 172.16.22.48 port 45642 [preauth]
+2025-05-02T22:04:37.152929+02:00 victim-ubuntu sshd[53335]: PAM 3 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=172.16.22.48 
+2025-05-02T22:04:37.153032+02:00 victim-ubuntu sshd[53335]: PAM service(sshd) ignoring max retries; 4 > 3
+2025-05-02T22:04:37.534486+02:00 victim-ubuntu sshd[53334]: Connection closed by invalid user admin 172.16.22.48 port 45632 [preauth]
+2025-05-02T22:04:37.534942+02:00 victim-ubuntu sshd[53334]: PAM 6 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=172.16.22.48 
+2025-05-02T22:04:37.535059+02:00 victim-ubuntu sshd[53334]: PAM service(sshd) ignoring max retries; 7 > 3
+2025-05-02T22:04:37.556496+02:00 victim-ubuntu sshd[53331]: Connection closed by invalid user admin 172.16.22.48 port 45630 [preauth]
+2025-05-02T22:04:37.556678+02:00 victim-ubuntu sshd[53327]: Connection closed by invalid user admin 172.16.22.48 port 45614 [preauth]
+2025-05-02T22:04:37.557099+02:00 victim-ubuntu sshd[53331]: PAM 5 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=172.16.22.48 
+2025-05-02T22:04:37.557170+02:00 victim-ubuntu sshd[53327]: PAM 3 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=172.16.22.48 
+2025-05-02T22:04:37.557206+02:00 victim-ubuntu sshd[53327]: PAM service(sshd) ignoring max retries; 4 > 3
+2025-05-02T22:04:37.557225+02:00 victim-ubuntu sshd[53331]: PAM service(sshd) ignoring max retries; 6 > 3
+2025-05-02T22:04:37.578298+02:00 victim-ubuntu sshd[53328]: Connection closed by invalid user admin 172.16.22.48 port 45616 [preauth]
+2025-05-02T22:04:37.578437+02:00 victim-ubuntu sshd[53337]: Connection closed by invalid user admin 172.16.22.48 port 45648 [preauth]
+2025-05-02T22:04:37.578592+02:00 victim-ubuntu sshd[53328]: PAM 6 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=172.16.22.48 
+2025-05-02T22:04:37.578641+02:00 victim-ubuntu sshd[53328]: PAM service(sshd) ignoring max retries; 7 > 3
+2025-05-02T22:04:37.578675+02:00 victim-ubuntu sshd[53337]: PAM 6 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=172.16.22.48 
+2025-05-02T22:04:37.578704+02:00 victim-ubuntu sshd[53337]: PAM service(sshd) ignoring max retries; 7 > 3
+2025-05-02T22:04:38.927611+02:00 victim-ubuntu sshd[53329]: Connection closed by invalid user admin 172.16.22.48 port 45618 [preauth]
+2025-05-02T22:04:38.927711+02:00 victim-ubuntu sshd[53329]: PAM 6 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=172.16.22.48 
+2025-05-02T22:04:38.927744+02:00 victim-ubuntu sshd[53329]: PAM service(sshd) ignoring max retries; 7 > 3
+2025-05-02T22:05:01.429959+02:00 victim-ubuntu CRON[53353]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-05-02T22:05:01.433687+02:00 victim-ubuntu CRON[53353]: pam_unix(cron:session): session closed for user root

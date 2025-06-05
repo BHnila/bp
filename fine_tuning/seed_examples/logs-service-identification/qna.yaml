@@ -1,0 +1,1369 @@
+version: 2
+task_description: |
+  This skill reads Linux log excerpts and classifies each entry based on
+  whether it indicates activity related to SSH, Telnet, SMB, or another
+  network service. The agent should identify the protocol or service
+  being referenced, if any, and output a corresponding label: SSH, Telnet,
+  SMB, Other. This helps analysts quickly filter logs by service
+  type without needing to examine each line manually.
+created_by: BHnila
+seed_examples:
+  - context: |
+      2025-05-02T20:09:11.087986+02:00 ubuntu sshd[32143]: pam_unix(sshd:auth):
+      authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.10.10.4  user=root
+      2025-05-02T20:09:11.273683+02:00 ubuntu sshd[32137]: pam_unix(sshd:auth):
+      authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.10.10.4  user=root
+      2025-05-02T20:09:11.342833+02:00 ubuntu sshd[32133]: pam_unix(sshd:auth):
+      authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.10.10.4  user=root
+      2025-05-02T20:09:11.359849+02:00 ubuntu sshd[32134]: pam_unix(sshd:auth):
+      authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.10.10.4  user=root
+      2025-05-02T20:09:11.360431+02:00 ubuntu sshd[32131]: pam_unix(sshd:auth):
+      authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.10.10.4  user=root
+      2025-05-02T20:09:11.361672+02:00 ubuntu sshd[32145]: pam_unix(sshd:auth):
+      authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.10.10.4  user=root
+      2025-05-02T20:09:11.364469+02:00 ubuntu sshd[32130]: pam_unix(sshd:auth):
+      authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.10.10.4  user=root
+      2025-05-02T20:09:11.365351+02:00 ubuntu sshd[32138]: pam_unix(sshd:auth):
+      authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.10.10.4  user=root
+      2025-05-02T20:09:11.366098+02:00 ubuntu sshd[32136]: pam_unix(sshd:auth):
+      authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.10.10.4  user=root
+      2025-05-02T20:09:11.370883+02:00 ubuntu sshd[32129]: pam_unix(sshd:auth):
+      authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.10.10.4  user=root
+      2025-05-02T20:09:11.376646+02:00 ubuntu sshd[32146]: pam_unix(sshd:auth):
+      authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.10.10.4  user=root
+      2025-05-02T20:09:11.377182+02:00 ubuntu sshd[32132]: pam_unix(sshd:auth):
+      authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.10.10.4  user=root
+      2025-05-02T20:09:11.377531+02:00 ubuntu sshd[32147]: pam_unix(sshd:auth):
+      authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.10.10.4  user=root
+      2025-05-02T20:09:11.377727+02:00 ubuntu sshd[32135]: pam_unix(sshd:auth):
+      authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.10.10.4  user=root
+      2025-05-02T20:09:11.379365+02:00 ubuntu sshd[32148]: pam_unix(sshd:auth):
+      authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.10.10.4  user=root
+    question: |
+      Based on the provided log entries, identify which network service they indicate activity for.
+      Respond with one of the following labels: SSH, Telnet, SMB, Other.
+      Choose the label that best represents the dominant or most clearly indicated service.
+    answer: |
+      SSH
+  - context: |
+      2025-05-02T21:15:32.308657+02:00 ubuntu sshd[52004]:
+      Failed password for invalid user admin from 10.68.105.80 port 49510 ssh2
+      2025-05-02T21:15:32.309658+02:00 ubuntu sshd[52004]:
+      pam_unix(sshd:auth): check pass; user unknown
+      2025-05-02T21:15:34.351747+02:00 ubuntu sshd[52004]:
+      Failed password for invalid user admin from 10.68.105.80 port 49510 ssh2
+      2025-05-02T21:15:35.423055+02:00 ubuntu sshd[52004]:
+      pam_unix(sshd:auth): check pass; user unknown
+      2025-05-02T21:15:37.466584+02:00 ubuntu sshd[52004]:
+      Failed password for invalid user admin from 10.68.105.80 port 49510 ssh2
+      2025-05-02T21:15:39.038767+02:00 ubuntu sshd[52004]:
+      pam_unix(sshd:auth): check pass; user unknown
+      2025-05-02T21:15:41.357168+02:00 ubuntu sshd[52004]:
+      Failed password for invalid user admin from 10.68.105.80 port 49510 ssh2
+      2025-05-02T21:15:41.831011+02:00 ubuntu sshd[52004]:
+      pam_unix(sshd:auth): check pass; user unknown
+      2025-05-02T21:15:44.506665+02:00 ubuntu sshd[52004]:
+      Failed password for invalid user admin from 10.68.105.80 port 49510 ssh2
+      2025-05-02T21:15:54.833371+02:00 ubuntu sshd[52004]:
+      pam_unix(sshd:auth): check pass; user unknown
+      2025-05-02T21:16:10.458270+02:00 ubuntu sshd[52004]:
+      Failed password for invalid user admin from 10.68.105.80 port 49510 ssh2
+      2025-05-02T21:16:10.459526+02:00 ubuntu sshd[52004]:
+      pam_unix(sshd:auth): check pass; user unknown
+      2025-05-02T21:16:12.468513+02:00 ubuntu sshd[52004]:
+      Failed password for invalid user admin from 10.68.105.80 port 49510 ssh2
+      2025-05-02T21:16:12.945697+02:00 ubuntu sshd[52004]:
+      pam_unix(sshd:auth): check pass; user unknown
+      2025-05-02T21:16:15.848064+02:00 ubuntu sshd[52004]:
+      Failed password for invalid user admin from 10.68.105.80 port 49510 ssh2
+      2025-05-02T21:16:19.341132+02:00 ubuntu sshd[52004]:
+      pam_unix(sshd:auth): check pass; user unknown
+      2025-05-02T21:16:23.669687+02:00 ubuntu sshd[52004]:
+      Failed password for invalid user admin from 10.68.105.80 port 49510 ssh2
+      2025-05-02T21:16:24.313875+02:00 ubuntu sshd[52004]:
+      pam_unix(sshd:auth): check pass; user unknown
+      2025-05-02T21:16:27.315430+02:00 ubuntu sshd[52004]:
+    question: |
+      Based on the provided log entries, identify which network service they indicate activity for.
+      Respond with one of the following labels: SSH, Telnet, SMB, Other.
+      Choose the label that best represents the dominant or most clearly indicated service.
+    answer: |
+      SSH
+  - context: |
+      2025-05-02T20:43:28.226060+02:00 ubuntu sshd[46411]:
+      pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh
+      ruser= rhost=10.10.10.4  user=root
+      2025-05-02T20:43:28.234322+02:00 ubuntu sshd[46407]:
+      pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh
+      ruser= rhost=10.10.10.4  user=root
+      2025-05-02T20:43:28.234774+02:00 ubuntu sshd[46409]:
+      pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh
+      ruser= rhost=10.10.10.4  user=root
+      2025-05-02T20:43:28.235062+02:00 ubuntu sshd[46410]:
+      pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh
+      ruser= rhost=10.10.10.4  user=root
+      2025-05-02T20:43:28.235321+02:00 ubuntu sshd[46412]:
+      pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh
+      ruser= rhost=10.10.10.4  user=root
+      2025-05-02T20:43:28.236428+02:00 ubuntu sshd[46408]:
+      pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh
+      ruser= rhost=10.10.10.4  user=root
+      2025-05-02T20:43:28.283975+02:00 ubuntu sshd[46413]:
+      pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh
+      ruser= rhost=10.10.10.4  user=root
+      2025-05-02T20:43:28.285083+02:00 ubuntu sshd[46414]:
+      pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh
+      ruser= rhost=10.10.10.4  user=root
+      2025-05-02T20:43:28.292994+02:00 ubuntu sshd[46416]:
+      pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh
+      ruser= rhost=10.10.10.4  user=root
+      2025-05-02T20:43:28.294745+02:00 ubuntu sshd[46415]:
+      pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh
+      ruser= rhost=10.10.10.4  user=root
+      2025-05-02T20:43:29.761844+02:00 ubuntu sshd[46416]:
+      Failed password for root from 10.10.10.4 port 33312 ssh2
+      2025-05-02T20:43:29.762197+02:00 ubuntu sshd[46410]:
+      Failed password for root from 10.10.10.4 port 33254 ssh2
+      2025-05-02T20:43:29.762473+02:00 ubuntu sshd[46413]:
+      Failed password for root from 10.10.10.4 port 33290 ssh2
+      2025-05-02T20:43:29.762675+02:00 ubuntu sshd[46415]:
+      Failed password for root from 10.10.10.4 port 33302 ssh2
+      2025-05-02T20:43:31.189181+02:00 ubuntu sshd[1917]:
+      error: beginning MaxStartups throttling
+      2025-05-02T20:43:31.189314+02:00 ubuntu sshd[1917]:
+      drop connection #10 from [10.10.10.4]:33324 on [10.10.10.5]:22 past MaxStartups
+      2025-05-02T20:43:31.453168+02:00 ubuntu sshd[46428]:
+      pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh
+      ruser= rhost=10.10.10.4  user=root
+    question: |
+      Based on the provided log entries, identify which network service they indicate activity for.
+      Respond with one of the following labels: SSH, Telnet, SMB, Other.
+      Choose the label that best represents the dominant or most clearly indicated service.
+    answer: |
+      SSH
+  - context: |
+      2025-05-02T21:22:43.935544+02:00 ubuntu sshd[52127]: pam_unix(sshd:auth):
+      authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.68.105.80
+      2025-05-02T21:22:44.049224+02:00 ubuntu sshd[52125]:
+      Connection closed by invalid user admin 10.68.105.80 port 57846 [preauth]
+      2025-05-02T21:22:46.569479+02:00 ubuntu sshd[52127]:
+      Failed password for invalid user admin from 10.68.105.80 port 57854 ssh2
+      2025-05-02T21:22:49.170748+02:00 ubuntu sshd[52129]:
+      Invalid user admin from 10.68.105.80 port 53338
+      2025-05-02T21:22:49.171137+02:00 ubuntu sshd[52127]:
+      Connection closed by invalid user admin 10.68.105.80 port 57854 [preauth]
+      2025-05-02T21:22:49.173053+02:00 ubuntu sshd[52129]:
+      pam_unix(sshd:auth): check pass; user unknown
+      2025-05-02T21:22:49.173134+02:00 ubuntu sshd[52129]:
+      pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh
+      ruser= rhost=10.68.105.80
+      2025-05-02T21:22:51.392669+02:00 ubuntu sshd[52129]:
+      Failed password for invalid user admin from 10.68.105.80 port 53338 ssh2
+      2025-05-02T21:22:52.391010+02:00 ubuntu sshd[52129]:
+      Connection closed by invalid user admin 10.68.105.80 port 53338 [preauth]
+      2025-05-02T21:22:53.944437+02:00 ubuntu sshd[52131]:
+      Invalid user admin from 10.68.105.80 port 53350
+      2025-05-02T21:22:53.946811+02:00 ubuntu sshd[52131]:
+      pam_unix(sshd:auth): check pass; user unknown
+      2025-05-02T21:22:53.946927+02:00 ubuntu sshd[52131]:
+      pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser=
+      rhost=10.68.105.80
+      2025-05-02T21:22:55.827982+02:00 ubuntu sshd[52131]:
+      Failed password for invalid user admin from 10.68.105.80 port 53350 ssh2
+      2025-05-02T21:22:56.520103+02:00 ubuntu sshd[52131]:
+      Connection closed by invalid user admin 10.68.105.80 port 53350 [preauth]
+      2025-05-02T21:22:59.284061+02:00 ubuntu sshd[52135]:
+      Invalid user admin from 10.68.105.80 port 56882
+      2025-05-02T21:22:59.286919+02:00 ubuntu sshd[52135]:
+      pam_unix(sshd:auth): check pass; user unknown
+      2025-05-02T21:22:59.287574+02:00 ubuntu sshd[52135]:
+      pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser=
+      rhost=10.68.105.80
+      2025-05-02T21:23:01.480659+02:00 ubuntu sshd[52135]:
+      Failed password for invalid user admin from 10.68.105.80 port 56882 ssh2
+    question: |
+      Based on the provided log entries, identify which network service they indicate activity for.
+      Respond with one of the following labels: SSH, Telnet, SMB, Other.
+      Choose the label that best represents the dominant or most clearly indicated service.
+    answer: |
+      SSH
+  - context: |
+      2025-05-02T21:27:17.682614+02:00 ubuntu sshd[52262]:
+      Failed password for root from 10.68.105.80 port 43074 ssh2
+      2025-05-02T21:27:18.883110+02:00 ubuntu sshd[52249]:
+      Failed password for root from 10.68.105.80 port 43026 ssh2
+      2025-05-02T21:27:19.468488+02:00 ubuntu sshd[52263]:
+      Failed password for root from 10.68.105.80 port 43090 ssh2
+      2025-05-02T21:27:19.468845+02:00 ubuntu sshd[52246]:
+      Failed password for root from 10.68.105.80 port 42990 ssh2
+      2025-05-02T21:27:19.469140+02:00 ubuntu sshd[52256]:
+      Failed password for root from 10.68.105.80 port 43060 ssh2
+      2025-05-02T21:27:19.473056+02:00 ubuntu sshd[52247]:
+      Failed password for root from 10.68.105.80 port 43002 ssh2
+      2025-05-02T21:27:19.479393+02:00 ubuntu sshd[52252]:
+      Failed password for root from 10.68.105.80 port 43042 ssh2
+      2025-05-02T21:27:19.479695+02:00 ubuntu sshd[52262]:
+      Failed password for root from 10.68.105.80 port 43074 ssh2
+      2025-05-02T21:27:22.845399+02:00 ubuntu sshd[52247]:
+      Failed password for root from 10.68.105.80 port 43002 ssh2
+      2025-05-02T21:27:22.845759+02:00 ubuntu sshd[52252]:
+      Failed password for root from 10.68.105.80 port 43042 ssh2
+      2025-05-02T21:27:31.450459+02:00 ubuntu sshd[52252]:
+      message repeated 3 times: [ Failed password for root from 10.68.105.80 port 43042 ssh2]
+      2025-05-02T21:27:32.712112+02:00 ubuntu sshd[52252]:
+      Connection closed by authenticating user root 10.68.105.80 port 43042 [preauth]
+      2025-05-02T21:27:32.712606+02:00 ubuntu sshd[52252]:
+      PAM 5 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.68.105.80  user=root
+      2025-05-02T21:27:32.712708+02:00 ubuntu sshd[52252]:
+      PAM service(sshd) ignoring max retries; 6 > 3
+    question: |
+      Based on the provided log entries, identify which network service they indicate activity for.
+      Respond with one of the following labels: SSH, Telnet, SMB, Other.
+      Choose the label that best represents the dominant or most clearly indicated service.
+    answer: |
+      SSH
+  - context: |
+      2025-05-02T20:51:50.654875+02:00 ubuntu sshd[48668]:
+      Connection closed by invalid user admin 10.10.10.4 port 60470 [preauth]
+      2025-05-02T20:51:50.655067+02:00 ubuntu sshd[48668]:
+      PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser=
+      rhost=10.10.10.4
+      2025-05-02T20:52:02.552297+02:00 ubuntu sshd[49118]:
+      Invalid user admin from 10.10.10.4 port 56994
+      2025-05-02T20:52:02.552650+02:00 ubuntu sshd[49117]:
+      Invalid user admin from 10.10.10.4 port 56992
+      2025-05-02T20:52:02.554876+02:00 ubuntu sshd[49118]:
+      pam_unix(sshd:auth): check pass; user unknown
+      2025-05-02T20:52:02.554984+02:00 ubuntu sshd[49117]:
+      pam_unix(sshd:auth): check pass; user unknown
+      2025-05-02T20:52:02.555024+02:00 ubuntu sshd[49118]:
+      pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser=
+      rhost=10.10.10.4
+      2025-05-02T20:52:02.555068+02:00 ubuntu sshd[49117]:
+      pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser=
+      rhost=10.10.10.4
+      2025-05-02T20:52:04.935171+02:00 ubuntu sshd[49117]:
+      Failed password for invalid user admin from 10.10.10.4 port 56992 ssh2
+      2025-05-02T20:52:07.612728+02:00 ubuntu sshd[49118]:
+      Failed password for invalid user admin from 10.10.10.4 port 56994 ssh2
+      2025-05-02T20:52:07.615134+02:00 ubuntu sshd[49118]:
+      pam_unix(sshd:auth): check pass; user unknown
+      2025-05-02T20:52:07.730717+02:00 ubuntu sshd[49117]:
+      pam_unix(sshd:auth): check pass; user unknown
+    question: |
+      Based on the provided log entries, identify which network service they indicate activity for.
+      Respond with one of the following labels: SSH, Telnet, SMB, Other.
+      Choose the label that best represents the dominant or most clearly indicated service.
+    answer: |
+      SSH
+  - context: |
+      2025-05-03T01:55:52.759999+02:00 ubuntu login[64932]:
+      pam_unix(login:auth): authentication failure; logname=.telnet uid=0
+      euid=0 tty=/dev/pts/2 ruser= rhost=10.10.10.4  user=root
+      2025-05-03T01:55:52.760317+02:00 ubuntu login[64942]:
+      pam_unix(login:auth): authentication failure; logname=.telnet uid=0
+      euid=0 tty=/dev/pts/12 ruser= rhost=10.10.10.4  user=root
+      2025-05-03T01:55:52.880437+02:00 ubuntu login[64943]:
+      pam_unix(login:auth): authentication failure; logname=.telnet uid=0
+      euid=0 tty=/dev/pts/13 ruser= rhost=10.10.10.4  user=root
+      2025-05-03T01:55:53.207631+02:00 ubuntu login[64933]:
+      pam_unix(login:auth): authentication failure; logname=.telnet uid=0
+      euid=0 tty=/dev/pts/4 ruser= rhost=10.10.10.4  user=root
+      2025-05-03T01:55:53.207877+02:00 ubuntu login[64935]:
+      pam_unix(login:auth): authentication failure; logname=.telnet uid=0
+      euid=0 tty=/dev/pts/5 ruser= rhost=10.10.10.4  user=root
+      2025-05-03T01:55:53.238593+02:00 ubuntu login[64938]:
+      pam_unix(login:auth): authentication failure; logname=.telnet uid=0
+      euid=0 tty=/dev/pts/8 ruser= rhost=10.10.10.4  user=root
+      2025-05-03T01:55:53.240747+02:00 ubuntu login[64936]:
+      pam_unix(login:auth): authentication failure; logname=.telnet uid=0
+      euid=0 tty=/dev/pts/6 ruser= rhost=10.10.10.4  user=root
+      2025-05-03T01:55:53.243315+02:00 ubuntu login[64940]:
+      pam_unix(login:auth): authentication failure; logname=.telnet uid=0
+      euid=0 tty=/dev/pts/10 ruser= rhost=10.10.10.4  user=root
+      2025-05-03T01:55:53.245968+02:00 ubuntu login[64934]:
+      pam_unix(login:auth): authentication failure; logname=.telnet uid=0
+      euid=0 tty=/dev/pts/3 ruser= rhost=10.10.10.4  user=root
+      2025-05-03T01:55:53.270876+02:00 ubuntu login[64937]:
+      pam_unix(login:auth): authentication failure; logname=.telnet uid=0
+      euid=0 tty=/dev/pts/7 ruser= rhost=10.10.10.4  user=root
+      2025-05-03T01:55:55.424341+02:00 ubuntu login[64943]:
+      FAILED LOGIN (1) on '/dev/pts/13' from '10.10.10.4' FOR 'root',
+      Authentication failure
+      2025-05-03T01:55:55.477736+02:00 ubuntu login[64941]:
+       FAILED LOGIN (1) on '/dev/pts/11' from '10.10.10.4' FOR 'root',
+       Authentication failure
+      2025-05-03T01:55:55.594876+02:00 ubuntu login[64932]:
+      FAILED LOGIN (1) on '/dev/pts/2' from '10.10.10.4' FOR 'root',
+      Authentication failure
+      2025-05-03T01:55:55.595458+02:00 ubuntu login[64939]:
+      FAILED LOGIN (1) on '/dev/pts/9' from '10.10.10.4' FOR 'root',
+      Authentication failure
+    question: |
+      Based on the provided log entries, identify which network service they indicate activity for.
+      Respond with one of the following labels: SSH, Telnet, SMB, Other.
+      Choose the label that best represents the dominant or most clearly indicated service.
+    answer: |
+      Telnet
+  - context: |
+      2025-05-03T02:09:49.038661+02:00 ubuntu login[70142]:
+      pam_unix(login:auth): check pass; user unknown
+      2025-05-03T02:09:49.038834+02:00 ubuntu login[70142]:
+      pam_unix(login:auth): authentication failure; logname=.telnet uid=0
+      euid=0 tty=/dev/pts/3 ruser= rhost=10.68.105.80
+      2025-05-03T02:09:52.377021+02:00 ubuntu login[70142]:
+      FAILED LOGIN (2) on '/dev/pts/3' from '10.68.105.80' FOR 'UNKNOWN',
+      Authentication failure
+      2025-05-03T02:09:52.705905+02:00 ubuntu login[70142]:
+      pam_unix(login:auth): check pass; user unknown
+      2025-05-03T02:09:56.768211+02:00 ubuntu login[70142]:
+      FAILED LOGIN (3) on '/dev/pts/3' from '10.68.105.80' FOR 'UNKNOWN',
+      Authentication failure
+      2025-05-03T02:09:57.431427+02:00 ubuntu login[70142]:
+      pam_unix(login:auth): check pass; user unknown
+      2025-05-03T02:10:00.805968+02:00 ubuntu login[70142]:
+      FAILED LOGIN (4) on '/dev/pts/3' from '10.68.105.80' FOR 'UNKNOWN',
+      Authentication failure
+      2025-05-03T02:10:01.481651+02:00 ubuntu login[70142]:
+      pam_unix(login:auth): check pass; user unknown
+      2025-05-03T02:10:04.754637+02:00 ubuntu login[70142]:
+      FAILED LOGIN (5) on '/dev/pts/3' from '10.68.105.80' FOR 'UNKNOWN',
+      Authentication failure
+      2025-05-03T02:10:04.754781+02:00 ubuntu login[70142]:
+      TOO MANY LOGIN TRIES (5) on '/dev/pts/3' from '10.68.105.80' FOR
+      'UNKNOWN'
+      2025-05-03T02:10:04.754840+02:00 ubuntu login[70142]:
+      pam_mail(login:session): user unknown
+      2025-05-03T02:10:04.754899+02:00 ubuntu login[70142]:
+      pam_unix(login:session): close_session - error recovering username
+      2025-05-03T02:10:04.754962+02:00 ubuntu login[70142]:
+      PAM 3 more authentication failures; logname=.telnet uid=0 euid=0
+      tty=/dev/pts/3 ruser= rhost=10.68.105.80
+      2025-05-03T02:10:04.754999+02:00 ubuntu login[70142]:
+      PAM service(login) ignoring max retries; 4 > 3
+    question: |
+      Based on the provided log entries, identify which network service they indicate activity for.
+      Respond with one of the following labels: SSH, Telnet, SMB, Other.
+      Choose the label that best represents the dominant or most clearly indicated service.
+    answer: |
+      Telnet
+  - context: |
+      2025-05-03T01:58:01.508860+02:00 ubuntu login[65821]:
+       FAILED LOGIN (1) on '/dev/pts/2' from '10.10.10.4' FOR 'root',
+       Authentication failure
+      2025-05-03T01:58:01.509196+02:00 ubuntu login[65830]:
+      FAILED LOGIN (1) on '/dev/pts/9' from '10.10.10.4' FOR 'root',
+      Authentication failure
+      2025-05-03T01:58:01.509381+02:00 ubuntu login[65823]:
+      FAILED LOGIN (1) on '/dev/pts/3' from '10.10.10.4' FOR 'root',
+      Authentication failure
+      2025-05-03T01:58:01.509560+02:00 ubuntu login[65828]:
+      FAILED LOGIN (1) on '/dev/pts/10' from '10.10.10.4' FOR 'root',
+      Authentication failure
+      2025-05-03T01:58:01.533680+02:00 ubuntu login[65825]:
+      FAILED LOGIN (1) on '/dev/pts/5' from '10.10.10.4' FOR 'root',
+      Authentication failure
+      2025-05-03T01:58:01.556004+02:00 ubuntu login[65835]:
+      pam_unix(login:auth): authentication failure; logname=.telnet
+      uid=0 euid=0 tty=/dev/pts/14 ruser= rhost=10.10.10.4  user=root
+      2025-05-03T01:58:01.621067+02:00 ubuntu login[65834]:
+      pam_unix(login:auth): authentication failure; logname=.telnet
+      uid=0 euid=0 tty=/dev/pts/12 ruser= rhost=10.10.10.4  user=root
+      2025-05-03T01:58:01.621944+02:00 ubuntu login[65836]:
+      pam_unix(login:auth): authentication failure; logname=.telnet
+      uid=0 euid=0 tty=/dev/pts/13 ruser= rhost=10.10.10.4  user=root
+    question: |
+      Based on the provided log entries, identify which network service they indicate activity for.
+      Respond with one of the following labels: SSH, Telnet, SMB, Other.
+      Choose the label that best represents the dominant or most clearly indicated service.
+    answer: |
+      Telnet
+  - context: |
+      2025-05-03T02:14:24.763922+02:00 ubuntu login[71828]:
+      TOO MANY LOGIN TRIES (5) on '/dev/pts/4' from '10.68.105.80' FOR 'UNKNOWN'
+      2025-05-03T02:14:24.763973+02:00 ubuntu login[71828]:
+      pam_mail(login:session): user unknown
+      2025-05-03T02:14:24.764094+02:00 ubuntu login[71828]:
+      pam_unix(login:session): session closed for user admin
+      2025-05-03T02:14:24.764141+02:00 ubuntu login[71828]:
+      PAM 4 more authentication failures; logname=.telnet uid=0
+      euid=0 tty=/dev/pts/4 ruser= rhost=10.68.105.80
+      2025-05-03T02:14:24.764205+02:00 ubuntu login[71828]:
+      PAM service(login) ignoring max retries; 5 > 3
+      2025-05-03T02:14:27.486917+02:00 ubuntu login[71830]:
+      FAILED LOGIN (4) on '/dev/pts/5' from '10.68.105.80' FOR
+      'UNKNOWN', Authentication failure
+      2025-05-03T02:14:27.623448+02:00 ubuntu login[71830]:
+      pam_unix(login:auth): check pass; user unknown
+      2025-05-03T02:14:27.887929+02:00 ubuntu login[71834]:
+      FAILED LOGIN (1) on '/dev/pts/3' from '10.68.105.80' FOR
+      'UNKNOWN', Authentication failure
+      2025-05-03T02:14:27.986400+02:00 ubuntu login[71834]:
+      pam_unix(login:auth): check pass; user unknown
+      2025-05-03T02:14:29.027007+02:00 ubuntu login[71957]:
+      pam_unix(login:auth): check pass; user unknown
+      2025-05-03T02:14:29.027188+02:00 ubuntu login[71957]:
+      pam_unix(login:auth): authentication failure; logname=.telnet
+      uid=0 euid=0 tty=/dev/pts/4 ruser= rhost=10.68.105.80
+      2025-05-03T02:14:29.773388+02:00 ubuntu login[71832]:
+      FAILED LOGIN (1) on '/dev/pts/2' from '10.68.105.80' FOR
+      'UNKNOWN', Authentication failure
+      2025-05-03T02:14:29.863209+02:00 ubuntu login[71832]:
+      pam_unix(login:auth): check pass; user unknown
+      2025-05-03T02:14:33.912430+02:00 ubuntu login[71957]:
+      FAILED LOGIN (1) on '/dev/pts/4' from '10.68.105.80' FOR
+      'UNKNOWN', Authentication failure
+      2025-05-03T02:14:33.913121+02:00 ubuntu login[71832]:
+      FAILED LOGIN (2) on '/dev/pts/2' from '10.68.105.80' FOR
+      'UNKNOWN', Authentication failure
+      2025-05-03T02:14:33.913607+02:00 ubuntu login[71830]:
+      FAILED LOGIN (5) on '/dev/pts/5' from '10.68.105.80' FOR
+      'UNKNOWN', Authentication failure
+      2025-05-03T02:14:33.913734+02:00 ubuntu login[71830]:
+      TOO MANY LOGIN TRIES (5) on '/dev/pts/5' from '10.68.105.80'
+      FOR 'UNKNOWN'
+    question: |
+      Based on the provided log entries, identify which network service they indicate activity for.
+      Respond with one of the following labels: SSH, Telnet, SMB, Other.
+      Choose the label that best represents the dominant or most clearly indicated service.
+    answer: |
+      Telnet
+  - context: |
+      2025-05-03T02:18:38.591616+02:00 ubuntu login[73161]:
+      FAILED LOGIN (1) on '/dev/pts/7' from '10.68.105.80' FOR 'root',
+      Authentication failure
+      2025-05-03T02:18:49.091773+02:00 ubuntu login[73154]:
+      FAILED LOGIN (1) on '/dev/pts/2' from '10.68.105.80' FOR 'root',
+      Authentication failure
+      2025-05-03T02:18:49.092148+02:00 ubuntu login[73158]:
+      FAILED LOGIN (1) on '/dev/pts/5' from '10.68.105.80' FOR 'root',
+      2025-05-03T02:18:53.336041+02:00 ubuntu login[73319]:
+      pam_unix(login:auth): authentication failure; logname=.telnet
+      uid=0 euid=0 tty=/dev/pts/8 ruser= rhost=10.68.105.80  user=root
+      2025-05-03T02:18:53.336760+02:00 ubuntu login[73318]:
+      pam_unix(login:auth): authentication failure; logname=.telnet
+      uid=0 euid=0 tty=/dev/pts/7 ruser= rhost=10.68.105.80  user=root
+      2025-05-03T02:18:56.039141+02:00 ubuntu login[73315]:
+      FAILED LOGIN (1) on '/dev/pts/11' from '10.68.105.80' FOR 'root',
+      Authentication failure
+      2025-05-03T02:18:56.049985+02:00 ubuntu login[73323]:
+      PAM unable to dlopen(pam_lastlog.so): /usr/lib/security/pam_lastlog.so:
+      cannot open shared object file: No such file or directory
+      2025-05-03T02:18:56.050040+02:00 ubuntu login[73323]:
+      PAM adding faulty module: pam_lastlog.so
+      2025-05-03T02:18:56.556795+02:00 ubuntu login[73323]:
+      pam_unix(login:auth): authentication failure; logname=.telnet
+      uid=0 euid=0 tty=/dev/pts/9 ruser= rhost=10.68.105.80  user=root
+      2025-05-03T02:18:56.557147+02:00 ubuntu login[73322]:
+      pam_unix(login:auth): authentication failure; logname=.telnet
+      uid=0 euid=0 tty=/dev/pts/11 ruser= rhost=10.68.105.80  user=root
+      2025-05-03T02:18:58.455310+02:00 ubuntu login[73319]:
+      FAILED LOGIN (1) on '/dev/pts/8' from '10.68.105.80' FOR 'root',
+      Authentication failure
+      2025-05-03T02:18:58.455700+02:00 ubuntu login[73309]:
+      FAILED LOGIN (1) on '/dev/pts/10' from '10.68.105.80' FOR 'root',
+      Authentication failure
+      2025-05-03T02:18:58.499184+02:00 ubuntu login[73211]:
+      FAILED LOGIN (1) on '/dev/pts/6' from '10.68.105.80' FOR 'root',
+      Authentication failure
+      2025-05-03T02:18:58.499426+02:00 ubuntu login[73318]:
+      FAILED LOGIN (1) on '/dev/pts/7' from '10.68.105.80' FOR 'root',
+      Authentication failure
+      2025-05-03T02:18:58.499579+02:00 ubuntu login[73178]:
+      FAILED LOGIN (1) on '/dev/pts/3' from '10.68.105.80' FOR 'root',
+      Authentication failure
+      2025-05-03T02:18:59.119883+02:00 ubuntu login[73322]:
+      FAILED LOGIN (1) on '/dev/pts/11' from '10.68.105.80' FOR 'root',
+      Authentication failure
+    question: |
+      Based on the provided log entries, identify which network service they indicate activity for.
+      Respond with one of the following labels: SSH, Telnet, SMB, Other.
+      Choose the label that best represents the dominant or most clearly indicated service.
+    answer: |
+      Telnet
+  - context: |
+      2025-05-03T01:59:33.145841+02:00 ubuntu login[66549]:
+      pam_unix(login:auth): authentication failure; logname=.telnet
+      uid=0 euid=0 tty=/dev/pts/3 ruser= rhost=10.10.10.4
+      2025-05-03T01:59:33.145896+02:00 ubuntu login[66550]:
+      pam_unix(login:auth): check pass; user unknown
+      2025-05-03T01:59:33.145928+02:00 ubuntu login[66550]:
+      pam_unix(login:auth): authentication failure; logname=.telnet
+      uid=0 euid=0 tty=/dev/pts/2 ruser= rhost=10.10.10.4
+      2025-05-03T01:59:36.483746+02:00 ubuntu login[66549]:
+      FAILED LOGIN (1) on '/dev/pts/3' from '10.10.10.4' FOR
+      'UNKNOWN', Authentication failure
+      2025-05-03T01:59:36.484153+02:00 ubuntu login[66550]:
+      FAILED LOGIN (1) on '/dev/pts/2' from '10.10.10.4' FOR
+      'UNKNOWN', Authentication failure
+      2025-05-03T01:59:37.589395+02:00 ubuntu login[66773]:
+      pam_unix(login:auth): check pass; user unknown
+      2025-05-03T01:59:37.589664+02:00 ubuntu login[66773]:
+      pam_unix(login:auth): authentication failure; logname=.telnet
+      uid=0 euid=0 tty=/dev/pts/3 ruser= rhost=10.10.10.4
+      2025-05-03T01:59:37.589723+02:00 ubuntu login[66772]:
+      pam_unix(login:auth): check pass; user unknown
+      2025-05-03T01:59:37.589761+02:00 ubuntu login[66772]:
+      pam_unix(login:auth): authentication failure; logname=.telnet
+      uid=0 euid=0 tty=/dev/pts/2 ruser= rhost=10.10.10.4
+      2025-05-03T01:59:44.207522+02:00 ubuntu login[66772]:
+      FAILED LOGIN (1) on '/dev/pts/2' from '10.10.10.4' FOR
+      'UNKNOWN', Authentication failure
+      2025-05-03T01:59:45.706686+02:00 ubuntu login[66775]:
+      pam_unix(login:auth): check pass; user unknown
+      2025-05-03T01:59:45.706781+02:00 ubuntu login[66775]:
+      pam_unix(login:auth): authentication failure; logname=.telnet
+      uid=0 euid=0 tty=/dev/pts/2 ruser= rhost=10.10.10.4
+      2025-05-03T01:59:59.225760+02:00 ubuntu login[66991]:
+      pam_unix(login:auth): check pass; user unknown
+      2025-05-03T01:59:59.225861+02:00 ubuntu login[66991]:
+      pam_unix(login:auth): authentication failure; logname=.telnet
+      uid=0 euid=0 tty=/dev/pts/3 ruser= rhost=10.10.10.4
+      2025-05-03T02:01:40.508818+02:00 ubuntu login[67434]:
+      pam_unix(login:auth): check pass; user unknown
+      2025-05-03T02:01:40.508900+02:00 ubuntu login[67434]:
+      pam_unix(login:auth): authentication failure; logname=.telnet
+      uid=0 euid=0 tty=/dev/pts/3 ruser= rhost=10.10.10.4
+      2025-05-03T02:01:43.704963+02:00 ubuntu login[67434]:
+      FAILED LOGIN (1) on '/dev/pts/3' from '10.10.10.4' FOR
+      'UNKNOWN', Authentication failure
+    question: |
+      Based on the provided log entries, identify which network service they indicate activity for.
+      Respond with one of the following labels: SSH, Telnet, SMB, Other.
+      Choose the label that best represents the dominant or most clearly indicated service.
+    answer: |
+      Telnet
+  - context: |
+      [2025/05/03 19:32:02.411805,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+      auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[root]@[10.10.10.4]
+      [2025/05/03 19:32:02.412432,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+      check_ntlm_password:  Authentication for user [root] -> [root] FAILED with error
+      NT_STATUS_WRONG_PASSWORD, authoritative=1
+      [2025/05/03 19:32:02.422787,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+      auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user
+      []\[root]@[10.10.10.4] with the new password interface
+      [2025/05/03 19:32:02.422923,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+      auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[root]@[10.10.10.4]
+      [2025/05/03 19:32:02.423730,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+      check_ntlm_password:  Authentication for user [root] -> [root] FAILED with error
+      NT_STATUS_WRONG_PASSWORD, authoritative=1
+      [2025/05/03 19:32:02.436622,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+      auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user
+      []\[root]@[10.10.10.4] with the new password interface
+      [2025/05/03 19:32:02.436731,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+      auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[root]@[10.10.10.4]
+      [2025/05/03 19:32:02.437480,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+      check_ntlm_password:  Authentication for user [root] -> [root] FAILED with error
+      NT_STATUS_WRONG_PASSWORD, authoritative=1
+      [2025/05/03 19:32:02.445273,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+      auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user
+      []\[root]@[10.10.10.4] with the new password interface
+      [2025/05/03 19:32:02.445381,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+      auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[root]@[10.10.10.4]
+      [2025/05/03 19:32:02.445934,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+      check_ntlm_password:  Authentication for user [root] -> [root] FAILED with error
+      NT_STATUS_WRONG_PASSWORD, authoritative=1
+      [2025/05/03 19:32:02.454799,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+      auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user
+      []\[root]@[10.10.10.4] with the new password interface
+    question: |
+      Based on the provided log entries, identify which network service they indicate activity for.
+      Respond with one of the following labels: SSH, Telnet, SMB, Other.
+      Choose the label that best represents the dominant or most clearly indicated service.
+    answer: |
+      SMB
+  - context: |
+      auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user
+      []\[admin]@[10.68.105.80] with the new password interface
+      [2025/05/03 21:19:34.132309,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+        auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[admin]@[10.68.105.80]
+      [2025/05/03 21:19:34.132826,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+        check_ntlm_password:  Authentication for user [admin] -> [admin] FAILED with error
+        NT_STATUS_WRONG_PASSWORD, authoritative=1
+      [2025/05/03 21:19:39.145031,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+        auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user
+        []\[admin]@[10.68.105.80] with the new password interface
+      [2025/05/03 21:19:39.145108,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+        auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[admin]@[10.68.105.80]
+      [2025/05/03 21:19:39.145847,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+        check_ntlm_password:  Authentication for user [admin] -> [admin] FAILED with error
+        NT_STATUS_WRONG_PASSWORD, authoritative=1
+      [2025/05/03 21:19:44.179561,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+        auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user
+        []\[admin]@[10.68.105.80] with the new password interface
+      [2025/05/03 21:19:44.179626,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+        auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[admin]@[10.68.105.80]
+      [2025/05/03 21:19:44.180798,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+        check_ntlm_password:  Authentication for user [admin] -> [admin] FAILED with error
+        NT_STATUS_WRONG_PASSWORD, authoritative=1
+      [2025/05/03 21:19:49.194274,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+        auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user
+        []\[admin]@[10.68.105.80] with the new password interface
+      [2025/05/03 21:19:49.194342,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+        auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[admin]@[10.68.105.80]
+    question: |
+      Based on the provided log entries, identify which network service they indicate activity for.
+      Respond with one of the following labels: SSH, Telnet, SMB, Other.
+      Choose the label that best represents the dominant or most clearly indicated service.
+    answer: |
+      SMB
+  - context: |
+      [2025/05/03 19:51:20.302239,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+        auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[root]@[10.10.10.4]
+      [2025/05/03 19:51:20.302637,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+        check_ntlm_password:  Authentication for user [root] -> [root] FAILED with error
+        NT_STATUS_WRONG_PASSWORD, authoritative=1
+      [2025/05/03 19:51:20.324586,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+        auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user
+        []\[root]@[10.10.10.4] with the new password interface
+      [2025/05/03 19:51:20.324636,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+        auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[root]@[10.10.10.4]
+      [2025/05/03 19:51:20.325075,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+        check_ntlm_password:  Authentication for user [root] -> [root] FAILED with error
+        NT_STATUS_WRONG_PASSWORD, authoritative=1
+      [2025/05/03 19:51:20.336235,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+        auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user
+        []\[root]@[10.10.10.4] with the new password interface
+      [2025/05/03 19:51:20.336308,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+        auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[root]@[10.10.10.4]
+      [2025/05/03 19:51:20.336807,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+        check_ntlm_password:  Authentication for user [root] -> [root] FAILED with error
+        NT_STATUS_WRONG_PASSWORD, authoritative=1
+      [2025/05/03 19:51:20.353532,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+        auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user
+        []\[root]@[10.10.10.4] with the new password interface
+      [2025/05/03 19:51:20.353563,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+        auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[root]@[10.10.10.4]
+      [2025/05/03 19:51:20.353881,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+        check_ntlm_password:  Authentication for user [root] -> [root] FAILED with error
+        NT_STATUS_WRONG_PASSWORD, authoritative=1
+    question: |
+      Based on the provided log entries, identify which network service they indicate activity for.
+      Respond with one of the following labels: SSH, Telnet, SMB, Other.
+      Choose the label that best represents the dominant or most clearly indicated service.
+    answer: |
+      SMB
+  - context: |
+      [2025/05/03 21:25:27.484398,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+        auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user
+        []\[admin]@[10.68.105.80] with the new password interface
+      [2025/05/03 21:25:27.484462,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+        auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[admin]@[10.68.105.80]
+      [2025/05/03 21:25:27.485098,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+        check_ntlm_password:  Authentication for user [admin] -> [admin] FAILED with error
+        NT_STATUS_WRONG_PASSWORD, authoritative=1
+      [2025/05/03 21:25:27.495677,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+        auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user
+        []\[admin]@[10.68.105.80] with the new password interface
+      [2025/05/03 21:25:27.495783,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+        auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[admin]@[10.68.105.80]
+      [2025/05/03 21:26:12.686496,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+        auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[admin]@[10.68.105.80]
+      [2025/05/03 21:26:12.686830,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+        check_ntlm_password:  Authentication for user [admin] -> [admin] FAILED with error
+        NT_STATUS_WRONG_PASSWORD, authoritative=1
+      [2025/05/03 21:26:17.721136,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+        auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user
+        []\[admin]@[10.68.105.80] with the new password interface
+      [2025/05/03 21:26:17.721213,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+        auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[admin]@[10.68.105.80]
+      [2025/05/03 21:26:17.721732,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+        check_ntlm_password:  Authentication for user [admin] -> [admin] FAILED with error
+        NT_STATUS_WRONG_PASSWORD, authoritative=1
+      [2025/05/03 21:26:17.722104,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+        auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user
+        []\[admin]@[10.68.105.80] with the new password interface
+    question: |
+      Based on the provided log entries, identify which network service they indicate activity for.
+      Respond with one of the following labels: SSH, Telnet, SMB, Other.
+      Choose the label that best represents the dominant or most clearly indicated service.
+    answer: |
+      SMB
+  - context: |
+      [2025/05/03 21:33:19.869392,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+        auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user
+        []\[root]@[] with the new password interface
+      [2025/05/03 21:33:19.869412,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+        auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[root]@[]
+      [2025/05/03 21:33:19.869723,  3] auth/ntlmssp/ntlmssp_server.c:509(ntlmssp_server_preauth)
+        Got user=[root] domain=[] workstation=[] len1=24 len2=24
+      [2025/05/03 21:33:19.869767,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+        auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user
+        []\[root]@[] with the new password interface
+      [2025/05/03 21:33:19.869786,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+        auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[root]@[]
+      [2025/05/03 21:33:19.870039,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+        check_ntlm_password:  Authentication for user [root] -> [root] FAILED with error
+        NT_STATUS_WRONG_PASSWORD, authoritative=1
+      [2025/05/03 21:33:19.870072,  3] auth/ntlmssp/ntlmssp_util.c:72(debug_ntlmssp_flags)
+        Got NTLMSSP neg_flags=0xa0880205
+      [2025/05/03 21:33:19.870087,  3] auth/gensec/spnego.c:1443(gensec_spnego_server_negTokenTarg_step)
+        gensec_spnego_server_negTokenTarg_step: SPNEGO(ntlmssp) login failed: NT_STATUS_WRONG_PASSWORD
+      [2025/05/03 21:33:19.870415,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+        check_ntlm_password:  Authentication for user [root] -> [root] FAILED with error
+        NT_STATUS_WRONG_PASSWORD, authoritative=1
+      [2025/05/03 21:33:19.870462,  3] auth/gensec/spnego.c:1443(gensec_spnego_server_negTokenTarg_step)
+        gensec_spnego_server_negTokenTarg_step: SPNEGO(ntlmssp) login failed: NT_STATUS_WRONG_PASSWORD
+      [2025/05/03 21:33:19.870690,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+        check_ntlm_password:  Authentication for user [root] -> [root] FAILED with error
+        NT_STATUS_WRONG_PASSWORD, authoritative=1
+      [2025/05/03 21:33:19.870722,  3] auth/gensec/spnego.c:1443(gensec_spnego_server_negTokenTarg_step)
+        gensec_spnego_server_negTokenTarg_step: SPNEGO(ntlmssp) login failed: NT_STATUS_WRONG_PASSWORD
+      [2025/05/03 21:33:19.872985,  3] auth/ntlmssp/ntlmssp_util.c:72(debug_ntlmssp_flags)
+    question: |
+      Based on the provided log entries, identify which network service they indicate activity for.
+      Respond with one of the following labels: SSH, Telnet, SMB, Other.
+      Choose the label that best represents the dominant or most clearly indicated service.
+    answer: |
+      SMB
+  - context: |
+      source3/auth/auth.c:202(auth_check_ntlm_password)
+        auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user
+        []\[admin]@[] with the new password interface
+      [2025/05/03 21:08:33.258425,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+        auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[admin]@[]
+      [2025/05/03 21:08:33.258955,  3] auth/ntlmssp/ntlmssp_server.c:509(ntlmssp_server_preauth)
+        Got user=[admin] domain=[] workstation=[] len1=24 len2=24
+      [2025/05/03 21:08:33.259039,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+        auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user
+        []\[admin]@[] with the new password interface
+      [2025/05/03 21:08:33.259057,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+        auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[admin]@[]
+      [2025/05/03 21:08:33.259265,  3] auth/gensec/spnego.c:1443(gensec_spnego_server_negTokenTarg_step)
+        gensec_spnego_server_negTokenTarg_step: SPNEGO(ntlmssp) login failed:
+        NT_STATUS_WRONG_PASSWORD
+      [2025/05/03 21:08:33.259674,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+        check_ntlm_password:  Authentication for user [admin] -> [admin] FAILED with error
+        NT_STATUS_WRONG_PASSWORD, authoritative=1
+      [2025/05/03 21:08:33.262871,  3] auth/ntlmssp/ntlmssp_server.c:509(ntlmssp_server_preauth)
+        Got user=[admin] domain=[] workstation=[] len1=24 len2=24
+      [2025/05/03 21:08:33.262931,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+        auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user
+        []\[admin]@[] with the new password interface
+      [2025/05/03 21:08:33.262949,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+        auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[admin]@[]
+      [2025/05/03 21:08:33.263397,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+      check_ntlm_password:  Authentication for user [admin] -> [admin] FAILED with error
+      NT_STATUS_WRONG_PASSWORD, authoritative=1
+    question: |
+      Based on the provided log entries, identify which network service they indicate activity for.
+      Respond with one of the following labels: SSH, Telnet, SMB, Other.
+      Choose the label that best represents the dominant or most clearly indicated service.
+    answer: |
+      SMB
+  - context: |
+      2025-05-02T18:44:19.271381+02:00 ubuntu polkitd[1030]:
+      Loading rules from directory /etc/polkit-1/rules.d
+      2025-05-02T18:44:19.271384+02:00 ubuntu polkitd[1030]:
+      Loading rules from directory /usr/share/polkit-1/rules.d
+      2025-05-02T18:44:19.271420+02:00 ubuntu polkitd[1030]:
+      Finished loading, compiling and executing 17 rules
+      2025-05-02T18:44:19.271428+02:00 ubuntu polkitd[1030]:
+      Acquired the name org.freedesktop.PolicyKit1 on the system bus
+      2025-05-02T18:44:20.111753+02:00 ubuntu sshd[1917]:
+      Server listening on :: port 22.
+      2025-05-02T18:44:20.207234+02:00 ubuntu gdm-launch-environment]:
+      pam_unix(gdm-launch-environment:session): session opened for user gdm(uid=120) by (uid=0)
+      2025-05-02T18:44:20.248882+02:00 ubuntu systemd-logind[1059]:
+      New session c1 of user gdm.
+      2025-05-02T18:44:20.282594+02:00 ubuntu (systemd):
+      pam_unix(systemd-user:session): session opened for user gdm(uid=120) by gdm(uid=0)
+      2025-05-02T18:44:21.869089+02:00 ubuntu polkitd[1030]:
+      Registered Authentication Agent for unix-session:c1 (system bus name :1.35
+      [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent,
+      locale en_US.UTF-8)
+      2025-05-02T18:44:37.118684+02:00 ubuntu gdm-password]:
+      gkr-pam: unable to locate daemon control file
+      2025-05-02T18:44:37.118753+02:00 ubuntu gdm-password]:
+      gkr-pam: stashed password to try later in open session
+      2025-05-02T18:44:37.131089+02:00 ubuntu gdm-password]:
+      pam_unix(gdm-password:session): session opened for user ubuntu(uid=1000) by ubuntu(uid=0)
+      2025-05-02T18:44:37.220137+02:00 ubuntu systemd-logind[1059]:
+      New session 2 of user ubuntu.
+      2025-05-02T18:44:37.239029+02:00 ubuntu (systemd):
+      pam_unix(systemd-user:session): session opened for user ubuntu(uid=1000) by ubuntu(uid=0)
+      2025-05-02T18:44:37.474070+02:00 ubuntu gdm-password]:
+      gkr-pam: unlocked login keyring
+    question: |
+      Based on the provided log entries, identify which network service they indicate activity for.
+      Respond with one of the following labels: SSH, Telnet, SMB, Other.
+      Choose the label that best represents the dominant or most clearly indicated service.
+    answer: |
+      Other
+  - context: |
+      2025-05-02T18:25:10.597065+02:00 ubuntu sudo:
+      pam_unix(sudo:session): session closed for user root
+      2025-05-02T18:25:17.581259+02:00 ubuntu sudo:
+      ubuntu : TTY=pts/0 ; PWD=/var/log ; USER=root ; COMMAND=/usr/bin/systemctl start rsyslog
+      2025-05-02T18:25:17.582044+02:00 ubuntu sudo:
+      pam_unix(sudo:session): session opened for user root(uid=0) by ubuntu(uid=1000)
+      2025-05-02T18:25:17.591875+02:00 ubuntu sudo:
+      pam_unix(sudo:session): session closed for user root
+      2025-05-02T18:26:50.904453+02:00 ubuntu systemd-logind[1020]:
+      The system will reboot now!
+      2025-05-02T18:26:50.930659+02:00 ubuntu systemd-logind[1020]:
+      System is rebooting.
+      2025-05-02T18:26:50.956384+02:00 ubuntu gdm-password]:
+      pam_unix(gdm-password:session): session closed for user ubuntu
+      2025-05-02T18:26:51.006147+02:00 ubuntu xrdp-sesman[8686]:
+      pam_unix(xrdp-sesman:session): session closed for user ubuntu
+      2025-05-02T18:26:55.004641+02:00 ubuntu systemd-logind[1066]:
+      New seat seat0.
+      2025-05-02T18:26:55.004650+02:00 ubuntu systemd-logind[1066]:
+      Watching system buttons on /dev/input/event0 (Power Button)
+      2025-05-02T18:26:55.004654+02:00 ubuntu systemd-logind[1066]:
+      Watching system buttons on /dev/input/event1 (Sleep Button)
+      2025-05-02T18:26:55.004658+02:00 ubuntu systemd-logind[1066]:
+      Watching system buttons on /dev/input/event2 (AT Translated Set 2 keyboard)
+      2025-05-02T18:26:55.024539+02:00 ubuntu polkitd[1035]:
+      Loading rules from directory /etc/polkit-1/rules.d
+      2025-05-02T18:26:55.024846+02:00 ubuntu polkitd[1035]:
+      Loading rules from directory /usr/share/polkit-1/rules.d
+      2025-05-02T18:26:55.043327+02:00 ubuntu polkitd[1035]:
+      Finished loading, compiling and executing 17 rules
+      2025-05-02T18:26:55.044706+02:00 ubuntu polkitd[1035]:
+      Acquired the name org.freedesktop.PolicyKit1 on the system bus
+      2025-05-02T18:26:55.873714+02:00 ubuntu sshd[1530]:
+      Server listening on :: port 22.
+    question: |
+      Based on the provided log entries, identify which network service they indicate activity for.
+      Respond with one of the following labels: SSH, Telnet, SMB, Other.
+      Choose the label that best represents the dominant or most clearly indicated service.
+    answer: |
+      Other
+  - context: |
+      2025-05-02T19:55:01.992452+02:00 ubuntu CRON[27237]:
+      pam_unix(cron:session): session closed for user root
+      2025-05-02T19:59:12.849386+02:00 ubuntu gdm-password]:
+      pam_unix(gdm-password:auth): authentication failure;
+      logname=ubuntu uid=0 euid=0 tty=/dev/tty1 ruser= rhost=  user=ubuntu
+      2025-05-02T19:59:23.084886+02:00 ubuntu gdm-password]:
+      pam_unix(gdm-password:auth): authentication failure;
+      logname=ubuntu uid=0 euid=0 tty=/dev/tty1 ruser= rhost=  user=ubuntu
+      2025-05-02T19:59:32.577141+02:00 ubuntu gdm-password]:
+      gkr-pam: unlocked login keyring
+    question: |
+      Based on the provided log entries, identify which network service they indicate activity for.
+      Respond with one of the following labels: SSH, Telnet, SMB, Other.
+      Choose the label that best represents the dominant or most clearly indicated service.
+    answer: |
+      Other
+  - context: |
+      2025-05-04T09:45:00.000000+02:00 ubuntu CRON[3456]:
+      pam_unix(cron:session): session opened for user root by (uid=0)
+      2025-05-04T09:45:00.500123+02:00 ubuntu CRON[3456]:
+      pam_unix(cron:session): session closed for user root
+      2025-05-04T10:00:23.250000+02:00 ubuntu sudo[3470]:
+      alice : TTY=pts/1 ; PWD=/home/alice ; USER=root ; COMMAND=/usr/bin/apt update
+      2025-05-04T10:00:23.750456+02:00 ubuntu sudo[3470]:
+      pam_unix(sudo:session): session opened for user root by alice(uid=1001)
+      2025-05-04T10:00:55.001234+02:00 ubuntu sudo[3470]:
+      pam_unix(sudo:session): session closed for user root
+      2025-05-04T11:15:12.123456+02:00 ubuntu su[3567]:
+      pam_unix(su:session): session opened for user root by bob(uid=1002)
+      2025-05-04T11:17:18.654321+02:00 ubuntu su[3567]:
+      pam_unix(su:session): session closed for user root
+      2025-05-04T12:30:45.000000+02:00 ubuntu passwd[3678]:
+      password expiry warning for user carol
+      2025-05-04T12:30:45.500000+02:00 ubuntu passwd[3678]:
+      pam_unix(passwd:chauthtok): password changed for carol
+      2025-05-04T13:05:14.000000+02:00 ubuntu systemd-logind[420]:
+      New session 54 of user dave.
+      2025-05-04T13:05:14.250000+02:00 ubuntu systemd-logind[420]:
+      Removed session 53.
+      2025-05-04T14:22:30.000000+02:00 ubuntu polkitd(authority=local):
+      Registered Authentication Agent for unix-process:
+      4021:173345 (system bus name :1.15, object path /org/freedesktop/PolicyKit1/AuthenticationAgent,
+      locale en_US.UTF-8)
+      2025-05-04T15:30:05.000000+02:00 ubuntu polkitd(authority=local):
+      Unregistered Authentication Agent for unix-process:4021:173345 (system bus name :1.15)
+      2025-05-04T16:45:00.000000+02:00 ubuntu gdm-password[4789]:
+      pam_unix(gdm-password:session): session opened for user eve by (uid=0)
+      2025-05-04T16:45:12.000000+02:00 ubuntu gdm-password[4789]:
+      pam_unix(gdm-password:session): session closed for user eve
+    question: |
+      Based on the provided log entries, identify which network service they indicate activity for.
+      Respond with one of the following labels: SSH, Telnet, SMB, Other.
+      Choose the label that best represents the dominant or most clearly indicated service.
+    answer: |
+      Other
+  - context: |
+      2025-06-04T14:22:11.123456+02:00 ubuntu sudo:          ubuntu : TTY=pts/0 ;
+       PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/apt update
+      2025-06-04T14:22:11.124001+02:00 ubuntu sudo:          pam_unix(sudo:session):
+       session opened for user root(uid=0) by ubuntu(uid=1000)
+      2025-06-04T14:22:12.256789+02:00 ubuntu sudo:          pam_unix(sudo:session):
+       session closed for user root
+      2025-06-04T14:23:29.654321+02:00 ubuntu systemd-logind[1020]: New seat seat0.
+      2025-06-04T14:23:29.654876+02:00 ubuntu systemd-logind[1020]: Watching
+       system buttons on /dev/input/event0 (Power Button)
+      2025-06-04T14:24:45.345678+02:00 ubuntu polkitd[1035]:   Loading rules
+       from directory /usr/share/polkit-1/rules.d
+      2025-06-04T14:24:45.567890+02:00 ubuntu polkitd[1035]:   Finished loading,
+       compiling and executing 17 rules
+      2025-06-04T14:24:45.678912+02:00 ubuntu polkitd[1035]:
+         Acquired the name org.freedesktop.PolicyKit1 on the system bus
+      2025-06-04T14:25:01.000123+02:00 ubuntu CRON[2154]:
+      pam_unix(cron:session): session opened for user root by (uid=0)
+      2025-06-04T14:25:01.010456+02:00 ubuntu CRON[2154]:
+      pam_unix(cron:session): session closed for user root
+    question: |
+      Based on the provided log entries, identify which network service they indicate activity for.  
+      Respond with one of the following labels: **SSH, Telnet, SMB, Other**.  
+      Choose the label that best represents the dominant or most clearly indicated service.
+    answer: |
+      Other
+  - context: |
+      2025-06-05T08:01:12.345678+02:00 ubuntu login[2153]: pam_unix(login:session):
+       session opened for user ubuntu by LOGIN(uid=0)
+      2025-06-05T08:01:12.347012+02:00 ubuntu systemd-logind[1020]:
+       New session 3 of user ubuntu.
+      2025-06-05T08:02:17.234567+02:00 ubuntu sudo:      ubuntu : TTY=tty1 ;
+       PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/timedatectl
+        set-timezone Europe/Bratislava
+      2025-06-05T08:02:17.234890+02:00 ubuntu sudo:
+      pam_unix(sudo:session): session opened for user root(uid=0) by ubuntu(uid=1000)
+      2025-06-05T08:02:17.247321+02:00 ubuntu sudo:
+      pam_unix(sudo:session): session closed for user root
+      2025-06-05T08:04:00.456789+02:00 ubuntu gdm-password]:
+      pam_unix(gdm-password:session): session opened for user ubuntu by (uid=0)
+      2025-06-05T08:04:01.123456+02:00 ubuntu systemd-logind[1020]:
+      New session 4 of user ubuntu.
+      2025-06-05T08:05:45.987654+02:00 ubuntu passwd[2301]:
+      pam_unix(passwd:chauthtok): password changed for ubuntu
+      2025-06-05T08:06:30.123456+02:00 ubuntu su[2350]:
+      (to root) ubuntu on pts/0
+      2025-06-05T08:06:30.123789+02:00 ubuntu su[2350]:
+      pam_unix(su:session): session opened for user root by ubuntu(uid=1000)
+      2025-06-05T08:06:31.234567+02:00 ubuntu su[2350]:
+      pam_unix(su:session): session closed for user root
+      2025-06-05T08:10:00.000789+02:00 ubuntu CRON[2500]:
+      pam_unix(cron:session): session opened for user root by (uid=0)
+      2025-06-05T08:10:00.012345+02:00 ubuntu CRON[2500]:
+      pam_unix(cron:session): session closed for user root
+      2025-06-05T08:12:25.678901+02:00 ubuntu polkitd[1035]:
+      Registered Authentication Agent for unix-process:2550:123456
+      (system bus name :1.48 [/usr/lib/policykit-1/polkit-agent-helper-1],
+      object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+      2025-06-05T08:12:27.345678+02:00 ubuntu polkitd[1035]:
+      Unregistered Authentication Agent for unix-process:2550:123456
+      (system bus name :1.48, object path /org/freedesktop/PolicyKit1/AuthenticationAgent,
+      locale en_US.UTF-8) (disconnected from bus)
+    question: |
+      Based on the provided log entries, identify which network service they indicate activity for.  
+      Respond with one of the following labels: **SSH, Telnet, SMB, Other**.  
+      Choose the label that best represents the dominant or most clearly indicated service.
+    answer: |
+      Other
+  - context: |
+      2025-04-18T23:36:35.056346+02:00 ubuntu sshd[547960]:
+      Accepted publickey for ubuntu from 10.116.7.3 port 53808 ssh2:
+      RSA SHA256:svFyiwd6eNAGhYjoyLK5s4DfV7L9OGkl96TdPD/HGx4
+      2025-04-18T23:36:35.066708+02:00 ubuntu sshd[547960]:
+      pam_unix(sshd:session): session opened for user ubuntu(uid=1000) by ubuntu(uid=0)
+      2025-04-18T23:37:24.719167+02:00 ubuntu sshd[548058]:
+      Received disconnect from 10.116.7.3 port 53808:11: disconnected by user
+      2025-04-18T23:37:24.726145+02:00 ubuntu sshd[548058]:
+      Disconnected from user ubuntu 10.116.7.3 port 53808
+      2025-04-18T23:37:24.727222+02:00 ubuntu sshd[547960]:
+      pam_unix(sshd:session): session closed for user ubuntu
+      2025-04-19T09:14:23.110395+02:00 ubuntu sshd[551506]:
+      Accepted publickey for ubuntu from 10.116.7.3 port 33152 ssh2:
+      RSA SHA256:svFyiwd6eNAGhYjoyLK5s4DfV7L9OGkl96TdPD/HGx4
+      2025-04-19T09:14:23.121154+02:00 ubuntu sshd[551506]:
+      pam_unix(sshd:session): session opened for user ubuntu(uid=1000) by ubuntu(uid=0)
+      2025-04-19T09:15:57.881900+02:00 ubuntu sshd[552208]:
+      Invalid user boris from 10.116.7.3 port 57392
+      2025-04-19T09:15:58.620146+02:00 ubuntu sshd[552210]:
+      Invalid user boris from 10.116.7.3 port 57404
+      2025-04-19T09:15:59.607241+02:00 ubuntu sshd[552208]:
+      Connection closed by invalid user boris 10.116.7.3 port 57392 [preauth]
+      2025-04-19T09:22:32.610651+02:00 ubuntu sshd[551506]:
+      pam_unix(sshd:session): session closed for user ubuntu
+      2025-04-19T09:24:29.439464+02:00 ubuntu sshd[3140]:
+      Server listening on :: port 22.
+      2025-04-19T09:24:29.644512+02:00 ubuntu sshd[3141]:
+      Accepted publickey for ubuntu from 10.116.7.3 port 59192 ssh2:
+      RSA SHA256:svFyiwd6eNAGhYjoyLK5s4DfV7L9OGkl96TdPD/HGx4
+      2025-04-19T09:24:29.653713+02:00 ubuntu sshd[3141]:
+      pam_unix(sshd:session): session opened for user ubuntu(uid=1000) by ubuntu(uid=0)
+      2025-04-19T09:25:20.757320+02:00 ubuntu sshd[3281]:
+      Received disconnect from 10.116.7.3 port 59192:11: disconnected by user
+      2025-04-19T09:25:20.758180+02:00 ubuntu sshd[3281]:
+      Disconnected from user ubuntu 10.116.7.3 port 59192
+      2025-04-19T09:25:20.761270+02:00 ubuntu sshd[3141]:
+      pam_unix(sshd:session): session closed for user ubuntu
+    question: |
+      Based on the provided log entries, identify which network service they indicate activity for.
+      Respond with one of the following labels: SSH, Telnet, SMB, Other.
+      Choose the label that best represents the dominant or most clearly indicated service.
+    answer: |
+      SSH
+  - context: |
+      2025-04-30T16:05:01.620769+02:00 ubuntu CRON[2612187]:
+      pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+      2025-04-30T16:05:01.630878+02:00 ubuntu CRON[2612187]:
+      pam_unix(cron:session): session closed for user root
+      2025-04-30T16:15:01.657300+02:00 ubuntu CRON[2620279]:
+      pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+      2025-04-30T16:15:01.667693+02:00 ubuntu CRON[2620279]:
+      pam_unix(cron:session): session closed for user root
+      2025-04-30T16:17:01.690428+02:00 ubuntu CRON[2621963]:
+      pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+      2025-04-30T16:17:01.700390+02:00 ubuntu CRON[2621963]:
+      pam_unix(cron:session): session closed for user root
+      2025-04-30T16:25:01.726194+02:00 ubuntu CRON[2628378]:
+      pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+      2025-04-30T16:25:01.735781+02:00 ubuntu CRON[2628378]:
+      pam_unix(cron:session): session closed for user root
+      2025-04-30T16:25:16.224921+02:00 ubuntu sshd[2629506]:
+      Invalid user boris from 10.116.7.3 port 46450
+      2025-04-30T16:26:17.122640+02:00 ubuntu sshd[2629508]:
+      Invalid user boris from 10.116.7.3 port 46458
+      2025-04-30T16:26:17.976781+02:00 ubuntu sshd[2629506]:
+      Connection closed by invalid user boris 10.116.7.3 port 46450 [preauth]
+      2025-04-30T16:35:01.764193+02:00 ubuntu CRON[2636757]:
+      pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+      2025-04-30T16:35:01.773652+02:00 ubuntu CRON[2636757]:
+      pam_unix(cron:session): session closed for user root
+      2025-04-30T16:45:01.798249+02:00 ubuntu CRON[2644850]:
+      pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+      2025-04-30T16:45:01.808095+02:00 ubuntu CRON[2644850]:
+      pam_unix(cron:session): session closed for user root
+      2025-04-30T16:55:01.834638+02:00 ubuntu CRON[2652949]:
+      pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+      2025-04-30T16:55:01.844476+02:00 ubuntu CRON[2652949]:
+      pam_unix(cron:session): session closed for user root
+      2025-04-30T17:00:01.868832+02:00 ubuntu CRON[2657131]:
+      pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+      2025-04-30T17:00:02.850232+02:00 ubuntu CRON[2657131]:
+      pam_unix(cron:session): session closed for user root
+    question: |
+      Based on the provided log entries, identify which network service they indicate activity for.
+      Respond with one of the following labels: SSH, Telnet, SMB, Other.
+      Choose the label that best represents the dominant or most clearly indicated service.
+    answer: |
+      SSH
+  - context: |
+      May  4 09:00:00 ubuntu sshd[3210]:
+      Connection from 192.168.1.100 port 53718
+      May  4 09:00:01 ubuntu sshd[3210]:
+      Failed password for peter from 192.168.1.100 port 53718 ssh2
+      May  4 09:00:01 ubuntu sshd[3210]:
+      pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.1.100
+      May  4 09:00:03 ubuntu sshd[3210]:
+      Accepted password for peter from 192.168.1.100 port 53718 ssh2
+      May  4 09:00:03 ubuntu sshd[3210]:
+      pam_unix(sshd:session): session opened for user peter by (uid=0)
+      May  4 09:10:00 ubuntu sshd[3210]:
+      pam_unix(sshd:session): session closed for user peter
+    question: |
+      Based on the provided log entries, identify which network service they indicate activity for.
+      Respond with one of the following labels: SSH, Telnet, SMB, Other.
+      Choose the label that best represents the dominant or most clearly indicated service.
+    answer: |
+      SSH
+  - context: |
+      May  4 09:00:00 ubuntu sshd[3210]:
+      Connection from 192.168.1.100 port 53718
+      May  4 09:00:01 ubuntu sshd[3210]:
+      Accepted password for peter from 192.168.1.100 port 53718 ssh2
+      May  4 09:00:01 ubuntu sshd[3210]:
+      pam_unix(sshd:session): session opened for user peter by (uid=0)
+      May  4 09:05:10 ubuntu sshd[3225]:
+      Connection from 10.0.0.5 port 49212
+      May  4 09:05:11 ubuntu sshd[3225]:
+      Failed password for alice from 10.0.0.5 port 49212 ssh2
+      May  4 09:05:11 ubuntu sshd[3225]:
+      pam_unix(sshd:auth): authentication
+      failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.0.0.5
+      May  4 09:05:13 ubuntu sshd[3225]:
+      Accepted password for alice from 10.0.0.5 port 49212 ssh2
+      May  4 09:05:13 ubuntu sshd[3225]:
+      pam_unix(sshd:session): session opened for user alice by (uid=0)
+      May  4 09:10:20 ubuntu sshd[3240]:
+      Connection from 203.0.113.42 port 61300
+      May  4 09:10:21 ubuntu sshd[3240]:
+      Failed password for bob from 203.0.113.42 port 61300 ssh2
+      May  4 09:10:21 ubuntu sshd[3240]:
+      pam_unix(sshd:auth): authentication
+      failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=203.0.113.42
+      May  4 09:10:23 ubuntu sshd[3240]:
+      Failed password for bob from 203.0.113.42 port 61300 ssh2
+      May  4 09:10:23 ubuntu sshd[3240]:
+      pam_unix(sshd:auth): authentication
+      failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=203.0.113.42
+      May  4 09:10:25 ubuntu sshd[3240]:
+      Accepted password for bob from 203.0.113.42 port 61300 ssh2
+      May  4 09:10:25 ubuntu sshd[3240]:
+      pam_unix(sshd:session): session opened for user bob by (uid=0)
+      May  4 09:20:00 ubuntu sshd[3210]:
+      pam_unix(sshd:session): session closed for user peter
+      May  4 09:25:00 ubuntu sshd[3225]:
+      pam_unix(sshd:session): session closed for user alice
+      May  4 09:30:00 ubuntu sshd[3240]:
+      pam_unix(sshd:session): session closed for user bob
+    question: |
+      Based on the provided log entries, identify which network service they indicate activity for.
+      Respond with one of the following labels: SSH, Telnet, SMB, Other.
+      Choose the label that best represents the dominant or most clearly indicated service.
+    answer: |
+      SSH
+  - context: |
+      [2025/05/03 21:08:33.258425,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+          auth_check_ntlm_password: check_ntlm_password:
+          Checking password for unmapped user []\[admin]@[] with the new password interface
+      [2025/05/03 21:08:33.258955,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+          auth_check_ntlm_password: check_ntlm_password:
+          mapped user is: []\[admin]@[]
+      [2025/05/03 21:08:33.259265,  3] auth/gensec/spnego.c:1443(gensec_spnego_server_negTokenTarg_step)
+          gensec_spnego_server_negTokenTarg_step:
+          SPNEGO(ntlmssp) login succeeded: NT_STATUS_OK
+      [2025/05/03 21:08:33.259674,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+          check_ntlm_password:
+          Authentication for user [admin] -> [admin] SUCCEEDED with status NT_STATUS_OK, authoritative=1
+      [2025/05/03 21:08:33.260012,  1] smbd/service.c:1234(start_smbd_session)
+          start_smbd_session:  session setup for user [admin] (uid=1001, gid=1001) succeeded
+      [2025/05/03 21:08:33.260345,  1] smbd/service.c:1300(open_svc)
+          open_svc:  service [share] pid=54321
+    question: |
+      Based on the provided log entries, identify which network service they indicate activity for.
+      Respond with one of the following labels: SSH, Telnet, SMB, Other.
+      Choose the label that best represents the dominant or most clearly indicated service.
+    answer: |
+      SMB
+  - context: |
+      [2025/05/04 09:45:12.345678,  3] lib/util_sock.c:102(client_connect)
+          client_connect:  accepted connection from 192.168.1.50:54321
+      [2025/05/04 09:45:12.346789,  3] smbd/service.c:456(make_connection_snum)
+          make_connection_snum:  New SMB2 connection, dialect SMB 3.1.1
+      [2025/05/04 09:45:12.347890,  3] auth/ntlmssp/ntlmssp_server.c:509(ntlmssp_server_preauth)
+          Got user=[testuser] domain=[WORKGROUP] workstation=[DESKTOP-PC] len1=32 len2=32
+      [2025/05/04 09:45:12.348901,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+          auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user
+          WORKGROUP\[testuser]@192.168.1.50 with the new password interface
+      [2025/05/04 09:45:12.349012,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+          auth_check_ntlm_password: check_ntlm_password:  mapped user is:
+          WORKGROUP\[testuser]@192.168.1.50
+      [2025/05/04 09:45:12.350123,  3] auth/gensec/spnego.c:1443(gensec_spnego_server_negTokenTarg_step)
+          gensec_spnego_server_negTokenTarg_step: SPNEGO(ntlmssp) login succeeded:
+          NT_STATUS_OK
+      [2025/05/04 09:45:12.350234,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+          check_ntlm_password:  Authentication for user [testuser] -> [testuser]
+          SUCCEEDED with status NT_STATUS_OK, authoritative=1
+      [2025/05/04 09:45:12.351345,  1] smbd/service.c:1234(start_smbd_session)
+          start_smbd_session:  session setup for user [testuser] (uid=1002, gid=1002) succeeded
+      [2025/05/04 09:45:12.352456,  1] smbd/service.c:1300(open_svc)
+          open_svc:  service [public] pid=6789
+      [2025/05/04 09:45:12.353567,  1] smbd/protocol.c:789(create_tree_connection)
+          TreeConnect (1): \\SERVER\public Succeeded (share_mode=RDONLY)
+      [2025/05/04 09:45:12.354678,  1] smbd/protocol.c:812(negociate_user_session)
+          Session (userid=1002) fully established over SMB2
+    question: |
+      Based on the provided log entries, identify which network service they indicate activity for.
+      Respond with one of the following labels: SSH, Telnet, SMB, Other.
+      Choose the label that best represents the dominant or most clearly indicated service.
+    answer: |
+      SMB
+  - context: |
+      [2025/05/04 16:00:00.123456,  3] lib/util_sock.c:102(client_connect)
+          client_connect:  accepted connection from 192.168.1.100:50123
+      [2025/05/04 16:00:00.124567,  3] smbd/service.c:456(make_connection_snum)
+          make_connection_snum:  New SMB1 connection, dialect SMB1
+      [2025/05/04 16:00:00.125678,  3] auth/ntlmssp/ntlmssp_server.c:509(ntlmssp_server_preauth)
+          Got user=[boris] domain=[WORKGROUP] workstation=[BORIS-PC] len1=24 len2=24
+      [2025/05/04 16:00:00.126789,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+          auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user
+          WORKGROUP\[boris]@192.168.1.100 with the new password interface
+      [2025/05/04 16:00:00.127890,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+          auth_check_ntlm_password: check_ntlm_password:  mapped user is:
+          WORKGROUP\[boris]@192.168.1.100
+      [2025/05/04 16:00:00.129012,  3] auth/gensec/spnego.c:1443(gensec_spnego_server_negTokenTarg_step)
+          gensec_spnego_server_negTokenTarg_step: SPNEGO(ntlmssp) login succeeded:
+          NT_STATUS_OK
+      [2025/05/04 16:00:00.130123,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+          check_ntlm_password:  Authentication for user [boris] -> [boris]
+          SUCCEEDED with status NT_STATUS_OK, authoritative=1
+      [2025/05/04 16:00:00.131234,  1] smbd/service.c:1234(start_smbd_session)
+          start_smbd_session:  session setup for user [boris] (uid=1003, gid=1003) succeeded
+      [2025/05/04 16:00:00.132345,  1] smbd/service.c:1300(open_svc)
+          open_svc:  service [shared] pid=1122
+      [2025/05/04 16:00:00.133456,  1] smbd/protocol.c:789(create_tree_connection)
+          TreeConnect (1): \\SERVER\shared Succeeded (share_mode=RDWR)
+      [2025/05/04 16:00:00.134567,  1] smbd/protocol.c:901(process_read)
+          Read (fid=3, offset=0, len=512) Succeeded
+      [2025/05/04 16:00:00.135678,  1] smbd/protocol.c:920(process_write)
+          Write (fid=3, offset=512, len=256) Succeeded
+      [2025/05/04 16:00:00.136789,  1] smbd/protocol.c:1045(process_logoff)
+          Logoff (userid=1003) Succeeded
+      [2025/05/04 16:00:00.137890,  1] smbd/service.c:1350(end_smbd_session)
+          end_smbd_session:  session teardown for user [boris] completed
+    question: |
+      Based on the provided log entries, identify which network service they indicate activity for.
+      Respond with one of the following labels: SSH, Telnet, SMB, Other.
+      Choose the label that best represents the dominant or most clearly indicated service.
+    answer: |
+      SMB
+  - context: |
+      [2025/05/04 16:10:00.123456,  3] lib/util_sock.c:102(client_connect)
+          client_connect:  accepted connection from 192.168.1.100:50200
+      [2025/05/04 16:10:00.124567,  3] smbd/service.c:456(make_connection_snum)
+          make_connection_snum:  New SMB1 connection, dialect SMB1
+      [2025/05/04 16:10:00.125678,  3] auth/ntlmssp/ntlmssp_server.c:509(ntlmssp_server_preauth)
+          Got user=[boris] domain=[WORKGROUP] workstation=[BORIS-PC] len1=24 len2=24
+      [2025/05/04 16:10:00.126789,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+          auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user
+          WORKGROUP\[boris]@192.168.1.100 with the new password interface
+      [2025/05/04 16:10:00.127890,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+          auth_check_ntlm_password: check_ntlm_password:  mapped user is:
+          WORKGROUP\[boris]@192.168.1.100
+      [2025/05/04 16:10:00.130123,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+          check_ntlm_password:  Authentication for user [boris] -> [boris]
+          FAILED with error NT_STATUS_WRONG_PASSWORD, authoritative=1
+      [2025/05/04 16:10:05.223456,  3] lib/util_sock.c:102(client_connect)
+          client_connect:  accepted connection from 192.168.1.100:50201
+      [2025/05/04 16:10:05.224567,  3] smbd/service.c:456(make_connection_snum)
+          make_connection_snum:  New SMB1 connection, dialect SMB1
+      [2025/05/04 16:10:05.225678,  3] auth/ntlmssp/ntlmssp_server.c:509(ntlmssp_server_preauth)
+          Got user=[boris] domain=[WORKGROUP] workstation=[BORIS-PC] len1=24 len2=24
+      [2025/05/04 16:10:05.226789,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+          auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user
+          WORKGROUP\[boris]@192.168.1.100 with the new password interface
+      [2025/05/04 16:10:05.227890,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+          auth_check_ntlm_password: check_ntlm_password:  mapped user is:
+          WORKGROUP\[boris]@192.168.1.100
+      [2025/05/04 16:10:05.230123,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+          check_ntlm_password:  Authentication for user [boris] -> [boris]
+          SUCCEEDED with status NT_STATUS_OK, authoritative=1
+    question: |
+      Based on the provided log entries, identify which network service they indicate activity for.
+      Respond with one of the following labels: SSH, Telnet, SMB, Other.
+      Choose the label that best represents the dominant or most clearly indicated service.
+    answer: |
+      SMB
+  - context: |
+      2025-05-03T01:54:50.123456+02:00 ubuntu telnetd[64950]: connect from 10.10.10.4
+      2025-05-03T01:54:50.123789+02:00 ubuntu login[64952]:
+            pam_unix(login:auth): authentication success; logname=.telnet uid=0
+            euid=0 tty=/dev/pts/2 ruser= rhost=10.10.10.4  user=root
+      2025-05-03T01:54:50.124012+02:00 ubuntu login[64952]:
+            pam_unix(login:session): session opened for user root by LOGIN(uid=0)
+      2025-05-03T02:15:31.000000+02:00 ubuntu login[64952]:
+            pam_unix(login:session): session closed for user root
+    question: |
+      Based on the provided log entries, identify which network service they indicate activity for.
+      Respond with one of the following labels: SSH, Telnet, SMB, Other.
+      Choose the label that best represents the dominant or most clearly indicated service.
+    answer: |
+      Telnet
+  - context: |
+      2025-05-03T03:20:10.100000+02:00 ubuntu telnetd[65001]:
+      connect from 10.10.10.5
+      2025-05-03T03:20:10.100300+02:00 ubuntu login[65002]:
+            pam_unix(login:auth): authentication failure; logname=.telnet uid=0
+            euid=0 tty=/dev/pts/3 ruser= rhost=10.10.10.5  user=boris
+      2025-05-03T03:20:10.200000+02:00 ubuntu login[65002]:
+            FAILED LOGIN (1) on '/dev/pts/3' from '10.10.10.5' FOR 'boris',
+            Authentication failure
+      2025-05-03T03:22:15.150000+02:00 ubuntu telnetd[65010]: connect from 10.10.10.5
+      2025-05-03T03:22:15.150300+02:00 ubuntu login[65011]:
+            pam_unix(login:auth): authentication success; logname=.telnet uid=0
+            euid=0 tty=/dev/pts/4 ruser= rhost=10.10.10.5  user=boris
+      2025-05-03T03:22:15.150600+02:00 ubuntu login[65011]:
+            pam_unix(login:session): session opened for user boris by LOGIN(uid=0)
+      2025-05-03T03:35:00.000000+02:00 ubuntu login[65011]:
+            pam_unix(login:session): session closed for user boris
+    question: |
+      Based on the provided log entries, identify which network service they indicate activity for.
+      Respond with one of the following labels: SSH, Telnet, SMB, Other.
+      Choose the label that best represents the dominant or most clearly indicated service.
+    answer: |
+      Telnet
+  - context: |
+      May  3 03:20:10 ubuntu telnetd[65030]: connect from 10.10.10.11
+      May  3 03:20:10 ubuntu login[65031]: pam_unix(login:auth):
+      authentication failure; logname=.telnet uid=0 euid=0 tty=pts/2 ruser= rhost=10.10.10.11 user=jane
+      May  3 03:20:10 ubuntu login[65031]:
+      FAILED LOGIN (1) on 'pts/2' from '10.10.10.11' FOR 'jane', Authentication failure
+      May  3 03:20:15 ubuntu telnetd[65035]:
+      connect from 10.10.10.11
+      May  3 03:20:15 ubuntu login[65036]:
+      pam_unix(login:auth): authentication failure; logname=.telnet uid=0 euid=0 tty=pts/3 ruser= rhost=10.10.10.11 user=jane
+      May  3 03:20:15 ubuntu login[65036]:
+      FAILED LOGIN (1) on 'pts/3' from '10.10.10.11' FOR 'jane', Authentication failure
+      May  3 03:20:20 ubuntu telnetd[65037]:
+      connect from 10.10.10.11
+      May  3 03:20:20 ubuntu login[65038]:
+      pam_unix(login:auth): authentication success; logname=.telnet uid=0 euid=0 tty=pts/4 ruser= rhost=10.10.10.11 user=jane
+      May  3 03:20:20 ubuntu login[65038]:
+      pam_unix(login:session): session opened for user jane by LOGIN(uid=0)
+      May  3 03:30:00 ubuntu login[65038]:
+      pam_unix(login:session): session closed for user jane
+      May  3 03:40:00 ubuntu telnetd[65040]:
+      connect from 10.10.10.12
+      May  3 03:40:00 ubuntu login[65041]:
+      pam_unix(login:auth): authentication failure; logname=.telnet uid=0 euid=0 tty=pts/5 ruser= rhost=10.10.10.12 user=mark
+      May  3 03:40:00 ubuntu login[65041]:
+      FAILED LOGIN (1) on 'pts/5' from '10.10.10.12' FOR 'mark', Authentication failure
+      May  3 03:40:05 ubuntu telnetd[65045]:
+      connect from 10.10.10.12
+      May  3 03:40:05 ubuntu login[65046]:
+      pam_unix(login:auth): authentication failure; logname=.telnet uid=0 euid=0 tty=pts/6 ruser= rhost=10.10.10.12 user=mark
+      May  3 03:40:05 ubuntu login[65046]:
+      FAILED LOGIN (1) on 'pts/6' from '10.10.10.12' FOR 'mark', Authentication failure
+      May  3 03:40:10 ubuntu telnetd[65047]:
+      connect from 10.10.10.12
+      May  3 03:40:10 ubuntu login[65048]:
+      pam_unix(login:auth): authentication success; logname=.telnet uid=0 euid=0 tty=pts/7 ruser= rhost=10.10.10.12 user=mark
+      May  3 03:40:10 ubuntu login[65048]:
+      pam_unix(login:session): session opened for user mark by LOGIN(uid=0)
+      May  3 03:50:00 ubuntu login[65048]:
+      pam_unix(login:session): session closed for user mark
+    question: |
+      Based on the provided log entries, identify which network service they indicate activity for.
+      Respond with one of the following labels: SSH, Telnet, SMB, Other.
+      Choose the label that best represents the dominant or most clearly indicated service.
+    answer: |
+      Telnet
+  - context: |
+      May  4 07:55:00 ubuntu CRON[3600]:
+      pam_unix(cron:session): session opened for user root by (uid=0)
+      May  4 07:55:00 ubuntu CRON[3600]:
+      pam_unix(cron:session): session closed for user root
+      May  4 08:10:23 ubuntu sudo[3610]:
+      alice : TTY=pts/0 ; PWD=/home/alice ;
+      USER=root ; COMMAND=/usr/bin/apt update
+      May  4 08:10:23 ubuntu sudo[3610]:
+      pam_unix(sudo:session): session opened for user root by alice(uid=1001)
+      May  4 08:10:55 ubuntu sudo[3610]:
+      pam_unix(sudo:session): session closed for user root
+      May  4 08:30:12 ubuntu su[3620]:
+      pam_unix(su:session): session opened for user root by bob(uid=1002)
+      May  4 08:32:45 ubuntu su[3620]:
+      pam_unix(su:session): session closed for user root
+      May  4 09:00:10 ubuntu telnetd[65060]:
+      connect from 10.10.10.20
+      May  4 09:00:10 ubuntu login[65061]:
+      pam_unix(login:auth): authentication success;
+      logname=.telnet uid=0 euid=0 tty=pts/2 ruser= rhost=10.10.10.20 user=charlie
+      May  4 09:00:10 ubuntu login[65061]:
+      pam_unix(login:session): session opened for user charlie by LOGIN(uid=0)
+      May  4 09:30:00 ubuntu login[65061]:
+      pam_unix(login:session): session closed for user charlie
+      May  4 10:15:45 ubuntu passwd[3650]:
+      password expiry warning for user dave
+      May  4 10:15:45 ubuntu passwd[3650]:
+      pam_unix(passwd:chauthtok): password changed for dave
+      May  4 11:20:30 ubuntu polkitd(authority=local):
+       Registered Authentication Agent for unix-process:4021:173345
+       (system bus name :1.15, object path /org/freedesktop/PolicyKit1/AuthenticationAgent,
+       locale en_US.UTF-8)
+      May  4 12:30:05 ubuntu polkitd(authority=local):
+      Unregistered Authentication Agent for unix-process:4021:173345
+      (system bus name :1.15)
+    question: |
+      Based on the provided log entries, identify which network service they indicate activity for.
+      Respond with one of the following labels: SSH, Telnet, SMB, Other.
+      Choose the label that best represents the dominant or most clearly indicated service.
+    answer: |
+      Telnet

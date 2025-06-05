@@ -1,0 +1,48 @@
+2025-05-02T21:42:57.867428+02:00 victim-ubuntu sshd[52751]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.11.4  user=root
+2025-05-02T21:42:57.871392+02:00 victim-ubuntu sshd[52752]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.11.4  user=root
+2025-05-02T21:43:05.824660+02:00 victim-ubuntu sshd[52751]: Failed password for root from 192.168.11.4 port 49432 ssh2
+2025-05-02T21:43:06.070658+02:00 victim-ubuntu sshd[52752]: Failed password for root from 192.168.11.4 port 49446 ssh2
+2025-05-02T21:43:08.392244+02:00 victim-ubuntu sshd[52751]: Failed password for root from 192.168.11.4 port 49432 ssh2
+2025-05-02T21:43:08.438504+02:00 victim-ubuntu sshd[52752]: Failed password for root from 192.168.11.4 port 49446 ssh2
+2025-05-02T21:43:11.261988+02:00 victim-ubuntu sshd[52751]: Failed password for root from 192.168.11.4 port 49432 ssh2
+2025-05-02T21:43:11.308035+02:00 victim-ubuntu sshd[52752]: Failed password for root from 192.168.11.4 port 49446 ssh2
+2025-05-02T21:43:22.134748+02:00 victim-ubuntu sshd[52751]: Failed password for root from 192.168.11.4 port 49432 ssh2
+2025-05-02T21:43:24.313114+02:00 victim-ubuntu sshd[52752]: Failed password for root from 192.168.11.4 port 49446 ssh2
+2025-05-02T21:43:24.366257+02:00 victim-ubuntu sshd[52751]: Failed password for root from 192.168.11.4 port 49432 ssh2
+2025-05-02T21:43:28.257311+02:00 victim-ubuntu sshd[52752]: Failed password for root from 192.168.11.4 port 49446 ssh2
+2025-05-02T21:43:28.654205+02:00 victim-ubuntu sshd[52751]: Failed password for root from 192.168.11.4 port 49432 ssh2
+2025-05-02T21:43:35.385794+02:00 victim-ubuntu sshd[52751]: message repeated 2 times: [ Failed password for root from 192.168.11.4 port 49432 ssh2]
+2025-05-02T21:43:36.027268+02:00 victim-ubuntu sshd[52752]: Failed password for root from 192.168.11.4 port 49446 ssh2
+2025-05-02T21:43:39.570226+02:00 victim-ubuntu sshd[52751]: Failed password for root from 192.168.11.4 port 49432 ssh2
+2025-05-02T21:43:40.356141+02:00 victim-ubuntu sshd[52752]: Failed password for root from 192.168.11.4 port 49446 ssh2
+2025-05-02T21:43:49.359848+02:00 victim-ubuntu sshd[52751]: Failed password for root from 192.168.11.4 port 49432 ssh2
+2025-05-02T21:43:51.465375+02:00 victim-ubuntu sshd[52752]: Failed password for root from 192.168.11.4 port 49446 ssh2
+2025-05-02T21:43:53.333639+02:00 victim-ubuntu sshd[52751]: Failed password for root from 192.168.11.4 port 49432 ssh2
+2025-05-02T21:43:55.591256+02:00 victim-ubuntu sshd[52751]: Failed password for root from 192.168.11.4 port 49432 ssh2
+2025-05-02T21:43:56.694912+02:00 victim-ubuntu sshd[52752]: Failed password for root from 192.168.11.4 port 49446 ssh2
+2025-05-02T21:43:59.339905+02:00 victim-ubuntu sshd[52751]: Failed password for root from 192.168.11.4 port 49432 ssh2
+2025-05-02T21:43:59.434848+02:00 victim-ubuntu sshd[52752]: Failed password for root from 192.168.11.4 port 49446 ssh2
+2025-05-02T21:44:03.812346+02:00 victim-ubuntu sshd[52751]: Failed password for root from 192.168.11.4 port 49432 ssh2
+2025-05-02T21:44:11.374651+02:00 victim-ubuntu sshd[52752]: Failed password for root from 192.168.11.4 port 49446 ssh2
+2025-05-02T21:44:13.338578+02:00 victim-ubuntu sshd[52751]: Failed password for root from 192.168.11.4 port 49432 ssh2
+2025-05-02T21:44:15.639627+02:00 victim-ubuntu sshd[52752]: Failed password for root from 192.168.11.4 port 49446 ssh2
+2025-05-02T21:44:21.234625+02:00 victim-ubuntu sshd[52751]: Failed password for root from 192.168.11.4 port 49432 ssh2
+2025-05-02T21:44:24.838260+02:00 victim-ubuntu sshd[52751]: Failed password for root from 192.168.11.4 port 49432 ssh2
+2025-05-02T21:44:24.954723+02:00 victim-ubuntu sshd[52752]: Failed password for root from 192.168.11.4 port 49446 ssh2
+2025-05-02T21:44:26.721827+02:00 victim-ubuntu sshd[52752]: Failed password for root from 192.168.11.4 port 49446 ssh2
+2025-05-02T21:44:31.418224+02:00 victim-ubuntu sshd[52751]: Failed password for root from 192.168.11.4 port 49432 ssh2
+2025-05-02T21:44:35.953916+02:00 victim-ubuntu sshd[52752]: Failed password for root from 192.168.11.4 port 49446 ssh2
+2025-05-02T21:44:37.882168+02:00 victim-ubuntu sshd[52751]: Failed password for root from 192.168.11.4 port 49432 ssh2
+2025-05-02T21:44:46.600262+02:00 victim-ubuntu sshd[52751]: Failed password for root from 192.168.11.4 port 49432 ssh2
+2025-05-02T21:44:48.533699+02:00 victim-ubuntu sshd[52752]: Failed password for root from 192.168.11.4 port 49446 ssh2
+2025-05-02T21:44:50.235743+02:00 victim-ubuntu sshd[52751]: Failed password for root from 192.168.11.4 port 49432 ssh2
+2025-05-02T21:44:50.947696+02:00 victim-ubuntu sshd[52752]: Failed password for root from 192.168.11.4 port 49446 ssh2
+2025-05-02T21:44:55.988036+02:00 victim-ubuntu sshd[52751]: Failed password for root from 192.168.11.4 port 49432 ssh2
+2025-05-02T21:44:57.825175+02:00 victim-ubuntu sshd[52756]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.11.4  user=root
+2025-05-02T21:44:58.833131+02:00 victim-ubuntu sshd[52758]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.11.4  user=root
+2025-05-02T21:45:01.844257+02:00 victim-ubuntu CRON[52760]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-05-02T21:45:01.844928+02:00 victim-ubuntu sshd[52756]: Failed password for root from 192.168.11.4 port 42764 ssh2
+2025-05-02T21:45:01.847158+02:00 victim-ubuntu CRON[52760]: pam_unix(cron:session): session closed for user root
+2025-05-02T21:45:03.766625+02:00 victim-ubuntu sshd[52756]: Connection closed by authenticating user root 192.168.11.4 port 42764 [preauth]
+2025-05-02T21:45:04.691428+02:00 victim-ubuntu sshd[52758]: Failed password for root from 192.168.11.4 port 42778 ssh2
+2025-05-02T21:45:04.693634+02:00 victim-ubuntu sshd[52758]: Connection closed by authenticating user root 192.168.11.4 port 42778 [preauth]

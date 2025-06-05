@@ -1,0 +1,39 @@
+2025-05-02T21:14:56.243700+02:00 victim-ubuntu sshd[52002]: Invalid user admin from 10.68.105.80 port 49506
+2025-05-02T21:14:56.247934+02:00 victim-ubuntu sshd[52002]: Received disconnect from 10.68.105.80 port 49506:11: Bye Bye [preauth]
+2025-05-02T21:14:56.247982+02:00 victim-ubuntu sshd[52002]: Disconnected from invalid user admin 10.68.105.80 port 49506 [preauth]
+2025-05-02T21:14:56.809200+02:00 victim-ubuntu sshd[52004]: Invalid user admin from 10.68.105.80 port 49510
+2025-05-02T21:14:56.811541+02:00 victim-ubuntu sshd[52004]: pam_unix(sshd:auth): check pass; user unknown
+2025-05-02T21:14:56.811647+02:00 victim-ubuntu sshd[52004]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.68.105.80 
+2025-05-02T21:14:59.151019+02:00 victim-ubuntu sshd[52004]: Failed password for invalid user admin from 10.68.105.80 port 49510 ssh2
+2025-05-02T21:15:02.043865+02:00 victim-ubuntu CRON[52006]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-05-02T21:15:02.046484+02:00 victim-ubuntu CRON[52006]: pam_unix(cron:session): session closed for user root
+2025-05-02T21:15:13.538531+02:00 victim-ubuntu sshd[52004]: pam_unix(sshd:auth): check pass; user unknown
+2025-05-02T21:15:32.308657+02:00 victim-ubuntu sshd[52004]: Failed password for invalid user admin from 10.68.105.80 port 49510 ssh2
+2025-05-02T21:15:32.309658+02:00 victim-ubuntu sshd[52004]: pam_unix(sshd:auth): check pass; user unknown
+2025-05-02T21:15:34.351747+02:00 victim-ubuntu sshd[52004]: Failed password for invalid user admin from 10.68.105.80 port 49510 ssh2
+2025-05-02T21:15:35.423055+02:00 victim-ubuntu sshd[52004]: pam_unix(sshd:auth): check pass; user unknown
+2025-05-02T21:15:37.466584+02:00 victim-ubuntu sshd[52004]: Failed password for invalid user admin from 10.68.105.80 port 49510 ssh2
+2025-05-02T21:15:39.038767+02:00 victim-ubuntu sshd[52004]: pam_unix(sshd:auth): check pass; user unknown
+2025-05-02T21:15:41.357168+02:00 victim-ubuntu sshd[52004]: Failed password for invalid user admin from 10.68.105.80 port 49510 ssh2
+2025-05-02T21:15:41.831011+02:00 victim-ubuntu sshd[52004]: pam_unix(sshd:auth): check pass; user unknown
+2025-05-02T21:15:44.506665+02:00 victim-ubuntu sshd[52004]: Failed password for invalid user admin from 10.68.105.80 port 49510 ssh2
+2025-05-02T21:15:54.833371+02:00 victim-ubuntu sshd[52004]: pam_unix(sshd:auth): check pass; user unknown
+2025-05-02T21:16:10.458270+02:00 victim-ubuntu sshd[52004]: Failed password for invalid user admin from 10.68.105.80 port 49510 ssh2
+2025-05-02T21:16:10.459526+02:00 victim-ubuntu sshd[52004]: pam_unix(sshd:auth): check pass; user unknown
+2025-05-02T21:16:12.468513+02:00 victim-ubuntu sshd[52004]: Failed password for invalid user admin from 10.68.105.80 port 49510 ssh2
+2025-05-02T21:16:12.945697+02:00 victim-ubuntu sshd[52004]: pam_unix(sshd:auth): check pass; user unknown
+2025-05-02T21:16:15.848064+02:00 victim-ubuntu sshd[52004]: Failed password for invalid user admin from 10.68.105.80 port 49510 ssh2
+2025-05-02T21:16:19.341132+02:00 victim-ubuntu sshd[52004]: pam_unix(sshd:auth): check pass; user unknown
+2025-05-02T21:16:23.669687+02:00 victim-ubuntu sshd[52004]: Failed password for invalid user admin from 10.68.105.80 port 49510 ssh2
+2025-05-02T21:16:24.313875+02:00 victim-ubuntu sshd[52004]: pam_unix(sshd:auth): check pass; user unknown
+2025-05-02T21:16:27.315430+02:00 victim-ubuntu sshd[52004]: Failed password for invalid user admin from 10.68.105.80 port 49510 ssh2
+2025-05-02T21:16:29.060895+02:00 victim-ubuntu sshd[52004]: pam_unix(sshd:auth): check pass; user unknown
+2025-05-02T21:16:32.188494+02:00 victim-ubuntu sshd[52004]: Failed password for invalid user admin from 10.68.105.80 port 49510 ssh2
+2025-05-02T21:16:35.644731+02:00 victim-ubuntu sshd[52004]: pam_unix(sshd:auth): check pass; user unknown
+2025-05-02T21:16:41.686481+02:00 victim-ubuntu sshd[52004]: Failed password for invalid user admin from 10.68.105.80 port 49510 ssh2
+2025-05-02T21:16:41.687432+02:00 victim-ubuntu sshd[52004]: pam_unix(sshd:auth): check pass; user unknown
+2025-05-02T21:16:43.429597+02:00 victim-ubuntu sshd[52004]: Failed password for invalid user admin from 10.68.105.80 port 49510 ssh2
+2025-05-02T21:16:51.629603+02:00 victim-ubuntu sshd[52004]: pam_unix(sshd:auth): check pass; user unknown
+2025-05-02T21:16:54.550268+02:00 victim-ubuntu sshd[52004]: Failed password for invalid user admin from 10.68.105.80 port 49510 ssh2
+2025-05-02T21:17:02.581564+02:00 victim-ubuntu CRON[52013]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-05-02T21:17:02.585290+02:00 victim-ubuntu CRON[52013]: pam_unix(cron:session): session closed for user root

@@ -1,0 +1,59 @@
+2025-05-03T01:57:40.010088+02:00 victim-ubuntu login[65809]: PAM unable to dlopen(pam_lastlog.so): /usr/lib/security/pam_lastlog.so: cannot open shared object file: No such file or directory
+2025-05-03T01:57:40.010316+02:00 victim-ubuntu login[65809]: PAM adding faulty module: pam_lastlog.so
+2025-05-03T01:57:40.135665+02:00 victim-ubuntu login[65809]: pam_unix(login:auth): authentication failure; logname=.telnet uid=0 euid=0 tty=/dev/pts/2 ruser= rhost=10.10.10.4  user=root
+2025-05-03T01:57:44.861906+02:00 victim-ubuntu login[65809]: FAILED LOGIN (1) on '/dev/pts/2' from '10.10.10.4' FOR 'root', Authentication failure
+2025-05-03T01:57:47.618303+02:00 victim-ubuntu login[65809]: FAILED LOGIN (2) on '/dev/pts/2' from '10.10.10.4' FOR 'root', Authentication failure
+2025-05-03T01:57:50.477782+02:00 victim-ubuntu login[65809]: FAILED LOGIN (3) on '/dev/pts/2' from '10.10.10.4' FOR 'root', Authentication failure
+2025-05-03T01:57:53.954121+02:00 victim-ubuntu login[65809]: FAILED LOGIN (4) on '/dev/pts/2' from '10.10.10.4' FOR 'root', Authentication failure
+2025-05-03T01:57:57.050135+02:00 victim-ubuntu login[65809]: FAILED LOGIN (5) on '/dev/pts/2' from '10.10.10.4' FOR 'root', Authentication failure
+2025-05-03T01:57:57.050287+02:00 victim-ubuntu login[65809]: TOO MANY LOGIN TRIES (5) on '/dev/pts/2' from '10.10.10.4' FOR 'root'
+2025-05-03T01:57:57.050346+02:00 victim-ubuntu login[65809]: pam_mail(login:session): pam_putenv: delete non-existent entry; MAIL
+2025-05-03T01:57:57.050410+02:00 victim-ubuntu login[65809]: pam_unix(login:session): session closed for user root
+2025-05-03T01:57:57.050480+02:00 victim-ubuntu login[65809]: PAM 4 more authentication failures; logname=.telnet uid=0 euid=0 tty=/dev/pts/2 ruser= rhost=10.10.10.4  user=root
+2025-05-03T01:57:57.050548+02:00 victim-ubuntu login[65809]: PAM service(login) ignoring max retries; 5 > 3
+2025-05-03T01:57:57.063332+02:00 victim-ubuntu login[65823]: PAM unable to dlopen(pam_lastlog.so): /usr/lib/security/pam_lastlog.so: cannot open shared object file: No such file or directory
+2025-05-03T01:57:57.063648+02:00 victim-ubuntu login[65821]: PAM unable to dlopen(pam_lastlog.so): /usr/lib/security/pam_lastlog.so: cannot open shared object file: No such file or directory
+2025-05-03T01:57:57.063852+02:00 victim-ubuntu login[65822]: PAM unable to dlopen(pam_lastlog.so): /usr/lib/security/pam_lastlog.so: cannot open shared object file: No such file or directory
+2025-05-03T01:57:57.063898+02:00 victim-ubuntu login[65821]: PAM adding faulty module: pam_lastlog.so
+2025-05-03T01:57:57.063923+02:00 victim-ubuntu login[65822]: PAM adding faulty module: pam_lastlog.so
+2025-05-03T01:57:57.064126+02:00 victim-ubuntu login[65824]: PAM unable to dlopen(pam_lastlog.so): /usr/lib/security/pam_lastlog.so: cannot open shared object file: No such file or directory
+2025-05-03T01:57:57.064181+02:00 victim-ubuntu login[65824]: PAM adding faulty module: pam_lastlog.so
+2025-05-03T01:57:57.064211+02:00 victim-ubuntu login[65823]: PAM adding faulty module: pam_lastlog.so
+2025-05-03T01:57:57.064388+02:00 victim-ubuntu login[65827]: PAM unable to dlopen(pam_lastlog.so): /usr/lib/security/pam_lastlog.so: cannot open shared object file: No such file or directory
+2025-05-03T01:57:57.064424+02:00 victim-ubuntu login[65827]: PAM adding faulty module: pam_lastlog.so
+2025-05-03T01:57:57.066395+02:00 victim-ubuntu login[65825]: PAM unable to dlopen(pam_lastlog.so): /usr/lib/security/pam_lastlog.so: cannot open shared object file: No such file or directory
+2025-05-03T01:57:57.066530+02:00 victim-ubuntu login[65825]: PAM adding faulty module: pam_lastlog.so
+2025-05-03T01:57:57.067089+02:00 victim-ubuntu login[65828]: PAM unable to dlopen(pam_lastlog.so): /usr/lib/security/pam_lastlog.so: cannot open shared object file: No such file or directory
+2025-05-03T01:57:57.067317+02:00 victim-ubuntu login[65826]: PAM unable to dlopen(pam_lastlog.so): /usr/lib/security/pam_lastlog.so: cannot open shared object file: No such file or directory
+2025-05-03T01:57:57.067543+02:00 victim-ubuntu login[65829]: PAM unable to dlopen(pam_lastlog.so): /usr/lib/security/pam_lastlog.so: cannot open shared object file: No such file or directory
+2025-05-03T01:57:57.067620+02:00 victim-ubuntu login[65826]: PAM adding faulty module: pam_lastlog.so
+2025-05-03T01:57:57.067660+02:00 victim-ubuntu login[65829]: PAM adding faulty module: pam_lastlog.so
+2025-05-03T01:57:57.067689+02:00 victim-ubuntu login[65828]: PAM adding faulty module: pam_lastlog.so
+2025-05-03T01:57:57.067905+02:00 victim-ubuntu login[65830]: PAM unable to dlopen(pam_lastlog.so): /usr/lib/security/pam_lastlog.so: cannot open shared object file: No such file or directory
+2025-05-03T01:57:57.067987+02:00 victim-ubuntu login[65830]: PAM adding faulty module: pam_lastlog.so
+2025-05-03T01:57:57.190275+02:00 victim-ubuntu login[65824]: pam_unix(login:auth): authentication failure; logname=.telnet uid=0 euid=0 tty=/dev/pts/6 ruser= rhost=10.10.10.4  user=root
+2025-05-03T01:57:57.191366+02:00 victim-ubuntu login[65826]: pam_unix(login:auth): authentication failure; logname=.telnet uid=0 euid=0 tty=/dev/pts/7 ruser= rhost=10.10.10.4  user=root
+2025-05-03T01:57:57.191428+02:00 victim-ubuntu login[65822]: pam_unix(login:auth): authentication failure; logname=.telnet uid=0 euid=0 tty=/dev/pts/4 ruser= rhost=10.10.10.4  user=root
+2025-05-03T01:57:57.196382+02:00 victim-ubuntu login[65821]: pam_unix(login:auth): authentication failure; logname=.telnet uid=0 euid=0 tty=/dev/pts/2 ruser= rhost=10.10.10.4  user=root
+2025-05-03T01:57:57.226593+02:00 victim-ubuntu login[65827]: pam_unix(login:auth): authentication failure; logname=.telnet uid=0 euid=0 tty=/dev/pts/8 ruser= rhost=10.10.10.4  user=root
+2025-05-03T01:57:57.227605+02:00 victim-ubuntu login[65823]: pam_unix(login:auth): authentication failure; logname=.telnet uid=0 euid=0 tty=/dev/pts/3 ruser= rhost=10.10.10.4  user=root
+2025-05-03T01:57:57.234580+02:00 victim-ubuntu login[65828]: pam_unix(login:auth): authentication failure; logname=.telnet uid=0 euid=0 tty=/dev/pts/10 ruser= rhost=10.10.10.4  user=root
+2025-05-03T01:57:57.236244+02:00 victim-ubuntu login[65830]: pam_unix(login:auth): authentication failure; logname=.telnet uid=0 euid=0 tty=/dev/pts/9 ruser= rhost=10.10.10.4  user=root
+2025-05-03T01:57:57.246544+02:00 victim-ubuntu login[65829]: pam_unix(login:auth): authentication failure; logname=.telnet uid=0 euid=0 tty=/dev/pts/11 ruser= rhost=10.10.10.4  user=root
+2025-05-03T01:57:57.262425+02:00 victim-ubuntu login[65825]: pam_unix(login:auth): authentication failure; logname=.telnet uid=0 euid=0 tty=/dev/pts/5 ruser= rhost=10.10.10.4  user=root
+2025-05-03T01:58:01.462903+02:00 victim-ubuntu login[65826]: FAILED LOGIN (1) on '/dev/pts/7' from '10.10.10.4' FOR 'root', Authentication failure
+2025-05-03T01:58:01.463518+02:00 victim-ubuntu login[65822]: FAILED LOGIN (1) on '/dev/pts/4' from '10.10.10.4' FOR 'root', Authentication failure
+2025-05-03T01:58:01.470203+02:00 victim-ubuntu login[65835]: PAM unable to dlopen(pam_lastlog.so): /usr/lib/security/pam_lastlog.so: cannot open shared object file: No such file or directory
+2025-05-03T01:58:01.470561+02:00 victim-ubuntu login[65834]: PAM unable to dlopen(pam_lastlog.so): /usr/lib/security/pam_lastlog.so: cannot open shared object file: No such file or directory
+2025-05-03T01:58:01.470758+02:00 victim-ubuntu login[65836]: PAM unable to dlopen(pam_lastlog.so): /usr/lib/security/pam_lastlog.so: cannot open shared object file: No such file or directory
+2025-05-03T01:58:01.470803+02:00 victim-ubuntu login[65834]: PAM adding faulty module: pam_lastlog.so
+2025-05-03T01:58:01.470829+02:00 victim-ubuntu login[65835]: PAM adding faulty module: pam_lastlog.so
+2025-05-03T01:58:01.470855+02:00 victim-ubuntu login[65836]: PAM adding faulty module: pam_lastlog.so
+2025-05-03T01:58:01.508860+02:00 victim-ubuntu login[65821]: FAILED LOGIN (1) on '/dev/pts/2' from '10.10.10.4' FOR 'root', Authentication failure
+2025-05-03T01:58:01.509196+02:00 victim-ubuntu login[65830]: FAILED LOGIN (1) on '/dev/pts/9' from '10.10.10.4' FOR 'root', Authentication failure
+2025-05-03T01:58:01.509381+02:00 victim-ubuntu login[65823]: FAILED LOGIN (1) on '/dev/pts/3' from '10.10.10.4' FOR 'root', Authentication failure
+2025-05-03T01:58:01.509560+02:00 victim-ubuntu login[65828]: FAILED LOGIN (1) on '/dev/pts/10' from '10.10.10.4' FOR 'root', Authentication failure
+2025-05-03T01:58:01.533680+02:00 victim-ubuntu login[65825]: FAILED LOGIN (1) on '/dev/pts/5' from '10.10.10.4' FOR 'root', Authentication failure
+2025-05-03T01:58:01.556004+02:00 victim-ubuntu login[65835]: pam_unix(login:auth): authentication failure; logname=.telnet uid=0 euid=0 tty=/dev/pts/14 ruser= rhost=10.10.10.4  user=root
+2025-05-03T01:58:01.621067+02:00 victim-ubuntu login[65834]: pam_unix(login:auth): authentication failure; logname=.telnet uid=0 euid=0 tty=/dev/pts/12 ruser= rhost=10.10.10.4  user=root
+2025-05-03T01:58:01.621944+02:00 victim-ubuntu login[65836]: pam_unix(login:auth): authentication failure; logname=.telnet uid=0 euid=0 tty=/dev/pts/13 ruser= rhost=10.10.10.4  user=root

@@ -1,0 +1,5 @@
+2025-05-02T19:55:01.992452+02:00 victim-ubuntu CRON[27237]: pam_unix(cron:session): session closed for user root
+2025-05-02T19:59:12.849386+02:00 victim-ubuntu gdm-password]: pam_unix(gdm-password:auth): authentication failure; logname=victim uid=0 euid=0 tty=/dev/tty1 ruser= rhost=  user=victim
+2025-05-02T19:59:23.084886+02:00 victim-ubuntu gdm-password]: pam_unix(gdm-password:auth): authentication failure; logname=victim uid=0 euid=0 tty=/dev/tty1 ruser= rhost=  user=victim
+2025-05-02T19:59:32.577141+02:00 victim-ubuntu gdm-password]: gkr-pam: unlocked login keyring
+

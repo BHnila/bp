@@ -1,0 +1,32 @@
+2025-05-02T21:55:03.706928+02:00 victim-ubuntu CRON[53161]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-05-02T21:55:03.709353+02:00 victim-ubuntu CRON[53161]: pam_unix(cron:session): session closed for user root
+2025-05-02T21:55:13.260324+02:00 victim-ubuntu sshd[53164]: Received disconnect from 172.16.22.48 port 46622:11: Bye Bye [preauth]
+2025-05-02T21:55:13.260648+02:00 victim-ubuntu sshd[53164]: Disconnected from authenticating user root 172.16.22.48 port 46622 [preauth]
+2025-05-02T21:55:13.753168+02:00 victim-ubuntu sshd[53166]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=172.16.22.48  user=root
+2025-05-02T21:55:13.753683+02:00 victim-ubuntu sshd[53167]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=172.16.22.48  user=root
+2025-05-02T21:55:17.297601+02:00 victim-ubuntu sshd[53166]: Failed password for root from 172.16.22.48 port 46632 ssh2
+2025-05-02T21:55:17.298096+02:00 victim-ubuntu sshd[53167]: Failed password for root from 172.16.22.48 port 46634 ssh2
+2025-05-02T21:55:22.569370+02:00 victim-ubuntu sshd[53166]: Failed password for root from 172.16.22.48 port 46632 ssh2
+2025-05-02T21:55:38.227898+02:00 victim-ubuntu sshd[53167]: Failed password for root from 172.16.22.48 port 46634 ssh2
+2025-05-02T21:55:38.228436+02:00 victim-ubuntu sshd[53166]: Failed password for root from 172.16.22.48 port 46632 ssh2
+2025-05-02T21:55:40.520178+02:00 victim-ubuntu sshd[53166]: Failed password for root from 172.16.22.48 port 46632 ssh2
+2025-05-02T21:55:40.520612+02:00 victim-ubuntu sshd[53167]: Failed password for root from 172.16.22.48 port 46634 ssh2
+2025-05-02T21:55:43.318158+02:00 victim-ubuntu sshd[53166]: Failed password for root from 172.16.22.48 port 46632 ssh2
+2025-05-02T21:55:55.043710+02:00 victim-ubuntu sshd[53166]: Failed password for root from 172.16.22.48 port 46632 ssh2
+2025-05-02T21:56:30.223265+02:00 victim-ubuntu sshd[53166]: message repeated 7 times: [ Failed password for root from 172.16.22.48 port 46632 ssh2]
+2025-05-02T21:56:30.223842+02:00 victim-ubuntu sshd[53167]: Failed password for root from 172.16.22.48 port 46634 ssh2
+2025-05-02T21:56:32.289114+02:00 victim-ubuntu sshd[53167]: Failed password for root from 172.16.22.48 port 46634 ssh2
+2025-05-02T21:56:34.584028+02:00 victim-ubuntu sshd[53166]: Failed password for root from 172.16.22.48 port 46632 ssh2
+2025-05-02T21:56:36.544470+02:00 victim-ubuntu sshd[53167]: Failed password for root from 172.16.22.48 port 46634 ssh2
+2025-05-02T21:56:45.016122+02:00 victim-ubuntu sshd[53166]: Failed password for root from 172.16.22.48 port 46632 ssh2
+2025-05-02T21:56:47.007034+02:00 victim-ubuntu sshd[53167]: Failed password for root from 172.16.22.48 port 46634 ssh2
+2025-05-02T21:56:51.620676+02:00 victim-ubuntu sshd[53167]: Failed password for root from 172.16.22.48 port 46634 ssh2
+2025-05-02T21:56:55.280479+02:00 victim-ubuntu sshd[53166]: Failed password for root from 172.16.22.48 port 46632 ssh2
+2025-05-02T21:56:56.014926+02:00 victim-ubuntu sshd[53167]: Failed password for root from 172.16.22.48 port 46634 ssh2
+2025-05-02T21:56:57.495817+02:00 victim-ubuntu sshd[53166]: Failed password for root from 172.16.22.48 port 46632 ssh2
+2025-05-02T21:57:06.659056+02:00 victim-ubuntu sshd[53167]: Failed password for root from 172.16.22.48 port 46634 ssh2
+2025-05-02T21:57:07.850580+02:00 victim-ubuntu sshd[53166]: Failed password for root from 172.16.22.48 port 46632 ssh2
+2025-05-02T21:57:11.528954+02:00 victim-ubuntu sshd[53167]: Failed password for root from 172.16.22.48 port 46634 ssh2
+2025-05-02T21:57:20.408604+02:00 victim-ubuntu sshd[53167]: Connection closed by authenticating user root 172.16.22.48 port 46634 [preauth]
+2025-05-02T21:57:20.408791+02:00 victim-ubuntu sshd[53167]: PAM 10 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=172.16.22.48  user=root
+2025-05-02T21:57:20.408871+02:00 victim-ubuntu sshd[53167]: PAM service(sshd) ignoring max retries; 11 > 3

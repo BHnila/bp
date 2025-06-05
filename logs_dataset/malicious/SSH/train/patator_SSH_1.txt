@@ -1,0 +1,54 @@
+2025-05-02T21:27:09.501117+02:00 victim-ubuntu sshd[52249]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.68.105.80  user=root
+2025-05-02T21:27:09.501625+02:00 victim-ubuntu sshd[52248]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.68.105.80  user=root
+2025-05-02T21:27:09.501810+02:00 victim-ubuntu sshd[52247]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.68.105.80  user=root
+2025-05-02T21:27:09.532512+02:00 victim-ubuntu sshd[52256]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.68.105.80  user=root
+2025-05-02T21:27:09.535194+02:00 victim-ubuntu sshd[52253]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.68.105.80  user=root
+2025-05-02T21:27:09.539337+02:00 victim-ubuntu sshd[52258]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.68.105.80  user=root
+2025-05-02T21:27:09.560929+02:00 victim-ubuntu sshd[52262]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.68.105.80  user=root
+2025-05-02T21:27:09.563379+02:00 victim-ubuntu sshd[52263]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.68.105.80  user=root
+2025-05-02T21:27:09.694109+02:00 victim-ubuntu sshd[52246]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.68.105.80  user=root
+2025-05-02T21:27:09.696527+02:00 victim-ubuntu sshd[52252]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.68.105.80  user=root
+2025-05-02T21:27:11.814608+02:00 victim-ubuntu sshd[52253]: Failed password for root from 10.68.105.80 port 43046 ssh2
+2025-05-02T21:27:11.815309+02:00 victim-ubuntu sshd[52256]: Failed password for root from 10.68.105.80 port 43060 ssh2
+2025-05-02T21:27:11.934732+02:00 victim-ubuntu sshd[52258]: Failed password for root from 10.68.105.80 port 43062 ssh2
+2025-05-02T21:27:11.981306+02:00 victim-ubuntu sshd[52248]: Failed password for root from 10.68.105.80 port 43018 ssh2
+2025-05-02T21:27:11.981582+02:00 victim-ubuntu sshd[52247]: Failed password for root from 10.68.105.80 port 43002 ssh2
+2025-05-02T21:27:11.981830+02:00 victim-ubuntu sshd[52249]: Failed password for root from 10.68.105.80 port 43026 ssh2
+2025-05-02T21:27:12.006431+02:00 victim-ubuntu sshd[52246]: Failed password for root from 10.68.105.80 port 42990 ssh2
+2025-05-02T21:27:17.666215+02:00 victim-ubuntu sshd[52263]: Failed password for root from 10.68.105.80 port 43090 ssh2
+2025-05-02T21:27:17.681352+02:00 victim-ubuntu sshd[52252]: Failed password for root from 10.68.105.80 port 43042 ssh2
+2025-05-02T21:27:17.682614+02:00 victim-ubuntu sshd[52262]: Failed password for root from 10.68.105.80 port 43074 ssh2
+2025-05-02T21:27:18.883110+02:00 victim-ubuntu sshd[52249]: Failed password for root from 10.68.105.80 port 43026 ssh2
+2025-05-02T21:27:19.468488+02:00 victim-ubuntu sshd[52263]: Failed password for root from 10.68.105.80 port 43090 ssh2
+2025-05-02T21:27:19.468845+02:00 victim-ubuntu sshd[52246]: Failed password for root from 10.68.105.80 port 42990 ssh2
+2025-05-02T21:27:19.469140+02:00 victim-ubuntu sshd[52256]: Failed password for root from 10.68.105.80 port 43060 ssh2
+2025-05-02T21:27:19.473056+02:00 victim-ubuntu sshd[52247]: Failed password for root from 10.68.105.80 port 43002 ssh2
+2025-05-02T21:27:19.479393+02:00 victim-ubuntu sshd[52252]: Failed password for root from 10.68.105.80 port 43042 ssh2
+2025-05-02T21:27:19.479695+02:00 victim-ubuntu sshd[52262]: Failed password for root from 10.68.105.80 port 43074 ssh2
+2025-05-02T21:27:22.845399+02:00 victim-ubuntu sshd[52247]: Failed password for root from 10.68.105.80 port 43002 ssh2
+2025-05-02T21:27:22.845759+02:00 victim-ubuntu sshd[52252]: Failed password for root from 10.68.105.80 port 43042 ssh2
+2025-05-02T21:27:31.450459+02:00 victim-ubuntu sshd[52252]: message repeated 3 times: [ Failed password for root from 10.68.105.80 port 43042 ssh2]
+2025-05-02T21:27:32.712112+02:00 victim-ubuntu sshd[52252]: Connection closed by authenticating user root 10.68.105.80 port 43042 [preauth]
+2025-05-02T21:27:32.712606+02:00 victim-ubuntu sshd[52252]: PAM 5 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.68.105.80  user=root
+2025-05-02T21:27:32.712708+02:00 victim-ubuntu sshd[52252]: PAM service(sshd) ignoring max retries; 6 > 3
+2025-05-02T21:27:35.200153+02:00 victim-ubuntu sshd[52248]: Failed password for root from 10.68.105.80 port 43018 ssh2
+2025-05-02T21:27:35.200491+02:00 victim-ubuntu sshd[52253]: Failed password for root from 10.68.105.80 port 43046 ssh2
+2025-05-02T21:27:35.200637+02:00 victim-ubuntu sshd[52249]: Connection closed by authenticating user root 10.68.105.80 port 43026 [preauth]
+2025-05-02T21:27:35.200672+02:00 victim-ubuntu sshd[52249]: PAM 1 more authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.68.105.80  user=root
+2025-05-02T21:27:35.200808+02:00 victim-ubuntu sshd[52247]: Connection closed by authenticating user root 10.68.105.80 port 43002 [preauth]
+2025-05-02T21:27:35.201800+02:00 victim-ubuntu sshd[52256]: Connection closed by authenticating user root 10.68.105.80 port 43060 [preauth]
+2025-05-02T21:27:35.201871+02:00 victim-ubuntu sshd[52256]: PAM 1 more authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.68.105.80  user=root
+2025-05-02T21:27:35.201901+02:00 victim-ubuntu sshd[52248]: Connection closed by authenticating user root 10.68.105.80 port 43018 [preauth]
+2025-05-02T21:27:35.201937+02:00 victim-ubuntu sshd[52248]: PAM 1 more authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.68.105.80  user=root
+2025-05-02T21:27:35.201988+02:00 victim-ubuntu sshd[52253]: Connection closed by authenticating user root 10.68.105.80 port 43046 [preauth]
+2025-05-02T21:27:35.202054+02:00 victim-ubuntu sshd[52253]: PAM 1 more authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.68.105.80  user=root
+2025-05-02T21:27:35.202105+02:00 victim-ubuntu sshd[52247]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.68.105.80  user=root
+2025-05-02T21:27:35.202187+02:00 victim-ubuntu sshd[52246]: Connection closed by authenticating user root 10.68.105.80 port 42990 [preauth]
+2025-05-02T21:27:35.202264+02:00 victim-ubuntu sshd[52246]: PAM 1 more authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.68.105.80  user=root
+2025-05-02T21:27:35.319600+02:00 victim-ubuntu sshd[52263]: Connection closed by authenticating user root 10.68.105.80 port 43090 [preauth]
+2025-05-02T21:27:35.320099+02:00 victim-ubuntu sshd[52262]: Connection closed by authenticating user root 10.68.105.80 port 43074 [preauth]
+2025-05-02T21:27:35.320430+02:00 victim-ubuntu sshd[52262]: PAM 1 more authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.68.105.80  user=root
+2025-05-02T21:27:35.320505+02:00 victim-ubuntu sshd[52263]: PAM 1 more authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.68.105.80  user=root
+2025-05-02T21:27:35.320733+02:00 victim-ubuntu sshd[52258]: Failed password for root from 10.68.105.80 port 43062 ssh2
+2025-05-02T21:27:35.320776+02:00 victim-ubuntu sshd[52258]: Connection closed by authenticating user root 10.68.105.80 port 43062 [preauth]
+2025-05-02T21:27:35.320812+02:00 victim-ubuntu sshd[52258]: PAM 1 more authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.68.105.80  user=root

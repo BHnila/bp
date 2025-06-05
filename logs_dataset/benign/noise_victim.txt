@@ -1,0 +1,139 @@
+2025-05-02T18:25:10.597065+02:00 victim-ubuntu sudo: pam_unix(sudo:session): session closed for user root
+2025-05-02T18:25:17.581259+02:00 victim-ubuntu sudo:   victim : TTY=pts/0 ; PWD=/var/log ; USER=root ; COMMAND=/usr/bin/systemctl start rsyslog
+2025-05-02T18:25:17.582044+02:00 victim-ubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by victim(uid=1000)
+2025-05-02T18:25:17.591875+02:00 victim-ubuntu sudo: pam_unix(sudo:session): session closed for user root
+2025-05-02T18:26:50.904453+02:00 victim-ubuntu systemd-logind[1020]: The system will reboot now!
+2025-05-02T18:26:50.930659+02:00 victim-ubuntu systemd-logind[1020]: System is rebooting.
+2025-05-02T18:26:50.956384+02:00 victim-ubuntu gdm-password]: pam_unix(gdm-password:session): session closed for user victim
+2025-05-02T18:26:51.006147+02:00 victim-ubuntu xrdp-sesman[8686]: pam_unix(xrdp-sesman:session): session closed for user victim
+2025-05-02T18:26:55.004641+02:00 victim-ubuntu systemd-logind[1066]: New seat seat0.
+2025-05-02T18:26:55.004650+02:00 victim-ubuntu systemd-logind[1066]: Watching system buttons on /dev/input/event0 (Power Button)
+2025-05-02T18:26:55.004654+02:00 victim-ubuntu systemd-logind[1066]: Watching system buttons on /dev/input/event1 (Sleep Button)
+2025-05-02T18:26:55.004658+02:00 victim-ubuntu systemd-logind[1066]: Watching system buttons on /dev/input/event2 (AT Translated Set 2 keyboard)
+2025-05-02T18:26:55.024539+02:00 victim-ubuntu polkitd[1035]: Loading rules from directory /etc/polkit-1/rules.d
+2025-05-02T18:26:55.024846+02:00 victim-ubuntu polkitd[1035]: Loading rules from directory /usr/share/polkit-1/rules.d
+2025-05-02T18:26:55.043327+02:00 victim-ubuntu polkitd[1035]: Finished loading, compiling and executing 17 rules
+2025-05-02T18:26:55.044706+02:00 victim-ubuntu polkitd[1035]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+2025-05-02T18:26:55.873714+02:00 victim-ubuntu sshd[1530]: Server listening on :: port 22.
+2025-05-02T18:26:55.987566+02:00 victim-ubuntu gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session opened for user gdm(uid=120) by (uid=0)
+2025-05-02T18:26:56.014659+02:00 victim-ubuntu systemd-logind[1066]: New session c1 of user gdm.
+2025-05-02T18:26:56.043535+02:00 victim-ubuntu (systemd): pam_unix(systemd-user:session): session opened for user gdm(uid=120) by gdm(uid=0)
+2025-05-02T18:26:57.693698+02:00 victim-ubuntu polkitd[1035]: Registered Authentication Agent for unix-session:c1 (system bus name :1.35 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+2025-05-02T18:27:14.121846+02:00 victim-ubuntu gdm-password]: gkr-pam: unable to locate daemon control file
+2025-05-02T18:27:14.121971+02:00 victim-ubuntu gdm-password]: gkr-pam: stashed password to try later in open session
+2025-05-02T18:27:14.131578+02:00 victim-ubuntu gdm-password]: pam_unix(gdm-password:session): session opened for user victim(uid=1000) by victim(uid=0)
+2025-05-02T18:27:14.145209+02:00 victim-ubuntu systemd-logind[1066]: New session 2 of user victim.
+2025-05-02T18:27:14.165851+02:00 victim-ubuntu (systemd): pam_unix(systemd-user:session): session opened for user victim(uid=1000) by victim(uid=0)
+2025-05-02T18:27:14.657533+02:00 victim-ubuntu gdm-password]: gkr-pam: unlocked login keyring
+2025-05-02T18:27:14.945627+02:00 victim-ubuntu gnome-keyring-daemon[2224]: The PKCS#11 component was already initialized
+2025-05-02T18:27:14.946183+02:00 victim-ubuntu gnome-keyring-daemon[2437]: discover_other_daemon: 1
+2025-05-02T18:27:14.948234+02:00 victim-ubuntu gnome-keyring-daemon[2224]: The Secret Service was already initialized
+2025-05-02T18:27:14.948692+02:00 victim-ubuntu gnome-keyring-daemon[2439]: discover_other_daemon: 1
+2025-05-02T18:27:14.959081+02:00 victim-ubuntu gnome-keyring-daemon[2443]: discover_other_daemon: 1
+2025-05-02T18:27:16.065608+02:00 victim-ubuntu polkitd[1035]: Registered Authentication Agent for unix-session:2 (system bus name :1.76 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+2025-05-02T18:27:16.549104+02:00 victim-ubuntu gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session closed for user gdm
+2025-05-02T18:27:16.558314+02:00 victim-ubuntu systemd-logind[1066]: Session c1 logged out. Waiting for processes to exit.
+2025-05-02T18:27:16.573681+02:00 victim-ubuntu polkitd[1035]: Unregistered Authentication Agent for unix-session:c1 (system bus name :1.35, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8) (disconnected from bus)
+2025-05-02T18:27:16.577209+02:00 victim-ubuntu systemd-logind[1066]: Removed session c1.
+2025-05-02T18:27:28.172252+02:00 victim-ubuntu (sd-pam): pam_unix(systemd-user:session): session closed for user gdm
+2025-05-02T18:27:32.296869+02:00 victim-ubuntu systemd-logind[1066]: The system will power off now!
+2025-05-02T18:27:32.321289+02:00 victim-ubuntu systemd-logind[1066]: System is powering down.
+2025-05-02T18:27:32.375484+02:00 victim-ubuntu gdm-password]: pam_unix(gdm-password:session): session closed for user victim
+2025-05-02T18:40:04.152451+02:00 victim-ubuntu systemd-logind[1060]: New seat seat0.
+2025-05-02T18:40:04.152454+02:00 victim-ubuntu systemd-logind[1060]: Watching system buttons on /dev/input/event0 (Power Button)
+2025-05-02T18:40:04.152457+02:00 victim-ubuntu systemd-logind[1060]: Watching system buttons on /dev/input/event1 (Sleep Button)
+2025-05-02T18:40:04.152460+02:00 victim-ubuntu systemd-logind[1060]: Watching system buttons on /dev/input/event2 (AT Translated Set 2 keyboard)
+2025-05-02T18:40:04.152485+02:00 victim-ubuntu polkitd[1033]: Loading rules from directory /etc/polkit-1/rules.d
+2025-05-02T18:40:04.152488+02:00 victim-ubuntu polkitd[1033]: Loading rules from directory /usr/share/polkit-1/rules.d
+2025-05-02T18:40:04.152526+02:00 victim-ubuntu polkitd[1033]: Finished loading, compiling and executing 17 rules
+2025-05-02T18:40:04.152548+02:00 victim-ubuntu polkitd[1033]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+2025-05-02T18:40:04.948341+02:00 victim-ubuntu sshd[1903]: Server listening on :: port 22.
+2025-05-02T18:40:05.069808+02:00 victim-ubuntu gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session opened for user gdm(uid=120) by (uid=0)
+2025-05-02T18:40:05.123055+02:00 victim-ubuntu systemd-logind[1060]: New session c1 of user gdm.
+2025-05-02T18:40:05.149930+02:00 victim-ubuntu (systemd): pam_unix(systemd-user:session): session opened for user gdm(uid=120) by gdm(uid=0)
+2025-05-02T18:40:06.697213+02:00 victim-ubuntu polkitd[1033]: Registered Authentication Agent for unix-session:c1 (system bus name :1.35 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+2025-05-02T18:40:16.008668+02:00 victim-ubuntu gdm-password]: gkr-pam: unable to locate daemon control file
+2025-05-02T18:40:16.008790+02:00 victim-ubuntu gdm-password]: gkr-pam: stashed password to try later in open session
+2025-05-02T18:40:16.019485+02:00 victim-ubuntu gdm-password]: pam_unix(gdm-password:session): session opened for user victim(uid=1000) by victim(uid=0)
+2025-05-02T18:40:16.027011+02:00 victim-ubuntu systemd-logind[1060]: New session 2 of user victim.
+2025-05-02T18:40:16.060015+02:00 victim-ubuntu (systemd): pam_unix(systemd-user:session): session opened for user victim(uid=1000) by victim(uid=0)
+2025-05-02T18:40:16.273357+02:00 victim-ubuntu gdm-password]: gkr-pam: unlocked login keyring
+2025-05-02T18:40:16.585192+02:00 victim-ubuntu gnome-keyring-daemon[2600]: The PKCS#11 component was already initialized
+2025-05-02T18:40:16.586432+02:00 victim-ubuntu gnome-keyring-daemon[2815]: discover_other_daemon: 1
+2025-05-02T18:40:16.587145+02:00 victim-ubuntu gnome-keyring-daemon[2600]: The Secret Service was already initialized
+2025-05-02T18:40:16.587974+02:00 victim-ubuntu gnome-keyring-daemon[2817]: discover_other_daemon: 1
+2025-05-02T18:40:16.604329+02:00 victim-ubuntu gnome-keyring-daemon[2819]: discover_other_daemon: 1
+2025-05-02T18:40:17.761493+02:00 victim-ubuntu polkitd[1033]: Registered Authentication Agent for unix-session:2 (system bus name :1.76 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+2025-05-02T18:40:18.213298+02:00 victim-ubuntu gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session closed for user gdm
+2025-05-02T18:40:18.225180+02:00 victim-ubuntu systemd-logind[1060]: Session c1 logged out. Waiting for processes to exit.
+2025-05-02T18:40:18.242803+02:00 victim-ubuntu systemd-logind[1060]: Removed session c1.
+2025-05-02T18:40:18.250415+02:00 victim-ubuntu polkitd[1033]: Unregistered Authentication Agent for unix-session:c1 (system bus name :1.35, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8) (disconnected from bus)
+2025-05-02T18:40:28.493325+02:00 victim-ubuntu (sd-pam): pam_unix(systemd-user:session): session closed for user gdm
+2025-05-02T18:41:18.588879+02:00 victim-ubuntu systemd-logind[1060]: The system will power off now!
+2025-05-02T18:41:18.613775+02:00 victim-ubuntu systemd-logind[1060]: System is powering down.
+2025-05-02T18:41:18.678039+02:00 victim-ubuntu gdm-password]: pam_unix(gdm-password:session): session closed for user victim
+2025-05-02T18:42:06.405364+02:00 victim-ubuntu systemd-logind[1058]: New seat seat0.
+2025-05-02T18:42:06.405369+02:00 victim-ubuntu systemd-logind[1058]: Watching system buttons on /dev/input/event0 (Power Button)
+2025-05-02T18:42:06.405383+02:00 victim-ubuntu systemd-logind[1058]: Watching system buttons on /dev/input/event1 (Sleep Button)
+2025-05-02T18:42:06.405395+02:00 victim-ubuntu systemd-logind[1058]: Watching system buttons on /dev/input/event2 (AT Translated Set 2 keyboard)
+2025-05-02T18:42:06.405435+02:00 victim-ubuntu polkitd[1034]: Loading rules from directory /etc/polkit-1/rules.d
+2025-05-02T18:42:06.405439+02:00 victim-ubuntu polkitd[1034]: Loading rules from directory /usr/share/polkit-1/rules.d
+2025-05-02T18:42:06.398466+02:00 victim-ubuntu polkitd[1034]: Finished loading, compiling and executing 17 rules
+2025-05-02T18:42:06.400645+02:00 victim-ubuntu polkitd[1034]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+2025-05-02T18:42:07.200622+02:00 victim-ubuntu sshd[1926]: Server listening on :: port 22.
+2025-05-02T18:42:07.309226+02:00 victim-ubuntu gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session opened for user gdm(uid=120) by (uid=0)
+2025-05-02T18:42:07.350980+02:00 victim-ubuntu systemd-logind[1058]: New session c1 of user gdm.
+2025-05-02T18:42:07.375680+02:00 victim-ubuntu (systemd): pam_unix(systemd-user:session): session opened for user gdm(uid=120) by gdm(uid=0)
+2025-05-02T18:42:08.921253+02:00 victim-ubuntu polkitd[1034]: Registered Authentication Agent for unix-session:c1 (system bus name :1.35 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+2025-05-02T18:42:18.025570+02:00 victim-ubuntu gdm-password]: gkr-pam: unable to locate daemon control file
+2025-05-02T18:42:18.025639+02:00 victim-ubuntu gdm-password]: gkr-pam: stashed password to try later in open session
+2025-05-02T18:42:18.034602+02:00 victim-ubuntu gdm-password]: pam_unix(gdm-password:session): session opened for user victim(uid=1000) by victim(uid=0)
+2025-05-02T18:42:18.039823+02:00 victim-ubuntu systemd-logind[1058]: New session 2 of user victim.
+2025-05-02T18:42:18.075596+02:00 victim-ubuntu (systemd): pam_unix(systemd-user:session): session opened for user victim(uid=1000) by victim(uid=0)
+2025-05-02T18:42:18.286139+02:00 victim-ubuntu gdm-password]: gkr-pam: unlocked login keyring
+2025-05-02T18:42:18.571096+02:00 victim-ubuntu gnome-keyring-daemon[2631]: The PKCS#11 component was already initialized
+2025-05-02T18:42:18.572619+02:00 victim-ubuntu gnome-keyring-daemon[2836]: discover_other_daemon: 1
+2025-05-02T18:42:18.573715+02:00 victim-ubuntu gnome-keyring-daemon[2631]: The Secret Service was already initialized
+2025-05-02T18:42:18.574278+02:00 victim-ubuntu gnome-keyring-daemon[2839]: discover_other_daemon: 1
+2025-05-02T18:42:18.588114+02:00 victim-ubuntu gnome-keyring-daemon[2842]: discover_other_daemon: 1
+2025-05-02T18:42:19.704160+02:00 victim-ubuntu polkitd[1034]: Registered Authentication Agent for unix-session:2 (system bus name :1.76 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+2025-05-02T18:42:20.217134+02:00 victim-ubuntu gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session closed for user gdm
+2025-05-02T18:42:20.232571+02:00 victim-ubuntu systemd-logind[1058]: Session c1 logged out. Waiting for processes to exit.
+2025-05-02T18:42:20.252042+02:00 victim-ubuntu systemd-logind[1058]: Removed session c1.
+2025-05-02T18:42:20.260964+02:00 victim-ubuntu polkitd[1034]: Unregistered Authentication Agent for unix-session:c1 (system bus name :1.35, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8) (disconnected from bus)
+2025-05-02T18:42:30.581871+02:00 victim-ubuntu (sd-pam): pam_unix(systemd-user:session): session closed for user gdm
+2025-05-02T18:43:48.159240+02:00 victim-ubuntu systemd-logind[1058]: The system will power off now!
+2025-05-02T18:43:48.180821+02:00 victim-ubuntu systemd-logind[1058]: System is powering down.
+2025-05-02T18:43:48.216253+02:00 victim-ubuntu gdm-password]: pam_unix(gdm-password:session): session closed for user victim
+2025-05-02T18:44:19.271294+02:00 victim-ubuntu systemd-logind[1059]: New seat seat0.
+2025-05-02T18:44:19.271297+02:00 victim-ubuntu systemd-logind[1059]: Watching system buttons on /dev/input/event0 (Power Button)
+2025-05-02T18:44:19.271301+02:00 victim-ubuntu systemd-logind[1059]: Watching system buttons on /dev/input/event1 (Sleep Button)
+2025-05-02T18:44:19.271316+02:00 victim-ubuntu systemd-logind[1059]: Watching system buttons on /dev/input/event2 (AT Translated Set 2 keyboard)
+2025-05-02T18:44:19.271381+02:00 victim-ubuntu polkitd[1030]: Loading rules from directory /etc/polkit-1/rules.d
+2025-05-02T18:44:19.271384+02:00 victim-ubuntu polkitd[1030]: Loading rules from directory /usr/share/polkit-1/rules.d
+2025-05-02T18:44:19.271420+02:00 victim-ubuntu polkitd[1030]: Finished loading, compiling and executing 17 rules
+2025-05-02T18:44:19.271428+02:00 victim-ubuntu polkitd[1030]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+2025-05-02T18:44:20.111753+02:00 victim-ubuntu sshd[1917]: Server listening on :: port 22.
+2025-05-02T18:44:20.207234+02:00 victim-ubuntu gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session opened for user gdm(uid=120) by (uid=0)
+2025-05-02T18:44:20.248882+02:00 victim-ubuntu systemd-logind[1059]: New session c1 of user gdm.
+2025-05-02T18:44:20.282594+02:00 victim-ubuntu (systemd): pam_unix(systemd-user:session): session opened for user gdm(uid=120) by gdm(uid=0)
+2025-05-02T18:44:21.869089+02:00 victim-ubuntu polkitd[1030]: Registered Authentication Agent for unix-session:c1 (system bus name :1.35 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+2025-05-02T18:44:37.118684+02:00 victim-ubuntu gdm-password]: gkr-pam: unable to locate daemon control file
+2025-05-02T18:44:37.118753+02:00 victim-ubuntu gdm-password]: gkr-pam: stashed password to try later in open session
+2025-05-02T18:44:37.131089+02:00 victim-ubuntu gdm-password]: pam_unix(gdm-password:session): session opened for user victim(uid=1000) by victim(uid=0)
+2025-05-02T18:44:37.220137+02:00 victim-ubuntu systemd-logind[1059]: New session 2 of user victim.
+2025-05-02T18:44:37.239029+02:00 victim-ubuntu (systemd): pam_unix(systemd-user:session): session opened for user victim(uid=1000) by victim(uid=0)
+2025-05-02T18:44:37.474070+02:00 victim-ubuntu gdm-password]: gkr-pam: unlocked login keyring
+2025-05-02T18:44:37.867385+02:00 victim-ubuntu gnome-keyring-daemon[2618]: The PKCS#11 component was already initialized
+2025-05-02T18:44:37.867716+02:00 victim-ubuntu gnome-keyring-daemon[2826]: discover_other_daemon: 1
+2025-05-02T18:44:37.867836+02:00 victim-ubuntu gnome-keyring-daemon[2618]: The Secret Service was already initialized
+2025-05-02T18:44:37.868076+02:00 victim-ubuntu gnome-keyring-daemon[2827]: discover_other_daemon: 1
+2025-05-02T18:44:37.925015+02:00 victim-ubuntu gnome-keyring-daemon[2831]: discover_other_daemon: 1
+2025-05-02T18:44:39.196342+02:00 victim-ubuntu polkitd[1030]: Registered Authentication Agent for unix-session:2 (system bus name :1.76 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+2025-05-02T18:44:39.665264+02:00 victim-ubuntu gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session closed for user gdm
+2025-05-02T18:44:39.674823+02:00 victim-ubuntu systemd-logind[1059]: Session c1 logged out. Waiting for processes to exit.
+2025-05-02T18:44:39.697152+02:00 victim-ubuntu polkitd[1030]: Unregistered Authentication Agent for unix-session:c1 (system bus name :1.35, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8) (disconnected from bus)
+2025-05-02T18:44:39.701659+02:00 victim-ubuntu systemd-logind[1059]: Removed session c1.
+2025-05-02T18:44:49.923168+02:00 victim-ubuntu (sd-pam): pam_unix(systemd-user:session): session closed for user gdm
+2025-05-02T18:45:01.084416+02:00 victim-ubuntu CRON[3780]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-05-02T18:45:01.087615+02:00 victim-ubuntu CRON[3780]: pam_unix(cron:session): session closed for user root

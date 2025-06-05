@@ -1,0 +1,90 @@
+## Telnet
+
+Command: hydra -l root -P /usr/share/seclists/Passwords/Common-Credentials/10k-most-common.txt telnet://10.10.10.5 
+
+Dátum: 2.5.2025 - 20:00
+
+**hydra_Telnet_1.txt**
+- Trvanie: 15 sekúnd
+- IP útočníka: 10.10.10.4
+- IP obete: 10.10.10.5
+- Útočí na: root
+
+**hydra_Telnet_2.txt**
+- Trvanie: 2 minúty - delay 5 sekúnd
+- IP útočníka: 10.68.105.80
+- IP obete: 10.68.105.100
+- Útočí na: admin
+
+**hydra_Telnet_3.txt**
+- Trvanie: 15 sekúnd
+- IP útočníka: 192.168.11.4
+- IP obete: 192.168.11.10
+- Útočí na: admin
+
+**hydra_Telnet_4.txt**
+- Trvanie: 2 minúty - delay 5 sekúnd
+- IP útočníka: 172.16.22.48
+- IP obete: 172.16.22.22
+- Útočí na: root
+
+---
+
+Command: ncrack -p 23 -u root -P /usr/share/seclists/Passwords/Common-Credentials/10k-most-common.txt 10.10.10.5
+
+Dátum: 2.5.2025 - 20:00
+
+**ncrack_Telnet_1.txt**
+- Trvanie: 15 sekúnd
+- IP útočníka: 10.10.10.4
+- IP obete: 10.10.10.5
+- Útočí na: root
+
+**ncrack_Telnet_2.txt**
+- Trvanie: 2 minúty - delay 5 sekúnd
+- IP útočníka: 10.68.105.80
+- IP obete: 10.68.105.100
+- Útočí na: admin
+
+**ncrack_Telnet_3.txt**
+- Trvanie: 15 sekúnd
+- IP útočníka: 192.168.11.4
+- IP obete: 192.168.11.10
+- Útočí na: admin
+
+**ncrack_Telnet_4.txt**
+- Trvanie: 2 minúty - delay 5 sekúnd
+- IP útočníka: 172.16.22.48
+- IP obete: 172.16.22.22
+- Útočí na: root
+
+---
+
+Command: ./patator.py telnet_login host=172.16.22.22 inputs='FILE0\nFILE1' 0=users.txt 1=/usr/share/seclists/Passwords/Common-Credentials/10k-most-common.txt prompt_re='login:|Password:' -x ignore:fgrep='Login incorrect'
+
+
+Dátum: 2.5.2025 - 20:00
+
+**patator_Telnet_1.txt**
+- Trvanie: 15 sekúnd
+- IP útočníka: 10.68.105.80
+- IP obete: 10.68.105.100
+- Útočí na: root
+
+**patator_Telnet_2.txt**
+- Trvanie: 2 minúty - delay 5 sekúnd
+- IP útočníka: 10.10.10.4
+- IP obete: 10.10.10.5
+- Útočí na: admin
+
+**patator_Telnet_3.txt**
+- Trvanie: 15 sekúnd
+- IP útočníka: 172.16.22.48
+- IP obete: 172.16.22.22
+- Útočí na: admin
+
+**patator_Telnet_4.txt**
+- Trvanie: 2 minúty - delay 5 sekúnd
+- IP útočníka: 192.168.11.4
+- IP obete: 192.168.11.10
+- Útočí na: root

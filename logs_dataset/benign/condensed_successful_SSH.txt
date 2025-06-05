@@ -1,0 +1,24 @@
+2025-04-18T23:35:08.051180+02:00 ubuntu sshd[545437]: pam_unix(sshd:session): session closed for user ubuntu
+2025-04-18T23:36:35.056346+02:00 ubuntu sshd[547960]: Accepted publickey for ubuntu from 10.116.7.3 port 53808 ssh2: RSA SHA256:svFyiwd6eNAGhYjoyLK5s4DfV7L9OGkl96TdPD/HGx4
+2025-04-18T23:36:35.066708+02:00 ubuntu sshd[547960]: pam_unix(sshd:session): session opened for user ubuntu(uid=1000) by ubuntu(uid=0)
+2025-04-18T23:37:24.719167+02:00 ubuntu sshd[548058]: Received disconnect from 10.116.7.3 port 53808:11: disconnected by user
+2025-04-18T23:37:24.726145+02:00 ubuntu sshd[548058]: Disconnected from user ubuntu 10.116.7.3 port 53808
+2025-04-18T23:37:24.727222+02:00 ubuntu sshd[547960]: pam_unix(sshd:session): session closed for user ubuntu
+2025-04-19T09:14:23.110395+02:00 ubuntu sshd[551506]: Accepted publickey for ubuntu from 10.116.7.3 port 33152 ssh2: RSA SHA256:svFyiwd6eNAGhYjoyLK5s4DfV7L9OGkl96TdPD/HGx4
+2025-04-19T09:14:23.121154+02:00 ubuntu sshd[551506]: pam_unix(sshd:session): session opened for user ubuntu(uid=1000) by ubuntu(uid=0)
+2025-04-19T09:15:57.881900+02:00 ubuntu sshd[552208]: Invalid user boris from 10.116.7.3 port 57392
+2025-04-19T09:15:58.620146+02:00 ubuntu sshd[552210]: Invalid user boris from 10.116.7.3 port 57404
+2025-04-19T09:15:59.607241+02:00 ubuntu sshd[552208]: Connection closed by invalid user boris 10.116.7.3 port 57392 [preauth]
+2025-04-19T09:22:32.610651+02:00 ubuntu sshd[551506]: pam_unix(sshd:session): session closed for user ubuntu
+2025-04-19T09:24:29.439464+02:00 ubuntu sshd[3140]: Server listening on :: port 22.
+2025-04-19T09:24:29.644512+02:00 ubuntu sshd[3141]: Accepted publickey for ubuntu from 10.116.7.3 port 59192 ssh2: RSA SHA256:svFyiwd6eNAGhYjoyLK5s4DfV7L9OGkl96TdPD/HGx4
+2025-04-19T09:24:29.653713+02:00 ubuntu sshd[3141]: pam_unix(sshd:session): session opened for user ubuntu(uid=1000) by ubuntu(uid=0)
+2025-04-19T09:25:20.757320+02:00 ubuntu sshd[3281]: Received disconnect from 10.116.7.3 port 59192:11: disconnected by user
+2025-04-19T09:25:20.758180+02:00 ubuntu sshd[3281]: Disconnected from user ubuntu 10.116.7.3 port 59192
+2025-04-19T09:25:20.761270+02:00 ubuntu sshd[3141]: pam_unix(sshd:session): session closed for user ubuntu
+2025-04-19T09:25:25.400980+02:00 ubuntu sshd[5016]: Accepted publickey for ubuntu from 10.116.7.3 port 36914 ssh2: RSA SHA256:svFyiwd6eNAGhYjoyLK5s4DfV7L9OGkl96TdPD/HGx4
+2025-04-19T09:25:25.411960+02:00 ubuntu sshd[5016]: pam_unix(sshd:session): session opened for user ubuntu(uid=1000) by ubuntu(uid=0)
+2025-04-19T09:25:27.914467+02:00 ubuntu sshd[5062]: Received disconnect from 10.116.7.3 port 36914:11: disconnected by user
+2025-04-19T09:25:27.915044+02:00 ubuntu sshd[5062]: Disconnected from user ubuntu 10.116.7.3 port 36914
+2025-04-19T09:25:27.917561+02:00 ubuntu sshd[5016]: pam_unix(sshd:session): session closed for user ubuntu
+

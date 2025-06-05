@@ -1,0 +1,81 @@
+2025-05-03T02:21:26.331943+02:00 victim-ubuntu login[74107]: PAM unable to dlopen(pam_lastlog.so): /usr/lib/security/pam_lastlog.so: cannot open shared object file: No such file or directory
+2025-05-03T02:21:26.332227+02:00 victim-ubuntu login[74111]: PAM unable to dlopen(pam_lastlog.so): /usr/lib/security/pam_lastlog.so: cannot open shared object file: No such file or directory
+2025-05-03T02:21:26.332272+02:00 victim-ubuntu login[74111]: PAM adding faulty module: pam_lastlog.so
+2025-05-03T02:21:26.332454+02:00 victim-ubuntu login[74114]: PAM unable to dlopen(pam_lastlog.so): /usr/lib/security/pam_lastlog.so: cannot open shared object file: No such file or directory
+2025-05-03T02:21:26.332493+02:00 victim-ubuntu login[74114]: PAM adding faulty module: pam_lastlog.so
+2025-05-03T02:21:26.332523+02:00 victim-ubuntu login[74107]: PAM adding faulty module: pam_lastlog.so
+2025-05-03T02:21:26.332690+02:00 victim-ubuntu login[74106]: PAM unable to dlopen(pam_lastlog.so): /usr/lib/security/pam_lastlog.so: cannot open shared object file: No such file or directory
+2025-05-03T02:21:26.332730+02:00 victim-ubuntu login[74106]: PAM adding faulty module: pam_lastlog.so
+2025-05-03T02:21:26.332898+02:00 victim-ubuntu login[74105]: PAM unable to dlopen(pam_lastlog.so): /usr/lib/security/pam_lastlog.so: cannot open shared object file: No such file or directory
+2025-05-03T02:21:26.332942+02:00 victim-ubuntu login[74105]: PAM adding faulty module: pam_lastlog.so
+2025-05-03T02:21:26.333100+02:00 victim-ubuntu login[74109]: PAM unable to dlopen(pam_lastlog.so): /usr/lib/security/pam_lastlog.so: cannot open shared object file: No such file or directory
+2025-05-03T02:21:26.333149+02:00 victim-ubuntu login[74109]: PAM adding faulty module: pam_lastlog.so
+2025-05-03T02:21:26.333323+02:00 victim-ubuntu login[74108]: PAM unable to dlopen(pam_lastlog.so): /usr/lib/security/pam_lastlog.so: cannot open shared object file: No such file or directory
+2025-05-03T02:21:26.333368+02:00 victim-ubuntu login[74108]: PAM adding faulty module: pam_lastlog.so
+2025-05-03T02:21:26.333528+02:00 victim-ubuntu login[74112]: PAM unable to dlopen(pam_lastlog.so): /usr/lib/security/pam_lastlog.so: cannot open shared object file: No such file or directory
+2025-05-03T02:21:26.333571+02:00 victim-ubuntu login[74112]: PAM adding faulty module: pam_lastlog.so
+2025-05-03T02:21:26.333736+02:00 victim-ubuntu login[74104]: PAM unable to dlopen(pam_lastlog.so): /usr/lib/security/pam_lastlog.so: cannot open shared object file: No such file or directory
+2025-05-03T02:21:26.333769+02:00 victim-ubuntu login[74104]: PAM adding faulty module: pam_lastlog.so
+2025-05-03T02:21:26.334032+02:00 victim-ubuntu login[74110]: PAM unable to dlopen(pam_lastlog.so): /usr/lib/security/pam_lastlog.so: cannot open shared object file: No such file or directory
+2025-05-03T02:21:26.334108+02:00 victim-ubuntu login[74110]: PAM adding faulty module: pam_lastlog.so
+2025-05-03T02:21:26.334651+02:00 victim-ubuntu login[74113]: PAM unable to dlopen(pam_lastlog.so): /usr/lib/security/pam_lastlog.so: cannot open shared object file: No such file or directory
+2025-05-03T02:21:26.334705+02:00 victim-ubuntu login[74113]: PAM adding faulty module: pam_lastlog.so
+2025-05-03T02:21:26.551878+02:00 victim-ubuntu login[74115]: PAM unable to dlopen(pam_lastlog.so): /usr/lib/security/pam_lastlog.so: cannot open shared object file: No such file or directory
+2025-05-03T02:21:26.551997+02:00 victim-ubuntu login[74115]: PAM adding faulty module: pam_lastlog.so
+2025-05-03T02:21:27.061144+02:00 victim-ubuntu login[74108]: pam_unix(login:auth): check pass; user unknown
+2025-05-03T02:21:27.061308+02:00 victim-ubuntu login[74108]: pam_unix(login:auth): authentication failure; logname=.telnet uid=0 euid=0 tty=/dev/pts/4 ruser= rhost=192.168.11.4 
+2025-05-03T02:21:27.061440+02:00 victim-ubuntu login[74106]: pam_unix(login:auth): check pass; user unknown
+2025-05-03T02:21:27.061475+02:00 victim-ubuntu login[74106]: pam_unix(login:auth): authentication failure; logname=.telnet uid=0 euid=0 tty=/dev/pts/2 ruser= rhost=192.168.11.4 
+2025-05-03T02:21:27.082952+02:00 victim-ubuntu login[74111]: pam_unix(login:auth): check pass; user unknown
+2025-05-03T02:21:27.083063+02:00 victim-ubuntu login[74111]: pam_unix(login:auth): authentication failure; logname=.telnet uid=0 euid=0 tty=/dev/pts/9 ruser= rhost=192.168.11.4 
+2025-05-03T02:21:27.160991+02:00 victim-ubuntu login[74104]: pam_unix(login:auth): check pass; user unknown
+2025-05-03T02:21:27.161157+02:00 victim-ubuntu login[74104]: pam_unix(login:auth): authentication failure; logname=.telnet uid=0 euid=0 tty=/dev/pts/3 ruser= rhost=192.168.11.4 
+2025-05-03T02:21:27.161268+02:00 victim-ubuntu login[74110]: pam_unix(login:auth): check pass; user unknown
+2025-05-03T02:21:27.161331+02:00 victim-ubuntu login[74110]: pam_unix(login:auth): authentication failure; logname=.telnet uid=0 euid=0 tty=/dev/pts/7 ruser= rhost=192.168.11.4 
+2025-05-03T02:21:27.161412+02:00 victim-ubuntu login[74109]: pam_unix(login:auth): check pass; user unknown
+2025-05-03T02:21:27.161484+02:00 victim-ubuntu login[74109]: pam_unix(login:auth): authentication failure; logname=.telnet uid=0 euid=0 tty=/dev/pts/8 ruser= rhost=192.168.11.4 
+2025-05-03T02:21:27.161566+02:00 victim-ubuntu login[74112]: pam_unix(login:auth): check pass; user unknown
+2025-05-03T02:21:27.161629+02:00 victim-ubuntu login[74112]: pam_unix(login:auth): authentication failure; logname=.telnet uid=0 euid=0 tty=/dev/pts/11 ruser= rhost=192.168.11.4 
+2025-05-03T02:21:27.161713+02:00 victim-ubuntu login[74113]: pam_unix(login:auth): check pass; user unknown
+2025-05-03T02:21:27.161802+02:00 victim-ubuntu login[74113]: pam_unix(login:auth): authentication failure; logname=.telnet uid=0 euid=0 tty=/dev/pts/10 ruser= rhost=192.168.11.4 
+2025-05-03T02:21:27.163181+02:00 victim-ubuntu login[74107]: pam_unix(login:auth): check pass; user unknown
+2025-05-03T02:21:27.163229+02:00 victim-ubuntu login[74107]: pam_unix(login:auth): authentication failure; logname=.telnet uid=0 euid=0 tty=/dev/pts/6 ruser= rhost=192.168.11.4 
+2025-05-03T02:21:27.163272+02:00 victim-ubuntu login[74105]: pam_unix(login:auth): check pass; user unknown
+2025-05-03T02:21:27.163302+02:00 victim-ubuntu login[74105]: pam_unix(login:auth): authentication failure; logname=.telnet uid=0 euid=0 tty=/dev/pts/5 ruser= rhost=192.168.11.4 
+2025-05-03T02:21:27.689774+02:00 victim-ubuntu login[74114]: pam_unix(login:auth): check pass; user unknown
+2025-05-03T02:21:27.689912+02:00 victim-ubuntu login[74114]: pam_unix(login:auth): authentication failure; logname=.telnet uid=0 euid=0 tty=/dev/pts/12 ruser= rhost=192.168.11.4 
+2025-05-03T02:21:27.938410+02:00 victim-ubuntu login[74115]: pam_unix(login:auth): check pass; user unknown
+2025-05-03T02:21:27.938521+02:00 victim-ubuntu login[74115]: pam_unix(login:auth): authentication failure; logname=.telnet uid=0 euid=0 tty=/dev/pts/13 ruser= rhost=192.168.11.4 
+2025-05-03T02:21:30.009496+02:00 victim-ubuntu login[74106]: FAILED LOGIN (1) on '/dev/pts/2' from '192.168.11.4' FOR 'UNKNOWN', Authentication failure
+2025-05-03T02:21:30.119632+02:00 victim-ubuntu login[74107]: FAILED LOGIN (1) on '/dev/pts/6' from '192.168.11.4' FOR 'UNKNOWN', Authentication failure
+2025-05-03T02:21:30.120000+02:00 victim-ubuntu login[74113]: FAILED LOGIN (1) on '/dev/pts/10' from '192.168.11.4' FOR 'UNKNOWN', Authentication failure
+2025-05-03T02:21:30.120316+02:00 victim-ubuntu login[74104]: FAILED LOGIN (1) on '/dev/pts/3' from '192.168.11.4' FOR 'UNKNOWN', Authentication failure
+2025-05-03T02:21:30.226804+02:00 victim-ubuntu login[74106]: pam_unix(login:auth): check pass; user unknown
+2025-05-03T02:21:30.226916+02:00 victim-ubuntu login[74106]: pam_unix(login:auth): authentication failure; logname=.telnet uid=0 euid=0 tty=/dev/pts/2 ruser= rhost=192.168.11.4 
+2025-05-03T02:21:30.437277+02:00 victim-ubuntu login[74107]: pam_unix(login:auth): check pass; user unknown
+2025-05-03T02:21:30.437430+02:00 victim-ubuntu login[74107]: pam_unix(login:auth): authentication failure; logname=.telnet uid=0 euid=0 tty=/dev/pts/6 ruser= rhost=192.168.11.4 
+2025-05-03T02:21:30.503934+02:00 victim-ubuntu login[74113]: pam_unix(login:auth): check pass; user unknown
+2025-05-03T02:21:30.504045+02:00 victim-ubuntu login[74113]: pam_unix(login:auth): authentication failure; logname=.telnet uid=0 euid=0 tty=/dev/pts/10 ruser= rhost=192.168.11.4 
+2025-05-03T02:21:30.610647+02:00 victim-ubuntu login[74104]: pam_unix(login:auth): check pass; user unknown
+2025-05-03T02:21:30.610793+02:00 victim-ubuntu login[74104]: pam_unix(login:auth): authentication failure; logname=.telnet uid=0 euid=0 tty=/dev/pts/3 ruser= rhost=192.168.11.4 
+2025-05-03T02:21:30.926686+02:00 victim-ubuntu login[74115]: FAILED LOGIN (1) on '/dev/pts/13' from '192.168.11.4' FOR 'UNKNOWN', Authentication failure
+2025-05-03T02:21:31.630146+02:00 victim-ubuntu login[74115]: pam_unix(login:auth): check pass; user unknown
+2025-05-03T02:21:31.630342+02:00 victim-ubuntu login[74115]: pam_unix(login:auth): authentication failure; logname=.telnet uid=0 euid=0 tty=/dev/pts/13 ruser= rhost=192.168.11.4 
+2025-05-03T02:21:32.916187+02:00 victim-ubuntu login[74104]: FAILED LOGIN (2) on '/dev/pts/3' from '192.168.11.4' FOR 'UNKNOWN', Authentication failure
+2025-05-03T02:21:33.493498+02:00 victim-ubuntu login[74104]: pam_unix(login:auth): check pass; user unknown
+2025-05-03T02:21:33.887807+02:00 victim-ubuntu login[74115]: FAILED LOGIN (2) on '/dev/pts/13' from '192.168.11.4' FOR 'UNKNOWN', Authentication failure
+2025-05-03T02:21:34.973106+02:00 victim-ubuntu login[74115]: pam_unix(login:auth): check pass; user unknown
+2025-05-03T02:21:36.662713+02:00 victim-ubuntu login[74104]: FAILED LOGIN (3) on '/dev/pts/3' from '192.168.11.4' FOR 'UNKNOWN', Authentication failure
+2025-05-03T02:21:37.325701+02:00 victim-ubuntu login[74104]: pam_unix(login:auth): check pass; user unknown
+2025-05-03T02:21:37.868184+02:00 victim-ubuntu login[74115]: FAILED LOGIN (3) on '/dev/pts/13' from '192.168.11.4' FOR 'UNKNOWN', Authentication failure
+2025-05-03T02:21:38.635680+02:00 victim-ubuntu login[74115]: pam_unix(login:auth): check pass; user unknown
+2025-05-03T02:21:39.870978+02:00 victim-ubuntu login[74104]: FAILED LOGIN (4) on '/dev/pts/3' from '192.168.11.4' FOR 'UNKNOWN', Authentication failure
+2025-05-03T02:21:40.329019+02:00 victim-ubuntu login[74104]: pam_unix(login:auth): check pass; user unknown
+2025-05-03T02:21:41.348236+02:00 victim-ubuntu login[74115]: FAILED LOGIN (4) on '/dev/pts/13' from '192.168.11.4' FOR 'UNKNOWN', Authentication failure
+2025-05-03T02:21:42.436600+02:00 victim-ubuntu login[74115]: pam_unix(login:auth): check pass; user unknown
+2025-05-03T02:21:43.939170+02:00 victim-ubuntu login[74104]: FAILED LOGIN (5) on '/dev/pts/3' from '192.168.11.4' FOR 'UNKNOWN', Authentication failure
+2025-05-03T02:21:43.939334+02:00 victim-ubuntu login[74104]: TOO MANY LOGIN TRIES (5) on '/dev/pts/3' from '192.168.11.4' FOR 'UNKNOWN'
+2025-05-03T02:21:43.939412+02:00 victim-ubuntu login[74104]: pam_mail(login:session): user unknown
+2025-05-03T02:21:43.939499+02:00 victim-ubuntu login[74104]: pam_unix(login:session): close_session - error recovering username
+2025-05-03T02:21:43.939589+02:00 victim-ubuntu login[74104]: PAM 3 more authentication failures; logname=.telnet uid=0 euid=0 tty=/dev/pts/3 ruser= rhost=192.168.11.4 
+2025-05-03T02:21:43.939653+02:00 victim-ubuntu login[74104]: PAM service(login) ignoring max retries; 4 > 3

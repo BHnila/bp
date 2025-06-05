@@ -1,0 +1,49 @@
+2025-05-02T20:43:28.217633+02:00 victim-ubuntu sshd[46099]: Failed password for root from 10.10.10.4 port 59586 ssh2
+2025-05-02T20:43:28.219397+02:00 victim-ubuntu sshd[46099]: Connection closed by authenticating user root 10.10.10.4 port 59586 [preauth]
+2025-05-02T20:43:28.219507+02:00 victim-ubuntu sshd[46099]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.10.10.4  user=root
+2025-05-02T20:43:28.226060+02:00 victim-ubuntu sshd[46411]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.10.10.4  user=root
+2025-05-02T20:43:28.234322+02:00 victim-ubuntu sshd[46407]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.10.10.4  user=root
+2025-05-02T20:43:28.234774+02:00 victim-ubuntu sshd[46409]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.10.10.4  user=root
+2025-05-02T20:43:28.235062+02:00 victim-ubuntu sshd[46410]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.10.10.4  user=root
+2025-05-02T20:43:28.235321+02:00 victim-ubuntu sshd[46412]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.10.10.4  user=root
+2025-05-02T20:43:28.236428+02:00 victim-ubuntu sshd[46408]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.10.10.4  user=root
+2025-05-02T20:43:28.283975+02:00 victim-ubuntu sshd[46413]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.10.10.4  user=root
+2025-05-02T20:43:28.285083+02:00 victim-ubuntu sshd[46414]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.10.10.4  user=root
+2025-05-02T20:43:28.292994+02:00 victim-ubuntu sshd[46416]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.10.10.4  user=root
+2025-05-02T20:43:28.294745+02:00 victim-ubuntu sshd[46415]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.10.10.4  user=root
+2025-05-02T20:43:29.761844+02:00 victim-ubuntu sshd[46416]: Failed password for root from 10.10.10.4 port 33312 ssh2
+2025-05-02T20:43:29.762197+02:00 victim-ubuntu sshd[46410]: Failed password for root from 10.10.10.4 port 33254 ssh2
+2025-05-02T20:43:29.762473+02:00 victim-ubuntu sshd[46413]: Failed password for root from 10.10.10.4 port 33290 ssh2
+2025-05-02T20:43:29.762675+02:00 victim-ubuntu sshd[46415]: Failed password for root from 10.10.10.4 port 33302 ssh2
+2025-05-02T20:43:31.189181+02:00 victim-ubuntu sshd[1917]: error: beginning MaxStartups throttling
+2025-05-02T20:43:31.189314+02:00 victim-ubuntu sshd[1917]: drop connection #10 from [10.10.10.4]:33324 on [10.10.10.5]:22 past MaxStartups
+2025-05-02T20:43:31.453168+02:00 victim-ubuntu sshd[46428]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.10.10.4  user=root
+2025-05-02T20:43:31.453508+02:00 victim-ubuntu sshd[46427]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.10.10.4  user=root
+2025-05-02T20:43:32.050881+02:00 victim-ubuntu sshd[46414]: Failed password for root from 10.10.10.4 port 33294 ssh2
+2025-05-02T20:43:32.239694+02:00 victim-ubuntu sshd[46411]: Failed password for root from 10.10.10.4 port 33266 ssh2
+2025-05-02T20:43:32.240010+02:00 victim-ubuntu sshd[46412]: Failed password for root from 10.10.10.4 port 33276 ssh2
+2025-05-02T20:43:32.240318+02:00 victim-ubuntu sshd[46407]: Failed password for root from 10.10.10.4 port 33232 ssh2
+2025-05-02T20:43:32.240568+02:00 victim-ubuntu sshd[46409]: Failed password for root from 10.10.10.4 port 33238 ssh2
+2025-05-02T20:43:32.242588+02:00 victim-ubuntu sshd[46408]: Failed password for root from 10.10.10.4 port 33236 ssh2
+2025-05-02T20:43:33.684739+02:00 victim-ubuntu sshd[46415]: Failed password for root from 10.10.10.4 port 33302 ssh2
+2025-05-02T20:43:34.007212+02:00 victim-ubuntu sshd[46410]: Failed password for root from 10.10.10.4 port 33254 ssh2
+2025-05-02T20:43:34.173332+02:00 victim-ubuntu sshd[46415]: Connection closed by authenticating user root 10.10.10.4 port 33302 [preauth]
+2025-05-02T20:43:34.173895+02:00 victim-ubuntu sshd[46415]: PAM 1 more authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.10.10.4  user=root
+2025-05-02T20:43:34.438897+02:00 victim-ubuntu sshd[46416]: Failed password for root from 10.10.10.4 port 33312 ssh2
+2025-05-02T20:43:38.401827+02:00 victim-ubuntu sshd[46427]: Failed password for root from 10.10.10.4 port 33338 ssh2
+2025-05-02T20:43:38.402880+02:00 victim-ubuntu sshd[46410]: Connection closed by authenticating user root 10.10.10.4 port 33254 [preauth]
+2025-05-02T20:43:38.403082+02:00 victim-ubuntu sshd[46408]: Connection closed by authenticating user root 10.10.10.4 port 33236 [preauth]
+2025-05-02T20:43:38.403263+02:00 victim-ubuntu sshd[46409]: Connection closed by authenticating user root 10.10.10.4 port 33238 [preauth]
+2025-05-02T20:43:38.403429+02:00 victim-ubuntu sshd[46407]: Connection closed by authenticating user root 10.10.10.4 port 33232 [preauth]
+2025-05-02T20:43:38.403478+02:00 victim-ubuntu sshd[46427]: Connection closed by authenticating user root 10.10.10.4 port 33338 [preauth]
+2025-05-02T20:43:38.403633+02:00 victim-ubuntu sshd[46416]: Connection closed by authenticating user root 10.10.10.4 port 33312 [preauth]
+2025-05-02T20:43:38.403685+02:00 victim-ubuntu sshd[46416]: PAM 1 more authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.10.10.4  user=root
+2025-05-02T20:43:38.404155+02:00 victim-ubuntu sshd[46410]: PAM 1 more authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.10.10.4  user=root
+2025-05-02T20:43:41.533330+02:00 victim-ubuntu sshd[46428]: Failed password for root from 10.10.10.4 port 33342 ssh2
+2025-05-02T20:43:41.533578+02:00 victim-ubuntu sshd[46428]: Connection closed by authenticating user root 10.10.10.4 port 33342 [preauth]
+2025-05-02T20:43:41.538114+02:00 victim-ubuntu sshd[46413]: Failed password for root from 10.10.10.4 port 33290 ssh2
+2025-05-02T20:43:41.538447+02:00 victim-ubuntu sshd[46414]: Connection closed by authenticating user root 10.10.10.4 port 33294 [preauth]
+2025-05-02T20:43:41.538591+02:00 victim-ubuntu sshd[46413]: Connection closed by authenticating user root 10.10.10.4 port 33290 [preauth]
+2025-05-02T20:43:41.538681+02:00 victim-ubuntu sshd[46413]: PAM 1 more authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.10.10.4  user=root
+2025-05-02T20:43:41.804728+02:00 victim-ubuntu sshd[46411]: Connection closed by authenticating user root 10.10.10.4 port 33266 [preauth]
+2025-05-02T20:43:41.805222+02:00 victim-ubuntu sshd[46412]: Connection closed by authenticating user root 10.10.10.4 port 33276 [preauth]

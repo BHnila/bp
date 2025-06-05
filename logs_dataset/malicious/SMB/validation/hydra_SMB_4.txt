@@ -1,0 +1,166 @@
+[2025/05/03 21:56:51.088898,  3] auth/gensec/gensec_start.c:1083(gensec_register)
+  GENSEC backend 'gssapi_spnego' registered
+[2025/05/03 21:56:51.088974,  3] auth/gensec/gensec_start.c:1083(gensec_register)
+  GENSEC backend 'gssapi_krb5' registered
+[2025/05/03 21:56:51.088986,  3] auth/gensec/gensec_start.c:1083(gensec_register)
+  GENSEC backend 'gssapi_krb5_sasl' registered
+[2025/05/03 21:56:51.089000,  3] auth/gensec/gensec_start.c:1083(gensec_register)
+  GENSEC backend 'spnego' registered
+[2025/05/03 21:56:51.089009,  3] auth/gensec/gensec_start.c:1083(gensec_register)
+  GENSEC backend 'schannel' registered
+[2025/05/03 21:56:51.089018,  3] auth/gensec/gensec_start.c:1083(gensec_register)
+  GENSEC backend 'ncalrpc_as_system' registered
+[2025/05/03 21:56:51.089028,  3] auth/gensec/gensec_start.c:1083(gensec_register)
+  GENSEC backend 'sasl-EXTERNAL' registered
+[2025/05/03 21:56:51.089038,  3] auth/gensec/gensec_start.c:1083(gensec_register)
+  GENSEC backend 'ntlmssp' registered
+[2025/05/03 21:56:51.089047,  3] auth/gensec/gensec_start.c:1083(gensec_register)
+  GENSEC backend 'ntlmssp_resume_ccache' registered
+[2025/05/03 21:56:51.089060,  3] auth/gensec/gensec_start.c:1083(gensec_register)
+  GENSEC backend 'http_basic' registered
+[2025/05/03 21:56:51.089069,  3] auth/gensec/gensec_start.c:1083(gensec_register)
+  GENSEC backend 'http_ntlm' registered
+[2025/05/03 21:56:51.089079,  3] auth/gensec/gensec_start.c:1083(gensec_register)
+  GENSEC backend 'http_negotiate' registered
+[2025/05/03 21:56:51.089090,  3] auth/gensec/gensec_start.c:1083(gensec_register)
+  GENSEC backend 'krb5' registered
+[2025/05/03 21:56:51.089102,  3] auth/gensec/gensec_start.c:1083(gensec_register)
+  GENSEC backend 'fake_gssapi_krb5' registered
+[2025/05/03 21:56:56.930516,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user []\[root]@[172.16.22.48] with the new password interface
+[2025/05/03 21:56:56.930573,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[root]@[172.16.22.48]
+[2025/05/03 21:56:56.931088,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+  check_ntlm_password:  Authentication for user [root] -> [root] FAILED with error NT_STATUS_WRONG_PASSWORD, authoritative=1
+[2025/05/03 21:57:01.942817,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user []\[root]@[172.16.22.48] with the new password interface
+[2025/05/03 21:57:01.942876,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[root]@[172.16.22.48]
+[2025/05/03 21:57:01.943381,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+  check_ntlm_password:  Authentication for user [root] -> [root] FAILED with error NT_STATUS_WRONG_PASSWORD, authoritative=1
+[2025/05/03 21:57:06.976463,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user []\[root]@[172.16.22.48] with the new password interface
+[2025/05/03 21:57:06.976539,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[root]@[172.16.22.48]
+[2025/05/03 21:57:06.977221,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+  check_ntlm_password:  Authentication for user [root] -> [root] FAILED with error NT_STATUS_WRONG_PASSWORD, authoritative=1
+[2025/05/03 21:57:11.993020,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user []\[root]@[172.16.22.48] with the new password interface
+[2025/05/03 21:57:11.993082,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[root]@[172.16.22.48]
+[2025/05/03 21:57:11.993593,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+  check_ntlm_password:  Authentication for user [root] -> [root] FAILED with error NT_STATUS_WRONG_PASSWORD, authoritative=1
+[2025/05/03 21:57:17.009412,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user []\[root]@[172.16.22.48] with the new password interface
+[2025/05/03 21:57:17.009478,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[root]@[172.16.22.48]
+[2025/05/03 21:57:17.010175,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+  check_ntlm_password:  Authentication for user [root] -> [root] FAILED with error NT_STATUS_WRONG_PASSWORD, authoritative=1
+[2025/05/03 21:57:22.174842,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user []\[root]@[172.16.22.48] with the new password interface
+[2025/05/03 21:57:22.174940,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[root]@[172.16.22.48]
+[2025/05/03 21:57:22.175520,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+  check_ntlm_password:  Authentication for user [root] -> [root] FAILED with error NT_STATUS_WRONG_PASSWORD, authoritative=1
+[2025/05/03 21:57:27.191295,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user []\[root]@[172.16.22.48] with the new password interface
+[2025/05/03 21:57:27.191366,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[root]@[172.16.22.48]
+[2025/05/03 21:57:27.191986,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+  check_ntlm_password:  Authentication for user [root] -> [root] FAILED with error NT_STATUS_WRONG_PASSWORD, authoritative=1
+[2025/05/03 21:57:32.227929,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user []\[root]@[172.16.22.48] with the new password interface
+[2025/05/03 21:57:32.227989,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[root]@[172.16.22.48]
+[2025/05/03 21:57:32.228600,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+  check_ntlm_password:  Authentication for user [root] -> [root] FAILED with error NT_STATUS_WRONG_PASSWORD, authoritative=1
+[2025/05/03 21:57:37.304134,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user []\[root]@[172.16.22.48] with the new password interface
+[2025/05/03 21:57:37.304202,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[root]@[172.16.22.48]
+[2025/05/03 21:57:37.304899,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+  check_ntlm_password:  Authentication for user [root] -> [root] FAILED with error NT_STATUS_WRONG_PASSWORD, authoritative=1
+[2025/05/03 21:57:42.335083,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user []\[root]@[172.16.22.48] with the new password interface
+[2025/05/03 21:57:42.335146,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[root]@[172.16.22.48]
+[2025/05/03 21:57:42.335660,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+  check_ntlm_password:  Authentication for user [root] -> [root] FAILED with error NT_STATUS_WRONG_PASSWORD, authoritative=1
+[2025/05/03 21:57:47.442768,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user []\[root]@[172.16.22.48] with the new password interface
+[2025/05/03 21:57:47.442833,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[root]@[172.16.22.48]
+[2025/05/03 21:57:47.443459,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+  check_ntlm_password:  Authentication for user [root] -> [root] FAILED with error NT_STATUS_WRONG_PASSWORD, authoritative=1
+[2025/05/03 21:57:52.452783,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user []\[root]@[172.16.22.48] with the new password interface
+[2025/05/03 21:57:52.452881,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[root]@[172.16.22.48]
+[2025/05/03 21:57:52.453879,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+  check_ntlm_password:  Authentication for user [root] -> [root] FAILED with error NT_STATUS_WRONG_PASSWORD, authoritative=1
+[2025/05/03 21:57:57.462335,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user []\[root]@[172.16.22.48] with the new password interface
+[2025/05/03 21:57:57.462408,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[root]@[172.16.22.48]
+[2025/05/03 21:57:57.463210,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+  check_ntlm_password:  Authentication for user [root] -> [root] FAILED with error NT_STATUS_WRONG_PASSWORD, authoritative=1
+[2025/05/03 21:58:02.478787,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user []\[root]@[172.16.22.48] with the new password interface
+[2025/05/03 21:58:02.478844,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[root]@[172.16.22.48]
+[2025/05/03 21:58:02.479519,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+  check_ntlm_password:  Authentication for user [root] -> [root] FAILED with error NT_STATUS_WRONG_PASSWORD, authoritative=1
+[2025/05/03 21:58:07.527551,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user []\[root]@[172.16.22.48] with the new password interface
+[2025/05/03 21:58:07.527616,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[root]@[172.16.22.48]
+[2025/05/03 21:58:07.528158,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+  check_ntlm_password:  Authentication for user [root] -> [root] FAILED with error NT_STATUS_WRONG_PASSWORD, authoritative=1
+[2025/05/03 21:58:12.538094,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user []\[root]@[172.16.22.48] with the new password interface
+[2025/05/03 21:58:12.538155,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[root]@[172.16.22.48]
+[2025/05/03 21:58:12.538857,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+  check_ntlm_password:  Authentication for user [root] -> [root] FAILED with error NT_STATUS_WRONG_PASSWORD, authoritative=1
+[2025/05/03 21:58:17.603048,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user []\[root]@[172.16.22.48] with the new password interface
+[2025/05/03 21:58:17.603114,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[root]@[172.16.22.48]
+[2025/05/03 21:58:17.603666,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+  check_ntlm_password:  Authentication for user [root] -> [root] FAILED with error NT_STATUS_WRONG_PASSWORD, authoritative=1
+[2025/05/03 21:58:22.647449,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user []\[root]@[172.16.22.48] with the new password interface
+[2025/05/03 21:58:22.647520,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[root]@[172.16.22.48]
+[2025/05/03 21:58:22.648020,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+  check_ntlm_password:  Authentication for user [root] -> [root] FAILED with error NT_STATUS_WRONG_PASSWORD, authoritative=1
+[2025/05/03 21:58:27.832799,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user []\[root]@[172.16.22.48] with the new password interface
+[2025/05/03 21:58:27.832877,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[root]@[172.16.22.48]
+[2025/05/03 21:58:27.833485,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+  check_ntlm_password:  Authentication for user [root] -> [root] FAILED with error NT_STATUS_WRONG_PASSWORD, authoritative=1
+[2025/05/03 21:58:32.840318,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user []\[root]@[172.16.22.48] with the new password interface
+[2025/05/03 21:58:32.840422,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[root]@[172.16.22.48]
+[2025/05/03 21:58:32.841373,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+  check_ntlm_password:  Authentication for user [root] -> [root] FAILED with error NT_STATUS_WRONG_PASSWORD, authoritative=1
+[2025/05/03 21:58:38.047023,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user []\[root]@[172.16.22.48] with the new password interface
+[2025/05/03 21:58:38.047117,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[root]@[172.16.22.48]
+[2025/05/03 21:58:38.048078,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+  check_ntlm_password:  Authentication for user [root] -> [root] FAILED with error NT_STATUS_WRONG_PASSWORD, authoritative=1
+[2025/05/03 21:58:43.125072,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user []\[root]@[172.16.22.48] with the new password interface
+[2025/05/03 21:58:43.125151,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[root]@[172.16.22.48]
+[2025/05/03 21:58:43.125837,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+  check_ntlm_password:  Authentication for user [root] -> [root] FAILED with error NT_STATUS_WRONG_PASSWORD, authoritative=1
+[2025/05/03 21:58:48.144953,  3] source3/auth/auth.c:202(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  Checking password for unmapped user []\[root]@[172.16.22.48] with the new password interface
+[2025/05/03 21:58:48.145033,  3] source3/auth/auth.c:208(auth_check_ntlm_password)
+  auth_check_ntlm_password: check_ntlm_password:  mapped user is: []\[root]@[172.16.22.48]
+[2025/05/03 21:58:48.145547,  2] source3/auth/auth.c:353(auth_check_ntlm_password)
+  check_ntlm_password:  Authentication for user [root] -> [root] FAILED with error NT_STATUS_WRONG_PASSWORD, authoritative=1

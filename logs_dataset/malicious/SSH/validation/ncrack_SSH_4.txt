@@ -1,0 +1,12 @@
+2025-05-02T21:59:44.973409+02:00 victim-ubuntu sshd[53239]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=172.16.22.48  user=root
+2025-05-02T21:59:46.640173+02:00 victim-ubuntu sshd[53239]: Failed password for root from 172.16.22.48 port 59286 ssh2
+2025-05-02T22:00:46.140572+02:00 victim-ubuntu sshd[53239]: message repeated 7 times: [ Failed password for root from 172.16.22.48 port 59286 ssh2]
+2025-05-02T22:00:56.925734+02:00 victim-ubuntu sshd[53239]: Failed password for root from 172.16.22.48 port 59286 ssh2
+2025-05-02T22:01:43.654201+02:00 victim-ubuntu sshd[53239]: message repeated 7 times: [ Failed password for root from 172.16.22.48 port 59286 ssh2]
+2025-05-02T22:01:44.993593+02:00 victim-ubuntu sshd[53249]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=172.16.22.48  user=root
+2025-05-02T22:01:51.401122+02:00 victim-ubuntu sshd[53251]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=172.16.22.48  user=root
+2025-05-02T22:01:54.365326+02:00 victim-ubuntu sshd[53249]: Failed password for root from 172.16.22.48 port 39010 ssh2
+2025-05-02T22:01:54.365838+02:00 victim-ubuntu sshd[53251]: Failed password for root from 172.16.22.48 port 54398 ssh2
+2025-05-02T22:01:54.365968+02:00 victim-ubuntu sshd[53249]: Connection closed by authenticating user root 172.16.22.48 port 39010 [preauth]
+2025-05-02T22:01:59.184916+02:00 victim-ubuntu sshd[53251]: Connection closed by authenticating user root 172.16.22.48 port 54398 [preauth]
+

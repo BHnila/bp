@@ -1,0 +1,91 @@
+## SSH
+
+Command: hydra -l root -P /usr/share/seclists/Passwords/Common-Credentials/10k-most-common.txt ssh://10.10.10.5 
+
+Dátum: 2.5.2025 - 20:00
+
+**hydra_SSH_1.txt**
+- Trvanie: 15 sekúnd
+- IP útočníka: 10.10.10.4
+- IP obete: 10.10.10.5
+- Útočí na: root
+
+**hydra_SSH_2.txt**
+- Trvanie: 2 minúty - delay 5 sekúnd
+- IP útočníka: 10.68.105.80
+- IP obete: 10.68.105.100
+- Útočí na: admin
+
+**hydra_SSH_3.txt**
+- Trvanie: 15 sekúnd
+- IP útočníka: 192.168.11.4
+- IP obete: 192.168.11.10
+- Útočí na: admin
+
+**hydra_SSH_4.txt**
+- Trvanie: 2 minúty - delay 5 sekúnd
+- IP útočníka: 172.16.22.48
+- IP obete: 172.16.22.22
+- Útočí na: root
+
+---
+
+Command: ncrack -p 22 -u root -P /usr/share/seclists/Passwords/Common-Credentials/10k-most-common.txt  10.10.10.5
+
+Dátum: 2.5.2025 - 20:00
+
+**ncrack_SSH_1.txt**
+- Trvanie: 15 sekúnd
+- IP útočníka: 10.10.10.4
+- IP obete: 10.10.10.5
+- Útočí na: root
+
+**ncrack_SSH_2.txt**
+- Trvanie: 2 minúty - delay 5 sekúnd
+- IP útočníka: 10.68.105.80
+- IP obete: 10.68.105.100
+- Útočí na: admin
+
+**ncrack_SSH_3.txt**
+- Trvanie: 15 sekúnd
+- IP útočníka: 192.168.11.4
+- IP obete: 192.168.11.10
+- Útočí na: admin
+
+**ncrack_SSH_4.txt**
+- Trvanie: 2 minúty - delay 5 sekúnd
+- IP útočníka: 172.16.22.48
+- IP obete: 172.16.22.22
+- Útočí na: root
+
+---
+
+Command: patator ssh_login host=10.10.10.5 user=root password=FILE0 0=/usr/share/seclists/Passwords/Common-Credentials/10k-most-common.txt
+
+Dátum: 2.5.2025 - 20:00
+
+**patator_SSH_1.txt**
+- Trvanie: 15 sekúnd
+- IP útočníka: 10.68.105.80
+- IP obete: 10.68.105.100
+- Útočí na: root
+
+**patator_SSH_2.txt**
+- Trvanie: 2 minúty - delay 5 sekúnd
+- IP útočníka: 10.10.10.4
+- IP obete: 10.10.10.5
+- Útočí na: admin
+
+**patator_SSH_3.txt**
+- Trvanie: 15 sekúnd
+- IP útočníka: 172.16.22.48
+- IP obete: 172.16.22.22
+- Útočí na: admin
+
+**patator_SSH_4.txt**
+- Trvanie: 2 minúty - delay 5 sekúnd
+- IP útočníka: 192.168.11.4
+- IP obete: 192.168.11.10
+- Útočí na: root
+
+
