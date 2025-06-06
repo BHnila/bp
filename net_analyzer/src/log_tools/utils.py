@@ -18,7 +18,7 @@ def calculate_precision(tp: int, fp: int) -> float:
 
     Presnosť predstavuje pravdepodobnosť, že pozitívna predikcia
     modelu je skutočne pozitívna. Definícia sa nachádza
-    v kapitole 1.8.
+    v kapitole 4.1.4.
 
     Parametre:
         tp (int): Počet detekovaných skutočne pozitívnych prípadov
@@ -41,7 +41,7 @@ def calculate_recall(tp: int, fn: int) -> float:
 
     Citlivosť (alebo úplnosť) hovorí, aká je pravdepodobnosť, že
     model detekuje skutočne pozitívny prípad. Definícia sa nachádza
-    v kapitole 1.8.
+    v kapitole 4.1.3.
 
     Parametre:
         tp (int): Počet detekovaných skutočne pozitívnych prípadov

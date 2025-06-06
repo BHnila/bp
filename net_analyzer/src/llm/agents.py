@@ -1,6 +1,6 @@
 """Tento modul obsahuje definície LLM agentov pre analýzu logov a tokov
 paketov. Agenti používajú LangChain na spracovanie a analýzu údajov.
-Agenti sú bližšie popísaní v kapitole 3.1.2
+Agenti sú bližšie popísaní v kapitole 3.2
 Pre konfiguráciu robustnosti pozrite src/llm/utils.py.
 """
 
@@ -27,7 +27,7 @@ def spawn_logs_metadata_extractor_agent(llm_client: BaseChatModel) -> Runnable:
     Vytvorí nakonfigurovanú inštanciu agenta pre extrahovanie metadát
     z logov.
 
-    Ide o implenetáciu Extraktora metadát (kapitola 3.1.2).
+    Ide o implenetáciu Extraktora metadát (kapitola 3.2.2).
 
     Tento agent analyzuje linuxové logy a extrahuje z nich metadáta -
     službu, IP adresu útočníka a trvanie podozrivej aktivity.
@@ -101,7 +101,7 @@ def spawn_logs_descriptor_agent(llm_client: BaseChatModel) -> Runnable:
     """
     Vytvorí nakonfigurovanú inštanciu agenta pre popis aktivity v logoch.
 
-    Ide o implementáciu Popisovača logov (kapitola 3.1.2).
+    Ide o implementáciu Popisovača logov (kapitola 3.2.2).
 
     Tento agent pripravuje detailné správy o aktivite v logoch
     pre bezpečnostných analytikov. Analyzuje neúspešné a úspešné
@@ -167,7 +167,7 @@ def spawn_logs_classifier_agent(llm_client: BaseChatModel) -> Runnable:
     """
     Vytvorí nakonfigurovanú inštanciu agenta pre klasifikáciu hrozieb v logoch.
 
-    Ide o implementáciu Klasifikátora logov (kapitola 3.1.2).
+    Ide o implementáciu Klasifikátora logov (kapitola 3.2.2).
 
     Tento agent rozhoduje na základe metadát a popisu aktivít v logoch,
     či došlo k narušeniu systému. Analyzuje indikátory brute force útokov
