@@ -1,0 +1,2644 @@
+
+             _   _      _                          _
+            | \ | |    | |       /\               | |
+            |  \| | ___| |_     /  \   _ __   __ _| |_   _ _______ _ __
+            | . ` |/ _ \ __|   / /\ \ | '_ \ / _` | | | | |_  / _ \ '__|
+            | |\  |  __/ |_   / ____ \| | | | (_| | | |_| |/ /  __/ |
+            |_| \_|\___|\__| /_/    \_\_| |_|\__,_|_|\__, /___\___|_|
+                                                      __/ |
+                                                     |___/
+        
+Vitajte v LLM Net Analyzer aplikácii!
+
+© Boris Hnila, 2025
+
+Vyberte typ analýzy:
+[1] Analýza Linux logov
+[2] Analýza sieťových tokov
+[3] Ukončiť program
+
+Zadajte váš výber (1-3): 
+Prosím, zvoľte počet epoch ladenia LLM modelu:
+• 0 = Základný model Llama 3.2 3B (bez ladenia)
+• 1-10 = Ladený model s daným počtom epoch
+
+Zadajte počet epoch (0-10): 
+Bude použitý ladený model SecLlama3B s 7 epochami.
+
+=== Analýza sieťových tokov ===
+Začína sa analýza...
+=== Aktuálny progres 1/200 ===
+Aktuálny súbor: chunk_1
+Momentálny stav analýzy:
+  Pozitívne: 0
+  Skutočne pozitívne: 0
+  Falošne pozitívne: 1
+  Falošne negatívne: 0
+Momentálne hodnoty metrík:
+  Presnosť: 0.0
+  Citlivosť: 0.0
+  F1 skóre: 0.0
+===============
+
+=== Aktuálny progres 2/200 ===
+Aktuálny súbor: chunk_2
+Momentálny stav analýzy:
+  Pozitívne: 0
+  Skutočne pozitívne: 0
+  Falošne pozitívne: 2
+  Falošne negatívne: 0
+Momentálne hodnoty metrík:
+  Presnosť: 0.0
+  Citlivosť: 0.0
+  F1 skóre: 0.0
+===============
+
+=== Aktuálny progres 3/200 ===
+Aktuálny súbor: chunk_3
+Momentálny stav analýzy:
+  Pozitívne: 0
+  Skutočne pozitívne: 0
+  Falošne pozitívne: 3
+  Falošne negatívne: 0
+Momentálne hodnoty metrík:
+  Presnosť: 0.0
+  Citlivosť: 0.0
+  F1 skóre: 0.0
+===============
+
+=== Aktuálny progres 4/200 ===
+Aktuálny súbor: chunk_4
+Momentálny stav analýzy:
+  Pozitívne: 0
+  Skutočne pozitívne: 0
+  Falošne pozitívne: 4
+  Falošne negatívne: 0
+Momentálne hodnoty metrík:
+  Presnosť: 0.0
+  Citlivosť: 0.0
+  F1 skóre: 0.0
+===============
+
+=== Aktuálny progres 5/200 ===
+Aktuálny súbor: chunk_5
+Momentálny stav analýzy:
+  Pozitívne: 0
+  Skutočne pozitívne: 0
+  Falošne pozitívne: 5
+  Falošne negatívne: 0
+Momentálne hodnoty metrík:
+  Presnosť: 0.0
+  Citlivosť: 0.0
+  F1 skóre: 0.0
+===============
+
+=== Aktuálny progres 6/200 ===
+Aktuálny súbor: chunk_6
+Momentálny stav analýzy:
+  Pozitívne: 0
+  Skutočne pozitívne: 0
+  Falošne pozitívne: 6
+  Falošne negatívne: 0
+Momentálne hodnoty metrík:
+  Presnosť: 0.0
+  Citlivosť: 0.0
+  F1 skóre: 0.0
+===============
+
+=== Aktuálny progres 7/200 ===
+Aktuálny súbor: chunk_7
+Momentálny stav analýzy:
+  Pozitívne: 0
+  Skutočne pozitívne: 0
+  Falošne pozitívne: 7
+  Falošne negatívne: 0
+Momentálne hodnoty metrík:
+  Presnosť: 0.0
+  Citlivosť: 0.0
+  F1 skóre: 0.0
+===============
+
+=== Aktuálny progres 8/200 ===
+Aktuálny súbor: chunk_8
+Momentálny stav analýzy:
+  Pozitívne: 0
+  Skutočne pozitívne: 0
+  Falošne pozitívne: 8
+  Falošne negatívne: 0
+Momentálne hodnoty metrík:
+  Presnosť: 0.0
+  Citlivosť: 0.0
+  F1 skóre: 0.0
+===============
+
+=== Aktuálny progres 9/200 ===
+Aktuálny súbor: chunk_9
+Momentálny stav analýzy:
+  Pozitívne: 0
+  Skutočne pozitívne: 0
+  Falošne pozitívne: 8
+  Falošne negatívne: 0
+Momentálne hodnoty metrík:
+  Presnosť: 0.0
+  Citlivosť: 0.0
+  F1 skóre: 0.0
+===============
+
+=== Aktuálny progres 10/200 ===
+Aktuálny súbor: chunk_10
+Momentálny stav analýzy:
+  Pozitívne: 0
+  Skutočne pozitívne: 0
+  Falošne pozitívne: 9
+  Falošne negatívne: 0
+Momentálne hodnoty metrík:
+  Presnosť: 0.0
+  Citlivosť: 0.0
+  F1 skóre: 0.0
+===============
+
+=== Aktuálny progres 11/200 ===
+Aktuálny súbor: chunk_11
+Momentálny stav analýzy:
+  Pozitívne: 0
+  Skutočne pozitívne: 0
+  Falošne pozitívne: 10
+  Falošne negatívne: 0
+Momentálne hodnoty metrík:
+  Presnosť: 0.0
+  Citlivosť: 0.0
+  F1 skóre: 0.0
+===============
+
+=== Aktuálny progres 12/200 ===
+Aktuálny súbor: chunk_12
+Momentálny stav analýzy:
+  Pozitívne: 0
+  Skutočne pozitívne: 0
+  Falošne pozitívne: 11
+  Falošne negatívne: 0
+Momentálne hodnoty metrík:
+  Presnosť: 0.0
+  Citlivosť: 0.0
+  F1 skóre: 0.0
+===============
+
+=== Aktuálny progres 13/200 ===
+Aktuálny súbor: chunk_13
+Momentálny stav analýzy:
+  Pozitívne: 0
+  Skutočne pozitívne: 0
+  Falošne pozitívne: 12
+  Falošne negatívne: 0
+Momentálne hodnoty metrík:
+  Presnosť: 0.0
+  Citlivosť: 0.0
+  F1 skóre: 0.0
+===============
+
+=== Aktuálny progres 14/200 ===
+Aktuálny súbor: chunk_14
+Momentálny stav analýzy:
+  Pozitívne: 0
+  Skutočne pozitívne: 0
+  Falošne pozitívne: 12
+  Falošne negatívne: 0
+Momentálne hodnoty metrík:
+  Presnosť: 0.0
+  Citlivosť: 0.0
+  F1 skóre: 0.0
+===============
+
+=== Aktuálny progres 15/200 ===
+Aktuálny súbor: chunk_15
+Momentálny stav analýzy:
+  Pozitívne: 0
+  Skutočne pozitívne: 0
+  Falošne pozitívne: 12
+  Falošne negatívne: 0
+Momentálne hodnoty metrík:
+  Presnosť: 0.0
+  Citlivosť: 0.0
+  F1 skóre: 0.0
+===============
+
+=== Aktuálny progres 16/200 ===
+Aktuálny súbor: chunk_16
+Momentálny stav analýzy:
+  Pozitívne: 0
+  Skutočne pozitívne: 0
+  Falošne pozitívne: 12
+  Falošne negatívne: 0
+Momentálne hodnoty metrík:
+  Presnosť: 0.0
+  Citlivosť: 0.0
+  F1 skóre: 0.0
+===============
+
+=== Aktuálny progres 17/200 ===
+Aktuálny súbor: chunk_17
+Momentálny stav analýzy:
+  Pozitívne: 0
+  Skutočne pozitívne: 0
+  Falošne pozitívne: 13
+  Falošne negatívne: 0
+Momentálne hodnoty metrík:
+  Presnosť: 0.0
+  Citlivosť: 0.0
+  F1 skóre: 0.0
+===============
+
+=== Aktuálny progres 18/200 ===
+Aktuálny súbor: chunk_18
+Momentálny stav analýzy:
+  Pozitívne: 0
+  Skutočne pozitívne: 0
+  Falošne pozitívne: 14
+  Falošne negatívne: 0
+Momentálne hodnoty metrík:
+  Presnosť: 0.0
+  Citlivosť: 0.0
+  F1 skóre: 0.0
+===============
+
+=== Aktuálny progres 19/200 ===
+Aktuálny súbor: chunk_19
+Momentálny stav analýzy:
+  Pozitívne: 0
+  Skutočne pozitívne: 0
+  Falošne pozitívne: 14
+  Falošne negatívne: 0
+Momentálne hodnoty metrík:
+  Presnosť: 0.0
+  Citlivosť: 0.0
+  F1 skóre: 0.0
+===============
+
+=== Aktuálny progres 20/200 ===
+Aktuálny súbor: chunk_20
+Momentálny stav analýzy:
+  Pozitívne: 0
+  Skutočne pozitívne: 0
+  Falošne pozitívne: 15
+  Falošne negatívne: 0
+Momentálne hodnoty metrík:
+  Presnosť: 0.0
+  Citlivosť: 0.0
+  F1 skóre: 0.0
+===============
+
+=== Aktuálny progres 21/200 ===
+Aktuálny súbor: chunk_21
+Momentálny stav analýzy:
+  Pozitívne: 0
+  Skutočne pozitívne: 0
+  Falošne pozitívne: 15
+  Falošne negatívne: 0
+Momentálne hodnoty metrík:
+  Presnosť: 0.0
+  Citlivosť: 0.0
+  F1 skóre: 0.0
+===============
+
+=== Aktuálny progres 22/200 ===
+Aktuálny súbor: chunk_22
+Momentálny stav analýzy:
+  Pozitívne: 0
+  Skutočne pozitívne: 0
+  Falošne pozitívne: 16
+  Falošne negatívne: 0
+Momentálne hodnoty metrík:
+  Presnosť: 0.0
+  Citlivosť: 0.0
+  F1 skóre: 0.0
+===============
+
+=== Aktuálny progres 23/200 ===
+Aktuálny súbor: chunk_23
+Momentálny stav analýzy:
+  Pozitívne: 0
+  Skutočne pozitívne: 0
+  Falošne pozitívne: 16
+  Falošne negatívne: 0
+Momentálne hodnoty metrík:
+  Presnosť: 0.0
+  Citlivosť: 0.0
+  F1 skóre: 0.0
+===============
+
+=== Aktuálny progres 24/200 ===
+Aktuálny súbor: chunk_24
+Momentálny stav analýzy:
+  Pozitívne: 0
+  Skutočne pozitívne: 0
+  Falošne pozitívne: 16
+  Falošne negatívne: 0
+Momentálne hodnoty metrík:
+  Presnosť: 0.0
+  Citlivosť: 0.0
+  F1 skóre: 0.0
+===============
+
+=== Aktuálny progres 25/200 ===
+Aktuálny súbor: chunk_25
+Momentálny stav analýzy:
+  Pozitívne: 0
+  Skutočne pozitívne: 0
+  Falošne pozitívne: 16
+  Falošne negatívne: 0
+Momentálne hodnoty metrík:
+  Presnosť: 0.0
+  Citlivosť: 0.0
+  F1 skóre: 0.0
+===============
+
+=== Aktuálny progres 26/200 ===
+Aktuálny súbor: chunk_26
+Momentálny stav analýzy:
+  Pozitívne: 0
+  Skutočne pozitívne: 0
+  Falošne pozitívne: 16
+  Falošne negatívne: 0
+Momentálne hodnoty metrík:
+  Presnosť: 0.0
+  Citlivosť: 0.0
+  F1 skóre: 0.0
+===============
+
+=== Aktuálny progres 27/200 ===
+Aktuálny súbor: chunk_27
+Momentálny stav analýzy:
+  Pozitívne: 0
+  Skutočne pozitívne: 0
+  Falošne pozitívne: 16
+  Falošne negatívne: 0
+Momentálne hodnoty metrík:
+  Presnosť: 0.0
+  Citlivosť: 0.0
+  F1 skóre: 0.0
+===============
+
+=== Aktuálny progres 28/200 ===
+Aktuálny súbor: chunk_28
+Momentálny stav analýzy:
+  Pozitívne: 0
+  Skutočne pozitívne: 0
+  Falošne pozitívne: 16
+  Falošne negatívne: 0
+Momentálne hodnoty metrík:
+  Presnosť: 0.0
+  Citlivosť: 0.0
+  F1 skóre: 0.0
+===============
+
+=== Aktuálny progres 29/200 ===
+Aktuálny súbor: chunk_29
+Momentálny stav analýzy:
+  Pozitívne: 0
+  Skutočne pozitívne: 0
+  Falošne pozitívne: 16
+  Falošne negatívne: 0
+Momentálne hodnoty metrík:
+  Presnosť: 0.0
+  Citlivosť: 0.0
+  F1 skóre: 0.0
+===============
+
+=== Aktuálny progres 30/200 ===
+Aktuálny súbor: chunk_30
+Momentálny stav analýzy:
+  Pozitívne: 0
+  Skutočne pozitívne: 0
+  Falošne pozitívne: 16
+  Falošne negatívne: 0
+Momentálne hodnoty metrík:
+  Presnosť: 0.0
+  Citlivosť: 0.0
+  F1 skóre: 0.0
+===============
+
+=== Aktuálny progres 31/200 ===
+Aktuálny súbor: chunk_31
+Momentálny stav analýzy:
+  Pozitívne: 0
+  Skutočne pozitívne: 0
+  Falošne pozitívne: 17
+  Falošne negatívne: 0
+Momentálne hodnoty metrík:
+  Presnosť: 0.0
+  Citlivosť: 0.0
+  F1 skóre: 0.0
+===============
+
+=== Aktuálny progres 32/200 ===
+Aktuálny súbor: chunk_32
+Momentálny stav analýzy:
+  Pozitívne: 0
+  Skutočne pozitívne: 0
+  Falošne pozitívne: 17
+  Falošne negatívne: 0
+Momentálne hodnoty metrík:
+  Presnosť: 0.0
+  Citlivosť: 0.0
+  F1 skóre: 0.0
+===============
+
+=== Aktuálny progres 33/200 ===
+Aktuálny súbor: chunk_33
+Momentálny stav analýzy:
+  Pozitívne: 0
+  Skutočne pozitívne: 0
+  Falošne pozitívne: 17
+  Falošne negatívne: 0
+Momentálne hodnoty metrík:
+  Presnosť: 0.0
+  Citlivosť: 0.0
+  F1 skóre: 0.0
+===============
+
+=== Aktuálny progres 34/200 ===
+Aktuálny súbor: chunk_34
+Momentálny stav analýzy:
+  Pozitívne: 0
+  Skutočne pozitívne: 0
+  Falošne pozitívne: 18
+  Falošne negatívne: 0
+Momentálne hodnoty metrík:
+  Presnosť: 0.0
+  Citlivosť: 0.0
+  F1 skóre: 0.0
+===============
+
+=== Aktuálny progres 35/200 ===
+Aktuálny súbor: chunk_35
+Momentálny stav analýzy:
+  Pozitívne: 0
+  Skutočne pozitívne: 0
+  Falošne pozitívne: 19
+  Falošne negatívne: 0
+Momentálne hodnoty metrík:
+  Presnosť: 0.0
+  Citlivosť: 0.0
+  F1 skóre: 0.0
+===============
+
+=== Aktuálny progres 36/200 ===
+Aktuálny súbor: chunk_36
+Momentálny stav analýzy:
+  Pozitívne: 0
+  Skutočne pozitívne: 0
+  Falošne pozitívne: 20
+  Falošne negatívne: 0
+Momentálne hodnoty metrík:
+  Presnosť: 0.0
+  Citlivosť: 0.0
+  F1 skóre: 0.0
+===============
+
+=== Aktuálny progres 37/200 ===
+Aktuálny súbor: chunk_37
+Momentálny stav analýzy:
+  Pozitívne: 0
+  Skutočne pozitívne: 0
+  Falošne pozitívne: 21
+  Falošne negatívne: 0
+Momentálne hodnoty metrík:
+  Presnosť: 0.0
+  Citlivosť: 0.0
+  F1 skóre: 0.0
+===============
+
+=== Aktuálny progres 38/200 ===
+Aktuálny súbor: chunk_38
+Momentálny stav analýzy:
+  Pozitívne: 0
+  Skutočne pozitívne: 0
+  Falošne pozitívne: 22
+  Falošne negatívne: 0
+Momentálne hodnoty metrík:
+  Presnosť: 0.0
+  Citlivosť: 0.0
+  F1 skóre: 0.0
+===============
+
+=== Aktuálny progres 39/200 ===
+Aktuálny súbor: chunk_39
+Momentálny stav analýzy:
+  Pozitívne: 0
+  Skutočne pozitívne: 0
+  Falošne pozitívne: 23
+  Falošne negatívne: 0
+Momentálne hodnoty metrík:
+  Presnosť: 0.0
+  Citlivosť: 0.0
+  F1 skóre: 0.0
+===============
+
+=== Aktuálny progres 40/200 ===
+Aktuálny súbor: chunk_40
+Momentálny stav analýzy:
+  Pozitívne: 0
+  Skutočne pozitívne: 0
+  Falošne pozitívne: 24
+  Falošne negatívne: 0
+Momentálne hodnoty metrík:
+  Presnosť: 0.0
+  Citlivosť: 0.0
+  F1 skóre: 0.0
+===============
+
+=== Aktuálny progres 41/200 ===
+Aktuálny súbor: chunk_41
+Momentálny stav analýzy:
+  Pozitívne: 0
+  Skutočne pozitívne: 0
+  Falošne pozitívne: 25
+  Falošne negatívne: 0
+Momentálne hodnoty metrík:
+  Presnosť: 0.0
+  Citlivosť: 0.0
+  F1 skóre: 0.0
+===============
+
+=== Aktuálny progres 42/200 ===
+Aktuálny súbor: chunk_42
+Momentálny stav analýzy:
+  Pozitívne: 0
+  Skutočne pozitívne: 0
+  Falošne pozitívne: 25
+  Falošne negatívne: 0
+Momentálne hodnoty metrík:
+  Presnosť: 0.0
+  Citlivosť: 0.0
+  F1 skóre: 0.0
+===============
+
+=== Aktuálny progres 43/200 ===
+Aktuálny súbor: chunk_43
+Momentálny stav analýzy:
+  Pozitívne: 0
+  Skutočne pozitívne: 0
+  Falošne pozitívne: 25
+  Falošne negatívne: 0
+Momentálne hodnoty metrík:
+  Presnosť: 0.0
+  Citlivosť: 0.0
+  F1 skóre: 0.0
+===============
+
+=== Aktuálny progres 44/200 ===
+Aktuálny súbor: chunk_44
+Momentálny stav analýzy:
+  Pozitívne: 0
+  Skutočne pozitívne: 0
+  Falošne pozitívne: 26
+  Falošne negatívne: 0
+Momentálne hodnoty metrík:
+  Presnosť: 0.0
+  Citlivosť: 0.0
+  F1 skóre: 0.0
+===============
+
+=== Aktuálny progres 45/200 ===
+Aktuálny súbor: chunk_45
+Momentálny stav analýzy:
+  Pozitívne: 0
+  Skutočne pozitívne: 0
+  Falošne pozitívne: 26
+  Falošne negatívne: 0
+Momentálne hodnoty metrík:
+  Presnosť: 0.0
+  Citlivosť: 0.0
+  F1 skóre: 0.0
+===============
+
+=== Aktuálny progres 46/200 ===
+Aktuálny súbor: chunk_46
+Momentálny stav analýzy:
+  Pozitívne: 0
+  Skutočne pozitívne: 0
+  Falošne pozitívne: 26
+  Falošne negatívne: 0
+Momentálne hodnoty metrík:
+  Presnosť: 0.0
+  Citlivosť: 0.0
+  F1 skóre: 0.0
+===============
+
+=== Aktuálny progres 47/200 ===
+Aktuálny súbor: chunk_47
+Momentálny stav analýzy:
+  Pozitívne: 0
+  Skutočne pozitívne: 0
+  Falošne pozitívne: 26
+  Falošne negatívne: 0
+Momentálne hodnoty metrík:
+  Presnosť: 0.0
+  Citlivosť: 0.0
+  F1 skóre: 0.0
+===============
+
+=== Aktuálny progres 48/200 ===
+Aktuálny súbor: chunk_48
+Momentálny stav analýzy:
+  Pozitívne: 0
+  Skutočne pozitívne: 0
+  Falošne pozitívne: 26
+  Falošne negatívne: 0
+Momentálne hodnoty metrík:
+  Presnosť: 0.0
+  Citlivosť: 0.0
+  F1 skóre: 0.0
+===============
+
+=== Aktuálny progres 49/200 ===
+Aktuálny súbor: chunk_49
+Momentálny stav analýzy:
+  Pozitívne: 0
+  Skutočne pozitívne: 0
+  Falošne pozitívne: 26
+  Falošne negatívne: 0
+Momentálne hodnoty metrík:
+  Presnosť: 0.0
+  Citlivosť: 0.0
+  F1 skóre: 0.0
+===============
+
+=== Aktuálny progres 50/200 ===
+Aktuálny súbor: chunk_50
+Momentálny stav analýzy:
+  Pozitívne: 0
+  Skutočne pozitívne: 0
+  Falošne pozitívne: 26
+  Falošne negatívne: 0
+Momentálne hodnoty metrík:
+  Presnosť: 0.0
+  Citlivosť: 0.0
+  F1 skóre: 0.0
+===============
+
+=== Aktuálny progres 51/200 ===
+Aktuálny súbor: chunk_51
+Momentálny stav analýzy:
+  Pozitívne: 0
+  Skutočne pozitívne: 0
+  Falošne pozitívne: 26
+  Falošne negatívne: 0
+Momentálne hodnoty metrík:
+  Presnosť: 0.0
+  Citlivosť: 0.0
+  F1 skóre: 0.0
+===============
+
+=== Aktuálny progres 52/200 ===
+Aktuálny súbor: chunk_52
+Momentálny stav analýzy:
+  Pozitívne: 0
+  Skutočne pozitívne: 0
+  Falošne pozitívne: 26
+  Falošne negatívne: 0
+Momentálne hodnoty metrík:
+  Presnosť: 0.0
+  Citlivosť: 0.0
+  F1 skóre: 0.0
+===============
+
+=== Aktuálny progres 53/200 ===
+Aktuálny súbor: chunk_53
+Momentálny stav analýzy:
+  Pozitívne: 0
+  Skutočne pozitívne: 0
+  Falošne pozitívne: 27
+  Falošne negatívne: 0
+Momentálne hodnoty metrík:
+  Presnosť: 0.0
+  Citlivosť: 0.0
+  F1 skóre: 0.0
+===============
+
+=== Aktuálny progres 54/200 ===
+Aktuálny súbor: chunk_54
+Momentálny stav analýzy:
+  Pozitívne: 0
+  Skutočne pozitívne: 0
+  Falošne pozitívne: 28
+  Falošne negatívne: 0
+Momentálne hodnoty metrík:
+  Presnosť: 0.0
+  Citlivosť: 0.0
+  F1 skóre: 0.0
+===============
+
+=== Aktuálny progres 55/200 ===
+Aktuálny súbor: chunk_55
+Momentálny stav analýzy:
+  Pozitívne: 0
+  Skutočne pozitívne: 0
+  Falošne pozitívne: 29
+  Falošne negatívne: 0
+Momentálne hodnoty metrík:
+  Presnosť: 0.0
+  Citlivosť: 0.0
+  F1 skóre: 0.0
+===============
+
+=== Aktuálny progres 56/200 ===
+Aktuálny súbor: chunk_56
+Momentálny stav analýzy:
+  Pozitívne: 0
+  Skutočne pozitívne: 0
+  Falošne pozitívne: 29
+  Falošne negatívne: 0
+Momentálne hodnoty metrík:
+  Presnosť: 0.0
+  Citlivosť: 0.0
+  F1 skóre: 0.0
+===============
+
+=== Aktuálny progres 57/200 ===
+Aktuálny súbor: chunk_57
+Momentálny stav analýzy:
+  Pozitívne: 0
+  Skutočne pozitívne: 0
+  Falošne pozitívne: 29
+  Falošne negatívne: 0
+Momentálne hodnoty metrík:
+  Presnosť: 0.0
+  Citlivosť: 0.0
+  F1 skóre: 0.0
+===============
+
+=== Aktuálny progres 58/200 ===
+Aktuálny súbor: chunk_58
+Momentálny stav analýzy:
+  Pozitívne: 0
+  Skutočne pozitívne: 0
+  Falošne pozitívne: 30
+  Falošne negatívne: 0
+Momentálne hodnoty metrík:
+  Presnosť: 0.0
+  Citlivosť: 0.0
+  F1 skóre: 0.0
+===============
+
+=== Aktuálny progres 59/200 ===
+Aktuálny súbor: chunk_59
+Momentálny stav analýzy:
+  Pozitívne: 0
+  Skutočne pozitívne: 0
+  Falošne pozitívne: 31
+  Falošne negatívne: 0
+Momentálne hodnoty metrík:
+  Presnosť: 0.0
+  Citlivosť: 0.0
+  F1 skóre: 0.0
+===============
+
+=== Aktuálny progres 60/200 ===
+Aktuálny súbor: chunk_60
+Momentálny stav analýzy:
+  Pozitívne: 0
+  Skutočne pozitívne: 0
+  Falošne pozitívne: 32
+  Falošne negatívne: 0
+Momentálne hodnoty metrík:
+  Presnosť: 0.0
+  Citlivosť: 0.0
+  F1 skóre: 0.0
+===============
+
+=== Aktuálny progres 61/200 ===
+Aktuálny súbor: chunk_61
+Momentálny stav analýzy:
+  Pozitívne: 0
+  Skutočne pozitívne: 0
+  Falošne pozitívne: 33
+  Falošne negatívne: 0
+Momentálne hodnoty metrík:
+  Presnosť: 0.0
+  Citlivosť: 0.0
+  F1 skóre: 0.0
+===============
+
+=== Aktuálny progres 62/200 ===
+Aktuálny súbor: chunk_62
+Momentálny stav analýzy:
+  Pozitívne: 0
+  Skutočne pozitívne: 0
+  Falošne pozitívne: 33
+  Falošne negatívne: 0
+Momentálne hodnoty metrík:
+  Presnosť: 0.0
+  Citlivosť: 0.0
+  F1 skóre: 0.0
+===============
+
+=== Aktuálny progres 63/200 ===
+Aktuálny súbor: chunk_63
+Momentálny stav analýzy:
+  Pozitívne: 0
+  Skutočne pozitívne: 0
+  Falošne pozitívne: 34
+  Falošne negatívne: 0
+Momentálne hodnoty metrík:
+  Presnosť: 0.0
+  Citlivosť: 0.0
+  F1 skóre: 0.0
+===============
+
+=== Aktuálny progres 64/200 ===
+Aktuálny súbor: chunk_64
+Momentálny stav analýzy:
+  Pozitívne: 0
+  Skutočne pozitívne: 0
+  Falošne pozitívne: 35
+  Falošne negatívne: 0
+Momentálne hodnoty metrík:
+  Presnosť: 0.0
+  Citlivosť: 0.0
+  F1 skóre: 0.0
+===============
+
+=== Aktuálny progres 65/200 ===
+Aktuálny súbor: chunk_65
+Momentálny stav analýzy:
+  Pozitívne: 0
+  Skutočne pozitívne: 0
+  Falošne pozitívne: 36
+  Falošne negatívne: 0
+Momentálne hodnoty metrík:
+  Presnosť: 0.0
+  Citlivosť: 0.0
+  F1 skóre: 0.0
+===============
+
+=== Aktuálny progres 66/200 ===
+Aktuálny súbor: chunk_66
+Momentálny stav analýzy:
+  Pozitívne: 0
+  Skutočne pozitívne: 0
+  Falošne pozitívne: 37
+  Falošne negatívne: 0
+Momentálne hodnoty metrík:
+  Presnosť: 0.0
+  Citlivosť: 0.0
+  F1 skóre: 0.0
+===============
+
+=== Aktuálny progres 67/200 ===
+Aktuálny súbor: chunk_67
+Momentálny stav analýzy:
+  Pozitívne: 0
+  Skutočne pozitívne: 0
+  Falošne pozitívne: 37
+  Falošne negatívne: 0
+Momentálne hodnoty metrík:
+  Presnosť: 0.0
+  Citlivosť: 0.0
+  F1 skóre: 0.0
+===============
+
+=== Aktuálny progres 68/200 ===
+Aktuálny súbor: chunk_68
+Momentálny stav analýzy:
+  Pozitívne: 0
+  Skutočne pozitívne: 0
+  Falošne pozitívne: 38
+  Falošne negatívne: 0
+Momentálne hodnoty metrík:
+  Presnosť: 0.0
+  Citlivosť: 0.0
+  F1 skóre: 0.0
+===============
+
+=== Aktuálny progres 69/200 ===
+Aktuálny súbor: chunk_69
+Momentálny stav analýzy:
+  Pozitívne: 0
+  Skutočne pozitívne: 0
+  Falošne pozitívne: 39
+  Falošne negatívne: 0
+Momentálne hodnoty metrík:
+  Presnosť: 0.0
+  Citlivosť: 0.0
+  F1 skóre: 0.0
+===============
+
+=== Aktuálny progres 70/200 ===
+Aktuálny súbor: chunk_70
+Momentálny stav analýzy:
+  Pozitívne: 0
+  Skutočne pozitívne: 0
+  Falošne pozitívne: 40
+  Falošne negatívne: 0
+Momentálne hodnoty metrík:
+  Presnosť: 0.0
+  Citlivosť: 0.0
+  F1 skóre: 0.0
+===============
+
+=== Aktuálny progres 71/200 ===
+Aktuálny súbor: chunk_71
+Momentálny stav analýzy:
+  Pozitívne: 0
+  Skutočne pozitívne: 0
+  Falošne pozitívne: 41
+  Falošne negatívne: 0
+Momentálne hodnoty metrík:
+  Presnosť: 0.0
+  Citlivosť: 0.0
+  F1 skóre: 0.0
+===============
+
+=== Aktuálny progres 72/200 ===
+Aktuálny súbor: chunk_72
+Momentálny stav analýzy:
+  Pozitívne: 0
+  Skutočne pozitívne: 0
+  Falošne pozitívne: 42
+  Falošne negatívne: 0
+Momentálne hodnoty metrík:
+  Presnosť: 0.0
+  Citlivosť: 0.0
+  F1 skóre: 0.0
+===============
+
+=== Aktuálny progres 73/200 ===
+Aktuálny súbor: chunk_73
+Momentálny stav analýzy:
+  Pozitívne: 0
+  Skutočne pozitívne: 0
+  Falošne pozitívne: 43
+  Falošne negatívne: 0
+Momentálne hodnoty metrík:
+  Presnosť: 0.0
+  Citlivosť: 0.0
+  F1 skóre: 0.0
+===============
+
+=== Aktuálny progres 74/200 ===
+Aktuálny súbor: chunk_74
+Momentálny stav analýzy:
+  Pozitívne: 0
+  Skutočne pozitívne: 0
+  Falošne pozitívne: 44
+  Falošne negatívne: 0
+Momentálne hodnoty metrík:
+  Presnosť: 0.0
+  Citlivosť: 0.0
+  F1 skóre: 0.0
+===============
+
+=== Aktuálny progres 75/200 ===
+Aktuálny súbor: chunk_75
+Momentálny stav analýzy:
+  Pozitívne: 0
+  Skutočne pozitívne: 0
+  Falošne pozitívne: 45
+  Falošne negatívne: 0
+Momentálne hodnoty metrík:
+  Presnosť: 0.0
+  Citlivosť: 0.0
+  F1 skóre: 0.0
+===============
+
+=== Aktuálny progres 76/200 ===
+Aktuálny súbor: chunk_76
+Momentálny stav analýzy:
+  Pozitívne: 0
+  Skutočne pozitívne: 0
+  Falošne pozitívne: 46
+  Falošne negatívne: 0
+Momentálne hodnoty metrík:
+  Presnosť: 0.0
+  Citlivosť: 0.0
+  F1 skóre: 0.0
+===============
+
+=== Aktuálny progres 77/200 ===
+Aktuálny súbor: chunk_77
+Momentálny stav analýzy:
+  Pozitívne: 0
+  Skutočne pozitívne: 0
+  Falošne pozitívne: 47
+  Falošne negatívne: 0
+Momentálne hodnoty metrík:
+  Presnosť: 0.0
+  Citlivosť: 0.0
+  F1 skóre: 0.0
+===============
+
+=== Aktuálny progres 78/200 ===
+Aktuálny súbor: chunk_78
+Momentálny stav analýzy:
+  Pozitívne: 0
+  Skutočne pozitívne: 0
+  Falošne pozitívne: 48
+  Falošne negatívne: 0
+Momentálne hodnoty metrík:
+  Presnosť: 0.0
+  Citlivosť: 0.0
+  F1 skóre: 0.0
+===============
+
+=== Aktuálny progres 79/200 ===
+Aktuálny súbor: chunk_79
+Momentálny stav analýzy:
+  Pozitívne: 0
+  Skutočne pozitívne: 0
+  Falošne pozitívne: 49
+  Falošne negatívne: 0
+Momentálne hodnoty metrík:
+  Presnosť: 0.0
+  Citlivosť: 0.0
+  F1 skóre: 0.0
+===============
+
+=== Aktuálny progres 80/200 ===
+Aktuálny súbor: chunk_80
+Momentálny stav analýzy:
+  Pozitívne: 0
+  Skutočne pozitívne: 0
+  Falošne pozitívne: 50
+  Falošne negatívne: 0
+Momentálne hodnoty metrík:
+  Presnosť: 0.0
+  Citlivosť: 0.0
+  F1 skóre: 0.0
+===============
+
+=== Aktuálny progres 81/200 ===
+Aktuálny súbor: chunk_81
+Momentálny stav analýzy:
+  Pozitívne: 0
+  Skutočne pozitívne: 0
+  Falošne pozitívne: 51
+  Falošne negatívne: 0
+Momentálne hodnoty metrík:
+  Presnosť: 0.0
+  Citlivosť: 0.0
+  F1 skóre: 0.0
+===============
+
+=== Aktuálny progres 82/200 ===
+Aktuálny súbor: chunk_82
+Momentálny stav analýzy:
+  Pozitívne: 0
+  Skutočne pozitívne: 0
+  Falošne pozitívne: 52
+  Falošne negatívne: 0
+Momentálne hodnoty metrík:
+  Presnosť: 0.0
+  Citlivosť: 0.0
+  F1 skóre: 0.0
+===============
+
+=== Aktuálny progres 83/200 ===
+Aktuálny súbor: chunk_83
+Momentálny stav analýzy:
+  Pozitívne: 0
+  Skutočne pozitívne: 0
+  Falošne pozitívne: 53
+  Falošne negatívne: 0
+Momentálne hodnoty metrík:
+  Presnosť: 0.0
+  Citlivosť: 0.0
+  F1 skóre: 0.0
+===============
+
+=== Aktuálny progres 84/200 ===
+Aktuálny súbor: chunk_84
+Momentálny stav analýzy:
+  Pozitívne: 0
+  Skutočne pozitívne: 0
+  Falošne pozitívne: 54
+  Falošne negatívne: 0
+Momentálne hodnoty metrík:
+  Presnosť: 0.0
+  Citlivosť: 0.0
+  F1 skóre: 0.0
+===============
+
+=== Aktuálny progres 85/200 ===
+Aktuálny súbor: chunk_85
+Momentálny stav analýzy:
+  Pozitívne: 0
+  Skutočne pozitívne: 0
+  Falošne pozitívne: 55
+  Falošne negatívne: 0
+Momentálne hodnoty metrík:
+  Presnosť: 0.0
+  Citlivosť: 0.0
+  F1 skóre: 0.0
+===============
+
+=== Aktuálny progres 86/200 ===
+Aktuálny súbor: chunk_86
+Momentálny stav analýzy:
+  Pozitívne: 0
+  Skutočne pozitívne: 0
+  Falošne pozitívne: 56
+  Falošne negatívne: 0
+Momentálne hodnoty metrík:
+  Presnosť: 0.0
+  Citlivosť: 0.0
+  F1 skóre: 0.0
+===============
+
+=== Aktuálny progres 87/200 ===
+Aktuálny súbor: chunk_87
+Momentálny stav analýzy:
+  Pozitívne: 0
+  Skutočne pozitívne: 0
+  Falošne pozitívne: 57
+  Falošne negatívne: 0
+Momentálne hodnoty metrík:
+  Presnosť: 0.0
+  Citlivosť: 0.0
+  F1 skóre: 0.0
+===============
+
+=== Aktuálny progres 88/200 ===
+Aktuálny súbor: chunk_88
+Momentálny stav analýzy:
+  Pozitívne: 0
+  Skutočne pozitívne: 0
+  Falošne pozitívne: 58
+  Falošne negatívne: 0
+Momentálne hodnoty metrík:
+  Presnosť: 0.0
+  Citlivosť: 0.0
+  F1 skóre: 0.0
+===============
+
+=== Aktuálny progres 89/200 ===
+Aktuálny súbor: chunk_89
+Momentálny stav analýzy:
+  Pozitívne: 0
+  Skutočne pozitívne: 0
+  Falošne pozitívne: 58
+  Falošne negatívne: 0
+Momentálne hodnoty metrík:
+  Presnosť: 0.0
+  Citlivosť: 0.0
+  F1 skóre: 0.0
+===============
+
+=== Aktuálny progres 90/200 ===
+Aktuálny súbor: chunk_90
+Momentálny stav analýzy:
+  Pozitívne: 0
+  Skutočne pozitívne: 0
+  Falošne pozitívne: 59
+  Falošne negatívne: 0
+Momentálne hodnoty metrík:
+  Presnosť: 0.0
+  Citlivosť: 0.0
+  F1 skóre: 0.0
+===============
+
+=== Aktuálny progres 91/200 ===
+Aktuálny súbor: chunk_91
+Momentálny stav analýzy:
+  Pozitívne: 0
+  Skutočne pozitívne: 0
+  Falošne pozitívne: 59
+  Falošne negatívne: 0
+Momentálne hodnoty metrík:
+  Presnosť: 0.0
+  Citlivosť: 0.0
+  F1 skóre: 0.0
+===============
+
+=== Aktuálny progres 92/200 ===
+Aktuálny súbor: chunk_92
+Momentálny stav analýzy:
+  Pozitívne: 0
+  Skutočne pozitívne: 0
+  Falošne pozitívne: 60
+  Falošne negatívne: 0
+Momentálne hodnoty metrík:
+  Presnosť: 0.0
+  Citlivosť: 0.0
+  F1 skóre: 0.0
+===============
+
+=== Aktuálny progres 93/200 ===
+Aktuálny súbor: chunk_93
+Momentálny stav analýzy:
+  Pozitívne: 0
+  Skutočne pozitívne: 0
+  Falošne pozitívne: 61
+  Falošne negatívne: 0
+Momentálne hodnoty metrík:
+  Presnosť: 0.0
+  Citlivosť: 0.0
+  F1 skóre: 0.0
+===============
+
+=== Aktuálny progres 94/200 ===
+Aktuálny súbor: chunk_94
+Momentálny stav analýzy:
+  Pozitívne: 0
+  Skutočne pozitívne: 0
+  Falošne pozitívne: 62
+  Falošne negatívne: 0
+Momentálne hodnoty metrík:
+  Presnosť: 0.0
+  Citlivosť: 0.0
+  F1 skóre: 0.0
+===============
+
+=== Aktuálny progres 95/200 ===
+Aktuálny súbor: chunk_95
+Momentálny stav analýzy:
+  Pozitívne: 0
+  Skutočne pozitívne: 0
+  Falošne pozitívne: 62
+  Falošne negatívne: 0
+Momentálne hodnoty metrík:
+  Presnosť: 0.0
+  Citlivosť: 0.0
+  F1 skóre: 0.0
+===============
+
+=== Aktuálny progres 96/200 ===
+Aktuálny súbor: chunk_96
+Momentálny stav analýzy:
+  Pozitívne: 0
+  Skutočne pozitívne: 0
+  Falošne pozitívne: 62
+  Falošne negatívne: 0
+Momentálne hodnoty metrík:
+  Presnosť: 0.0
+  Citlivosť: 0.0
+  F1 skóre: 0.0
+===============
+
+=== Aktuálny progres 97/200 ===
+Aktuálny súbor: chunk_97
+Momentálny stav analýzy:
+  Pozitívne: 0
+  Skutočne pozitívne: 0
+  Falošne pozitívne: 63
+  Falošne negatívne: 0
+Momentálne hodnoty metrík:
+  Presnosť: 0.0
+  Citlivosť: 0.0
+  F1 skóre: 0.0
+===============
+
+=== Aktuálny progres 98/200 ===
+Aktuálny súbor: chunk_98
+Momentálny stav analýzy:
+  Pozitívne: 0
+  Skutočne pozitívne: 0
+  Falošne pozitívne: 64
+  Falošne negatívne: 0
+Momentálne hodnoty metrík:
+  Presnosť: 0.0
+  Citlivosť: 0.0
+  F1 skóre: 0.0
+===============
+
+=== Aktuálny progres 99/200 ===
+Aktuálny súbor: chunk_99
+Momentálny stav analýzy:
+  Pozitívne: 0
+  Skutočne pozitívne: 0
+  Falošne pozitívne: 64
+  Falošne negatívne: 0
+Momentálne hodnoty metrík:
+  Presnosť: 0.0
+  Citlivosť: 0.0
+  F1 skóre: 0.0
+===============
+
+=== Aktuálny progres 100/200 ===
+Aktuálny súbor: chunk_100
+Momentálny stav analýzy:
+  Pozitívne: 0
+  Skutočne pozitívne: 0
+  Falošne pozitívne: 65
+  Falošne negatívne: 0
+Momentálne hodnoty metrík:
+  Presnosť: 0.0
+  Citlivosť: 0.0
+  F1 skóre: 0.0
+===============
+
+=== Aktuálny progres 101/200 ===
+Aktuálny súbor: chunk_101
+Momentálny stav analýzy:
+  Pozitívne: 1
+  Skutočne pozitívne: 1
+  Falošne pozitívne: 65
+  Falošne negatívne: 0
+Momentálne hodnoty metrík:
+  Presnosť: 0.015151515151515152
+  Citlivosť: 1.0
+  F1 skóre: 0.02985074626865672
+===============
+
+=== Aktuálny progres 102/200 ===
+Aktuálny súbor: chunk_102
+Momentálny stav analýzy:
+  Pozitívne: 2
+  Skutočne pozitívne: 2
+  Falošne pozitívne: 65
+  Falošne negatívne: 0
+Momentálne hodnoty metrík:
+  Presnosť: 0.029850746268656716
+  Citlivosť: 1.0
+  F1 skóre: 0.05797101449275362
+===============
+
+=== Aktuálny progres 103/200 ===
+Aktuálny súbor: chunk_103
+Momentálny stav analýzy:
+  Pozitívne: 3
+  Skutočne pozitívne: 3
+  Falošne pozitívne: 65
+  Falošne negatívne: 0
+Momentálne hodnoty metrík:
+  Presnosť: 0.04411764705882353
+  Citlivosť: 1.0
+  F1 skóre: 0.08450704225352113
+===============
+
+=== Aktuálny progres 104/200 ===
+Aktuálny súbor: chunk_104
+Momentálny stav analýzy:
+  Pozitívne: 4
+  Skutočne pozitívne: 4
+  Falošne pozitívne: 65
+  Falošne negatívne: 0
+Momentálne hodnoty metrík:
+  Presnosť: 0.057971014492753624
+  Citlivosť: 1.0
+  F1 skóre: 0.1095890410958904
+===============
+
+=== Aktuálny progres 105/200 ===
+Aktuálny súbor: chunk_105
+Momentálny stav analýzy:
+  Pozitívne: 5
+  Skutočne pozitívne: 5
+  Falošne pozitívne: 65
+  Falošne negatívne: 0
+Momentálne hodnoty metrík:
+  Presnosť: 0.07142857142857142
+  Citlivosť: 1.0
+  F1 skóre: 0.13333333333333333
+===============
+
+=== Aktuálny progres 106/200 ===
+Aktuálny súbor: chunk_106
+Momentálny stav analýzy:
+  Pozitívne: 6
+  Skutočne pozitívne: 6
+  Falošne pozitívne: 65
+  Falošne negatívne: 0
+Momentálne hodnoty metrík:
+  Presnosť: 0.08450704225352113
+  Citlivosť: 1.0
+  F1 skóre: 0.15584415584415587
+===============
+
+=== Aktuálny progres 107/200 ===
+Aktuálny súbor: chunk_107
+Momentálny stav analýzy:
+  Pozitívne: 7
+  Skutočne pozitívne: 6
+  Falošne pozitívne: 65
+  Falošne negatívne: 1
+Momentálne hodnoty metrík:
+  Presnosť: 0.08450704225352113
+  Citlivosť: 0.8571428571428571
+  F1 skóre: 0.15384615384615383
+===============
+
+=== Aktuálny progres 108/200 ===
+Aktuálny súbor: chunk_108
+Momentálny stav analýzy:
+  Pozitívne: 8
+  Skutočne pozitívne: 7
+  Falošne pozitívne: 65
+  Falošne negatívne: 1
+Momentálne hodnoty metrík:
+  Presnosť: 0.09722222222222222
+  Citlivosť: 0.875
+  F1 skóre: 0.17500000000000002
+===============
+
+=== Aktuálny progres 109/200 ===
+Aktuálny súbor: chunk_109
+Momentálny stav analýzy:
+  Pozitívne: 9
+  Skutočne pozitívne: 7
+  Falošne pozitívne: 65
+  Falošne negatívne: 2
+Momentálne hodnoty metrík:
+  Presnosť: 0.09722222222222222
+  Citlivosť: 0.7777777777777778
+  F1 skóre: 0.17283950617283952
+===============
+
+=== Aktuálny progres 110/200 ===
+Aktuálny súbor: chunk_110
+Momentálny stav analýzy:
+  Pozitívne: 10
+  Skutočne pozitívne: 7
+  Falošne pozitívne: 65
+  Falošne negatívne: 3
+Momentálne hodnoty metrík:
+  Presnosť: 0.09722222222222222
+  Citlivosť: 0.7
+  F1 skóre: 0.17073170731707316
+===============
+
+=== Aktuálny progres 111/200 ===
+Aktuálny súbor: chunk_111
+Momentálny stav analýzy:
+  Pozitívne: 11
+  Skutočne pozitívne: 8
+  Falošne pozitívne: 65
+  Falošne negatívne: 3
+Momentálne hodnoty metrík:
+  Presnosť: 0.1095890410958904
+  Citlivosť: 0.7272727272727273
+  F1 skóre: 0.19047619047619047
+===============
+
+=== Aktuálny progres 112/200 ===
+Aktuálny súbor: chunk_112
+Momentálny stav analýzy:
+  Pozitívne: 12
+  Skutočne pozitívne: 9
+  Falošne pozitívne: 65
+  Falošne negatívne: 3
+Momentálne hodnoty metrík:
+  Presnosť: 0.12162162162162163
+  Citlivosť: 0.75
+  F1 skóre: 0.2093023255813954
+===============
+
+=== Aktuálny progres 113/200 ===
+Aktuálny súbor: chunk_113
+Momentálny stav analýzy:
+  Pozitívne: 13
+  Skutočne pozitívne: 10
+  Falošne pozitívne: 65
+  Falošne negatívne: 3
+Momentálne hodnoty metrík:
+  Presnosť: 0.13333333333333333
+  Citlivosť: 0.7692307692307693
+  F1 skóre: 0.2272727272727273
+===============
+
+=== Aktuálny progres 114/200 ===
+Aktuálny súbor: chunk_114
+Momentálny stav analýzy:
+  Pozitívne: 14
+  Skutočne pozitívne: 11
+  Falošne pozitívne: 65
+  Falošne negatívne: 3
+Momentálne hodnoty metrík:
+  Presnosť: 0.14473684210526316
+  Citlivosť: 0.7857142857142857
+  F1 skóre: 0.24444444444444444
+===============
+
+=== Aktuálny progres 115/200 ===
+Aktuálny súbor: chunk_115
+Momentálny stav analýzy:
+  Pozitívne: 15
+  Skutočne pozitívne: 11
+  Falošne pozitívne: 65
+  Falošne negatívne: 4
+Momentálne hodnoty metrík:
+  Presnosť: 0.14473684210526316
+  Citlivosť: 0.7333333333333333
+  F1 skóre: 0.24175824175824176
+===============
+
+=== Aktuálny progres 116/200 ===
+Aktuálny súbor: chunk_116
+Momentálny stav analýzy:
+  Pozitívne: 16
+  Skutočne pozitívne: 12
+  Falošne pozitívne: 65
+  Falošne negatívne: 4
+Momentálne hodnoty metrík:
+  Presnosť: 0.15584415584415584
+  Citlivosť: 0.75
+  F1 skóre: 0.25806451612903225
+===============
+
+=== Aktuálny progres 117/200 ===
+Aktuálny súbor: chunk_117
+Momentálny stav analýzy:
+  Pozitívne: 17
+  Skutočne pozitívne: 12
+  Falošne pozitívne: 65
+  Falošne negatívne: 5
+Momentálne hodnoty metrík:
+  Presnosť: 0.15584415584415584
+  Citlivosť: 0.7058823529411765
+  F1 skóre: 0.2553191489361702
+===============
+
+=== Aktuálny progres 118/200 ===
+Aktuálny súbor: chunk_118
+Momentálny stav analýzy:
+  Pozitívne: 18
+  Skutočne pozitívne: 13
+  Falošne pozitívne: 65
+  Falošne negatívne: 5
+Momentálne hodnoty metrík:
+  Presnosť: 0.16666666666666666
+  Citlivosť: 0.7222222222222222
+  F1 skóre: 0.2708333333333333
+===============
+
+=== Aktuálny progres 119/200 ===
+Aktuálny súbor: chunk_119
+Momentálny stav analýzy:
+  Pozitívne: 19
+  Skutočne pozitívne: 13
+  Falošne pozitívne: 65
+  Falošne negatívne: 6
+Momentálne hodnoty metrík:
+  Presnosť: 0.16666666666666666
+  Citlivosť: 0.6842105263157895
+  F1 skóre: 0.26804123711340205
+===============
+
+=== Aktuálny progres 120/200 ===
+Aktuálny súbor: chunk_120
+Momentálny stav analýzy:
+  Pozitívne: 20
+  Skutočne pozitívne: 14
+  Falošne pozitívne: 65
+  Falošne negatívne: 6
+Momentálne hodnoty metrík:
+  Presnosť: 0.17721518987341772
+  Citlivosť: 0.7
+  F1 skóre: 0.2828282828282828
+===============
+
+=== Aktuálny progres 121/200 ===
+Aktuálny súbor: chunk_121
+Momentálny stav analýzy:
+  Pozitívne: 21
+  Skutočne pozitívne: 15
+  Falošne pozitívne: 65
+  Falošne negatívne: 6
+Momentálne hodnoty metrík:
+  Presnosť: 0.1875
+  Citlivosť: 0.7142857142857143
+  F1 skóre: 0.297029702970297
+===============
+
+=== Aktuálny progres 122/200 ===
+Aktuálny súbor: chunk_122
+Momentálny stav analýzy:
+  Pozitívne: 22
+  Skutočne pozitívne: 16
+  Falošne pozitívne: 65
+  Falošne negatívne: 6
+Momentálne hodnoty metrík:
+  Presnosť: 0.19753086419753085
+  Citlivosť: 0.7272727272727273
+  F1 skóre: 0.3106796116504854
+===============
+
+=== Aktuálny progres 123/200 ===
+Aktuálny súbor: chunk_123
+Momentálny stav analýzy:
+  Pozitívne: 23
+  Skutočne pozitívne: 17
+  Falošne pozitívne: 65
+  Falošne negatívne: 6
+Momentálne hodnoty metrík:
+  Presnosť: 0.2073170731707317
+  Citlivosť: 0.7391304347826086
+  F1 skóre: 0.3238095238095238
+===============
+
+=== Aktuálny progres 124/200 ===
+Aktuálny súbor: chunk_124
+Momentálny stav analýzy:
+  Pozitívne: 24
+  Skutočne pozitívne: 18
+  Falošne pozitívne: 65
+  Falošne negatívne: 6
+Momentálne hodnoty metrík:
+  Presnosť: 0.21686746987951808
+  Citlivosť: 0.75
+  F1 skóre: 0.3364485981308411
+===============
+
+=== Aktuálny progres 125/200 ===
+Aktuálny súbor: chunk_125
+Momentálny stav analýzy:
+  Pozitívne: 25
+  Skutočne pozitívne: 18
+  Falošne pozitívne: 65
+  Falošne negatívne: 7
+Momentálne hodnoty metrík:
+  Presnosť: 0.21686746987951808
+  Citlivosť: 0.72
+  F1 skóre: 0.3333333333333333
+===============
+
+=== Aktuálny progres 126/200 ===
+Aktuálny súbor: chunk_126
+Momentálny stav analýzy:
+  Pozitívne: 26
+  Skutočne pozitívne: 18
+  Falošne pozitívne: 65
+  Falošne negatívne: 8
+Momentálne hodnoty metrík:
+  Presnosť: 0.21686746987951808
+  Citlivosť: 0.6923076923076923
+  F1 skóre: 0.33027522935779813
+===============
+
+=== Aktuálny progres 127/200 ===
+Aktuálny súbor: chunk_127
+Momentálny stav analýzy:
+  Pozitívne: 27
+  Skutočne pozitívne: 19
+  Falošne pozitívne: 65
+  Falošne negatívne: 8
+Momentálne hodnoty metrík:
+  Presnosť: 0.2261904761904762
+  Citlivosť: 0.7037037037037037
+  F1 skóre: 0.34234234234234234
+===============
+
+=== Aktuálny progres 128/200 ===
+Aktuálny súbor: chunk_128
+Momentálny stav analýzy:
+  Pozitívne: 28
+  Skutočne pozitívne: 19
+  Falošne pozitívne: 65
+  Falošne negatívne: 9
+Momentálne hodnoty metrík:
+  Presnosť: 0.2261904761904762
+  Citlivosť: 0.6785714285714286
+  F1 skóre: 0.3392857142857143
+===============
+
+=== Aktuálny progres 129/200 ===
+Aktuálny súbor: chunk_129
+Momentálny stav analýzy:
+  Pozitívne: 29
+  Skutočne pozitívne: 20
+  Falošne pozitívne: 65
+  Falošne negatívne: 9
+Momentálne hodnoty metrík:
+  Presnosť: 0.23529411764705882
+  Citlivosť: 0.6896551724137931
+  F1 skóre: 0.3508771929824561
+===============
+
+=== Aktuálny progres 130/200 ===
+Aktuálny súbor: chunk_130
+Momentálny stav analýzy:
+  Pozitívne: 30
+  Skutočne pozitívne: 21
+  Falošne pozitívne: 65
+  Falošne negatívne: 9
+Momentálne hodnoty metrík:
+  Presnosť: 0.2441860465116279
+  Citlivosť: 0.7
+  F1 skóre: 0.3620689655172414
+===============
+
+=== Aktuálny progres 131/200 ===
+Aktuálny súbor: chunk_131
+Momentálny stav analýzy:
+  Pozitívne: 31
+  Skutočne pozitívne: 22
+  Falošne pozitívne: 65
+  Falošne negatívne: 9
+Momentálne hodnoty metrík:
+  Presnosť: 0.25287356321839083
+  Citlivosť: 0.7096774193548387
+  F1 skóre: 0.3728813559322034
+===============
+
+=== Aktuálny progres 132/200 ===
+Aktuálny súbor: chunk_132
+Momentálny stav analýzy:
+  Pozitívne: 32
+  Skutočne pozitívne: 23
+  Falošne pozitívne: 65
+  Falošne negatívne: 9
+Momentálne hodnoty metrík:
+  Presnosť: 0.26136363636363635
+  Citlivosť: 0.71875
+  F1 skóre: 0.3833333333333333
+===============
+
+=== Aktuálny progres 133/200 ===
+Aktuálny súbor: chunk_133
+Momentálny stav analýzy:
+  Pozitívne: 33
+  Skutočne pozitívne: 23
+  Falošne pozitívne: 65
+  Falošne negatívne: 10
+Momentálne hodnoty metrík:
+  Presnosť: 0.26136363636363635
+  Citlivosť: 0.696969696969697
+  F1 skóre: 0.3801652892561983
+===============
+
+=== Aktuálny progres 134/200 ===
+Aktuálny súbor: chunk_134
+Momentálny stav analýzy:
+  Pozitívne: 34
+  Skutočne pozitívne: 23
+  Falošne pozitívne: 65
+  Falošne negatívne: 11
+Momentálne hodnoty metrík:
+  Presnosť: 0.26136363636363635
+  Citlivosť: 0.6764705882352942
+  F1 skóre: 0.3770491803278689
+===============
+
+=== Aktuálny progres 135/200 ===
+Aktuálny súbor: chunk_135
+Momentálny stav analýzy:
+  Pozitívne: 35
+  Skutočne pozitívne: 23
+  Falošne pozitívne: 65
+  Falošne negatívne: 12
+Momentálne hodnoty metrík:
+  Presnosť: 0.26136363636363635
+  Citlivosť: 0.6571428571428571
+  F1 skóre: 0.37398373983739835
+===============
+
+=== Aktuálny progres 136/200 ===
+Aktuálny súbor: chunk_136
+Momentálny stav analýzy:
+  Pozitívne: 36
+  Skutočne pozitívne: 23
+  Falošne pozitívne: 65
+  Falošne negatívne: 13
+Momentálne hodnoty metrík:
+  Presnosť: 0.26136363636363635
+  Citlivosť: 0.6388888888888888
+  F1 skóre: 0.3709677419354838
+===============
+
+=== Aktuálny progres 137/200 ===
+Aktuálny súbor: chunk_137
+Momentálny stav analýzy:
+  Pozitívne: 37
+  Skutočne pozitívne: 24
+  Falošne pozitívne: 65
+  Falošne negatívne: 13
+Momentálne hodnoty metrík:
+  Presnosť: 0.2696629213483146
+  Citlivosť: 0.6486486486486487
+  F1 skóre: 0.380952380952381
+===============
+
+=== Aktuálny progres 138/200 ===
+Aktuálny súbor: chunk_138
+Momentálny stav analýzy:
+  Pozitívne: 38
+  Skutočne pozitívne: 25
+  Falošne pozitívne: 65
+  Falošne negatívne: 13
+Momentálne hodnoty metrík:
+  Presnosť: 0.2777777777777778
+  Citlivosť: 0.6578947368421053
+  F1 skóre: 0.39062500000000006
+===============
+
+=== Aktuálny progres 139/200 ===
+Aktuálny súbor: chunk_139
+Momentálny stav analýzy:
+  Pozitívne: 39
+  Skutočne pozitívne: 26
+  Falošne pozitívne: 65
+  Falošne negatívne: 13
+Momentálne hodnoty metrík:
+  Presnosť: 0.2857142857142857
+  Citlivosť: 0.6666666666666666
+  F1 skóre: 0.4
+===============
+
+=== Aktuálny progres 140/200 ===
+Aktuálny súbor: chunk_140
+Momentálny stav analýzy:
+  Pozitívne: 40
+  Skutočne pozitívne: 27
+  Falošne pozitívne: 65
+  Falošne negatívne: 13
+Momentálne hodnoty metrík:
+  Presnosť: 0.29347826086956524
+  Citlivosť: 0.675
+  F1 skóre: 0.40909090909090917
+===============
+
+=== Aktuálny progres 141/200 ===
+Aktuálny súbor: chunk_141
+Momentálny stav analýzy:
+  Pozitívne: 41
+  Skutočne pozitívne: 28
+  Falošne pozitívne: 65
+  Falošne negatívne: 13
+Momentálne hodnoty metrík:
+  Presnosť: 0.3010752688172043
+  Citlivosť: 0.6829268292682927
+  F1 skóre: 0.417910447761194
+===============
+
+=== Aktuálny progres 142/200 ===
+Aktuálny súbor: chunk_142
+Momentálny stav analýzy:
+  Pozitívne: 42
+  Skutočne pozitívne: 29
+  Falošne pozitívne: 65
+  Falošne negatívne: 13
+Momentálne hodnoty metrík:
+  Presnosť: 0.30851063829787234
+  Citlivosť: 0.6904761904761905
+  F1 skóre: 0.4264705882352941
+===============
+
+=== Aktuálny progres 143/200 ===
+Aktuálny súbor: chunk_143
+Momentálny stav analýzy:
+  Pozitívne: 43
+  Skutočne pozitívne: 30
+  Falošne pozitívne: 65
+  Falošne negatívne: 13
+Momentálne hodnoty metrík:
+  Presnosť: 0.3157894736842105
+  Citlivosť: 0.6976744186046512
+  F1 skóre: 0.43478260869565216
+===============
+
+=== Aktuálny progres 144/200 ===
+Aktuálny súbor: chunk_144
+Momentálny stav analýzy:
+  Pozitívne: 44
+  Skutočne pozitívne: 30
+  Falošne pozitívne: 65
+  Falošne negatívne: 14
+Momentálne hodnoty metrík:
+  Presnosť: 0.3157894736842105
+  Citlivosť: 0.6818181818181818
+  F1 skóre: 0.4316546762589928
+===============
+
+=== Aktuálny progres 145/200 ===
+Aktuálny súbor: chunk_145
+Momentálny stav analýzy:
+  Pozitívne: 45
+  Skutočne pozitívne: 30
+  Falošne pozitívne: 65
+  Falošne negatívne: 15
+Momentálne hodnoty metrík:
+  Presnosť: 0.3157894736842105
+  Citlivosť: 0.6666666666666666
+  F1 skóre: 0.42857142857142855
+===============
+
+=== Aktuálny progres 146/200 ===
+Aktuálny súbor: chunk_146
+Momentálny stav analýzy:
+  Pozitívne: 46
+  Skutočne pozitívne: 31
+  Falošne pozitívne: 65
+  Falošne negatívne: 15
+Momentálne hodnoty metrík:
+  Presnosť: 0.3229166666666667
+  Citlivosť: 0.6739130434782609
+  F1 skóre: 0.4366197183098592
+===============
+
+=== Aktuálny progres 147/200 ===
+Aktuálny súbor: chunk_147
+Momentálny stav analýzy:
+  Pozitívne: 47
+  Skutočne pozitívne: 32
+  Falošne pozitívne: 65
+  Falošne negatívne: 15
+Momentálne hodnoty metrík:
+  Presnosť: 0.32989690721649484
+  Citlivosť: 0.6808510638297872
+  F1 skóre: 0.4444444444444444
+===============
+
+=== Aktuálny progres 148/200 ===
+Aktuálny súbor: chunk_148
+Momentálny stav analýzy:
+  Pozitívne: 48
+  Skutočne pozitívne: 33
+  Falošne pozitívne: 65
+  Falošne negatívne: 15
+Momentálne hodnoty metrík:
+  Presnosť: 0.336734693877551
+  Citlivosť: 0.6875
+  F1 skóre: 0.4520547945205479
+===============
+
+=== Aktuálny progres 149/200 ===
+Aktuálny súbor: chunk_149
+Momentálny stav analýzy:
+  Pozitívne: 49
+  Skutočne pozitívne: 34
+  Falošne pozitívne: 65
+  Falošne negatívne: 15
+Momentálne hodnoty metrík:
+  Presnosť: 0.3434343434343434
+  Citlivosť: 0.6938775510204082
+  F1 skóre: 0.4594594594594595
+===============
+
+=== Aktuálny progres 150/200 ===
+Aktuálny súbor: chunk_150
+Momentálny stav analýzy:
+  Pozitívne: 50
+  Skutočne pozitívne: 35
+  Falošne pozitívne: 65
+  Falošne negatívne: 15
+Momentálne hodnoty metrík:
+  Presnosť: 0.35
+  Citlivosť: 0.7
+  F1 skóre: 0.4666666666666667
+===============
+
+=== Aktuálny progres 151/200 ===
+Aktuálny súbor: chunk_151
+Momentálny stav analýzy:
+  Pozitívne: 51
+  Skutočne pozitívne: 35
+  Falošne pozitívne: 65
+  Falošne negatívne: 16
+Momentálne hodnoty metrík:
+  Presnosť: 0.35
+  Citlivosť: 0.6862745098039216
+  F1 skóre: 0.4635761589403974
+===============
+
+=== Aktuálny progres 152/200 ===
+Aktuálny súbor: chunk_152
+Momentálny stav analýzy:
+  Pozitívne: 52
+  Skutočne pozitívne: 35
+  Falošne pozitívne: 65
+  Falošne negatívne: 17
+Momentálne hodnoty metrík:
+  Presnosť: 0.35
+  Citlivosť: 0.6730769230769231
+  F1 skóre: 0.46052631578947373
+===============
+
+=== Aktuálny progres 153/200 ===
+Aktuálny súbor: chunk_153
+Momentálny stav analýzy:
+  Pozitívne: 53
+  Skutočne pozitívne: 36
+  Falošne pozitívne: 65
+  Falošne negatívne: 17
+Momentálne hodnoty metrík:
+  Presnosť: 0.3564356435643564
+  Citlivosť: 0.6792452830188679
+  F1 skóre: 0.4675324675324675
+===============
+
+=== Aktuálny progres 154/200 ===
+Aktuálny súbor: chunk_154
+Momentálny stav analýzy:
+  Pozitívne: 54
+  Skutočne pozitívne: 37
+  Falošne pozitívne: 65
+  Falošne negatívne: 17
+Momentálne hodnoty metrík:
+  Presnosť: 0.3627450980392157
+  Citlivosť: 0.6851851851851852
+  F1 skóre: 0.4743589743589744
+===============
+
+=== Aktuálny progres 155/200 ===
+Aktuálny súbor: chunk_155
+Momentálny stav analýzy:
+  Pozitívne: 55
+  Skutočne pozitívne: 38
+  Falošne pozitívne: 65
+  Falošne negatívne: 17
+Momentálne hodnoty metrík:
+  Presnosť: 0.36893203883495146
+  Citlivosť: 0.6909090909090909
+  F1 skóre: 0.4810126582278481
+===============
+
+=== Aktuálny progres 156/200 ===
+Aktuálny súbor: chunk_156
+Momentálny stav analýzy:
+  Pozitívne: 56
+  Skutočne pozitívne: 39
+  Falošne pozitívne: 65
+  Falošne negatívne: 17
+Momentálne hodnoty metrík:
+  Presnosť: 0.375
+  Citlivosť: 0.6964285714285714
+  F1 skóre: 0.48750000000000004
+===============
+
+=== Aktuálny progres 157/200 ===
+Aktuálny súbor: chunk_157
+Momentálny stav analýzy:
+  Pozitívne: 57
+  Skutočne pozitívne: 40
+  Falošne pozitívne: 65
+  Falošne negatívne: 17
+Momentálne hodnoty metrík:
+  Presnosť: 0.38095238095238093
+  Citlivosť: 0.7017543859649122
+  F1 skóre: 0.49382716049382713
+===============
+
+=== Aktuálny progres 158/200 ===
+Aktuálny súbor: chunk_158
+Momentálny stav analýzy:
+  Pozitívne: 58
+  Skutočne pozitívne: 41
+  Falošne pozitívne: 65
+  Falošne negatívne: 17
+Momentálne hodnoty metrík:
+  Presnosť: 0.3867924528301887
+  Citlivosť: 0.7068965517241379
+  F1 skóre: 0.5
+===============
+
+=== Aktuálny progres 159/200 ===
+Aktuálny súbor: chunk_159
+Momentálny stav analýzy:
+  Pozitívne: 59
+  Skutočne pozitívne: 42
+  Falošne pozitívne: 65
+  Falošne negatívne: 17
+Momentálne hodnoty metrík:
+  Presnosť: 0.3925233644859813
+  Citlivosť: 0.711864406779661
+  F1 skóre: 0.5060240963855422
+===============
+
+=== Aktuálny progres 160/200 ===
+Aktuálny súbor: chunk_160
+Momentálny stav analýzy:
+  Pozitívne: 60
+  Skutočne pozitívne: 43
+  Falošne pozitívne: 65
+  Falošne negatívne: 17
+Momentálne hodnoty metrík:
+  Presnosť: 0.39814814814814814
+  Citlivosť: 0.7166666666666667
+  F1 skóre: 0.511904761904762
+===============
+
+=== Aktuálny progres 161/200 ===
+Aktuálny súbor: chunk_161
+Momentálny stav analýzy:
+  Pozitívne: 61
+  Skutočne pozitívne: 44
+  Falošne pozitívne: 65
+  Falošne negatívne: 17
+Momentálne hodnoty metrík:
+  Presnosť: 0.4036697247706422
+  Citlivosť: 0.7213114754098361
+  F1 skóre: 0.5176470588235293
+===============
+
+=== Aktuálny progres 162/200 ===
+Aktuálny súbor: chunk_162
+Momentálny stav analýzy:
+  Pozitívne: 62
+  Skutočne pozitívne: 45
+  Falošne pozitívne: 65
+  Falošne negatívne: 17
+Momentálne hodnoty metrík:
+  Presnosť: 0.4090909090909091
+  Citlivosť: 0.7258064516129032
+  F1 skóre: 0.5232558139534883
+===============
+
+=== Aktuálny progres 163/200 ===
+Aktuálny súbor: chunk_163
+Momentálny stav analýzy:
+  Pozitívne: 63
+  Skutočne pozitívne: 45
+  Falošne pozitívne: 65
+  Falošne negatívne: 18
+Momentálne hodnoty metrík:
+  Presnosť: 0.4090909090909091
+  Citlivosť: 0.7142857142857143
+  F1 skóre: 0.5202312138728324
+===============
+
+=== Aktuálny progres 164/200 ===
+Aktuálny súbor: chunk_164
+Momentálny stav analýzy:
+  Pozitívne: 64
+  Skutočne pozitívne: 46
+  Falošne pozitívne: 65
+  Falošne negatívne: 18
+Momentálne hodnoty metrík:
+  Presnosť: 0.4144144144144144
+  Citlivosť: 0.71875
+  F1 skóre: 0.5257142857142857
+===============
+
+=== Aktuálny progres 165/200 ===
+Aktuálny súbor: chunk_165
+Momentálny stav analýzy:
+  Pozitívne: 65
+  Skutočne pozitívne: 46
+  Falošne pozitívne: 65
+  Falošne negatívne: 19
+Momentálne hodnoty metrík:
+  Presnosť: 0.4144144144144144
+  Citlivosť: 0.7076923076923077
+  F1 skóre: 0.5227272727272728
+===============
+
+=== Aktuálny progres 166/200 ===
+Aktuálny súbor: chunk_166
+Momentálny stav analýzy:
+  Pozitívne: 66
+  Skutočne pozitívne: 47
+  Falošne pozitívne: 65
+  Falošne negatívne: 19
+Momentálne hodnoty metrík:
+  Presnosť: 0.41964285714285715
+  Citlivosť: 0.7121212121212122
+  F1 skóre: 0.5280898876404494
+===============
+
+=== Aktuálny progres 167/200 ===
+Aktuálny súbor: chunk_167
+Momentálny stav analýzy:
+  Pozitívne: 67
+  Skutočne pozitívne: 48
+  Falošne pozitívne: 65
+  Falošne negatívne: 19
+Momentálne hodnoty metrík:
+  Presnosť: 0.4247787610619469
+  Citlivosť: 0.7164179104477612
+  F1 skóre: 0.5333333333333332
+===============
+
+=== Aktuálny progres 168/200 ===
+Aktuálny súbor: chunk_168
+Momentálny stav analýzy:
+  Pozitívne: 68
+  Skutočne pozitívne: 49
+  Falošne pozitívne: 65
+  Falošne negatívne: 19
+Momentálne hodnoty metrík:
+  Presnosť: 0.4298245614035088
+  Citlivosť: 0.7205882352941176
+  F1 skóre: 0.5384615384615384
+===============
+
+=== Aktuálny progres 169/200 ===
+Aktuálny súbor: chunk_169
+Momentálny stav analýzy:
+  Pozitívne: 69
+  Skutočne pozitívne: 50
+  Falošne pozitívne: 65
+  Falošne negatívne: 19
+Momentálne hodnoty metrík:
+  Presnosť: 0.43478260869565216
+  Citlivosť: 0.7246376811594203
+  F1 skóre: 0.5434782608695652
+===============
+
+=== Aktuálny progres 170/200 ===
+Aktuálny súbor: chunk_170
+Momentálny stav analýzy:
+  Pozitívne: 70
+  Skutočne pozitívne: 50
+  Falošne pozitívne: 65
+  Falošne negatívne: 20
+Momentálne hodnoty metrík:
+  Presnosť: 0.43478260869565216
+  Citlivosť: 0.7142857142857143
+  F1 skóre: 0.5405405405405405
+===============
+
+=== Aktuálny progres 171/200 ===
+Aktuálny súbor: chunk_171
+Momentálny stav analýzy:
+  Pozitívne: 71
+  Skutočne pozitívne: 51
+  Falošne pozitívne: 65
+  Falošne negatívne: 20
+Momentálne hodnoty metrík:
+  Presnosť: 0.4396551724137931
+  Citlivosť: 0.7183098591549296
+  F1 skóre: 0.5454545454545455
+===============
+
+=== Aktuálny progres 172/200 ===
+Aktuálny súbor: chunk_172
+Momentálny stav analýzy:
+  Pozitívne: 72
+  Skutočne pozitívne: 52
+  Falošne pozitívne: 65
+  Falošne negatívne: 20
+Momentálne hodnoty metrík:
+  Presnosť: 0.4444444444444444
+  Citlivosť: 0.7222222222222222
+  F1 skóre: 0.5502645502645503
+===============
+
+=== Aktuálny progres 173/200 ===
+Aktuálny súbor: chunk_173
+Momentálny stav analýzy:
+  Pozitívne: 73
+  Skutočne pozitívne: 53
+  Falošne pozitívne: 65
+  Falošne negatívne: 20
+Momentálne hodnoty metrík:
+  Presnosť: 0.4491525423728814
+  Citlivosť: 0.726027397260274
+  F1 skóre: 0.5549738219895288
+===============
+
+=== Aktuálny progres 174/200 ===
+Aktuálny súbor: chunk_174
+Momentálny stav analýzy:
+  Pozitívne: 74
+  Skutočne pozitívne: 53
+  Falošne pozitívne: 65
+  Falošne negatívne: 21
+Momentálne hodnoty metrík:
+  Presnosť: 0.4491525423728814
+  Citlivosť: 0.7162162162162162
+  F1 skóre: 0.5520833333333334
+===============
+
+=== Aktuálny progres 175/200 ===
+Aktuálny súbor: chunk_175
+Momentálny stav analýzy:
+  Pozitívne: 75
+  Skutočne pozitívne: 54
+  Falošne pozitívne: 65
+  Falošne negatívne: 21
+Momentálne hodnoty metrík:
+  Presnosť: 0.453781512605042
+  Citlivosť: 0.72
+  F1 skóre: 0.5567010309278351
+===============
+
+=== Aktuálny progres 176/200 ===
+Aktuálny súbor: chunk_176
+Momentálny stav analýzy:
+  Pozitívne: 76
+  Skutočne pozitívne: 55
+  Falošne pozitívne: 65
+  Falošne negatívne: 21
+Momentálne hodnoty metrík:
+  Presnosť: 0.4583333333333333
+  Citlivosť: 0.7236842105263158
+  F1 skóre: 0.5612244897959183
+===============
+
+=== Aktuálny progres 177/200 ===
+Aktuálny súbor: chunk_177
+Momentálny stav analýzy:
+  Pozitívne: 77
+  Skutočne pozitívne: 56
+  Falošne pozitívne: 65
+  Falošne negatívne: 21
+Momentálne hodnoty metrík:
+  Presnosť: 0.4628099173553719
+  Citlivosť: 0.7272727272727273
+  F1 skóre: 0.5656565656565656
+===============
+
+=== Aktuálny progres 178/200 ===
+Aktuálny súbor: chunk_178
+Momentálny stav analýzy:
+  Pozitívne: 78
+  Skutočne pozitívne: 57
+  Falošne pozitívne: 65
+  Falošne negatívne: 21
+Momentálne hodnoty metrík:
+  Presnosť: 0.4672131147540984
+  Citlivosť: 0.7307692307692307
+  F1 skóre: 0.57
+===============
+
+=== Aktuálny progres 179/200 ===
+Aktuálny súbor: chunk_179
+Momentálny stav analýzy:
+  Pozitívne: 79
+  Skutočne pozitívne: 58
+  Falošne pozitívne: 65
+  Falošne negatívne: 21
+Momentálne hodnoty metrík:
+  Presnosť: 0.4715447154471545
+  Citlivosť: 0.7341772151898734
+  F1 skóre: 0.5742574257425743
+===============
+
+=== Aktuálny progres 180/200 ===
+Aktuálny súbor: chunk_180
+Momentálny stav analýzy:
+  Pozitívne: 80
+  Skutočne pozitívne: 59
+  Falošne pozitívne: 65
+  Falošne negatívne: 21
+Momentálne hodnoty metrík:
+  Presnosť: 0.47580645161290325
+  Citlivosť: 0.7375
+  F1 skóre: 0.5784313725490197
+===============
+
+=== Aktuálny progres 181/200 ===
+Aktuálny súbor: chunk_181
+Momentálny stav analýzy:
+  Pozitívne: 81
+  Skutočne pozitívne: 60
+  Falošne pozitívne: 65
+  Falošne negatívne: 21
+Momentálne hodnoty metrík:
+  Presnosť: 0.48
+  Citlivosť: 0.7407407407407407
+  F1 skóre: 0.5825242718446602
+===============
+
+=== Aktuálny progres 182/200 ===
+Aktuálny súbor: chunk_182
+Momentálny stav analýzy:
+  Pozitívne: 82
+  Skutočne pozitívne: 61
+  Falošne pozitívne: 65
+  Falošne negatívne: 21
+Momentálne hodnoty metrík:
+  Presnosť: 0.48412698412698413
+  Citlivosť: 0.7439024390243902
+  F1 skóre: 0.5865384615384616
+===============
+
+=== Aktuálny progres 183/200 ===
+Aktuálny súbor: chunk_183
+Momentálny stav analýzy:
+  Pozitívne: 83
+  Skutočne pozitívne: 62
+  Falošne pozitívne: 65
+  Falošne negatívne: 21
+Momentálne hodnoty metrík:
+  Presnosť: 0.4881889763779528
+  Citlivosť: 0.7469879518072289
+  F1 skóre: 0.5904761904761905
+===============
+
+=== Aktuálny progres 184/200 ===
+Aktuálny súbor: chunk_184
+Momentálny stav analýzy:
+  Pozitívne: 84
+  Skutočne pozitívne: 63
+  Falošne pozitívne: 65
+  Falošne negatívne: 21
+Momentálne hodnoty metrík:
+  Presnosť: 0.4921875
+  Citlivosť: 0.75
+  F1 skóre: 0.5943396226415094
+===============
+
+=== Aktuálny progres 185/200 ===
+Aktuálny súbor: chunk_185
+Momentálny stav analýzy:
+  Pozitívne: 85
+  Skutočne pozitívne: 64
+  Falošne pozitívne: 65
+  Falošne negatívne: 21
+Momentálne hodnoty metrík:
+  Presnosť: 0.49612403100775193
+  Citlivosť: 0.7529411764705882
+  F1 skóre: 0.5981308411214953
+===============
+
+=== Aktuálny progres 186/200 ===
+Aktuálny súbor: chunk_186
+Momentálny stav analýzy:
+  Pozitívne: 86
+  Skutočne pozitívne: 65
+  Falošne pozitívne: 65
+  Falošne negatívne: 21
+Momentálne hodnoty metrík:
+  Presnosť: 0.5
+  Citlivosť: 0.7558139534883721
+  F1 skóre: 0.6018518518518519
+===============
+
+=== Aktuálny progres 187/200 ===
+Aktuálny súbor: chunk_187
+Momentálny stav analýzy:
+  Pozitívne: 87
+  Skutočne pozitívne: 65
+  Falošne pozitívne: 65
+  Falošne negatívne: 22
+Momentálne hodnoty metrík:
+  Presnosť: 0.5
+  Citlivosť: 0.7471264367816092
+  F1 skóre: 0.5990783410138248
+===============
+
+=== Aktuálny progres 188/200 ===
+Aktuálny súbor: chunk_188
+Momentálny stav analýzy:
+  Pozitívne: 88
+  Skutočne pozitívne: 66
+  Falošne pozitívne: 65
+  Falošne negatívne: 22
+Momentálne hodnoty metrík:
+  Presnosť: 0.5038167938931297
+  Citlivosť: 0.75
+  F1 skóre: 0.6027397260273972
+===============
+
+=== Aktuálny progres 189/200 ===
+Aktuálny súbor: chunk_189
+Momentálny stav analýzy:
+  Pozitívne: 89
+  Skutočne pozitívne: 67
+  Falošne pozitívne: 65
+  Falošne negatívne: 22
+Momentálne hodnoty metrík:
+  Presnosť: 0.5075757575757576
+  Citlivosť: 0.7528089887640449
+  F1 skóre: 0.6063348416289592
+===============
+
+=== Aktuálny progres 190/200 ===
+Aktuálny súbor: chunk_190
+Momentálny stav analýzy:
+  Pozitívne: 90
+  Skutočne pozitívne: 68
+  Falošne pozitívne: 65
+  Falošne negatívne: 22
+Momentálne hodnoty metrík:
+  Presnosť: 0.5112781954887218
+  Citlivosť: 0.7555555555555555
+  F1 skóre: 0.6098654708520179
+===============
+
+=== Aktuálny progres 191/200 ===
+Aktuálny súbor: chunk_191
+Momentálny stav analýzy:
+  Pozitívne: 91
+  Skutočne pozitívne: 69
+  Falošne pozitívne: 65
+  Falošne negatívne: 22
+Momentálne hodnoty metrík:
+  Presnosť: 0.5149253731343284
+  Citlivosť: 0.7582417582417582
+  F1 skóre: 0.6133333333333334
+===============
+
+=== Aktuálny progres 192/200 ===
+Aktuálny súbor: chunk_192
+Momentálny stav analýzy:
+  Pozitívne: 92
+  Skutočne pozitívne: 69
+  Falošne pozitívne: 65
+  Falošne negatívne: 23
+Momentálne hodnoty metrík:
+  Presnosť: 0.5149253731343284
+  Citlivosť: 0.75
+  F1 skóre: 0.6106194690265487
+===============
+
+=== Aktuálny progres 193/200 ===
+Aktuálny súbor: chunk_193
+Momentálny stav analýzy:
+  Pozitívne: 93
+  Skutočne pozitívne: 70
+  Falošne pozitívne: 65
+  Falošne negatívne: 23
+Momentálne hodnoty metrík:
+  Presnosť: 0.5185185185185185
+  Citlivosť: 0.7526881720430108
+  F1 skóre: 0.6140350877192983
+===============
+
+=== Aktuálny progres 194/200 ===
+Aktuálny súbor: chunk_194
+Momentálny stav analýzy:
+  Pozitívne: 94
+  Skutočne pozitívne: 71
+  Falošne pozitívne: 65
+  Falošne negatívne: 23
+Momentálne hodnoty metrík:
+  Presnosť: 0.5220588235294118
+  Citlivosť: 0.7553191489361702
+  F1 skóre: 0.6173913043478261
+===============
+
+=== Aktuálny progres 195/200 ===
+Aktuálny súbor: chunk_195
+Momentálny stav analýzy:
+  Pozitívne: 95
+  Skutočne pozitívne: 72
+  Falošne pozitívne: 65
+  Falošne negatívne: 23
+Momentálne hodnoty metrík:
+  Presnosť: 0.5255474452554745
+  Citlivosť: 0.7578947368421053
+  F1 skóre: 0.6206896551724139
+===============
+
+=== Aktuálny progres 196/200 ===
+Aktuálny súbor: chunk_196
+Momentálny stav analýzy:
+  Pozitívne: 96
+  Skutočne pozitívne: 73
+  Falošne pozitívne: 65
+  Falošne negatívne: 23
+Momentálne hodnoty metrík:
+  Presnosť: 0.5289855072463768
+  Citlivosť: 0.7604166666666666
+  F1 skóre: 0.6239316239316239
+===============
+
+=== Aktuálny progres 197/200 ===
+Aktuálny súbor: chunk_197
+Momentálny stav analýzy:
+  Pozitívne: 97
+  Skutočne pozitívne: 74
+  Falošne pozitívne: 65
+  Falošne negatívne: 23
+Momentálne hodnoty metrík:
+  Presnosť: 0.5323741007194245
+  Citlivosť: 0.7628865979381443
+  F1 skóre: 0.6271186440677966
+===============
+
+=== Aktuálny progres 198/200 ===
+Aktuálny súbor: chunk_198
+Momentálny stav analýzy:
+  Pozitívne: 98
+  Skutočne pozitívne: 75
+  Falošne pozitívne: 65
+  Falošne negatívne: 23
+Momentálne hodnoty metrík:
+  Presnosť: 0.5357142857142857
+  Citlivosť: 0.7653061224489796
+  F1 skóre: 0.6302521008403361
+===============
+
+=== Aktuálny progres 199/200 ===
+Aktuálny súbor: chunk_199
+Momentálny stav analýzy:
+  Pozitívne: 99
+  Skutočne pozitívne: 76
+  Falošne pozitívne: 65
+  Falošne negatívne: 23
+Momentálne hodnoty metrík:
+  Presnosť: 0.5390070921985816
+  Citlivosť: 0.7676767676767676
+  F1 skóre: 0.6333333333333333
+===============
+
+=== Aktuálny progres 200/200 ===
+Aktuálny súbor: chunk_200
+Momentálny stav analýzy:
+  Pozitívne: 100
+  Skutočne pozitívne: 77
+  Falošne pozitívne: 65
+  Falošne negatívne: 23
+Momentálne hodnoty metrík:
+  Presnosť: 0.5422535211267606
+  Citlivosť: 0.77
+  F1 skóre: 0.6363636363636365
+===============
+
+
+=== Výsledok analýzy ===
+Celkový počet pozitívnych: 100
+Skutočne pozitívne: 77
+Falošne pozitívne: 65
+Falošne negatívne: 23
+--- Výkonnostné metriky ---
+Presnosť: 0.5423
+Úplnosť: 0.7700
+F1 skóre: 0.6364
+===============
+
+Analýza tokov trvala 00:14:14 (hh:mm:ss).
+
+Chcete spustiť ďalšiu analýzu? (a/n): 
