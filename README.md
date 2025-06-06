@@ -5,10 +5,10 @@ Systém detekcie útokov hrubou silou pomocou veľkých jazykových modelov (LLM
 ## Štruktúra repozitára
 
 ```
-├── requirements.txt              # Python závislosti
-├── README.md                     # Dokumentácia projektu
+├── requirements.txt              # Závislosti aplikácie
+├── README.md                     # Popis repozitára
 ├── net_analyzer/                 # Hlavná aplikácia
-│   ├── __main__.py               # Vstupný bod aplikácie
+│   ├── main.py                   # Vstupný bod aplikácie
 │   └── src/                      # Zdrojový kód
 │       ├── data_processing/      # Spracovanie dát
 │       ├── llm/                  # LLM agenti a toky
@@ -16,19 +16,21 @@ Systém detekcie útokov hrubou silou pomocou veľkých jazykových modelov (LLM
 │       └── system_core/          # Základná funkčnosť systému
 ├── flow_input/                   # Vstupné súbory pre analýzu tokov
 │   ├── CIC_IDS2017.pcap_ISCX.csv # Dataset (treba stiahnuť)
-│   └── README.md                 # inštrukcie pre stiahnutie
+│   └── README.md                 # Inštrukcie pre stiahnutie datasetu
 ├── log_input/                    # Vstupné log súbory pre analýzu
-│   ├── BENIGN_*.txt              # Neškodné logy
-│   └── MALICIOUS_*.txt           # Škodlivé logy
+│   ├── BENIGN_*.txt              # Neškodné logy na analýzu
+│   └── MALICIOUS_*.txt           # Škodlivé logy na analýzu
 ├── logs_dataset/                 # Náš vlastný dataset logov
 │   ├── benign/                   # Neškodné logy
 │   └── malicious/                # Škodlivé logy
 ├── fine_tuning/                  # Ladenie LLM modelov
 │   ├── tuning_script.ipynb       # Colab skript pre ladenie
-│   ├── bruteLlama3B/             # Dáta pre BruteLlama3B model
-│   ├── secLlama3B/               # Dáta pre SecLlama3B model
-│   └── seed_examples/            # Referenčné príklady pre ladenie
-└── example_output/               # Ukážkové výstupy
+│   ├── bruteLlama3B/             # Trénovací a validačný dataset pre
+│   │                             # bruteLlama3B
+│   ├── secLlama3B/               # Trénovací a validačný dataset pre
+│   │                             # secLlama3B model
+│   └── seed_examples/            # Referenčné príklady pre SDG
+└── example_output/               # Ukážkové výstupy aplikácie
 ```
 
 ## Požiadavky na systém
@@ -134,11 +136,7 @@ https://git-scm.com/downloads
 3. Spustite aplikáciu:
    ```bash
    cd net_analyzer
-   python3 -m net_analyzer
-   ```
-   alebo
-   ```bash
-   python3 -m net_analyzer.__main__
+   python3 main.py
    ```
 
 ## Použitie
